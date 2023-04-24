@@ -1,7 +1,7 @@
 .container {
   display: flex;
   margin-top: 10px;
-  background-color: aliceblue;
+  background-color: lightgrey;
   font-family: sans-serif;
 }
 .leftside {
@@ -9,7 +9,9 @@
 }
 .news-box {
   flex: 6;
-  
+  background-color: white;
+  align-items: center;
+  padding: 10px;
 }
 .rightside {
   flex: 3;
