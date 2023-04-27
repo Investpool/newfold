@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+
+       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+       @media screen and (min-width: 200px){
+
       .newscontainer {
         display: flex;
-        /*background-color: rgb(175, 213, 246);*/
+        background-color: aliceblue;         
         font-family: sans-serif;
       }
       .left {
@@ -16,16 +29,23 @@
       }
       .body {
         flex: 6;
+        border: 8px solid white;
+        padding: 5px;
       }
       .right {
         flex: 3;
       }
+      h1{
+        margin-bottom: 10px;
+      }
+  
       img{
-        border: 2px solid black;
+        border: 2px solid white;
         border-radius: 5px;
         float: left;
         margin-right: 10px;
       }
+    }
     </style>
   </head>
   <body>
@@ -36,7 +56,7 @@
           <h1>World Bank to advance almost $1bn to Ghana under IMF programme – Ofori-Atta </h1>
 
           <script type="text/javascript">
-           document.write(new Date()) 
+           document.write(Date()) 
           </script>
           
         </div>
@@ -114,4 +134,4 @@ The World Bank is expected to give Ghana about $250 million by June this year, a
       <div class="right"></div>
     </div>
   </body>
-</html>s
+</html>

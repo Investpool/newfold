@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* || small */
+@media screen and (min-width: 200px)
+/*@media screen and (min-width: 350px);*/  
+/*@media screen and (min-width: 900px)*/
+{
+   
 .container {
   display: flex;
   margin-top: 10px;
@@ -157,3 +172,5 @@ section{
   margin-bottom: 10px;
   border-radius: 8px;
 }
+}
+
