@@ -28,6 +28,16 @@
   align-items: center;
   padding: 10px;
 }
+.firstpic{
+   display: flex;
+   margin-bottom: 10px;
+}
+.bigfirst{
+  flex: 9;
+}
+.smallfirst{
+  flex: 3;
+}
 .rightside {
   flex: 3;
 }
@@ -56,6 +66,7 @@
   justify-content: space-between;
   cursor: pointer;
   margin-right: 10px;
+  
 }
 .ncol2 {
   flex: 2;
@@ -164,13 +175,26 @@ section{
     color: #fff;
 }
 .newsad{
-  background-color: #fff;
-  color: red;
-  border: 2px solid rgb(178, 178, 241);
-  text-align: center;
-  padding: 30px;
+  display: flex;
+  
+  
+  
   margin-bottom: 10px;
-  border-radius: 8px;
+  
+}
+.firstads1{
+  flex: 6;
+}
+.firstads2{
+  flex: 6;
+}
+.bigfirst{
+  background-image: url("images/photo11.jpeg");
+}
+.opencap{
+ margin-top: 200px;
+ color: whitesmoke;
+
 }
 }
 
