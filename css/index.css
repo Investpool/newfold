@@ -16,7 +16,7 @@
 .container {
   display: flex;
   margin-top: 10px;
-  background-color: lightgrey;
+  background-color: ghostwhite;
   font-family: sans-serif;
 }
 .leftside {
@@ -202,7 +202,7 @@ section{
   display: flex;
   background-color: green;
   color: yellow;
-  height: 150px;
+  height: 30px;
   padding: 10px;
   margin-top: 15px;
 }
@@ -216,6 +216,32 @@ section{
 }
 .policy{
   flex: 4;
+}
+h5{
+/*  background-color: yellow;*/
+  color: yellow;
+  padding: 0px 10px 0px 10px;
+}
+.editorial{
+  padding: 15px;
+  background-color: white;
+  margin: 20px;
+  border: 1px solid cadetblue;
+}
+.edithead{
+  background-color: cadetblue;
+  color: yellow;
+  padding: 10px;
+  font-family: cursive;
+  font-weight: bolder;
+  border-radius: 0px 15px 0px 15px;
+  margin-bottom: 10px;
+}
+.write{
+  font-size: large;
+  margin-top: 10px;
+  font-style: italic;
+  font-family: inherit;
 }
 }
 
