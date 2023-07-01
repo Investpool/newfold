@@ -66,9 +66,8 @@
   justify-content: space-between;
   cursor: pointer;
   margin-right: 10px;
-  
-}
-.ncol2 {
+  }
+  .ncol2 {
   flex: 2;
   margin-right: 10px;
 }
@@ -167,23 +166,33 @@ img{
 .header{
   align-items: center;
 }
-section{
-    background-color: goldenrod;
-    height: 150px;
+.sect{
+    background-color: black;
+    height: 120px;
     border: none;
     border-radius: 5px;
+}
+.logoImg{
+  background-color: khaki;
+  height: 80px;
 }
 .logo{
    margin-top: 20px;
    padding-left: 5px;
-  /* -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+   height: 60px;
+   width: 220px;
+
+  /*-webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.68);*/
 }
 .jinggle{
   font-family: cursive;
   color: yellow;
   font-size: large;
+  font-weight: bolder;
   font-style: italic;
+  padding: 10px 0 0 10px;
+
 }
 .ads{
     font-family: sans-serif;
@@ -195,11 +204,7 @@ section{
 }
 .newsad{
   display: flex;
-  
-  
-  
   margin-bottom: 10px;
-  
 }
 .firstads1{
   flex: 6;
@@ -213,6 +218,8 @@ section{
 .opencap{
  margin-top: 200px;
  color: whitesmoke;
+ padding-left: 20px;
+ text-decoration: none;
 }
 .footer{
   display: flex;
@@ -262,5 +269,7 @@ h5{
   font-style: italic;
   font-family: inherit;
 }
+
+
 }
 
