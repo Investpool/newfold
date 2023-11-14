@@ -22,6 +22,9 @@
 .leftside {
   flex: 3;
 }
+.kent{
+ padding-top: 30px; 
+}
 .news-box {
   flex: 6;
   background-color: white;
