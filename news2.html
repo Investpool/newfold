@@ -16,7 +16,7 @@
  @media screen and (min-width: 200px){
       .newscontainer {
         display: flex;
-         background-color: ghostwhite;
+        background-color: ghostwhite;
         font-family: sans-serif;
       }
       .left {
@@ -24,15 +24,35 @@
       }
       .body {
         flex: 6;
+        border: 8px solid white;
+        background-color: white;
+        padding: 5px;
       }
       .right {
         flex: 3;
       }
+       h1{
+        margin-bottom: 10px;
+      }
+      P{
+        line-height: 25px;
+      }
       img{
-        border: 2px solid black;
+        border: none;
         border-radius: 5px;
         float: left;
         margin-right: 10px;
+      }
+      .comments{
+        background-color: lightgrey;
+        border: 2px solid black;
+        color:blue;
+        height: 30px;
+      }
+      .comHead{
+        cursor: pointer;
+        padding-left: 30px;
+        font-weight: bold;
       }
     }
     </style>

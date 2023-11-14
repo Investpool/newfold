@@ -7,13 +7,11 @@
     <title>Document</title>
     <style>
        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 @media screen and (min-width: 200px){
       .newscontainer {
         display: flex;
@@ -39,13 +37,13 @@
         line-height: 25px;
       }
       img{
-        border: 2px solid black;
+        border: none;
         border-radius: 5px;
         float: left;
         margin-right: 10px;
       }
       .comments{
-        background-color: aquamarine;
+        background-color: lightgrey;
         border: 2px solid black;
         color:blue;
         height: 30px;
@@ -55,6 +53,23 @@
         padding-left: 30px;
         font-weight: bold;
       }
+      .links{
+        display: flex;
+        background-color: green;
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        justify-content: space-between;
+        padding: 5px 18px 5px 18px;
+      }
+      /*.share, .fBook, .wApp, .instGram {
+        margin-right: 90px;
+        padding-left: 20px;
+        cursor: pointer;
+      }
+      .mail{
+        cursor: pointer;
+      }*/
     }
     </style>
   </head>
@@ -68,7 +83,7 @@
         <div class="heading">
          <h1>A GIANT RUSSIAN SHIP DOCKS AT THE PORT OF MANCHESTER</h1>
         </div>
-        <img src="images/photo8.jpeg" height="200" wide="200" alt=""/>
+        <img src="images/pipi 1.jpg" height="200" wide="200" alt=""/>
         <p>
           The World Bank is expected to advance almost $1 billion to Ghana if the country secures an International Monetary Fund (IMF) programme.
 
@@ -113,7 +128,15 @@ Mr. Ofori-Atta stated that the expected financial support from the World Bank wi
 
 He added that the funds will be advanced towards some projects and initiatives identified in the 2023 Budget.
         </p>
+        <div class="links">
+        <div class="share">share</div>
+        <div class="fBook">facebook</div>
+        <div class="wApp">whatsapp</div>
+        <div class="instGram">instagram</div>
+        <div class="mail">email</div>
       </div>
+      </div>
+      
       <div class="right"></div>
     </div>
   </body>

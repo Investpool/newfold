@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-    @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+   <style>
+       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +17,6 @@
         display: flex;
         background-color: ghostwhite;
         font-family: sans-serif;
-        margin-top: none;
       }
       .left {
         flex: 3;
@@ -38,13 +37,13 @@
         line-height: 25px;
       }
       img{
-        border: 2px solid black;
+        border: none;
         border-radius: 5px;
         float: left;
         margin-right: 10px;
       }
       .comments{
-        background-color: aquamarine;
+        background-color: lightgrey;
         border: 2px solid black;
         color:blue;
         height: 30px;
@@ -54,6 +53,23 @@
         padding-left: 30px;
         font-weight: bold;
       }
+      .links{
+        display: flex;
+        background-color: green;
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        justify-content: space-between;
+        padding: 5px 18px 5px 18px;
+      }
+      /*.share, .fBook, .wApp, .instGram {
+        margin-right: 90px;
+        padding-left: 20px;
+        cursor: pointer;
+      }
+      .mail{
+        cursor: pointer;
+      }*/
     }
     </style>
   </head>
@@ -73,8 +89,7 @@
           <span>March 4th, 2023</span>
         <div>
         <img src="images/ofori.jpg"/>
-
-        <p>
+      <p>
           The World Bank is expected to advance almost $1 billion to Ghana if the country secures an International Monetary Fund (IMF) programme.
 
       This is separate from the $3 billion that is expected to support Ghana’s Balance of Payment from the IMF under a Fund programme.
