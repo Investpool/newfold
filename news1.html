@@ -7,7 +7,6 @@
     <title>Document</title>
     <style>
        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
 *{
     margin: 0;
     padding: 0;
@@ -15,57 +14,99 @@
 }
 body{
   font: 1rem "Nunito", sans-serif;
-  line-height: 20px;
 }
-      @media screen and (min-width: 200px){
+@media screen and (min-width: 200px){
       .newscontainer {
         display: flex;
         background-color: ghostwhite;
-        font-family: sans-serif;
       }
-      /*.left {
+      .left {
         flex: 3;
-      }*/
+      }
       .body {
         flex: 6;
         border: 8px solid white;
         background-color: white;
         padding: 5px;
       }
-      /*.right {
+      .right {
         flex: 3;
-      }*/
+      }
        h1{
         margin-bottom: 10px;
       }
-      
+      P{
+        line-height: 25px;
+      }
       img{
-        border: 2px solid black;
+        border: none;
         border-radius: 5px;
         float: left;
         margin-right: 10px;
       }
       .comments{
-        background-color: aquamarine;
+        background-color: lightgrey;
         border: 2px solid black;
         color:blue;
         height: 30px;
-        margin-bottom: 10px;
-        
-      }
-      .heading{
-        padding: 5px;
-        line-height: 30px;
-        margin-top: !important;
-      }
-      span{
-        margin-top: 50px;
-        
       }
       .comHead{
         cursor: pointer;
         padding-left: 30px;
         font-weight: bold;
+      }
+      .links{
+        display: flex;
+        background-color: lightgrey;
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        justify-content: space-between;
+        padding: 5px 18px 5px 18px;
+      }
+      .share{
+        background-color: grey;
+        color: white;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+      } 
+      .facebook{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+      } 
+      .whatsapp{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+      } 
+      .twitter {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .mail{
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
       }
     }
     </style>
@@ -82,7 +123,7 @@ body{
           <h1 class="hd">COP Kofi Boakyi exits the Ghana Police at age 60</h1>
           <span>September 4th, 2023</span>
         </div>
-        <img src="images/pipi 1.jpg" height="160" width="160" />
+        <img src="images/pipi 1.jpg" height="300" width="800" />
         <div></div>
         <p>
           The Pensioner Bondholders Forum has threatened to resume its picketing
@@ -183,6 +224,13 @@ body{
           course and tutorial, and how to learn and use Data Structure and
           Algorithm notes. of course!
         </p>
+        <div class="links">
+      <a href="#" class="share">share</a>   
+      <a href="#" class="facebook">facebook</a>
+      <a href="#" class="whatsapp">whatsapp</a>
+      <a href="#" class="twitter">twitter</a>
+      <a href="#" class="mail">mail</a>
+    </div>
       </div>
       <div class="right"></div>
     </div>
