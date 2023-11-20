@@ -13,30 +13,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+  font: 1rem "Nunito", sans-serif;
+  line-height: 20px;
+}
       @media screen and (min-width: 200px){
       .newscontainer {
         display: flex;
         background-color: ghostwhite;
         font-family: sans-serif;
       }
-      .left {
+      /*.left {
         flex: 3;
-      }
+      }*/
       .body {
         flex: 6;
         border: 8px solid white;
         background-color: white;
         padding: 5px;
       }
-      .right {
+      /*.right {
         flex: 3;
-      }
+      }*/
        h1{
         margin-bottom: 10px;
       }
-      p{
-        line-height: 15px;
-      }
+      
       img{
         border: 2px solid black;
         border-radius: 5px;
@@ -48,6 +50,17 @@
         border: 2px solid black;
         color:blue;
         height: 30px;
+        margin-bottom: 10px;
+        
+      }
+      .heading{
+        padding: 5px;
+        line-height: 30px;
+        margin-top: !important;
+      }
+      span{
+        margin-top: 50px;
+        
       }
       .comHead{
         cursor: pointer;
@@ -66,7 +79,7 @@
           <p class="comHead">comments(0)</p>
         </div>
         <div class="heading">
-          <h1>COP Kofi Boakyi exits the Ghana Police at age 60</h1>
+          <h1 class="hd">COP Kofi Boakyi exits the Ghana Police at age 60</h1>
           <span>September 4th, 2023</span>
         </div>
         <img src="images/pipi 1.jpg" height="160" width="160" />

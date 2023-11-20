@@ -8,23 +8,37 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        -->
   
   <style>
+    
     .bigfirst{
       background-image: url("images/photo2.jpeg");
       background-size: cover;
     }
-    .edithead{
+    /*.edithead{
       background-image: url("images/kentewhite.PNG");
       background-size: cover;
-    }
+    }*/
     a:link {
       text-decoration: none;
     }
     .kent{
       background-image: url("images/kente2.jpg");
+      position: fixed;
+      height: 40px;
+    }
+    .header{
+      top: 40px; 
+      position: fixed;
+      width: 49.5%;
     }
     .topbelt{
       display: flex;
-      
+       top: 158px; 
+       position: fixed;
+       width: 49.5%;
+    }
+    .unfixed{
+      height: calc(100% - 250px);
+      margin-top: 168px;
     }
     .news{
       flex: 1;
@@ -32,12 +46,12 @@
     .edit{
       flex: 1;
       background-color: darkred;
-      
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.89)
       font-family: sans-serif;
       font-weight: bold;
       font-size: 25px;
       border: none;
-      margin: 2px 0px 2px 0px;
+      margin: 2px;
       border-radius: 7px;
     }
     a{
@@ -51,9 +65,7 @@
 <body>
   <div class="kent">.</div>
 <div class="container">
-  <div class="leftside">
-        
-      </div>
+  <div class="leftside"></div>
       <div class="news-box">                                                                                         
         <i class="fas fa-clock" style="font-size:24px;"></i>
         
@@ -69,7 +81,7 @@
           <h2 class="news">NEWS</h2>
           <button class="edit"><a href ="editorial.html">Editorial</a></button>
         </div>
-        
+        <div class="unfixed">
         <div class="firstpic">
           <div class="bigfirst">
             <a href="frontnews.html" target="_self">
@@ -703,6 +715,7 @@
                Copyright @ 2023  NewsboxGhana. All rights reserved.
              </div>
         </div>
+</div>
 </div>
 
         <div class="rightside"></div>
