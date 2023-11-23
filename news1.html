@@ -36,7 +36,7 @@ body{
         margin-bottom: 10px;
       }
       P{
-        line-height: 25px;
+        line-height: 28px;
       }
       img{
         border: none;
@@ -121,9 +121,62 @@ body{
         </div>
         <div class="heading">
           <h1 class="hd">COP Kofi Boakyi exits the Ghana Police at age 60</h1>
-          <span>September 4th, 2023</span>
         </div>
-        <img src="images/pipi 1.jpg" height="160" width="300" />
+        <p id="demo"></p>
+        <script>
+          
+function timeAgo (timestamp, locale = 'en') => {
+  let value;
+  const diff = (new Date().getTime() - timestamp.getTime()) / 1000;
+  const minutes = Math.floor(diff / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  const months = Math.floor(days / 30);
+  const years = Math.floor(months / 12);
+  const rtf = new Intl.RelativeTimeFormat(locale, { numeric: "auto" });
+
+  if (years > 0) {
+    value = rtf.format(0 - years, "year");
+  } else if (months > 0) {
+    value = rtf.format(0 - months, "month");
+  } else if (days > 0) {
+    value = rtf.format(0 - days, "day");
+  } else if (hours > 0) {
+    value = rtf.format(0 - hours, "hour");
+  } else if (minutes > 0) {
+    value = rtf.format(0 - minutes, "minute");
+  } else {
+    value = rtf.format(0 - diff, "second");
+  }
+  console.log()
+}
+
+        </script>
+          <!-- <script>
+            (function timeAgo(selector){
+              
+              console.clear();
+              var dt1 = new Date("19-12-17 13:12:34");
+              var dt2 = new Date();
+
+              var diff = (dt2.getTime() - dt1.getTime());
+              var hours = Math.floor(diff / (1000 * 60 * 60));
+              diff -= hours * (1000 * 60 * 60);
+              var mins = Math.floor(diff/ (1000 * 60));
+              diff -= mins * (1000 * 60);
+
+              document.getElementById("demo").innerHTML = mins + 'minutes ago';
+
+              setTimeout(timeAgo, 60000);
+            })();
+          </script>
+          <script>
+            jQuery.timeago(newDate()){
+              console.log();
+            }
+          </script> -->
+        
+        <img src="images/pipi 1.jpg" height="160" width="260"/>
         <div></div>
         <p>
           The Pensioner Bondholders Forum has threatened to resume its picketing
