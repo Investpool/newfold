@@ -15,7 +15,7 @@
 body{
   font: 1rem "Nunito", sans-serif;
 }
-@media screen and (min-width: 200px){
+@media screen and (max-width: 200px){
       .newscontainer {
         display: flex;
         background-color: ghostwhite;
@@ -65,12 +65,13 @@ body{
         padding: 5px 18px 5px 18px;
       }
       .share{
-        background-color: grey;
+        background-color: black;
         color: white;
         margin: 5px;
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
+        border-radius: 5px;
       } 
       .facebook{
         background-color: blue;
@@ -80,6 +81,7 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
+        border-radius: 5px;
       } 
       .whatsapp{
         background-color: green;
@@ -89,6 +91,7 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
+        border-radius: 5px;
       } 
       .twitter {
         background-color: black;
@@ -98,6 +101,7 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
+        border-radius: 5px;
       }
       .mail{
         background-color: red;
@@ -107,6 +111,7 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
+        border-radius: 5px;
       }
     }
     </style>
@@ -123,59 +128,6 @@ body{
           <h1 class="hd">COP Kofi Boakyi exits the Ghana Police at age 60</h1>
         </div>
         <p id="demo"></p>
-        <script>
-          
-function timeAgo (timestamp, locale = 'en') => {
-  let value;
-  const diff = (new Date().getTime() - timestamp.getTime()) / 1000;
-  const minutes = Math.floor(diff / 60);
-  const hours = Math.floor(minutes / 60);
-  const days = Math.floor(hours / 24);
-  const months = Math.floor(days / 30);
-  const years = Math.floor(months / 12);
-  const rtf = new Intl.RelativeTimeFormat(locale, { numeric: "auto" });
-
-  if (years > 0) {
-    value = rtf.format(0 - years, "year");
-  } else if (months > 0) {
-    value = rtf.format(0 - months, "month");
-  } else if (days > 0) {
-    value = rtf.format(0 - days, "day");
-  } else if (hours > 0) {
-    value = rtf.format(0 - hours, "hour");
-  } else if (minutes > 0) {
-    value = rtf.format(0 - minutes, "minute");
-  } else {
-    value = rtf.format(0 - diff, "second");
-  }
-  console.log()
-}
-
-        </script>
-          <!-- <script>
-            (function timeAgo(selector){
-              
-              console.clear();
-              var dt1 = new Date("19-12-17 13:12:34");
-              var dt2 = new Date();
-
-              var diff = (dt2.getTime() - dt1.getTime());
-              var hours = Math.floor(diff / (1000 * 60 * 60));
-              diff -= hours * (1000 * 60 * 60);
-              var mins = Math.floor(diff/ (1000 * 60));
-              diff -= mins * (1000 * 60);
-
-              document.getElementById("demo").innerHTML = mins + 'minutes ago';
-
-              setTimeout(timeAgo, 60000);
-            })();
-          </script>
-          <script>
-            jQuery.timeago(newDate()){
-              console.log();
-            }
-          </script> -->
-        
         <img src="images/pipi 1.jpg" height="120" width="160" alt=""/>
         <div></div>
         <p>
