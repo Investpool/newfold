@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,17 +7,19 @@
     <title>Document</title>
     <style>
        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@media screen and (min-width: 200px){
+body{
+  font: 1rem "Nunito", sans-serif;
+  padding: 8px;
+}
+@media screen and (max-width: 200px){
       .newscontainer {
         display: flex;
         background-color: ghostwhite;
-        font-family: sans-serif;
       }
       .left {
         flex: 3;
@@ -35,7 +37,7 @@
         margin-bottom: 10px;
       }
       P{
-        line-height: 25px;
+        line-height: 30px;
       }
       img{
         border: none;
@@ -53,6 +55,64 @@
         cursor: pointer;
         padding-left: 30px;
         font-weight: bold;
+      }
+      .links{
+        display: flex;
+        background-color: lightgrey;
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        justify-content: space-between;
+        padding: 5px 18px 5px 18px;
+      }
+      .share{
+        background-color: black;
+        color: white;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .facebook{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .whatsapp{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .twitter {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .mail{
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
       }
     }
     </style>
@@ -74,4 +134,4 @@
       <div class="right"></div>
     </div>
   </body>
-</html> -->
+</html>
