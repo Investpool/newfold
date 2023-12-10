@@ -7,17 +7,19 @@
     <title>Document</title>
     <style>
        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@media screen and (min-width: 200px){
+body{
+  font: 1rem "Nunito", sans-serif;
+  padding: 8px;
+}
+@media screen and (max-width: 200px){
       .newscontainer {
         display: flex;
         background-color: ghostwhite;
-        font-family: sans-serif;
       }
       .left {
         flex: 3;
@@ -35,7 +37,7 @@
         margin-bottom: 10px;
       }
       P{
-        line-height: 25px;
+        line-height: 30px;
       }
       img{
         border: none;
@@ -54,6 +56,70 @@
         padding-left: 30px;
         font-weight: bold;
       }
+      .links{
+        display: flex;
+        background-color: lightgrey;
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        justify-content: space-between;
+        padding: 5px 18px 5px 18px;
+      }
+      .share{
+        background-color: black;
+        color: white;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .facebook{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .whatsapp{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .twitter {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .mail{
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .date{
+        font-style: italic;
+        color: grey;
+        font-size: x-small;
+        margin: 6px;
+      }
     }
     </style>
   </head>
@@ -65,11 +131,18 @@
           <p class="comHead">comments(0)</p>
         </div>
         <div class="heading">
-          <h1></h1>
+          <h1>Dangote Refinery Takes Delivery of the First Crude Oil</h1>
         </div>
-        <img src=""/>
+        <img src="images/dang.PNG" height="200" width="320" alt=""/>
+        <div class="date">10th December, 2023</div>
         <p>
-          
+          The 20 billion dollar Dangote Oil Refinery has begun production as scheduled amidst storms of congratulatory messages from Nigerians.
+          </p><br>
+          <p> A ship load of crude supplied from the Agbami oil fields, operated by Chevron  was seen berthed at the facility on Thursday, 7th of December. Many social media users joined in the joy of the nation.
+          </p><br>
+          <p>
+          The  650,000 bpd capacity refinery is projected to generate about 100,000 jobs when fully operational.
+          According to the management of the faciliity, they are going to focus on Nigerian markets before considering other destinations.
         </p>
         
       </div>
