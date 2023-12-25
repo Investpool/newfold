@@ -341,7 +341,7 @@ img{
 }
 .footer{
   display: flex;
-  background-color: green;
+  background-color: dodgerblue;
   color: yellow;
   height: 30px;
   padding: 10px;

@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
+        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@media screen and (min-width: 200px){
+body{
+  font: 1rem "Nunito", sans-serif;
+  padding: 8px;
+}
+@media screen and (max-width: 200px){
       .newscontainer {
         display: flex;
         background-color: ghostwhite;
-        font-family: sans-serif;
       }
       .left {
         flex: 3;
@@ -35,7 +37,7 @@
         margin-bottom: 10px;
       }
       P{
-        line-height: 25px;
+        line-height: 30px;
       }
       img{
         border: none;
@@ -54,6 +56,64 @@
         padding-left: 30px;
         font-weight: bold;
       }
+      .links{
+        display: flex;
+        background-color: lightgrey;
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        justify-content: space-between;
+        padding: 5px 18px 5px 18px;
+      }
+      .share{
+        background-color: black;
+        color: white;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .facebook{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .whatsapp{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      } 
+      .twitter {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .mail{
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+      }
     }
     </style>
   </head>
@@ -65,11 +125,24 @@
           <p class="comHead">comments(0)</p>
         </div>
         <div class="heading">
-          <h1></h1>
+          <h1>Humanitarian crisis worsens in Gaza as Israel-Hamas war rages</h1>
         </div>
-        <img src=""/>
+        <img src="images/gaza.jpg" height="200" width="300" alt=""/>
+        <div class="date" style="font-style: italic; margin-bottom: 10px; font-size: smaller;">17th December, 2023</div>
         <p>
-          
+Thousands gathered in Tel Aviv to call for the Israeli government to immediately bring back remaining hostages held in Gaza, after three Israeli hostages were mistakenly killed in the enclave Friday by the Israel Defense Forces. They were waving a white flag when they were shot, an IDF official said.
+</p><br>
+<p>
+The IDF chief of staff took responsibility for the deaths, saying on Saturday the hostages did "everything possible" to signal they were civilians.
+</p><br>
+<p>
+An IDF sniper killed a mother and daughter inside a Gaza church, according to the Latin Patriarchate of Jerusalem. The IDF is yet to comment on the claim.
+</p><br>
+<p>
+Prime Minister Benjamin Netanyahu vowed to continue the war "until victory." He also appeared to suggest on Saturday that new negotiations were underway to rescue hostages, emphasizing that the Israeli military's continued use of force in Gaza was necessary.
+</p><br>
+<p>
+Al Jazeera journalists mourned the death of their colleague, cameraman Samer Abu Daqqa, who was killed in an airstrike Friday. The network accused Israel of "systematically targeting and killing" Al Jazeera journalists and their families — a claim the IDF has denied. 
         </p>
         
       </div>
