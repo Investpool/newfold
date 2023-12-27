@@ -5,36 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@media screen and (min-width: 200px){
+body{
+  font: 1rem "Nunito", sans-serif;
+  padding: 8px;
+}
+@media screen and (max-width: 200px){
       .newscontainer {
         display: flex;
-         background-color: ghostwhite;
-        font-family: sans-serif;
+        background-color: ghostwhite;
       }
       .left {
         flex: 3;
       }
       .body {
         flex: 6;
+        border: 8px solid white;
+        background-color: white;
+        padding: 5px;
       }
       .right {
         flex: 3;
       }
+       h1{
+        margin-bottom: 10px;
+      }
+      P{
+        line-height: 30px;
+      }
       img{
-        border: 2px solid black;
+        border: none;
         border-radius: 5px;
         float: left;
         margin-right: 10px;
       }
+      .comments{
+        background-color: lightgrey;
+        border: 2px solid black;
+        color:blue;
+        height: 30px;
+      }
+      .comHead{
+        cursor: pointer;
+        padding-left: 30px;
+        font-weight: bold;
+      }
     }
+      .links{
+        display: flex;
+        background-color: transparent;
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        
+        padding: 5px 18px 5px 18px;
+      }
+      .facebook{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 20px;
+        
+      } 
+      .whatsapp{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        
+      } 
+      .twitter {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        
+      }
+      .mail{
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        
+      }
+    
+    </style>
     </style>
   </head>
   <body>
@@ -47,7 +123,7 @@
         <div class="heading">
           <h1></h1>
         </div>
-        <img src=""/>
+        <img src="" height="200" width="340" alt=""/>
         <p>
           
         </p>
