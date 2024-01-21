@@ -9,10 +9,6 @@
 
 /* || small */
 @media screen and (min-width: 200px){
-/*@media screen and (min-width: 350px);*/  
-/*@media screen and (min-width: 900px)*/
-
-   
 .container {
   display: flex;
   margin-top: 10px;
@@ -249,7 +245,7 @@ img{
     border-radius: 5px;
 }
 .logoImg{
-  background-color: khaki;
+  background-color: lightseagreen;
   height: 80px;
   display: flex;
 }
