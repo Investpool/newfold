@@ -36,6 +36,7 @@
 }
 .bigfirst{
   flex: 9;
+  background-image: url("images/photo11.jpeg");
 }
 .smallfirst{
   flex: 3;
@@ -241,6 +242,7 @@ img{
 .sect{
     background-color: black;
     height: 120px;
+    width: 58%;
     border: none;
     border-radius: 5px;
 }
@@ -286,7 +288,7 @@ img{
   flex: 6;
 }
 .bigfirst{
-  background-image: url("images/photo11.jpeg");
+  
 }
 .opencap{
  margin-top: 200px;
