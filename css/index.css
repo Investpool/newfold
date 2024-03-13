@@ -236,13 +236,13 @@ p{
 img{
     border-radius: 10px;
 }
-.header{
+/*.header{
   align-items: center;
-}
+}*/
 .sect{
     background-color: black;
     height: 120px;
-    width: 58%;
+    width: 100%;
     border: none;
     border-radius: 5px;
 }
