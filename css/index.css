@@ -247,7 +247,7 @@ img{
     border-radius: 5px;
 }
 .logoImg{
-  background-color: rgb(123, 185, 218);
+  background-image: linear-gradient(white, blue);
   height: 80px;
   display: flex;
 }
