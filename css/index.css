@@ -36,7 +36,7 @@
 }
 .bigfirst{
   flex: 9;
-  background-image: url("images/photo11.jpeg");
+  margin-right: 10px;
 }
 .smallfirst{
   flex: 3;
@@ -247,12 +247,17 @@ img{
     border-radius: 5px;
 }
 .logoImg{
-  background-color: lightseagreen;
+  background-color: rgb(123, 185, 218);
   height: 80px;
   display: flex;
 }
 .title {
   margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  /* box-shadow: 11px 21px 16px 9px rgba(0,0,0,0.57);
+-webkit-box-shadow: 11px 21px 16px 9px rgba(0,0,0,0.57);
+-moz-box-shadow: 11px 21px 16px 9px rgba(0,0,0,0.57); */
 }
 .logo{
    margin-top: 10px;
@@ -287,9 +292,9 @@ img{
 .firstads2{
   flex: 6;
 }
-.bigfirst{
+/* .bigfirst{
   
-}
+} */
 .opencap{
  margin-top: 200px;
  color: whitesmoke;
