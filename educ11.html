@@ -5,72 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <style>
-       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-  font: 1rem "Nunito", sans-serif;
-  padding: 8px;
-}
-@media screen and (max-width: 200px){
-      .newscontainer {
-        display: flex;
-        background-color: ghostwhite;
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-      .left {
-        flex: 3;
+      body {
+        font: 1rem "Nunito", sans-serif;
+        padding: 8px;
       }
-      .body {
-        flex: 6;
-        border: 8px solid white;
-        background-color: white;
-        padding: 5px;
+      @media screen and (max-width: 200px) {
+        .newscontainer {
+          display: flex;
+          background-color: ghostwhite;
+        }
+        .left {
+          flex: 3;
+        }
+        .body {
+          flex: 6;
+          border: 8px solid white;
+          background-color: white;
+          padding: 5px;
+        }
+        .right {
+          flex: 3;
+        }
+        h1 {
+          margin-bottom: 10px;
+        }
+        P {
+          line-height: 30px;
+        }
+        img {
+          border: none;
+          border-radius: 5px;
+          float: left;
+          margin-right: 10px;
+        }
+        .comments {
+          background-color: lightgrey;
+          border: 2px solid black;
+          color: blue;
+          height: 30px;
+        }
+        .comHead {
+          cursor: pointer;
+          padding-left: 30px;
+          font-weight: bold;
+        }
       }
-      .right {
-        flex: 3;
-      }
-       h1{
-        margin-bottom: 10px;
-      }
-      P{
-        line-height: 30px;
-      }
-      img{
-        border: none;
-        border-radius: 5px;
-        float: left;
-        margin-right: 10px;
-      }
-      .comments{
-        background-color: lightgrey;
-        border: 2px solid black;
-        color:blue;
-        height: 30px;
-      }
-      .comHead{
-        cursor: pointer;
-        padding-left: 30px;
-        font-weight: bold;
-      }
-    }
-    .headTop{
+      .headTop {
         display: flex;
         background-color: cadetblue;
         margin-bottom: 10px;
         -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-         box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.68);
+        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.68);
       }
-      .logo{
+      .logo {
         flex: 1;
         padding: 10px 80px 10px 20px;
       }
-      .title{
+      .title {
         flex: 11;
         color: white;
         padding-top: 8px;
@@ -78,20 +81,20 @@ body{
         padding-left: 5px;
         font-family: serif;
       }
-    .base{
-      background-color: papayawhip;
-      height: 50px;
-    }
-      .links{
+      .base {
+        background-color: papayawhip;
+        height: 50px;
+      }
+      .links {
         display: flex;
         background-color: transparent;
         position: relative;
         font-size: 1.1em;
         color: #fff;
-        
+
         padding: 5px 18px 5px 18px;
       }
-      .facebook{
+      .facebook {
         background-color: blue;
         color: white;
         font-weight: bold;
@@ -100,9 +103,8 @@ body{
         cursor: pointer;
         text-decoration: none;
         margin-right: 20px;
-        
-      } 
-      .whatsapp{
+      }
+      .whatsapp {
         background-color: green;
         color: white;
         font-weight: bold;
@@ -110,8 +112,7 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
-        
-      } 
+      }
       .twitter {
         background-color: black;
         color: white;
@@ -120,9 +121,8 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
-        
       }
-      .mail{
+      .mail {
         background-color: red;
         color: white;
         font-weight: bold;
@@ -130,67 +130,147 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
-        
       }
-    
     </style>
   </head>
   <body>
     <div class="newscontainer">
-      
       <div class="left"></div>
       <div class="body">
         <div class="headTop">
-        <h1 class="title">Education and Culture</h1>
-      </div>
+          <h1 class="title">Education and Culture</h1>
+        </div>
         <div class="heading">
           <h1>
-            Minority Caucus MPs call for immediate interdiction of Scholarship Secretariat registrar
-            </h1>
+            Minority Caucus MPs call for immediate interdiction of Scholarship
+            Secretariat registrar
+          </h1>
         </div>
-        <img src="images/scholar.webp" height="200" width="340" alt=""/>
-        <div class="date" style="font-style: italic; font-size: smaller">
+        <img src="images/scholar.webp" height="200" width="340" alt="" />
+        <div class="date" style="font-style: italic; font-size: smaller; color: gray;">
           9th April, 2024
         </div>
         <p>
-          The Minority Caucus of Ghana’s parliament
-has called for the immediate interdiction of the Registrar of the Ghana Scholarship Secretariat, Kingsley Agyemang, over an investigative report which showed several irregularities in the award of scholarships.
-</p><br> 
-</p>
-In a statement issued on April 8, 2024, the National Democratic Congress (NDC) Members of
-(MPs) indicated that even though the Scholarship Secretariat was set up to support needy and brilliant Ghanaians to further their education, the report showed that scholarships were awarded by the secretariat through corruption and political considerations.
-</p><br> 
-</p>
-The MPs added that Kingsley Agyemang must be interdicted and investigated because the claims of corruption and favouritism in the award of scholarships were corroborated by several Ghanaians.
-</p><br> 
-</p>
-“The investigations, which span the period between 2019 and 2020, reveal very sordid details of the award of Government of Ghana scholarships on the basis of political patronage, influence, favouritism, among other considerations, contrary to the object of these scholarships which are supposed to be given to deserving, needy but brilliant students.
-</p><br> 
-</p>
-“The series of investigations by the Fourth Estate have since been corroborated by other patriotic Ghanaians, both home and abroad. Many have cited instances of extortion, bribery and collection of kickbacks allegedly involving the Registrar of the Ghana Scholarship Secretariat, Kingsley Agyemang, and other officials,” part of the statement reads.
-</p><br> 
-</p>
-The MPs also said that the revelations from the investigation also affirms the level of corruption in the government, with persons close to the New Patriotic Party (NPP) and the presidency all getting hefty scholarships.
-</p><br> 
-</p>
-“The investigation further revealed that in one instance, an official of the NPP was awarded multiple scholarships to the tune of £57,210 for a post-graduate course, while a Special Assistant to the spouse of the Vice President, Samira Bawumia, was awarded £17,355 for post-graduate studies in the UK. Interestingly, Samira Bawumia’s Special Assistant did not step foot at the school, nor complete the programme.
-</p><br> 
-</p>
-“Widespread reports of multiple scholarships worth several thousands of dollars, sometimes awarded to the same individuals in same year, reveal the extent of abuse of the taxpayers money. Worst of all, it has been reported that these awards are sometimes handed to NPP-aligned persons for two-week training programmes abroad, in return for some kickback,” the statement added.
-
+          The Minority Caucus of Ghana’s parliament has called for the immediate
+          interdiction of the Registrar of the Ghana Scholarship Secretariat,
+          Kingsley Agyemang, over an investigative report which showed several
+          irregularities in the award of scholarships.
+        </p>
+        <br />
+        <p>
+          In a statement issued on April 8, 2024, the National Democratic
+          Congress (NDC) Members of (MPs) indicated that even though the
+          Scholarship Secretariat was set up to support needy and brilliant
+          Ghanaians to further their education, the report showed that
+          scholarships were awarded by the secretariat through corruption and
+          political considerations.
+        </p>
+        <br />
+        <p>
+          The MPs added that Kingsley Agyemang must be interdicted and
+          investigated because the claims of corruption and favouritism in the
+          award of scholarships were corroborated by several Ghanaians.
+        </p>
+        <br />
+        <p>
+          “The investigations, which span the period between 2019 and 2020,
+          reveal very sordid details of the award of Government of Ghana
+          scholarships on the basis of political patronage, influence,
+          favouritism, among other considerations, contrary to the object of
+          these scholarships which are supposed to be given to deserving, needy
+          but brilliant students.
+        </p>
+        <br />
+        <p>
+          “The series of investigations by the Fourth Estate have since been
+          corroborated by other patriotic Ghanaians, both home and abroad. Many
+          have cited instances of extortion, bribery and collection of kickbacks
+          allegedly involving the Registrar of the Ghana Scholarship
+          Secretariat, Kingsley Agyemang, and other officials,” part of the
+          statement reads.
+        </p>
+        <br />
+        <p>
+          The MPs also said that the revelations from the investigation also
+          affirms the level of corruption in the government, with persons close
+          to the New Patriotic Party (NPP) and the presidency all getting hefty
+          scholarships.
+        </p>
+        <br />
+        <p>
+          “The investigation further revealed that in one instance, an official
+          of the NPP was awarded multiple scholarships to the tune of £57,210
+          for a post-graduate course, while a Special Assistant to the spouse of
+          the Vice President, Samira Bawumia, was awarded £17,355 for
+          post-graduate studies in the UK. Interestingly, Samira Bawumia’s
+          Special Assistant did not step foot at the school, nor complete the
+          programme.
+        </p>
+        <br />
+        <p>
+          “Widespread reports of multiple scholarships worth several thousands
+          of dollars, sometimes awarded to the same individuals in same year,
+          reveal the extent of abuse of the taxpayers money. Worst of all, it
+          has been reported that these awards are sometimes handed to
+          NPP-aligned persons for two-week training programmes abroad, in return
+          for some kickback,” the statement added.
         </p>
         <div class="base">
-    <div class="links">
-      
-      <a href=" https://api.whatsapp.com/send?text=https://investpool.github.io/newfold/educ11.html/" data-action="share/whatsapp/share"><button class="fa fa-whatsapp" style="color: white; margin-right: 20px; padding: 8px; background-color: green; font-size: 18px; border: none; border-radius: 20px; cursor: pointer;"></button></a>
+          <div class="links">
+            <a
+              href=" https://api.whatsapp.com/send?text=https://investpool.github.io/newfold/educ11.html/"
+              data-action="share/whatsapp/share"
+              ><button
+                class="fa fa-whatsapp"
+                style="
+                  color: white;
+                  margin-right: 20px;
+                  padding: 8px;
+                  background-color: green;
+                  font-size: 18px;
+                  border: none;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              ></button
+            ></a>
 
+            <a
+              href="https://www.facebook.com/sharer.php?u=https://investpool.github.io/newfold/educ11.html/"
+              data-action="share/whatsapp/share"
+              ><button
+                class="fa fa-facebook"
+                style="
+                  color: white;
+                  margin-right: 20px;
+                  padding: 8px;
+                  background-color: blue;
+                  font-size: 21px;
+                  border: none;
+                  border-radius: 30px;
+                  cursor: pointer;
+                "
+              ></button
+            ></a>
 
-      <a href="https://www.facebook.com/sharer.php?u=https://investpool.github.io/newfold/educ11.html/" data-action="share/whatsapp/share" ><button class="fa fa-facebook" style="color: white; margin-right: 20px; padding: 8px; background-color: blue; font-size: 21px; border: none; border-radius: 30px; cursor: pointer;"></button></a>
-      
-      <a href="https://twitter.com/intent/tweet?text=https://investpool.github.io/newfold/educ11.html/"><button class="fa fa-twitter" style="color: white; margin-right: 20px; padding: 8px; background-color: black; font-size: 18px; border: none; border-radius: 20px; cursor: pointer;"></button></a>
-    
-    </div>
-  </div>
+            <a
+              href="https://twitter.com/intent/tweet?text=https://investpool.github.io/newfold/educ11.html/"
+              ><button
+                class="fa fa-twitter"
+                style="
+                  color: white;
+                  margin-right: 20px;
+                  padding: 8px;
+                  background-color: black;
+                  font-size: 18px;
+                  border: none;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              ></button
+            ></a>
+          </div>
+        </div>
       </div>
       <div class="right"></div>
     </div>
