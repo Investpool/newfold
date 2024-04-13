@@ -4,74 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5219296279302217"
-    crossorigin="anonymous"></script>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5219296279302217"
+      crossorigin="anonymous"
+    ></script>
     <style>
-       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-  font: 1rem "Nunito", sans-serif;
-  padding: 8px;
-}
-@media screen and (max-width: 200px){
-      .newscontainer {
-        display: flex;
-        background-color: ghostwhite;
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-      .left {
-        flex: 3;
+      body {
+        font: 1rem "Nunito", sans-serif;
+        padding: 8px;
       }
-      .body {
-        flex: 6;
-        border: 8px solid white;
-        background-color: white;
-        padding: 5px;
+      @media screen and (max-width: 200px) {
+        .newscontainer {
+          display: flex;
+          background-color: ghostwhite;
+        }
+        .left {
+          flex: 3;
+        }
+        .body {
+          flex: 6;
+          border: 8px solid white;
+          background-color: white;
+          padding: 5px;
+        }
+        .right {
+          flex: 3;
+        }
+        h1 {
+          margin-bottom: 10px;
+        }
+        P {
+          line-height: 30px;
+        }
+        img {
+          border: none;
+          border-radius: 5px;
+          float: left;
+          margin-right: 10px;
+        }
+        .comments {
+          background-color: lightgrey;
+          border: 2px solid black;
+          color: blue;
+          height: 30px;
+        }
+        .comHead {
+          cursor: pointer;
+          padding-left: 30px;
+          font-weight: bold;
+        }
       }
-      .right {
-        flex: 3;
-      }
-       h1{
-        margin-bottom: 10px;
-      }
-      P{
-        line-height: 30px;
-      }
-      img{
-        border: none;
-        border-radius: 5px;
-        float: left;
-        margin-right: 10px;
-      }
-      .comments{
-        background-color: lightgrey;
-        border: 2px solid black;
-        color:blue;
-        height: 30px;
-      }
-      .comHead{
-        cursor: pointer;
-        padding-left: 30px;
-        font-weight: bold;
-      }
-    }
-    .headTop{
+      .headTop {
         display: flex;
         background-color: cadetblue;
         margin-bottom: 10px;
         -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-         box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.68);
+        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.68);
       }
-      .logo{
+      .logo {
         flex: 1;
         padding: 10px 80px 10px 20px;
       }
-      .title{
+      .title {
         flex: 11;
         color: white;
         padding-top: 8px;
@@ -79,20 +85,20 @@ body{
         padding-left: 5px;
         font-family: serif;
       }
-    .base{
-      background-color: hotpink;
-      height: 50px;
-    }
-      .links{
+      .base {
+        background-color: hotpink;
+        height: 50px;
+      }
+      .links {
         display: flex;
         background-color: transparent;
         position: relative;
         font-size: 1.1em;
         color: #fff;
-        
+
         padding: 5px 18px 5px 18px;
       }
-      .facebook{
+      .facebook {
         background-color: blue;
         color: white;
         font-weight: bold;
@@ -101,9 +107,8 @@ body{
         cursor: pointer;
         text-decoration: none;
         margin-right: 20px;
-        
-      } 
-      .whatsapp{
+      }
+      .whatsapp {
         background-color: green;
         color: white;
         font-weight: bold;
@@ -111,8 +116,7 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
-        
-      } 
+      }
       .twitter {
         background-color: black;
         color: white;
@@ -121,9 +125,8 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
-        
       }
-      .mail{
+      .mail {
         background-color: red;
         color: white;
         font-weight: bold;
@@ -131,74 +134,150 @@ body{
         padding: 5px 10px 5px 10px;
         cursor: pointer;
         text-decoration: none;
-        
       }
-    
     </style>
   </head>
   <body>
     <div class="newscontainer">
-      
       <div class="left"></div>
       <div class="body">
         <div class="headTop">
-        <h1 class="title">Education and Culture</h1>
-      </div>
-        <div class="heading">
-          <h1>Basic education receives highest GETFund allocation in 7 years</h1>
+          <h1 class="title">Education and Culture</h1>
         </div>
-        <img src="images/getfund.webp" height="200" width="340" alt=""/>
+        <div class="heading">
+          <h1>
+            Basic education receives highest GETFund allocation in 7 years
+          </h1>
+        </div>
+        <img src="images/getfund.webp" height="200" width="340" alt="" />
         <div class="date" style="font-style: italic; font-size: smaller">
           11th April, 2024
         </div>
         <p>
-         <b>Parliament has approved the highest-ever Ghana Education Trust Fund (GETFund) allocation to basic education, totalling GH¢800 million under the current government.</b> 
-        </p><p>
-        The amount constitutes 20 per cent of the total GETFund Formula for 2024, compared to 12 per cent in 2023. The 2024 allocation is a 196 per cent increase from the GH¢ 270 million allocated in 2023.
-      </p>
-      <br />
-      <p>
-Of the allocation to basic education, GH¢ 370 million is earmarked for new and ongoing basic school projects. Out of the total amount, GH¢ 270 million is for new and ongoing school projects and GH¢ 100 million for furniture.
-</p>
-<br />
-<p>
+          <b
+            >Parliament has approved the highest-ever Ghana Education Trust Fund
+            (GETFund) allocation to basic education, totalling GH¢800 million
+            under the current government.</b
+          >
+        </p>
+        <p>
+          The amount constitutes 20 per cent of the total GETFund Formula for
+          2024, compared to 12 per cent in 2023. The 2024 allocation is a 196
+          per cent increase from the GH¢ 270 million allocated in 2023.
+        </p>
+        <br />
+        <p>
+          Of the allocation to basic education, GH¢ 370 million is earmarked for
+          new and ongoing basic school projects. Out of the total amount, GH¢
+          270 million is for new and ongoing school projects and GH¢ 100 million
+          for furniture.
+        </p>
+        <br />
+        <p>
+          Education think tank, the Africa Education Watch (Eduwatch), has
+          described the development as a “huge progress”. The development, it
+          said, followed its one-year intensive advocacy for desks and basic
+          school infrastructure, with support from its donor partners and
+          collaborators.
+        </p>
+        <br />
+        <p>
+          “Our meetings with the Parliamentary Select Committee on Education,
+          and regular engagement with the Minister of Education, has been
+          productive, and will continue, to ensure full budget execution,
+          spending efficiency and quality implementation,” it said.
+        </p>
+        <br />
+        <p>
+          Eduwatch and partners, the organisation said, were grateful to the
+          Parliamentary Select Committee on Education and the Minister of
+          Education. “We urge the Ministry of Finance to improve upon the slow
+          release of funds under the GETFund to ensure all ongoing projects are
+          completed this year,” it said.
+        </p>
+        <br />
+        <p>
+          The organisation had urged the Ministry of Education to increase
+          allocations for desks to basic schools to at least GH¢ 60 million in
+          the 2024 GETFund formula. “We call on the Minister of Finance to
+          release outstanding funds for procuring desks under the 2023 GETFund
+          formula.
+        </p>
+        <br />
+        <p>
+          “We call on Parliament to show interest in the delayed disbursement of
+          basic education funds under GETFund and demand accountability from the
+          Minister of Finance on the slow disbursement,” it said. “We urge local
+          governments and the non-state sector, including faith-based
+          organisations and private companies, to support the provision of desks
+          in public basic schools,” it added.
+        </p>
+        <br />
+        <p>
+          Eduwatch will in the coming days engage the ministers of Education and
+          Finance, and the Parliamentary Select Committee on Education on the
+          aforementioned issues. The CSO-Media monitoring is part of activities
+          under Eduwatch's SERVE III project being implemented with support from
+          the Foreign Commonwealth and Development Office (FCDO) and in
+          partnership with the STAR-Ghana Foundation.
+        </p>
 
-Education think tank, the Africa Education Watch (Eduwatch), has described the development as a “huge progress”. The development, it said, followed its one-year intensive advocacy for desks and basic school infrastructure, with support from its donor partners and collaborators.
-</p>
-<br />
-<p>
-“Our meetings with the Parliamentary Select Committee on Education, and regular engagement with the Minister of Education, has been productive, and will continue, to ensure full budget execution, spending efficiency and quality implementation,” it said.
-</p>
-<br />
-<p>
+        <div class="base">
+          <div class="links">
+            <a
+              href=" https://api.whatsapp.com/send?text=https://investpool.github.io/newfold/educ5.html/"
+              data-action="share/whatsapp/share"
+              ><button
+                class="fa fa-whatsapp"
+                style="
+                  color: white;
+                  margin-right: 20px;
+                  padding: 8px;
+                  background-color: green;
+                  font-size: 18px;
+                  border: none;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              ></button
+            ></a>
 
-Eduwatch and partners, the organisation said, were grateful to the Parliamentary Select Committee on Education and the Minister of Education. “We urge the Ministry of Finance to improve upon the slow release of funds under the GETFund to ensure all ongoing projects are completed this year,” it said.
-</p>
-<br />
-<p>
-The organisation had urged the Ministry of Education to increase allocations for desks to basic schools to at least GH¢ 60 million in the 2024 GETFund formula. “We call on the Minister of Finance to release outstanding funds for procuring desks under the 2023 GETFund formula.
-</p>
-<br />
-<p>
-“We call on Parliament to show interest in the delayed disbursement of basic education funds under GETFund and demand accountability from the Minister of Finance on the slow disbursement,” it said. “We urge local governments and the non-state sector, including faith-based organisations and private companies, to support the provision of desks in public basic schools,” it added.
-</p>
-<br />
-<p>
-Eduwatch will in the coming days engage the ministers of Education and Finance, and the Parliamentary Select Committee on Education on the aforementioned issues. The CSO-Media monitoring is part of activities under Eduwatch's SERVE III project being implemented with support from the Foreign Commonwealth and Development Office (FCDO) and in partnership with the STAR-Ghana Foundation.      
-</p>
+            <a
+              href="https://www.facebook.com/sharer.php?u=https://investpool.github.io/newfold/educ5.html/"
+              data-action="share/whatsapp/share"
+              ><button
+                class="fa fa-facebook"
+                style="
+                  color: white;
+                  margin-right: 20px;
+                  padding: 8px;
+                  background-color: blue;
+                  font-size: 21px;
+                  border: none;
+                  border-radius: 30px;
+                  cursor: pointer;
+                "
+              ></button
+            ></a>
 
-<div class="base">
-    <div class="links">
-      
-      <a href=" https://api.whatsapp.com/send?text=https://investpool.github.io/newfold/educ5.html/" data-action="share/whatsapp/share"><button class="fa fa-whatsapp" style="color: white; margin-right: 20px; padding: 8px; background-color: green; font-size: 18px; border: none; border-radius: 20px; cursor: pointer;"></button></a>
-
-
-      <a href="https://www.facebook.com/sharer.php?u=https://investpool.github.io/newfold/educ5.html/" data-action="share/whatsapp/share" ><button class="fa fa-facebook" style="color: white; margin-right: 20px; padding: 8px; background-color: blue; font-size: 21px; border: none; border-radius: 30px; cursor: pointer;"></button></a>
-      
-      <a href="https://twitter.com/intent/tweet?text=https://investpool.github.io/newfold/educ5.html/"><button class="fa fa-twitter" style="color: white; margin-right: 20px; padding: 8px; background-color: black; font-size: 18px; border: none; border-radius: 20px; cursor: pointer;"></button></a>
-    
-    </div>
-  </div>
+            <a
+              href="https://twitter.com/intent/tweet?text=https://investpool.github.io/newfold/educ5.html/"
+              ><button
+                class="fa fa-twitter"
+                style="
+                  color: white;
+                  margin-right: 20px;
+                  padding: 8px;
+                  background-color: black;
+                  font-size: 18px;
+                  border: none;
+                  border-radius: 20px;
+                  cursor: pointer;
+                "
+              ></button
+            ></a>
+          </div>
+        </div>
       </div>
       <div class="right"></div>
     </div>
