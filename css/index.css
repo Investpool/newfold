@@ -322,6 +322,7 @@ img{
 }
 .policy{
   flex: 4;
+  color: yellow;
 }
 h5{
   color: yellow;
