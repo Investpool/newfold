@@ -40,6 +40,7 @@
 }
 .smallfirst{
   flex: 3;
+  border: 1px solid black;
 }
 .rightside {
   flex: 3;
