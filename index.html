@@ -13,11 +13,11 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-      * {
+      /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      }
+      } */
       .navbar {
         display: flex;
         color: red;
@@ -41,22 +41,19 @@
         display: flex;
       }
       .sidebar {
-        flex: 2;
+        flex: 4;
       }
       .dome {
         display: flex;
-        flex: 10;
+        flex: 8;
         margin-top: 50px;
       }
       .mid_info {
-        flex: 9;
+        
         padding-left: 20px;
         padding-top: 10px;
       }
-      .right {
-        flex: 3;
-        margin-top: 10px;
-      }
+      
 
       .story {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -125,19 +122,25 @@
         border: 1px solid black;
         background-color: lightgray;
       }
-      @media screen and(min-width:300px) {
+      @media screen and (max-width:400px) {
         .sidebar {
           font-size: 5px;
           color: red;
+          flex: 4;
+        }
+        .dome{
+          font-size: xx-small;
         }
 
       .mid_info {
-        flex: 9;
+        flex: 8;
         padding-left: 20px;
         padding-top: 10px;
         color: yellow;
       }
-      
+      a {
+        font-size: xx-small;
+      }
       
       }
       .span1,
@@ -182,24 +185,7 @@
           <a href="volta.html">VOLTA REGION</a>
         </div>
         <div class="dome">
-          <!-- <div class="left">
-            <div class="firstImg">
-              <img src="images/anloga.png" class="img-thumbnail" alt="..." />
-              <span class="span1">Aerial View of Anloga</span>
-            </div>
-            <div class="secondImg">
-              <img src="images/Anfoega.png" class="img-thumbnail" alt="..." />
-              <span class="span2">A popular foot path to Anfoega Township</span>
-            </div>
-            <div class="thirdImg">
-              <img
-                src="images/Viepe beach.png"
-                class="img-thumbnail"
-                alt="..."
-              />
-              <span class="span3">Beach scape of Viepe, Volta Region</span>
-            </div>
-          </div> -->
+          
           <div class="mid_info">
             <h3 class="story">LET'S REACH OUT TO OUR COMMUNITIES IN GHANA</h3>
             <p>
@@ -239,7 +225,7 @@
             emailed to: content-info@newsboxgh.com
             <p></p>
           </div>
-          <div class="right"></div>
+          
         </div>
         <!-- <div class="carouse"></div> -->
       </div>
