@@ -1,8 +1,4 @@
-<h1>Ooooooops!!</h1>
-<h1>Site under development</h1>
-
-
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,7 +9,15 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .navbar {
         display: flex;
         color: red;
@@ -40,27 +44,24 @@
         flex: 2;
       }
       .dome {
+        display: flex;
         flex: 10;
         margin-top: 50px;
-        display: flex;
       }
-      .left {
+      .mid_info {
+        flex: 9;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+      .right {
         flex: 3;
         margin-top: 10px;
       }
-      .mid_info {
-        flex: 6;
-        text-align: center;
-        padding-top: 10px;
-      }
+
       .story {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
       }
-      .right {
-        flex: 3;
-      }
-
       div h2 {
         padding: 40px 0 0 0;
         cursor: pointer;
@@ -75,7 +76,6 @@
         text-decoration: none;
         outline: none;
       }
-      /* Div link on hover */
       .sidebar a:hover {
         color: #56ff38;
         background: #fff;
@@ -92,39 +92,60 @@
         display: flex;
         background-color: rgb(1, 19, 36);
         height: 35px;
-       
         margin-top: 10px;
+      }
+      footer a div {
+        display: flex;
       }
       .about {
         color: yellow;
       }
       .address {
-       
         display: flex;
         flex-direction: column;
       }
-      .map{
+      .map {
         color: yellow;
       }
       .policy {
-       
         color: yellow;
-        
       }
-      h5 {
+
+      .firstImg {
+        background-color: lightgray;
+        border: 1px solid black;
+        margin-bottom: 5px;
+      }
+      .secondImg {
+        background-color: lightgray;
+        border: 1px solid black;
+        margin-bottom: 5px;
+      }
+      .thirdImg {
+        border: 1px solid black;
+        background-color: lightgray;
+      }
+      @media screen and(min-width:300px) {
+        .sidebar {
+          font-size: 5px;
+          color: red;
+        }
+
+      .mid_info {
+        flex: 9;
+        padding-left: 20px;
+        padding-top: 10px;
         color: yellow;
-        padding: 0px 10px 0px 10px;
-      }
-      .edithead {
-        color: black;
-        padding: 10px;
-        font-family: cursive;
-        font-weight: bolder;
-        border-radius: 0px 15px 0px 15px;
-        margin-bottom: 10px;
       }
       
       
+      }
+      .span1,
+      .span2,
+      .span3 {
+        font-size: small;
+        padding: 5px;
+      }
     </style>
   </head>
   <body>
@@ -161,57 +182,79 @@
           <a href="volta.html">VOLTA REGION</a>
         </div>
         <div class="dome">
-          <div class="left">
-            <div><img src="images/anloga.png" class="img-thumbnail" alt="..." />
-              <span>lflflflflf</span>
+          <!-- <div class="left">
+            <div class="firstImg">
+              <img src="images/anloga.png" class="img-thumbnail" alt="..." />
+              <span class="span1">Aerial View of Anloga</span>
             </div>
-            <div><img src="images/acr.png" class="img-thumbnail" alt="..." />
-              <span>flflflflfl</span>
+            <div class="secondImg">
+              <img src="images/Anfoega.png" class="img-thumbnail" alt="..." />
+              <span class="span2">A popular foot path to Anfoega Township</span>
             </div>
-            <div><img src="images/ibu.webp" class="img-thumbnail" alt="..." />
-              <span>fhfhfhfhfh</span>
+            <div class="thirdImg">
+              <img
+                src="images/Viepe beach.png"
+                class="img-thumbnail"
+                alt="..."
+              />
+              <span class="span3">Beach scape of Viepe, Volta Region</span>
             </div>
-            
-            
-            
-          </div>
+          </div> -->
           <div class="mid_info">
             <h3 class="story">LET'S REACH OUT TO OUR COMMUNITIES IN GHANA</h3>
             <p>
-              Our communities share an important memoires in our up-bringing as
-              children. Especially as it can be recalled that every mother is
-              everyone else' mother, so do uncles, Aunties, Fathers and so on.
+              Our communities share an important memories in our up-bringing as
+              children. Family relations, neighbourhoods and infrastructural
+              environments are the few to recall when growing up as children in
+              our various communities.
             </p>
 
             <p>
-              Our communities present a unique pride in our aspiration to see
-              that significant strides are made.Be it cultural, spiritual,
-              econonomic, social and emotional.
+              Along the line, families move to other destinations in pursuit of
+              jobs, other attractions and even the simple ectasy of relocation.
+              The most undertone for these movements are urbanisation which
+              comes with economic and social status enhancement.
             </p>
 
             <p>
-              Distance, most of the time elude us the luxery of getting involved
-              in the matters that concern our places of birth or once our adored
-              locality of maiden experience. In perspective, these country
-              sides, in an European palance turns dejected, a situation that has
-              to be blamed on urbanistion and modernity.
+              In effect, the countryside is left to the mercy of old people and
+              those who do not have the opportunity to travel because they may
+              not have any connection in the cities.
+            </p>
+            <p>
+              In perspective, communities must be showcased with all potentials
+              for growth, be it social or economic.
+            </p>
+            <p>
+              What makes the difference?<br />
+              <b>NEWSBOX</b> throws a spotlight on every single community in
+              Ghana.
+              <li>What people say around town</li>
+              <li>pictorial activities of the people</li>
+              <li>business opportunities available</li>
+              <li>any other general outlook</li>
             </p>
 
-            <p>
-              NEWSBOX is set to bridge that gap by bringing along all that
-              maters in our communities in pictures, sounds and videos. Together
-              we can build a prosperous Ghana when everyone matter.
-            </p>
+            Information from any community with pictures and voice clips can be
+            emailed to: content-info@newsboxgh.com
+            <p></p>
           </div>
           <div class="right"></div>
         </div>
-        <div class="carouse"></div>
+        <!-- <div class="carouse"></div> -->
       </div>
 
       <div class="footer">
-        
-       
-        <a style="text-decoration: none" href="privacy-policy.html" target="_self">
+        <a style="text-decoration: none" href="about.html" target="_self">
+          <div class="about">About Us</div>
+        </a>
+        <b></b>
+
+        <a
+          style="text-decoration: none"
+          href="privacy-policy.html"
+          target="_self"
+        >
           <div class="policy">Privacy Policy</div>
         </a>
       </div>
@@ -223,4 +266,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html> -->
+</html>
