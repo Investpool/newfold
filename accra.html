@@ -11,39 +11,57 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-   
+    
     <style>
-      hr {  
-            height: 4px;  
-            background-color: rgb(8, 62, 180);  
-            border: none;  
-        }  
+       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } 
+
+
+      hr {
+        height: 4px;
+        background-color: rgb(8, 62, 180);
+        border: none;
+      }
+      a {
+        color: rgb(241, 241, 247);
+        background-color: rgb(2, 5, 26);
+        padding: 2px;
+        font-size: small;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      .regions {
+        padding: 20px;
+      }
+      .grOne {
+        margin-bottom: 20px;
+      }
+      .grTwo {
+        margin-bottom: 20px;
+      }
+      .grThree {
+        margin-bottom: 20px;
+      }
+      .grFour {
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 320px ) {
         a {
-          color: rgb(241, 241, 247);
-          background-color: blue;
-          padding: 10px;
-          font-size: medium;
-          margin-bottom: 15px;
-          font-weight: 200;
-        }
-        .regions{
-          padding: 20px;
-        }
-        .grOne{
-          margin-bottom: 20px;
-        }
-        .grTwo{
-          margin-bottom: 20px;
-        }
-        .grThree{
-          margin-bottom: 20px;
-        }
-        .grFour{
-          margin-bottom: 20px;
-        }
-        
+        color: rgb(240, 240, 245);
+        background-color: green;
+        text-decoration: none;
+        padding: 2px;
+        font-size: x-small;
+        margin-bottom: 20px;
+        font-weight: 100;
+      }
+      }
     </style>
   </head>
   <body>
@@ -53,7 +71,7 @@
           <h2>GREATER ACCRA REGION</h2>
         </div>
         <div class="regionsWrapperRight">
-          <h3>GREATER ACCRA DISTRICTS AND METRO ASSEMBLIES</h3>
+          <h4>GREATER ACCRA DISTRICTS AND METRO ASSEMBLIES</h4>
           <div class="grOne">
             <a href="okaikwesouth.html" target="_self" class="districts"
               >OKAIKWE SOUTH</a
@@ -97,7 +115,6 @@
             <a href="ningoprampram.html" target="_self" class="districts"
               >NINGO PRAMPRAM</a
             >
-            
           </div>
           <div class="grThree">
             <a href="korleyklottey.html" target="_self" class="districts"
@@ -147,7 +164,6 @@
             <a href="domeabraobom.html" target="_self" class="districts"
               >DOMEABRA OBOM</a
             >
-            
           </div>
           <div class="grFive">
             <a href="okaikwecentral.html" target="_self" class="districts"
@@ -165,8 +181,7 @@
           </div>
         </div>
       </div>
-      <hr>
-      
+      <hr />
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
