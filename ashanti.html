@@ -7,51 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!-- <style>
-.ashantiregion{
-    width: 99vw;
-    height: 95vh;
-    background-image: url("assets/random/ghashanti1.PNG");
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-.ashantiregionWrapper{
-    width: 70%;
-    height: 70%;
-    display: flex;
-}
-.ashantiRegionLeft{
-    flex: 1;
-    display: flex;
-    
-    color: rgb(202, 89, 23);;
-}
-.ashantiDistrictsRight{
-    height: 500px;
-    padding: 20px;
-    background-color: transparent;
-    
-    flex-direction: column-reverse;
-    justify-content: space-between; 
-    flex: 5;
-}
-.grOne, .grTwo, .grThree, .grFour, .grFive, .grSix, .grSeven, .grEight{
-    display: flex;
-}
-.districts{
-    margin-right: auto;
-    margin-bottom: 30px;
-    text-decoration: none;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: blue;
-    color:white;
-    padding: 5px;
-}
-    </style> -->
+
     <style>
      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
@@ -69,6 +25,8 @@ hr {
 }
 a {
  color: rgb(241, 241, 247);
+ border: 2px solid yellow;
+ border-radius: 5px;
  background-color: rgb(2, 5, 26);
  padding: 2px;
  font-size: small;
@@ -102,17 +60,23 @@ a {
  font-weight: 100;
 }
 }
-      
+.regionWrapper{
+        background-image: url(images/ashanti.png);
+        padding: 20px;
+      }
+      .regionLeft, .headings{
+        color: white;
+      }
     </style>
   </head>
   <body>
     <div class="regions">
-      <div class="ashantiregionWrapper">
-        <div class="ashantiRegionLeft">
+      <div class="regionWrapper">
+        <div class="regionLeft">
           <h2>ASHANTI REGION</h2>
         </div>
         <div class="ashantiDistrictsRight">
-          <h2>ASHANTI DISTRICTS AND METRO ASSEMBLIES</h2>
+          <h2 class="headings">ASHANTI DISTRICTS AND METRO ASSEMBLIES</h2>
           <div class="grOne">
             <a href="adansinorth.html" target="_self" class="districts"
               >ADANSI NORTH</a

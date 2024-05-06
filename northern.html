@@ -7,58 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!-- <style>
-      .northernregion {
-        width: 100vw;
-        height: 100vh;
-        background-color: #d8dad0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      .northernregionWrapper {
-        width: 70%;
-        height: 70%;
-        display: flex;
-      }
-      .northernRegionLeft{
-        flex: 1;
-        display: flex;
-        color: rgb(7, 12, 42);
-      }
-      .northernTitle {
-        color: rgb(7, 9, 43);
-        font-size: x-large;
-        font-weight: 800;
-        margin-right: 20px;
-      }
-      .northernDistrictsRight {
-        height: 280px;
-        padding: 20px;
-        background-color: white;
-
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        flex: 2;
-      }
-      .grOne,
-      .grTwo,
-      .grThree,
-      .grFour,
-      .grFive {
-        display: flex;
-      }
-      .districts {
-        margin-right: auto;
-        margin-bottom: 30px;
-        text-decoration: none;
-        background-color: aquamarine;
-        cursor: pointer;
-        color: rgb(5, 20, 34);
-        padding: 5px;
-      }
-    </style> -->
+    
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
@@ -76,6 +25,8 @@ hr {
 }
 a {
  color: rgb(241, 241, 247);
+ border: 2px solid yellow;
+ border-radius: 5px;
  background-color: rgb(2, 5, 26);
  padding: 2px;
  font-size: small;
@@ -109,16 +60,24 @@ a {
  font-weight: 100;
 }
 }
+.regionWrapper{
+        background-image: url(images/northern.png);
+        height: 300px;
+        padding: 20px;
+      }
+      .regionLeft, .headings{
+        color: white;
+      }
     </style>
   </head>
   <body>
     <div class="regions">
-      <div class="northernregionWrapper">
-        <div class="northernRegionLeft">
+      <div class="regionWrapper">
+        <div class="regionLeft">
           <h2 class="northernTitle">NORTHERN REGION</h2>
         </div>
         <div class="northernDistrictsRight">
-          <h3>NORTHERN DISTRICTS AND METRO ASSEMBLIES</h3>
+          <h3 class="headings">NORTHERN DISTRICTS AND METRO ASSEMBLIES</h3>
           <div class="grOne">
             <a href="gushiegu.html" target="_self" class="districts">GUSHIEGU</a>
             <a href="zabzugu.html" target="_self" class="districts">ZABZUGU</a>

@@ -31,7 +31,10 @@ hr {
 }
 a {
  color: rgb(241, 241, 247);
- background-color: rgb(2, 5, 26);
+ background-color: black;
+ color: yellow;
+ border: 2px solid yellow;
+ border-radius: 5px;
  padding: 2px;
  font-size: small;
  text-decoration: none;
@@ -56,7 +59,6 @@ a {
 @media screen and (max-width: 320px ) {
  a {
  color: rgb(240, 240, 245);
- background-color: green;
  text-decoration: none;
  padding: 2px;
  font-size: x-small;
@@ -64,13 +66,27 @@ a {
  font-weight: 100;
 }
 }
-    </style>
+.regionWrapper{
+        background-image: url(images/central.png);
+        background-repeat: repeat;
+        /* background-size: cover; */
+        
+        height: 300px;
+        padding: 20px;
+      }
+      .districtsCentral{
+        color: white;
+      }
+      .centralDistrictsRight{
+        color: white;
+      }
+</style>
 </head>
 <body>
     <div class="regions">
-        <div class="centralregionWrapper">
+        <div class="regionWrapper">
           <div class="centralRegionLeft">
-            <h2 class="districtsCentral">CENTRAL REGION</h2>
+            <h1 class="districtsCentral">CENTRAL REGION</h1>
           </div>
           <div class="centralDistrictsRight">
             <h3>CENTRAL DISTRICTS AND METRO ASSEMBLIES</h3>
@@ -128,7 +144,10 @@ a {
         </div>
         <hr>
       </div>
-      <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>

@@ -80,6 +80,8 @@ hr {
 a {
  color: rgb(241, 241, 247);
  background-color: rgb(2, 5, 26);
+ border: 2px solid yellow;
+ border-radius: 5px;
  padding: 2px;
  font-size: small;
  text-decoration: none;
@@ -112,11 +114,16 @@ a {
  font-weight: 100;
 }
 }
+.regionWrapper{
+        background-image: url(images/western.png);
+        height:300px;
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
     <div class="regions">
-      <div class="westernregionWrapper">
+      <div class="regionWrapper">
         <div class="westernLeft">
           <h2 class="westernTitle">WESTERN REGION</h2>
         </div>
@@ -168,7 +175,10 @@ a {
       </div>
       <hr/>
     </div>
-    <script type="text/javascript" src="js/jquery-5.1.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
