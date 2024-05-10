@@ -95,19 +95,6 @@
         margin-bottom: 15px;
       }
 
-      .firstImg {
-        margin-bottom: 5px;
-        height: 200px;
-        justify-content: space-between;
-      }
-      .firstImg {
-        margin-bottom: 5px;
-        height: 200px;
-      }
-      .firstImg {
-        margin-bottom: 5px;
-        height: 200px;
-      }
 
       @media screen and (max-width: 450px) {
         .sidebar a {
@@ -151,6 +138,14 @@
           font-size: xx-small;
           text-align: center;
         }
+        .middle{
+          width: 300px;
+          font-size: small;
+        }
+        .info_head{
+          font-size: small;
+        }
+
       }
 
       .downbelt {
@@ -182,6 +177,27 @@
       .pic1 {
         padding: 0%;
       }
+      .info{
+        display: flex;
+      }
+      .leftSide{
+        flex: 2;
+      }
+      .middle{
+        flex: 8;
+       padding: 20px;
+       border-left: 5px solid rgb(216, 210, 210);
+      }
+      .rightSide{
+        flex: 2;
+      }
+      .info_head{
+        background-color: rgb(115, 115, 129);
+        color: white;
+        padding: 10px;
+      border-top-right-radius: 30px;
+      }
+      
     </style>
   </head>
   <body>
@@ -264,19 +280,19 @@
       <div class="gary">
         <div class="firstpic">
           <img src="images/Ho.webp" height="200" width="230" class="pic1" />
-          <span class="write">A suburb of Ho, Volta Region</span>
+          <p>A suburb of Ho, Volta Region</p>
         </div>
         <div class="secondpic">
           <img src="images/anloga.png" height="200" width="230" class="pic2" />
-          <span class="write">Somewhere in the Eastern Region</span>
+          <p>Somewhere in the Eastern Region</p>
         </div>
         <div class="thirdpic">
           <img src="images/logba.webp" height="200" width="230" class="pic3" />
-          <span class="write">Afadjato area, Volta Region</span>
+          <p>Afadjato area, Volta Region</p>
         </div>
         <div class="fourthpic">
           <img src="images/akatsi.png" height="200" width="230" class="pic4" />
-          <span class="write">Akatsi, Volta Region</span>
+          <p>Akatsi, Volta Region</p>
         </div>
         <div class="fifthpic">
           <img
@@ -285,8 +301,52 @@
             width="230"
             class="pic5"
           />
-          <span class="write">Viepe Beach, Volta Region</span>
+          <p>Viepe Beach, Volta Region</p>
         </div>
+      </div>
+      <div class="info">
+        <div class="leftSide"></div>
+        <div class="middle">
+        <h3 class="info_head">UPPER WEST REGION</h3>
+        <p>
+          Upper West Region is the northwesterly part of Ghana and a home for many
+          renowned personalities in the productive agricultural space.
+        </p>
+        <p>
+          As a hub of fair natural resources, the region has its major
+          industries in animal and food crop productions. National statistics
+          does not indicate the quantum of these production levels vis a vis the national
+          averages. However its worthy of note that sufficient productions are
+          made for local consumptions and export to neighboring countries.
+          <b>NEWSBOX</b> in furthering its coverage of the region, projects to make
+          account of the rate and the level at which these raw primary products are made
+          and the percentage that is
+          changed into secondary products. Personalities championing the
+          productive industries would be promoted in such a way that more room
+          would be created for them to excel for a possible national excellence.
+        </p>
+        <p>
+          The number of industrial establishments in the regions is equally an
+          important concern for our assessment. Through this, we hope to provide
+          adequate infographics for public consumption and investment processes.
+        </p>
+        <h3 class="info_head">UPPER EAST REGION</h3>
+        <p>
+          Upper east region with Bawku as its capital is a buzzling marketing center
+          due to divers links to two international frontiers. 
+          </p>
+          Different kinds of products, both industrial and agricultural find their way into the region. 
+          This is associated with
+          the fact that it connects the sahel to the south. 
+          </p>
+          <p>
+          It is therefore apparent that much smoother
+          commercial links to the region, by way of ownership and management of supply chains 
+          can ensure a sustainable business environment.
+        </p>
+       
+        </div>
+        <div class="rightSide"></div>
       </div>
 
       <div class="downbelt">
