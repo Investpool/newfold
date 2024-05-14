@@ -74,6 +74,7 @@ a {
  text-decoration: none;
  margin-bottom: 15px;
  font-weight: 600;
+ border: 2px solid yellow;
 }
 .regions {
  padding: 20px;
@@ -93,7 +94,7 @@ a {
 @media screen and (max-width: 320px ) {
  a {
  color: rgb(240, 240, 245);
- background-color: green;
+ background-color: rgb(31, 39, 31);
  text-decoration: none;
  padding: 2px;
  font-size: x-small;
@@ -101,16 +102,29 @@ a {
  font-weight: 100;
 }
 }
+.regionWrapper{
+        background-image: url(images/nnortheastt.webp);
+        padding: 20px;
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .regionTitle{
+        color: white;
+      }
+      .districtTitle{
+        color: white;
+      }
 </style>
 </head>
 <body>
     <div class="regions">
-        <div class="northeastregionWrapper">
+        <div class="regionWrapper">
           <div class="northeastRegionLeft">
-            <h2 class="northeastTitle">NORTH EAST REGION</h2>
+            <h2 class="regionTitle">NORTH EAST REGION</h2>
           </div>
           <div class="northeastDistrictsRight">
-            <h2>NORTH EAST DISTRICTS AND METRO ASSEMBLIES</h2>
+            <h2 class="districtTitle">NORTH EAST DISTRICTS AND METRO ASSEMBLIES</h2>
             <div class="grOne">
               <a href="mamprugomoad.html" target="_self" class="districts">MAMPRUGO-MOADURI</a>
               <a href="eastmamprusi.html" target="_self" class="districts">EAST MAMPRUSI</a>
