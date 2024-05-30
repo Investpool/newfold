@@ -11,70 +11,193 @@
     />
     <title>Document</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       body {
-        background-color: #fafafa;
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-family: system-ui;
+        font-size: 16px;
+        background: #e9eef0;
+        margin-top: 20px;
       }
-      .mediaPlatform {
+      .flex {
         display: flex;
-        margin: 25px;
-      }
-      .comment {
-        flex: 4;
-        background-color: rgb(222, 245, 247);
-        margin: 20px;
-        padding: 10px;
-      }
-      .profile {
-        flex: 8;
-        background-color: rgb(208, 208, 238);
-        margin: 20px;
-        padding: 10px;
-      }
-      li {
-        margin-bottom: 20px;
+        justify-content: space-between;
+        width: 100%;
       }
       img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .comment-box,
+      .comment-list {
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 2px 2px #000;
+      }
+      .comment-session {
+        width: 650px;
+        height: auto;
+        margin: 0 auto;
+      }
+      .comment-list {
+        width: 100%;
+        margin-bottom: 12px;
+      }
+      .comment-list .user {
+        display: flex;
+        padding: 8px;
+        overflow: hidden;
+      }
+      .comment-list .user img {
+        height: 38px;
+        width: 30px;
         border-radius: 50%;
         margin-right: 10px;
       }
-      .person{
+      .comment-list .name {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .comment-list .day {
+        font-size: 12px;
+      }
+      .reply {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        color: #777;
+        gap: 5px;
+      }
+      .icon:hover {
+        color: #000;
         cursor: pointer;
       }
+       
+      .comment {
+        padding: 0 0 15px 58px;
+      }
+      .comment-box {
+        padding: 10px;
+        overflow: hidden;
+      }
+      .comment-box .user {
+        display: flex;
+        width: min-content;
+      }
+      .comment-box .image img {
+        width: 24px;
+        width: 24px;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+      .comment-box textarea {
+        background: #eee;
+        width: -webkit-fill-available;
+        height: 130px;
+        margin: 10px 0;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 0 0 0.5px #0003;
+      }
+
+      .comment-box textarea:focus {
+        outline-color: #009cff;
+      }
+      .comment-box .comment-submit {
+        float: right;
+        padding: 6px 14px;
+        border: none;
+        color: #fff;
+        background: #009cff;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+      .post-comment{
+        display: flex;
+        width: 900px;
+      }
+      .form{
+        flex: 4;
+      }
+      .comment-group{
+        flex: 8;
+      }
+      
     </style>
   </head>
   <body>
-    <div class="mediaPlatform">
-      <div class="comment">
-        <form action="updates.jsp" id="usrform">
-          Name: <input type="text" name="usrname" />
-
-          <br /><br />
-          <textarea
-            rows="5"
-            cols="39"
-            name="comment"
-            form="usrform"
-            placeholder="write your comment..."
-          ></textarea><br />
-          <input type="submit" />
-        </form>
-      </div>
-      <div class="profile">
-        <ul>
-          <li class="person">
-            <img src="images/girl.png" height="60" width="60" />
-            <span>We are here</span>
-          </li>
-          <li class="person">
-            <img src="images/girl.png" height="60" width="60" />
-            <span>We are here</span>
-          </li>
-
-          <li class="person">
-            <img src="images/girl.png" height="60" width="60" />
-            <span>We are here</span>
-          </li>
-        </ul>
+    <div class="comment-session">
+      <div class="post-comment">
+        <div class="form">
+          <form action="" class="comment-box">
+            <div class="user">
+              <div class="image"><img src="images/girl.png" alt="" /></div>
+              <div class="name">Rupa</div>
+            </div>
+            <textarea name="comment" id=""></textarea>
+            <button class="comment-submit">Comment</button>
+          </form>
+          </div>
+        <div class="comment-group">
+        <div class="comment-list">
+          <div class="flex">
+            <div class="user">
+              <div class="user-image"><img src="images/girl.png" alt="" /></div>
+              <div class="user-meta">
+                <div class="name">Rupa</div>
+                <div class="day">10 days ago</div>
+              </div>
+            </div>
+            <div class="reply">
+              <div class="like-icon">450<i class="fa fa-thumbs-o-up"></i></div>
+              <div class="dislike-icon">
+                <i class="fa fa-thumbs-o-down"></i>
+              </div>
+              <div class="re-comment">Reply</div>
+            </div>
+          </div>
+          <div class="comment">
+            Thank you for that great work. You are a gem.
+          </div>
+        </div>
+        <div class="comment-list">
+          <div class="flex">
+            <div class="user">
+              <div class="user-image">
+                <img src="images/ernst.jpg" alt="" />
+              </div>
+              <div class="user-meta">
+                <div class="name">Bonney</div>
+                <div class="day">1 mins ago</div>
+              </div>
+            </div>
+            <div class="reply">
+              <div class="like-icon">450<i class="fa fa-thumbs-o-up"></i></div>
+              <div class="dislike-icon">
+                <i class="fa fa-thumbs-o-down"></i>
+              </div>
+              <div class="re-comment">Reply</div>
+            </div>
+          </div>
+          <div class="comment">Great works ahead of time.</div>
+        </div>
+        </div>
+        
       </div>
     </div>
     <script
