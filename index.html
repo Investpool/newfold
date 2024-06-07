@@ -26,19 +26,23 @@
       .navbar {
         display: flex;
         color: red;
-        background-image: linear-gradient(white, blue);
+        
+        background-image: linear-gradient(rgb(32, 61, 192), blue);
         position: fixed;
         width: 100%;
         text-align: center;
         top: 0;
       }
+      .logs {
+        border-radius: 5px;
+      }
 
       .sidebar {
-        color: #fff;
+        color: #0f0000;
+        text-align: center;
         width: 200px;
         padding-left: 2px;
         height: 100vh;
-        
         overflow-y: scroll;
         margin-top: 50px;
       }
@@ -77,18 +81,21 @@
         outline: none;
         margin-right: 4px;
       }
-      .regs a:hover {
+      .nav-link a:hover {
         color: #56ff38;
         background: #fff;
         position: relative;
-       
       }
       .brand {
         font-size: larger;
         font-weight: bold;
       }
 
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 425px) {
+        .navbar {
+          margin-bottom: 30px;
+          display: flex;
+        }
         .sidebar a {
           font-size: 10px;
           flex: 4;
@@ -138,6 +145,16 @@
         }
         .info_head {
           font-size: small;
+        }
+        .regs {
+          flex-direction: column;
+          font-size: 10px;
+          margin-right: 6px;
+          color: yellow;
+        }
+        .firstPic {
+          height: "110";
+          width: "150";
         }
       }
 
@@ -193,73 +210,148 @@
         padding: 10px;
         border-top-right-radius: 30px;
       }
-      .inset{
+      .inset {
         padding: 0px;
       }
-      .regs{
+      .regs {
         display: flex;
         font-size: 12px;
         margin-right: 6px;
         color: yellow;
       }
+      .nav-link  {
+        font-size: 11px;
+        
+      }
+      li a {
+        color: white;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar">
-        <div class="logo">
-          <img
-            src="images/rainb.PNG"
-            height="40"
-            width="70"
-            padding="20px"
-            alt=""
-          />
-          <span class="brand">NEWSBOX</span>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="logo">
+            <img
+              class="logs"
+              src="images/rainb.PNG"
+              height="40"
+              width="70"
+              padding="20px"
+              alt=""
+            />
+            <span class="brand">NEWSBOX</span>
           </div>
-        <div class="regs">
-            <a href="accra.html">GREATER-ACCRA</a>
-            <a href="central.html">CENTRAL</a>
-            <a href="eastern.html">EASTERN</a>
-            <a href="western.html">WESTERN</a>
-            <a href="westernnorth.html">WESTERN-NORTH</a>
-            <a href="bono.html">BONO</a>
-            <a href="bonoeast.html">BONO-EAST</a>
-            <a href="ahafo.html">AHAFO</a>
-            <a href="ashanti.html">ASHANTI</a>
-            <a href="northern.html">NORTHERN</a>
-            <a href="northeast.html">NORTH EAST</a>
-            <a href="savannah.html">SAVANNAH</a>
-            <a href="upperwest.html">UPPER-WEST</a>
-            <a href="uppereast.html">UPPER-EAST</a>
-            <a href="oti.html">OTI</a>
-            <a href="volta.html">VOLTA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="accra.html">GREATER-ACCRA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="central.html">CENTRAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eastern.html">EASTERN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="western.html">WESTERN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="westernnorth.html">WESTERN-NORTH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bono.html">BONO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bonoeast.html">BONO-EAST</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ahafo.html">AHAFO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ashanti.html">ASHANTI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="northern.html">NORTHERN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="northeast.html">NORTH EAST</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="savannah.html">SAVANNAH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="upperwest.html">UPPER-WEST</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="uppereast.html">UPPER-EAST</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="oti.html">OTI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="volta.html">VOLTA</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="down">
         <div class="sidebar">
           <div class="gary">
             <div class="firstpic">
-              <img src="images/Ho.webp" height="200" width="230" class="pic1" />
-              <p>A suburb of Ho, Volta Region</p>
+              <img src="images/Ho.webp" height="220" width="300" class="pic1" />
+              <span>A suburb of Ho, Volta Region</span>
             </div>
             <div class="secondpic">
-              <img src="images/anloga.png" height="200" width="230" class="pic2" />
+              <img
+                src="images/anloga.png"
+                height="220"
+                width="300"
+                class="pic2"
+              />
               <p>Somewhere in the Eastern Region</p>
             </div>
             <div class="thirdpic">
-              <img src="images/logba.webp" height="200" width="230" class="pic3" />
+              <img
+                src="images/logba.webp"
+                height="220"
+                width="300"
+                class="pic3"
+              />
               <p>Afadjato area, Volta Region</p>
             </div>
             <div class="fourthpic">
-              <img src="images/akatsi.png" height="200" width="230" class="pic4" />
+              <img
+                src="images/akatsi.png"
+                height="220"
+                width="300"
+                class="pic4"
+              />
               <p>Akatsi, Volta Region</p>
             </div>
             <div class="fifthpic">
               <img
                 src="images/Viepe beach.png"
-                height="200"
-                width="230"
+                height="220"
+                width="300"
                 class="pic5"
               />
               <p>Viepe Beach, Volta Region</p>
@@ -326,7 +418,7 @@
       </div>
 
       <hr class="backline" />
-      
+
       <div class="info">
         <div class="leftSide"></div>
         <div class="middle">
@@ -347,8 +439,8 @@
           <p>
             By popular opinion, the Central Region is estimated to be one of the
             poorest regions in the country. This is obvious on account of high
-            rate of teenage pregnancy as recorded by the <a href="cr11.html" class="inset">National statistics
-            data of 2020.</a>
+            rate of teenage pregnancy as recorded by the National statistics
+            data of 2020.
           </p>
           <p>
             There are potentials for high agro industrial output as its the hub
@@ -472,8 +564,8 @@
             remarkable rate along side complete marketing strategies.
           </p>
           <p>
-            Details of industrial activities in this area would be made available
-            to stakeholders in due course.
+            Details of industrial activities in this area would be made
+            available to stakeholders in due course.
           </p>
         </div>
         <div class="rightSide"></div>
