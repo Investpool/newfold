@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -12,117 +12,215 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-@media screen and (max-width: 450px) {
-  a {
-    color: #f7eeee;
-    color: #1e06fa;
-    border: 1px solid blue;
-    /* margin: 40px; */
-    text-decoration: none;
-  }
-}
+      @media screen and (max-width: 450px) {
+        a {
+          color: #f7eeee;
+          color: #1e06fa;
+          border: 1px solid blue;
+          /* margin: 40px; */
+          text-decoration: none;
+        }
+      }
 
-body {
-  padding: 20px;
-  
-}
-a {
-  padding: 2px;
-  margin-bottom: 100px;
-  border-radius: 20px;
-  color: #fff;
-  border: 1px solid #fff;
-  /*border-bottom: 5px solid blue; */
-  text-decoration: none;
-}
-p {
-  background-color: #1e06fa;
-  padding: 10px;
-  box-shadow: 0 0 0 4.5px black;
-  border-radius: 4px;
-}
-.cr11,
-.cr12 {
-  background-color: azure;
-  color: rgb(0, 0, 0);
-}
+      body {
+        padding: 20px;
+      }
+      a {
+        padding: 2px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        /*border-bottom: 5px solid blue; */
+        text-decoration: none;
+      }
+      section {
+        background-color: #1e06fa;
+        padding: 10px;
+      }
+      .cr11,
+      .cr12 {
+        background-color: azure;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        margin-right: 2px;
+      }
+      .image-row {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .post {
+        display: flex;
+      }
+      .input {
+        flex: 4;
+      }
+      .writeups {
+        flex: 8;
+        background-color: pink;
+      }
+      .text {
+        height: 400;
+      }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .parent {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 10px;
+        background-color: black;
+        padding: 2px;
+      }
     </style>
-</head>
-<body>
-  <div>
-    <h3>HO WEST DISTRICT</h3>
-  </div>
-  <div>
-    <h3>HO WEST DISTRICT COMMUNITIES</h3>
-  </div>
-  <p>
-    <a href="">Dzolokpuita</a>
-    <a href="">Tsito</a>
-    <a href="">Dzorkpe</a>
-    <a href="">Anyirawase</a>
-    <a href="">Abadakpoe</a>
-    <a href="">Bokorvikope</a>
-    <a href="">Dededo</a>
-    <a href="">Tsawenu</a>
-    <a href="">Dzanyodake</a>
-    <a href="">Akorme</a>
-    <a href="">Avenui</a>
-    <a href="">Tedeafenui</a>
-    <a href="">Ashanti-Kpoeta</a>
-    <a href="">Horluta</a>
-    <a href="">Dzogbefeme</a>
-    <a href="">Aflakpe</a>
-    <a href="">Kpedze</a>
-    <a href="">Biakpa</a>
-    <a href="">Kwanta</a>
-    <a href="">Tsyome</a>
-    <a href="">Dodome</a>
-    <a href="">Luvudo</a>
-    <a href="">Vane</a>
-    <a href="">Amedzofe</a>
-    <a href="">Etodome</a>
-    <a href="">Hlefi</a>
-    <a href="">Tsibu</a>
-    <a href="">Dafor</a>
-    <a href="">Abutia-Teti</a>
-    <a href="">Agorve</a>
-    <a href="">Avetakpo</a>
-    <a href="">Agortive</a>
-    <a href="">Anfoeta</a>
-    <a href="">Saviefe</a>
-    <a href="">Gbadzeme</a>
-    <a href="">Wadamaxe</a>
-    <a href="">Gbetekpo</a>
-    <a href="">Hlove</a>
-    <a href="">Dafor</a>
-    <a href="">Wukpo</a>
-    <a href="">Kloe</a>
-    <a href="">Tagbave</a>
-    <a href="">Agordeke</a>
-    <a href="">Kpota</a>
-    <a href="">Kpolukope</a>
-    <a href="">Adegblevi</a>
-    <a href="">Amesianyakope</a>
-    <a href="">Fume</a>
-    <a href="">Aboete</a>
-    <a href="">Kissiflui</a>
-    <a href="">Sebekope</a>
-    <a href="">Trevui</a>
-    <a href="">Woeme</a>
-    <a href="">Xorse</a>
-    <a href="">Kpale</a>
-  </p>
-    
+  </head>
+  <body>
+    <div>
+      <h3>HO WEST DISTRICT</h3>
+    </div>
+    <div>HO WEST DISTRICT COMMUNITIES</div>
+    <section>
+      <a href="">Dzolokpuita</a>
+      <a href="">Tsito</a>
+      <a href="">Dzorkpe</a>
+      <a href="">Anyirawase</a>
+      <a href="">Abadakpoe</a>
+      <a href="">Bokorvikope</a>
+      <a href="">Dededo</a>
+      <a href="">Tsawenu</a>
+      <a href="">Dzanyodake</a>
+      <a href="">Akorme</a>
+      <a href="">Avenui</a>
+      <a href="">Tedeafenui</a>
+      <a href="">Ashanti-Kpoeta</a>
+      <a href="">Horluta</a>
+      <a href="">Dzogbefeme</a>
+      <a href="">Aflakpe</a>
+      <a href="">Kpedze</a>
+      <a href="">Biakpa</a>
+      <a href="">Kwanta</a>
+      <a href="">Tsyome</a>
+      <a href="">Dodome</a>
+      <a href="">Luvudo</a>
+      <a href="">Vane</a>
+      <a href="">Amedzofe</a>
+      <a href="">Etodome</a>
+      <a href="">Hlefi</a>
+      <a href="">Tsibu</a>
+      <a href="">Dafor</a>
+      <a href="">Abutia-Teti</a>
+      <a href="">Agorve</a>
+      <a href="">Avetakpo</a>
+      <a href="">Agortive</a>
+      <a href="">Anfoeta</a>
+      <a href="">Saviefe</a>
+      <a href="">Gbadzeme</a>
+      <a href="">Wadamaxe</a>
+      <a href="">Gbetekpo</a>
+      <a href="">Hlove</a>
+      <a href="">Dafor</a>
+      <a href="">Wukpo</a>
+      <a href="">Kloe</a>
+      <a href="">Tagbave</a>
+      <a href="">Agordeke</a>
+      <a href="">Kpota</a>
+      <a href="">Kpolukope</a>
+      <a href="">Adegblevi</a>
+      <a href="">Amesianyakope</a>
+      <a href="">Fume</a>
+      <a href="">Aboete</a>
+      <a href="">Kissiflui</a>
+      <a href="">Sebekope</a>
+      <a href="">Trevui</a>
+      <a href="">Woeme</a>
+      <a href="">Xorse</a>
+      <a href="">Kpale</a>
+    </section>
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/ahafo.webp" height="100" width="150" alt="" />
+        <img src="images/ahafo.webp" height="100" width="150" alt="" />
+        <img src="images/akatsi.webp" height="100" width="150" alt="" />
+        <img src="images/anloga.webp" height="100" width="150" alt="" />
+        <img src="images/ashanti.webp" height="100" width="150" alt="" />
+        <img src="images/bawku.webp" height="100" width="150" alt="" />
+        <img src="images/bono.webp" height="100" width="150" alt="" />
+        <img src="images/anloga.webp" height="100" width="150" alt="" />
+        <img src="images/ashanti.webp" height="100" width="150" alt="" />
+        <img src="images/bawku.webp" height="100" width="150" alt="" />
+        <img src="images/bono.webp" height="100" width="150" alt="" />
+        <img src="images/anloga.webp" height="100" width="150" alt="" />
+        <img src="images/ashanti.webp" height="100" width="150" alt="" />
+        <img src="images/bawku.webp" height="100" width="150" alt="" />
+        <img src="images/bono.webp" height="100" width="150" alt="" />
+      </div>
+      <div class="posts">
+        <div></div>
+      </div>
+    </div>
+    <div class="news">
+      <h3><i>LATEST NEWS</i></h3>
+      <h5>Kpale Murder Case</h5>
+      <p>A fetish priest in Kpale has cooked his wife in a cooking pot</p>
+    </div>
+
+    <script>
+      const list = [
+        {
+          id: 1,
+          name: "",
+          price: "",
+        },
+        {
+          id: 2,
+          name: "",
+          price: "",
+        },
+        {
+          id: 3,
+          name: "",
+          price: "",
+        },
+      ];
+    </script>
+
+    <!-- <div class="post">
+      <form action="#">
+        <textarea
+          name="blog"
+          placeholder="comment"
+          rows="4"
+          cols="45"
+        ></textarea>
+        <br />
+        <input type="submit" value="submit" />
+      </form>
+    </div> -->
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
-</body>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
