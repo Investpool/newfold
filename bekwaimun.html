@@ -1,123 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Bekwai Municipal</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    
     <style>
-        
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 450px) {
+        a {
+          color: #f7eeee;
+          color: #1e06fa;
+          border: 1px solid blue;
+          /* margin: 40px; */
+          text-decoration: none;
+        }
+      }
+
+      body {
+        padding: 20px;
+      }
+      a {
+        padding: 2px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        /*border-bottom: 5px solid blue; */
+        text-decoration: none;
+      }
+      p {
+        background-color: #1e06fa;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      .cr11,
+      .cr12 {
+        background-color: azure;
+        color: rgb(0, 0, 0);
+      }
     </style>
-</head>
-<body>
-    <h1>BEKWAI MUNICIPAL COMMUNITIES</h1>
-    <div class="communities">
-        <div class="commWrapper">
-            <div class="firstLane">
-            <div class="town">Dominase</div>
-            <div class="town">Bekwai</div>
-            <div class="town">Daa</div>
-            <div class="town">AnwiaNkwanta</div>
-            <div class="town">Adweso</div>
-            <div class="town">Akyeremade</div>
-            <div class="town">Edwinase</div>
-            <div class="town">Feyiase</div>
-            <div class="town">Sawaba</div>
-            <div class="town">Anwiam</div>
-            <div class="town">Amoamo</div>
-            <div class="town">Asanso</div>
-            <div class="town">Ahwiaa</div>
-            <div class="town">Sesekro</div>
-            <div class="town">Adankraja</div>
-            <div class="town">Adumasa</div>
-            
-            </div>
-            <div class="secondLane">
-            <div class="town">Amoaful</div>
-            <div class="town">Aboaso</div>
-            <div class="town">Kokofu</div>
-            <div class="town">OfoaseKokoben</div>
-            <div class="town">Afransie</div>
-            <div class="town">Poano</div>
-            <div class="town">Mensase</div>
-            <div class="town">Dwoamin</div>
-            <div class="town">Beseasi</div>
-            <div class="town">Etwireso</div>
-            <div class="town">Esiase</div>
-            <div class="town">Asokore</div>
-            <div class="town">Gyasikrom</div>
-            <div class="town">Koniyaw</div>
-            <div class="town">Abodom</div>
-            <div class="town">Edwenase</div>
-            </div>
-            <div class="thirdLane">
-            <div class="town">Anwhiren</div>			
-            <div class="town">Asakyire</div>
-            <div class="town">Dadease</div>
-            <div class="town">Bedomase</div>
-            <div class="town">Nkyekyeam</div>
-            <div class="town">Sebidie</div>
-            <div class="town">Essumeja</div>
-            <div class="town">Kyiransa</div>
-            <div class="town">Sefwi</div>
-            <div class="town">Dominase</div>
-            <div class="town">Wawase</div>
-            <div class="town">Adjamesu</div>
-            <div class="town">Senfi</div>
-            <div class="town">Betinko</div>
-            <div class="town">Akyease</div>
-            <div class="town">Denyase</div>
-            </div>
-            <div class="fourthLane">
-            <div class="town">Asankare</div>
-            <div class="town">NewAbenkyem</div>
-            <div class="town">Patase</div>
-            <div class="town">Huntado</div>
-            <div class="town">Boni</div>
-            <div class="town">Asaman</div>
-            <div class="town">Ntroaku</div>
-            <div class="town">Kokotro</div>
-            <div class="town">Kortwia</div>
-            <div class="town">Abesewa</div>
-            <div class="town">Bogyawe</div>
-            <div class="town">Dotom</div>
-            <div class="town">Ankaase</div>
-            <div class="town">Aduam</div>
-            <div class="town">Sanfo</div>
-            <div class="town">Kwaman</div>
-            </div>
-            <div class="fifthLane">
-             <div class="town">Essankwanta</div>
-             <div class="town">Pampaso</div>
-             <div class="town">Bodoma</div>
-             <div class="town">Wioso</div>
-             <div class="town">Dwumakro</div>
-             <div class="town">Sarfokrom</div>
-             <div class="town">Kensere</div>
-             <div class="town">Bribiwomang</div>
-             <div class="town">Ntinankor</div>
-             <div class="town">Kyekyewere</div>
-             <div class="town">Brosankro</div>
-             <div class="town">Boaman</div>
-             <div class="town"></div>
-             <div class="town"></div>
-             <div class="town"></div>
-             <div class="town"></div>
-            </div>
-            <div class="sixthLane">
-              <div class="town"></div>
-              <div class="town"> </div>
-              <div class="town"></div>
-              <div class="town"></div>
-              <div class="town"></div>
-              <div class="town"></div>
-            </div>
-        </div>
-    </div>
-    										
-    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-</body>
+  </head>
+  <body>
+    <div><h3>BEKWAI MUNICIPAL</h3></div>
+    <div>BEKWAI MUNICIPAL COMMUNITIES</div>
+<p>
+    <a href="">Dominase</a>
+    <a href="">Bekwai</a>
+    <a href="">Daa</a>
+    <a href="">AnwiaNkwanta</a>
+    <a href="">Adweso</a>
+    <a href="">Akyeremade</a>
+    <a href="">Edwinase</a>
+    <a href="">Feyiase</a>
+    <a href="">Sawaba</a>
+    <a href="">Anwiam</a>
+    <a href="">Amoamo</a>
+    <a href="">Asanso</a>
+    <a href="">Ahwiaa</a>
+    <a href="">Sesekro</a>
+    <a href="">Adankraja</a>
+    <a href="">Adumasa</a>
+    <a href="">Amoaful</a>
+    <a href="">Aboaso</a>
+    <a href="">Kokofu</a>
+    <a href="">OfoaseKokoben</a>
+    <a href="">Afransie</a>
+    <a href="">Poano</a>
+    <a href="">Mensase</a>
+    <a href="">Dwoamin</a>
+    <a href="">Beseasi</a>
+    <a href="">Etwireso</a>
+    <a href="">Esiase</a>
+    <a href="">Asokore</a>
+    <a href="">Gyasikrom</a>
+    <a href="">Koniyaw</a>
+    <a href="">Abodom</a>
+    <a href="">Edwenase</a>
+    <a href="">Anwhiren</a>
+    <a href="">Asakyire</a>
+    <a href="">Dadease</a>
+    <a href="">Bedomase</a>
+    <a href="">Nkyekyeam</a>
+    <a href="">Sebidie</a>
+    <a href="">Essumeja</a>
+    <a href="">Kyiransa</a>
+    <a href="">Sefwi</a>
+    <a href="">Dominase</a>
+    <a href="">Wawase</a>
+    <a href="">Adjamesu</a>
+    <a href="">Senfi</a>
+    <a href="">Betinko</a>
+    <a href="">Akyease</a>
+    <a href="">Denyase</a>
+    <a href="">Asankare</a>
+    <a href="">NewAbenkyem</a>
+    <a href="">Patase</a>
+    <a href="">Huntado</a>
+    <a href="">Boni</a>
+    <a href="">Asaman</a>
+    <a href="">Ntroaku</a>
+    <a href="">Kokotro</a>
+    <a href="">Kortwia</a>
+    <a href="">Abesewa</a>
+    <a href="">Bogyawe</a>
+    <a href="">Dotom</a>
+    <a href="">Ankaase</a>
+    <a href="">Aduam</a>
+    <a href="">Sanfo</a>
+    <a href="">Kwaman</a>
+    <a href="">Essankwanta</a>
+    <a href="">Pampaso</a>
+    <a href="">Bodoma</a>
+    <a href="">Wioso</a>
+    <a href="">Dwumakro</a>
+    <a href="">Sarfokrom</a>
+    <a href="">Kensere</a>
+    <a href="">Bribiwomang</a>
+    <a href="">Ntinankor</a>
+    <a href="">Kyekyewere</a>
+    <a href="">Brosankro</a>
+    <a href="">Boaman</a>
+  </p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
