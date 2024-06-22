@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SEKYERE CENTRAL</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <title>newsbox</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
@@ -19,13 +19,19 @@
         padding: 0;
         box-sizing: border-box;
       }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 425px) {
         a {
           color: #f7eeee;
           color: #1e06fa;
           border: 1px solid blue;
           /* margin: 40px; */
           text-decoration: none;
+        }
+        p {
+          font-size: 12px;
+        }
+        h5 {
+          font-size: 14px;
         }
       }
 
@@ -41,10 +47,9 @@
         /*border-bottom: 5px solid blue; */
         text-decoration: none;
       }
-      p {
+      section {
         background-color: #1e06fa;
         padding: 10px;
-        border-radius: 4px;
       }
       .cr11,
       .cr12 {
@@ -88,107 +93,166 @@
         bottom: 10px;
         right: 15px;
         font-size: 10px;
-        background-color: black;
+
         padding: 2px;
+      }
+      .package {
+        display: flex;
+      }
+      .news {
+        flex: 6;
+        background-color: rgb(196, 241, 247);
+      }
+      .ads {
+        flex: 6;
+      }
+      .newsPage {
+        border: none;
+        border-radius: 5px;
+        padding: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+      }
+      .titlop {
+        font-weight: 500;
       }
     </style>
   </head>
   <body>
     <div><h3>SEKYERE CENTRAL DISTRICT</h3></div>
     <div>SEKYERE CENTRAL DISTRICT COMMUNITIES</div>
-    <p>
-    <a href="">Bonkrong</a>
-    <a href="">Gyetiase</a>
-    <a href="">Tadieso</a>
-    <a href="">Abonkroso</a>
-    <a href="">Kruwi</a>
-    <a href="">Nsuta</a>
-    <a href="">Anansu</a>
-    <a href="">Asuafu</a>
-    <a href="">Jansa</a>
-    <a href="">Atwea</a>
-    <a href="">Abaasua</a>
-    <a href="">Adutwam</a>
-    <a href="">Anwanya</a>
-    <a href="">Beposo</a>
-    <a href="">Kyebi</a>
-    <a href="">Governor</a>
-    <a href="">Issakakrom</a>
-    <a href="">Congo</a>
-    <a href="">Santaso</a>
-    <a href="">Yireso</a>
-    <a href="">Asuogya</a>
-    <a href="">Balana</a>
-    <a href="">Asubuasu</a>
-    <a href="">Chokosi</a>
-    <a href="">Nyamebekyere</a>
-    <a href="">Njaya</a>
-    <a href="">Sankasaase</a>
-    <a href="">SaaseBonso</a>
-    <a href="">Domi</a>
-    <a href="">Domeabra</a>
-    <a href="">Tailorkrom</a>
-    <a href="">Nkwabirem</a>
-    <a href="">Bimma</a>
-    <a href="">Owudbonho</a>
-    <a href="">Mpantunase</a>
-    <a href="">Kwakye-Dida</a>
-    <a href="">Amangoase</a>
-    <a href="">Akyease</a>
-    <a href="">Atonsu</a>
-    <a href=""> Nyameane</a>
-    <a href="">Kwamang</a>
-    <a href="">Amoamang</a>
-    <a href="">Ankamadua</a>
-    <a href="">Fawomang</a>
-    <a href="">Nkujua</a>
-    <a href="">Nkwanta</a>
-    <a href="">Aware-Nkwanta</a>
-    <a href="">Medina</a>
-    <a href="">Ankamabudso</a>
-    <a href="">Balana</a>
-    <a href="">KwameDapaa</a>
-    <a href="">Adidwan</a>
-    <a href="">Kroduase</a>
-    <a href="">Kyeyease</a>
-    <a href="">Kyekyeboum</a>
-    <a href="">Aframso</a>
-    <a href="">Nantwibuom</a>
-    <a href="">Garba</a>
-    <a href="">Odumase</a>
-    <a href="">Sunkwae</a>
-    <a href="">Jediako</a>
-    <a href="">Birim</a>
-    <a href="">Marloo</a>
-    <a href="">Mantukwa</a>
-    <a href="">Didaso</a>
-  </p>
-  <div class="info-down">
-    <div class="image-row">
-      <div class="parent">
-        <img src="images/accra.webp" height="100" width="150" alt="" />
-        <div class="bottom-right">Korle gonno beach, Accra</div>
+    <section>
+      <a href="">Bonkrong</a>
+      <a href="">Gyetiase</a>
+      <a href="">Tadieso</a>
+      <a href="">Abonkroso</a>
+      <a href="">Kruwi</a>
+      <a href="">Nsuta</a>
+      <a href="">Anansu</a>
+      <a href="">Asuafu</a>
+      <a href="">Jansa</a>
+      <a href="">Atwea</a>
+      <a href="">Abaasua</a>
+      <a href="">Adutwam</a>
+      <a href="">Anwanya</a>
+      <a href="">Beposo</a>
+      <a href="">Kyebi</a>
+      <a href="">Governor</a>
+      <a href="">Issakakrom</a>
+      <a href="">Congo</a>
+      <a href="">Santaso</a>
+      <a href="">Yireso</a>
+      <a href="">Asuogya</a>
+      <a href="">Balana</a>
+      <a href="">Asubuasu</a>
+      <a href="">Chokosi</a>
+      <a href="">Nyamebekyere</a>
+      <a href="">Njaya</a>
+      <a href="">Sankasaase</a>
+      <a href="">SaaseBonso</a>
+      <a href="">Domi</a>
+      <a href="">Domeabra</a>
+      <a href="">Tailorkrom</a>
+      <a href="">Nkwabirem</a>
+      <a href="">Bimma</a>
+      <a href="">Owudbonho</a>
+      <a href="">Mpantunase</a>
+      <a href="">Kwakye-Dida</a>
+      <a href="">Amangoase</a>
+      <a href="">Akyease</a>
+      <a href="">Atonsu</a>
+      <a href=""> Nyameane</a>
+      <a href="">Kwamang</a>
+      <a href="">Amoamang</a>
+      <a href="">Ankamadua</a>
+      <a href="">Fawomang</a>
+      <a href="">Nkujua</a>
+      <a href="">Nkwanta</a>
+      <a href="">Aware-Nkwanta</a>
+      <a href="">Medina</a>
+      <a href="">Ankamabudso</a>
+      <a href="">Balana</a>
+      <a href="">KwameDapaa</a>
+      <a href="">Adidwan</a>
+      <a href="">Kroduase</a>
+      <a href="">Kyeyease</a>
+      <a href="">Kyekyeboum</a>
+      <a href="">Aframso</a>
+      <a href="">Nantwibuom</a>
+      <a href="">Garba</a>
+      <a href="">Odumase</a>
+      <a href="">Sunkwae</a>
+      <a href="">Jediako</a>
+      <a href="">Birim</a>
+      <a href="">Marloo</a>
+      <a href="">Mantukwa</a>
+      <a href="">Didaso</a>
+    </section>
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/ahafo.webp" height="100" width="150" alt="" />
+        <img src="images/ahafo.webp" height="100" width="150" alt="" />
+        <img src="images/akatsi.webp" height="100" width="150" alt="" />
+        <img src="images/anloga.webp" height="100" width="150" alt="" />
+        <img src="images/ashanti.webp" height="100" width="150" alt="" />
+        <img src="images/bawku.webp" height="100" width="150" alt="" />
+        <img src="images/bono.webp" height="100" width="150" alt="" />
+        <img src="images/anloga.webp" height="100" width="150" alt="" />
+        <img src="images/ashanti.webp" height="100" width="150" alt="" />
+        <img src="images/bawku.webp" height="100" width="150" alt="" />
+        <img src="images/bono.webp" height="100" width="150" alt="" />
+        <img src="images/anloga.webp" height="100" width="150" alt="" />
+        <img src="images/ashanti.webp" height="100" width="150" alt="" />
+        <img src="images/bawku.webp" height="100" width="150" alt="" />
+        <img src="images/bono.webp" height="100" width="150" alt="" />
       </div>
-      <img src="images/ahafo.webp" height="100" width="150" alt="" />
-      <img src="images/ahafo.webp" height="100" width="150" alt="" />
-      <img src="images/akatsi.webp" height="100" width="150" alt="" />
-      <img src="images/anloga.webp" height="100" width="150" alt="" />
-      <img src="images/ashanti.webp" height="100" width="150" alt="" />
-      <img src="images/bawku.webp" height="100" width="150" alt="" />
-      <img src="images/bono.webp" height="100" width="150" alt="" />
-      <img src="images/anloga.webp" height="100" width="150" alt="" />
-      <img src="images/ashanti.webp" height="100" width="150" alt="" />
-      <img src="images/bawku.webp" height="100" width="150" alt="" />
-      <img src="images/bono.webp" height="100" width="150" alt="" />
-      <img src="images/anloga.webp" height="100" width="150" alt="" />
-      <img src="images/ashanti.webp" height="100" width="150" alt="" />
-      <img src="images/bawku.webp" height="100" width="150" alt="" />
-      <img src="images/bono.webp" height="100" width="150" alt="" />
+      <div class="posts">
+        <div></div>
+      </div>
     </div>
-    <div class="posts">
-      <div></div>
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+      </div>
     </div>
-  </div>
+    <div class="package">
+      <div class="news">
+        <h5><i>LATEST NEWS</i></h5>
+        <div class="newsPage">
+          <h6 class="titlop">Excursion to Kakum Forest</h6>
+          <p class="date"></p>
+          <img src="images/" height="120" width="150" alt="" />
+          <p>A fetish priest in OnTest has cooked his wife in a cooking pot</p>
+        </div>
+      </div>
+      <div class="ads">
+        <h5><i>COMMUNITY ADVERTISEMENTS</i></h5>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

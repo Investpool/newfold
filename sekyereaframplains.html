@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,13 +19,19 @@
         padding: 0;
         box-sizing: border-box;
       }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 425px) {
         a {
           color: #f7eeee;
           color: #1e06fa;
           border: 1px solid blue;
           /* margin: 40px; */
           text-decoration: none;
+        }
+        p {
+          font-size: 12px;
+        }
+        h5 {
+          font-size: 14px;
         }
       }
 
@@ -42,15 +47,76 @@
         /*border-bottom: 5px solid blue; */
         text-decoration: none;
       }
-      p {
+      section {
         background-color: #1e06fa;
         padding: 10px;
-        border-radius: 4px;
       }
       .cr11,
       .cr12 {
         background-color: azure;
         color: rgb(0, 0, 0);
+      }
+      img {
+        margin-right: 2px;
+      }
+      .image-row {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .post {
+        display: flex;
+      }
+      .input {
+        flex: 4;
+      }
+      .writeups {
+        flex: 8;
+        background-color: pink;
+      }
+      .text {
+        height: 400;
+      }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .parent {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 10px;
+
+        padding: 2px;
+      }
+      .package {
+        display: flex;
+      }
+      .news {
+        flex: 6;
+        background-color: rgb(196, 241, 247);
+      }
+      .ads {
+        flex: 6;
+      }
+      .newsPage {
+        border: none;
+        border-radius: 5px;
+        padding: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+      }
+      .titlop {
+        font-weight: 500;
       }
     </style>
   </head>
@@ -58,54 +124,91 @@
     <div><h3>SEKYERE AFRAM PLAINS DISTRICT</h3></div>
 
     <div>SEKYERE AFRAM PLAINS DISTRICT COMMUNITIES</div>
-<p>
-    <a href="">Dagomba</a>
-    <a href="">Mamprusi</a>
-    <a href="">Wenamda</a>
-    <a href="">Drobonso</a>
-    <a href="">Abofrem</a>
-    <a href="">Nyame</a>
-    <a href="">Adu-Adu</a>
-    <a href="">Issakura</a>
-    <a href="">Dawia</a>
-    <a href="">Samso</a>
-    <a href="">Mmempekasa</a>
-    <a href="">Anokye</a>
-    <a href="">Beemu</a>
-    <a href="">Kuubu</a>
-    <a href="">Batanjo</a>
-    <a href="">Abenoa</a>
-    <a href="">Panin</a>
-    <a href="">Mossi</a>
-    <a href="">Hamidu</a>
-    <a href="">Bosomfour</a>
-    <a href="">Charity</a>
-    <a href="">Offe</a>
-    <a href="">Akoma</a>
-    <a href="">Fumsua</a>
-    <a href="">Adobeso</a>
-    <a href="">Asisiwa</a>
-    <a href="">Yakubu</a>
-    <a href="">Poolo</a>
-    <a href="">Adomso</a>
-    <a href="">Sampson</a>
-    <a href="">Babayilli</a>
-    <a href="">Asuoja</a>
-    <a href="">Tumtum</a>
-    <a href="">Seneso</a>
-    <a href="">Piipiso</a>
-    <a href="">Saabuso</a>
-    <a href="">Bomsosoa</a>
-    <a href="">Konfenini</a>
-    <a href="">Nyameani</a>
-    <a href="">Sabrewa</a>
-    <a href="">Asubuasu</a>
-    <a href="">Abura</a>
-    <a href="">Saabum</a>
-    <a href="">Anyinofi</a>
-    <a href="">Campele</a>
-    <a href="">Hyiamankyene</a>
-  </p>
+    <section>
+      <a href="">Dagomba</a>
+      <a href="">Mamprusi</a>
+      <a href="">Wenamda</a>
+      <a href="">Drobonso</a>
+      <a href="">Abofrem</a>
+      <a href="">Nyame</a>
+      <a href="">Adu-Adu</a>
+      <a href="">Issakura</a>
+      <a href="">Dawia</a>
+      <a href="">Samso</a>
+      <a href="">Mmempekasa</a>
+      <a href="">Anokye</a>
+      <a href="">Beemu</a>
+      <a href="">Kuubu</a>
+      <a href="">Batanjo</a>
+      <a href="">Abenoa</a>
+      <a href="">Panin</a>
+      <a href="">Mossi</a>
+      <a href="">Hamidu</a>
+      <a href="">Bosomfour</a>
+      <a href="">Charity</a>
+      <a href="">Offe</a>
+      <a href="">Akoma</a>
+      <a href="">Fumsua</a>
+      <a href="">Adobeso</a>
+      <a href="">Asisiwa</a>
+      <a href="">Yakubu</a>
+      <a href="">Poolo</a>
+      <a href="">Adomso</a>
+      <a href="">Sampson</a>
+      <a href="">Babayilli</a>
+      <a href="">Asuoja</a>
+      <a href="">Tumtum</a>
+      <a href="">Seneso</a>
+      <a href="">Piipiso</a>
+      <a href="">Saabuso</a>
+      <a href="">Bomsosoa</a>
+      <a href="">Konfenini</a>
+      <a href="">Nyameani</a>
+      <a href="">Sabrewa</a>
+      <a href="">Asubuasu</a>
+      <a href="">Abura</a>
+      <a href="">Saabum</a>
+      <a href="">Anyinofi</a>
+      <a href="">Campele</a>
+      <a href="">Hyiamankyene</a>
+    </section>
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+      </div>
+    </div>
+    <div class="package">
+      <div class="news">
+        <h5><i>LATEST NEWS</i></h5>
+        <div class="newsPage">
+          <h6 class="titlop">Excursion to Kakum Forest</h6>
+          <p class="date"></p>
+          <img src="images/" height="120" width="150" alt="" />
+          <p>A fetish priest in OnTest has cooked his wife in a cooking pot</p>
+        </div>
+      </div>
+      <div class="ads">
+        <h5><i>COMMUNITY ADVERTISEMENTS</i></h5>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
