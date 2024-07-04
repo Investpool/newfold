@@ -10,16 +10,225 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>newsbox</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 425px) {
+        a {
+          color: #f7eeee;
+          color: #1e06fa;
+          border: 1px solid blue;
+          /* margin: 40px; */
+          text-decoration: none;
+        }
+        p {
+          font-size: 12px;
+        }
+        h5 {
+          font-size: 14px;
+        }
+      }
+
+      body {
+        padding: 20px;
+      }
+      a {
+        padding: 2px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        /*border-bottom: 5px solid blue; */
+        text-decoration: none;
+      }
+      section {
+        background-color: #1e06fa;
+        padding: 10px;
+      }
+      .cr11,
+      .cr12 {
+        background-color: azure;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        margin-right: 2px;
+      }
+      .image-row {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .post {
+        display: flex;
+      }
+      .input {
+        flex: 4;
+      }
+      .writeups {
+        flex: 8;
+        background-color: pink;
+      }
+      .text {
+        height: 400;
+      }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .parent {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 10px;
+
+        padding: 2px;
+      }
+      .package {
+        display: flex;
+      }
+      .news {
+        flex: 6;
+        background-color: rgb(196, 241, 247);
+      }
+      .ads {
+        flex: 6;
+      }
+      .newsPage {
+        border: none;
+        border-radius: 5px;
+        padding: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+      }
+      .titlop {
+        font-weight: 500;
+      }
+    </style>
   </head>
   <body>
-    Ngleshie Amanfro Galilea Aplaku Ayigbe Town Bortianor Tuba Kokrobite Oshiye
-    Sampaman Weija New Weija Gbawe Tetegu Oblogo Mallam McCarthy Hill Nsuobiri
-    Obomase Akwetiako Mmampehia Ashweneagmor Besease Akweiman Asuom Nankasu
-    Kyekyewere Jei Kodua Fantemayera Asabade Adiembra Hobor Bosomafise Krokohwe
-    Obakrowa Kwame Anum Ashalaja Okoman Amooman Balagonor Danchira Odunkwa Afadi
-    Demeabra Ayidan Kudeha Kofi Kwei Odumprala Obesee Twerebo Paanor Fankyenekor
-    Okaijaman Obeliakua Afajator Abuasa Komkom Panfo Tenbibian Ashamoah Agonor
-    Agbazo Kofi-Donkor Bebianeha
+    <div><h3>GA SOUTH MUNICIPAL</h3></div>
+    <div>GA SOUTH MUNICIPAL COMMUNITIES</div>
+    <section>
+      <a href="">Ngleshie-Amanfro</a>
+      <a href="">Galilea</a>
+      <a href="">Aplaku</a>
+      <a href="">Ayigbe Town</a>
+      <a href="">Bortianor</a>
+      <a href="">Tuba</a>
+      <a href="">Kokrobite</a>
+      <a href="">Oshiye</a>
+      <a href="">Sampaman</a>
+      <a href="">Weija</a>
+      <a href="">New Weija</a>
+      <a href="">Gbawe</a>
+      <a href="">Tetegu</a>
+      <a href="">Oblogo</a>
+      <a href="">Mallam</a>
+      <a href="">McCarthy Hill</a>
+      <a href="">Nsuobiri</a>
+      <a href="">Obomase</a>
+      <a href="">Akwetiako</a>
+      <a href="">Mmampehia</a>
+      <a href="">Ashweneagmor</a>
+      <a href="">Besease</a>
+      <a href="">Akweiman</a>
+      <a href="">Asuom</a>
+      <a href="">Nankasu</a>
+      <a href="">Kyekyewere</a>
+      <a href="">Jei Kodua</a>
+      <a href="">Fantemayera</a>
+      <a href="">Asabade</a>
+      <a href="">Adiembra</a>
+      <a href="">Hobor</a>
+      <a href="">Bosomafise</a>
+      <a href="">Kofi-Kwei</a>
+      <a href="">Odumprala</a>
+      <a href="">Obesee</a>
+      <a href="">Twerebo</a>
+      <a href="">Paanor</a>
+      <a href="">Fankyenekor</a>
+      <a href="">Okoman</a>
+      <a href="">Krokohwe</a>
+      <a href="">Ashalaja</a>
+      <a href="">Obakrowa</a>
+      <a href="">Kwame-Anum</a>
+      <a href="">Danchira</a>
+      <a href="">Amooman</a>
+      <a href="">Demeabra</a>
+      <a href="">Okaijaman</a>
+      <a href="">Kudeha</a>
+      <a href="">Obeliakua</a>
+      <a href="">Ayidan</a>
+      <a href="">Balagonor</a>
+      <a href="">Odunkwa</a>
+      <a href="">Afadi</a>
+      <a href="">Afajator</a>
+      <a href="">Abuasa</a>
+      <a href="">Komkom</a>
+      <a href="">Panfo</a>
+      <a href="">Tenbibian</a>
+      <a href="">Ashamoah</a>
+      <a href="">Agonor</a>
+      <a href="">Agbazo</a>
+      <a href="">Kofi-Donkor</a>
+      <a href="">Bebianeha</a>
+    </section>
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+      </div>
+    </div>
+    <div class="package">
+      <div class="news">
+        <h5><i>LATEST NEWS</i></h5>
+        <div class="newsPage">
+          <h6 class="titlop"></h6>
+          <p class="date"></p>
+          <img src="images/" height="120" width="150" alt="" />
+          <p></p>
+        </div>
+      </div>
+      <div class="ads">
+        <h5><i>COMMUNITY ADVERTISEMENTS</i></h5>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,20 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Kpandai	Balai	Lensenepe	Gbandri	Kuja	Uchado	Oyombo	Ekumdipe	Bankamba	Salai	
-    Agbonjokura		Binagmam	Chekoli	Najero	Bombari	Konjadon	Kojoboni	Bingodo	Tenglento	
-    Kwatape	Sambuti	Wiaye	Bonajape	Bisando	Lambardo	Takoradi	Jarado	Dalardo	Takanado	
-    Bakopodo	Katiejeli	Meme	Dodope	Tikarini	Buya	Nkanchina	Kpalung	Dolung	
-    Janjaline	Kpakpa	Adukpetsi	Lankpa	Agblemegbe		Agbakura	Kabonwule	Bingani	
-    Binandu	Bladjai	Memetor	Katsakpe	Atifufu	Eyademakura		Kitare	Donkpai	Thomaskope		
-    Wasawasa	Degenge	Nassandin	Bolla	Jambupe	Achiripe	Kanchinke	Lagee	Loloto	Dogope	
-    Gulupi	Kumniso	Kabeso	Dumakura	Toklokope	Lonto	Kapui	Sungai	Kpanjai	Bikondo
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>newsbox</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-</body>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 425px) {
+        a {
+          color: #f7eeee;
+          color: #1e06fa;
+          border: 1px solid blue;
+          /* margin: 40px; */
+          text-decoration: none;
+        }
+        p{
+          font-size: 12px;
+        }
+        h5{
+          font-size: 14px;
+        }
+      }
+
+      body {
+        padding: 20px;
+      }
+      a {
+        padding: 2px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        /*border-bottom: 5px solid blue; */
+        text-decoration: none;
+      }
+      section {
+        background-color: #1e06fa;
+        padding: 10px;
+      }
+      .cr11,
+      .cr12 {
+        background-color: azure;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        margin-right: 2px;
+      }
+      .image-row {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .post {
+        display: flex;
+      }
+      .input {
+        flex: 4;
+      }
+      .writeups {
+        flex: 8;
+        background-color: pink;
+      }
+      .text {
+        height: 400;
+      }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .parent {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 10px;
+
+        padding: 2px;
+      }
+      .package {
+        display: flex;
+      }
+      .news {
+        flex: 6;
+        background-color: rgb(196, 241, 247);
+      }
+      .ads {
+        flex: 6;
+      }
+      .newsPage{
+       border: none;
+       border-radius: 5px;
+       padding: 2px;
+       margin-bottom: 5px;
+       margin-left: 5px;
+       margin-right: 5px;
+       background-color: white;
+      }
+      .titlop{
+        font-weight: 500;
+      } 
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>KPANDAI DISTRICT</h3>
+    </div>
+    <div>
+      KPANDAI DISTRICT COMMUNITIES
+    </div>
+    <section>
+        <a href="">Kpandai</a>
+        <a href="">Balai</a>
+        <a href="">Lensenepe</a>
+        <a href="">Gbandri</a>
+        <a href="">Kuja</a>
+        <a href="">Uchado</a>
+        <a href="">Oyombo</a>
+        <a href="">Ekumdipe</a>
+        <a href="">Bankamba</a>
+        <a href="">Salai</a>
+        <a href="">Agbonjokura</a>
+        <a href="">Binagmam</a>
+        <a href="">Chekoli</a>
+        <a href="">Najero</a>
+        <a href="">Bombari</a>
+        <a href="">Konjadon</a>
+        <a href="">Kojoboni</a>
+        <a href="">Bingodo</a>
+        <a href="">Tenglento</a>
+        <a href="">Kwatape</a>
+        <a href="">Sambuti</a>
+        <a href="">Wiaye</a>
+        <a href="">Bonajape</a>
+        <a href="">Bisando</a>
+        <a href="">Lambardo</a>
+        <a href="">Takoradi</a>
+        <a href="">Jarado	</a>
+        <a href="">Dalardo</a>
+        <a href="">Bakopodo</a>
+        <a href="">Meme</a>
+        <a href="">Katiejeli</a>
+        <a href="">Takanado</a>
+        <a href="">Dodope</a>
+        <a href="">Tikarini</a>
+        <a href="">Buya</a>
+        <a href="">Nkanchina</a>
+        <a href="">Kpalung</a>
+        <a href="">Dolung</a>
+        <a href="">Janjaline</a>
+        <a href="">Kpakpa</a>
+        <a href="">Adukpetsi</a>
+        <a href="">Lankpa</a>
+        <a href="">Agblemegbe</a>
+        <a href="">Agbakura</a>
+        <a href="">Kabonwule</a>
+        <a href="">Bingani</a>
+        <a href="">Binandu</a>
+        <a href="">Bladjai</a>
+        <a href="">Memetor</a>
+        <a href="">Katsakpe</a>
+        <a href="">Atifufu</a>
+        <a href="">Eyademakura</a>
+        <a href="">Kitare</a>
+        <a href="">Donkpai</a>
+        <a href="">Thomaskope</a>
+        <a href=""> Wasawasa</a>
+        <a href="">Degenge</a>
+        <a href="">Nassandin</a>
+        <a href="">Bolla</a>
+        <a href="">Jambupe</a>
+        <a href="">Achiripe</a>
+        <a href="">Kanchinke</a>
+        <a href="">Lagee</a>
+        <a href="">Loloto</a>
+        <a href="">Dogope</a>
+        <a href="">Gulupi</a>
+        <a href="">Kumniso</a>
+        <a href="">Kabeso</a>
+        <a href="">Dumakura</a>
+        <a href="">Toklokope</a>
+        <a href="">Lonto</a>
+        <a href="">Kapui</a>
+        <a href="">Sungai</a>
+        <a href="">Kpanjai</a>
+        <a href="">Bikondo</a>
+    </section>
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+
+      </div>
+    </div>
+    <div class="package">
+      <div class="news">
+        <h5><i>LATEST NEWS</i></h5>
+        <div class="newsPage">
+          <h6 class="titlop"></h6>
+          <p class="date"></p>
+          <img src="images/" height="120" width="150" alt=""/>
+          <p></p>
+        </div>
+      </div>
+      <div class="ads">
+        <h5><i>COMMUNITY ADVERTISEMENTS</i></h5>
+      </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  </body>
 </html>

@@ -1,18 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Bibiani	Bassengele	Mframakrom		Bethlehem	Sefwikrom	Kusikrom	Hiapenika	Nzima Nkwanta		
-    Wenchi	Dominebo	Edukrom	Kwamekrom	Fahiakobo	Kwaso	Brahabebome		Agyepongkrom		Kyenase	
-    Kojina	Hwenanpori	Nambro	Ntakem	Aboabo	Pataboso	Afamu	Pat.Nkwanta		Tanoso	Kramokrom	Adupri	
-    Kunkunso	AnkraMuano		Breman	Debiso	Morno	Subri	Akaaso	Adiambra	Chirano	Surano	Etwebo	Anyinase	
-    Asawinso	Manse	Mpesiem	Krodua	Merewa	Nkronua	Etifi	Nkatieso	Beposo	Awaso	Bekwai	Akaasu	Ashiem	
-    Nyetina	Kofikrom	Chiraa	Alata	Atronsu	Apenkrom	Humjibre	Muoho	Kojina
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>newsbox</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-</body>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 425px) {
+        a {
+          color: #f7eeee;
+          color: #1e06fa;
+          border: 1px solid blue;
+          /* margin: 40px; */
+          text-decoration: none;
+        }
+        p {
+          font-size: 12px;
+        }
+        h5 {
+          font-size: 14px;
+        }
+      }
+
+      body {
+        padding: 20px;
+      }
+      a {
+        padding: 2px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        /*border-bottom: 5px solid blue; */
+        text-decoration: none;
+      }
+      section {
+        background-color: #1e06fa;
+        padding: 10px;
+      }
+      .cr11,
+      .cr12 {
+        background-color: azure;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        margin-right: 2px;
+      }
+      .image-row {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .post {
+        display: flex;
+      }
+      .input {
+        flex: 4;
+      }
+      .writeups {
+        flex: 8;
+        background-color: pink;
+      }
+      .text {
+        height: 400;
+      }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .parent {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 10px;
+
+        padding: 2px;
+      }
+      .package {
+        display: flex;
+      }
+      .news {
+        flex: 6;
+        background-color: rgb(196, 241, 247);
+      }
+      .ads {
+        flex: 6;
+      }
+      .newsPage {
+        border: none;
+        border-radius: 5px;
+        padding: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+      }
+      .titlop {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h3>BIBIANI ANHWEASO BEKWAI DISTRICT</h3></div>
+    <div>BIBIANI ANHWEASO BEKWAI DISTRICT COMMUNITIES</div>
+    <section>
+        <a href="">Bibiani</a>
+        <a href="">Bassengele</a>
+        <a href="">Mframakrom</a>
+        <a href="">Bethlehem</a>
+        <a href="">Sefwikrom</a>
+        <a href="">Kusikrom</a>
+        <a href="">Hiapenika</a>
+        <a href="">Nzima</a>
+        <a href="">Nkwanta</a>
+        <a href="">Wenchi</a>
+        <a href="">Dominebo</a>
+        <a href="">Edukrom</a>
+        <a href="">Kwamekrom</a>
+        <a href="">Fahiakobo</a>
+        <a href="">Kwaso</a>
+        <a href="">Brahabebome</a>
+        <a href="">Agyepongkrom</a>
+        <a href="">Kyenase</a>
+        <a href="">Kojina</a>
+        <a href="">Hwenanpori</a>
+        <a href="">Nambro</a>
+        <a href="">Ntakem</a>
+        <a href="">Aboabo</a>
+        <a href="">Pataboso</a>
+        <a href="">Afamu</a>
+        <a href="">Nkwanta</a>
+        <a href="">Tanoso</a>
+        <a href="">Muoho</a>
+        <a href="">Mpesiem</a>
+        <a href="">Merewa</a>
+        <a href="">Krodua</a>
+        <a href="">Nkronua</a>
+        <a href="">Beposo</a>
+        <a href="">Akaasu</a>
+        <a href="">Awaso</a>
+        <a href="">Bekwai</a>
+        <a href="">Chirano</a>
+        <a href="">Surano</a>
+        <a href="">Etwebo</a>
+        <a href="">Anyinase</a>
+        <a href="">Asawinso</a>
+        <a href="">Nkatieso</a>
+        <a href="">Adiambra</a>
+        <a href="">Akaaso</a>
+        <a href="">Manse</a>
+        <a href="">Etifi</a>
+        <a href="">AnkraMuano</a>
+        <a href="">Breman</a>
+        <a href="">Debiso</a>
+        <a href="">Kramokrom</a>
+        <a href="">Humjibre</a>
+        <a href="">Apenkrom</a>
+        <a href="">Atronsu</a>
+        <a href="">Ashiem</a>
+        <a href="">Nyetina</a>
+        <a href="">Kojina</a>
+        <a href="">Alata</a>
+        <a href="">Chiraa</a>
+        <a href="">Kofikrom</a>
+        <a href="">Kunkunso</a>
+        <a href="">Adupri</a>
+        <a href="">Morno</a>
+        <a href="">Subri</a>
+        </section>
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+      </div>
+    </div>
+    <div class="package">
+      <div class="news">
+        <h5><i>LATEST NEWS</i></h5>
+        <div class="newsPage">
+          <h6 class="titlop"></h6>
+          <p class="date"></p>
+          <img src="images/" height="120" width="150" alt="" />
+          <p></p>
+        </div>
+      </div>
+      <div class="ads">
+        <h5><i>COMMUNITY ADVERTISEMENTS</i></h5>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
+

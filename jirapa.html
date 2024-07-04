@@ -1,5 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>newsbox</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 425px) {
+        a {
+          color: #f7eeee;
+          color: #1e06fa;
+          border: 1px solid blue;
+          /* margin: 40px; */
+          text-decoration: none;
+        }
+        p {
+          font-size: 12px;
+        }
+        h5 {
+          font-size: 14px;
+        }
+      }
+
+      body {
+        padding: 20px;
+      }
+      a {
+        padding: 2px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        /*border-bottom: 5px solid blue; */
+        text-decoration: none;
+      }
+      section {
+        background-color: #1e06fa;
+        padding: 10px;
+      }
+      .cr11,
+      .cr12 {
+        background-color: azure;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        margin-right: 2px;
+      }
+      .image-row {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .post {
+        display: flex;
+      }
+      .input {
+        flex: 4;
+      }
+      .writeups {
+        flex: 8;
+        background-color: pink;
+      }
+      .text {
+        height: 400;
+      }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .parent {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 10px;
+
+        padding: 2px;
+      }
+      .package {
+        display: flex;
+      }
+      .news {
+        flex: 6;
+        background-color: rgb(196, 241, 247);
+      }
+      .ads {
+        flex: 6;
+      }
+      .newsPage {
+        border: none;
+        border-radius: 5px;
+        padding: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+      }
+      .titlop {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>JIRAPA DISTRICT</h3>
+    </div>
+    <div>JIRAPA DISTRICT COMMUNITIES</div>
+    <section>
+        <a href="">Kpuriyiri</a>
+            <a href="">Sobayiri</a>
+            <a href="">Bubor</a>
+            <a href="">Guoyiri</a>
+            <a href="">Tikpe</a>
+            <a href="">Orifani	</a>
+            <a href="">Nyani</a>
+            <a href="">Nayibog</a>
+            <a href="">Nyenvaari</a>
+            <a href="">Nwanwaari</a>
+            <a href="">Bombaa</a>
+            <a href="">Chapuri</a>
+            <a href="">Chaacha</a>
+            <a href="">Somboroh</a>
+            <a href="">Bakonoyiri</a>
+            <a href="">Gurippala</a>
+            <a href="">Yipieli </a>
+            <a href="">Sabuli</a>
+            <a href="">Bachuglo</a>
+            <a href="">Kenne</a>
+            <a href="">Degri</a>
+            <a href="">Nayiri</a>
+            <a href="">Ul-Kpong</a>
+            <a href="">Duori</a>
+            <a href="">Tampoe</a>
+            <a href="">Gu0</a>
+            <a href="">Mwal</a>
+            <a href="">Nabiri</a>
+            <a href="">Tankuri</a>
+            <a href="">Balanta</a>
+            <a href="">Gooziri</a>
+            <a href="">Katang</a>			
+            <a href="">Baazu</a>
+            <a href="">Sanwie</a>
+            <a href="">Guri-Han</a>
+            <a href="">Sietori</a>
+            <a href="">Sawale</a>
+            <a href="">Naachenyiri</a>
+            <a href="">Tie</a>
+            <a href="">paMwofola</a>
+            <a href="">Kpanguori</a>
+            <a href="">Dagugyiri</a>
+            <a href="">Pokori</a>
+            <a href="">Kuncheni</a>
+            <a href="">Konpori</a>
+            <a href="">Baazu</a>
+            <a href="">Gbari</a>
+            <a href="">Tampala</a>
+            <a href="">Nandomwala	</a>
+            <a href="">Kaasire	</a>
+            <a href="">Zaguo</a>
+            <a href="">Ping</a>
+            <a href="">Volu-Kuu</a>
+            <a href="">Venkyenyiri	</a>
+            <a href="">Taakpongbari</a>
+            <a href="">Uollo</a>
+            <a href="">Nembare</a>
+            <a href="">Kane</a>
+            <a href="">Boi</a>
+            <a href="">Han</a>
+            <a href="">Zinpen</a>
+            <a href="">Gyangvuri</a>
+            <a href="">Jefiri</a>
+            <a href="">Die</a>
+            <a href="">Vinving</a>
+            <a href="">Sigri</a>
+            <a href="">Tuolo</a>
+            <a href="">Yaga</a>
+            <a href="">Nambeg</a>
+            <a href="">Tangziiri</a>
+            <a href="">Jirapa</a>
+            <a href="">Kuree</a>
+            <a href="">Wulen</a>
+            <a href=""> Siiri</a>
+            <a href="">Gbari</a>
+            <a href="">Kabrae</a>
+            <a href="">Naale</a>
+            <a href="">Buckpinyiri</a>
+            <a href="">Doboziiri</a>
+            <a href="">Kunzokala	</a>
+            <a href="">Guoripuo</a>
+            <a href="">Tuggoh</a>
+    </section>
+
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+      </div>
+    </div>
+    <div class="package">
+      <div class="news">
+        <h5><i>LATEST NEWS</i></h5>
+        <div class="newsPage">
+          <h6 class="titlop"></h6>
+          <p class="date"></p>
+          <img src="images/" height="120" width="150" alt="" />
+          <p></p>
+        </div>
+      </div>
+      <div class="ads">
+        <h5><i>COMMUNITY ADVERTISEMENTS</i></h5>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,104 +291,7 @@
     <div class="communities">
         <div class="commWrapper">
             <div class="firstLane">
-            <div class="town">Kpuriyiri</div>
-            <div class="town">Sobayiri</div>
-            <div class="town">Bubor</div>
-            <div class="town">Guoyiri</div>
-            <div class="town">Tikpe</div>
-            <div class="town">Orifani	</div>
-            <div class="town">Nyani</div>
-            <div class="town">Nayibog</div>
-            <div class="town">Nyenvaari</div>
-            <div class="town">Nwanwaari</div>
-            <div class="town">Bombaa</div>
-            <div class="town">Chapuri</div>
-            <div class="town">Chaacha</div>
-            <div class="town">Somboroh</div>
-            <div class="town">Bakonoyiri</div>
-            <div class="town"> Gurippala</div>
-            <div class="town">Yipieli </div>
-            <div class="town">Sabuli									
-                			
-            </div>
-        </div>
-            <div class="secondLane">
-            <div class="town">Bachuglo</div>
-            <div class="town">Kenne</div>
-            <div class="town">Degri</div>
-            <div class="town">Nayiri</div>
-            <div class="town">Ul-Kpong</div>
-            <div class="town">Duori</div>
-            <div class="town">Guo	Tampoe</div>
-            <div class="town">Mwal</div>
-            <div class="town">Nabiri</div>
-            <div class="town">Tankuri</div>
-            <div class="town">Balanta</div>
-            <div class="town">Gooziri</div>
-            <div class="town"></div>
-            <div class="town"></div>
-            <div class="town"></div>
-            <div class="town"></div>
-            </div>
-            <div class="thirdLane">
-            <div class="town">Katang</div>			
-            <div class="town">Baazu</div>
-            <div class="town">Sanwie</div>
-            <div class="town">Guri-Han</div>
-            <div class="town">Sietori</div>
-            <div class="town">Sawale</div>
-            <div class="town">Naachenyiri</div>
-            <div class="town">Tie						
-               						</div>
-            <div class="town"> paMwofola</div>
-            <div class="town">Kpanguori</div>
-            <div class="town">Dagugyiri</div>
-            <div class="town">Pokori</div>
-            <div class="town">Kuncheni</div>
-            <div class="town">	Konpori</div>
-            <div class="town">Baazu</div>
-            <div class="town">Gbari</div>
-            </div>
-            <div class="fourthlane">
-            <div class="town">Tampala</div>
-            <div class="town">Nandomwala	</div>
-            <div class="town">Kaasire	</div>
-            <div class="town">Zaguo</div>
-            <div class="town">	Ping</div>
-            <div class="town">Volu-Kuu</div>
-            <div class="town">Venkyenyiri	</div>
-            <div class="town">Taakpongbari</div>
-            <div class="town">Uollo</div>
-            <div class="town">Nembare</div>
-            <div class="town">Kane</div>
-            <div class="town"></div>
-            <div class="town"></div>
-            <div class="town">Boi</div>
-            <div class="town">Han	</div>
-            <div class="town">Zinpen</div>
-            <div class="town">Gyangvuri</div>
-            <div class="town">Jefiri</div>
-            <div class="town">Die</div>
-            <div class="town">Vinving</div>
-            <div class="town">Sigri</div>
-            <div class="town">Tuolo</div>
-            <div class="town">Yaga</div>
-            <div class="town">Nambeg</div>
-            <div class="town">Tangziiri</div>
-            <div class="town">Jirapa</div>
-            <div class="town">Kuree</div>
-            <div class="town">Wulen</div>
-            <div class="town"> Siiri</div>
-            <div class="town">Gbari</div>
-            <div class="town">Kabrae</div>
-            <div class="town">Naale</div>
-            <div class="town">Buckpinyiri</div>
-            <div class="town">Doboziiri</div>
-            <div class="town">Kunzokala	</div>
-            <div class="town">Guoripuo</div>
-            <div class="town">Tuggoh	</div>
-            </div>
-            <div class="fifthLane">
+            
              
             </div>
         </div>

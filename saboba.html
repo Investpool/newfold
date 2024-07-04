@@ -1,18 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Tilangbeni	Saboba	Sanguli	Sobiba	Kpiegu	Bukob	Jagridogodo	 	Gbangbapon	   Nakpel	
-    Yawboisu	Nambiri Zongo		Kunjul	Kpalba	Kinabulk	Buigmal	Kuntuli	Gbaln	Kugnani	
-    Kucha	Botoe	Sambuli	Kunkunzoli	Wadig	Garimata	Nnalog	Demon	Dinchakyado		
-    Namongbani		Wapuli	Bakundiba	Nakpanboni	Yankazia	Wadul	Sheigbini	Inabuni	
-    Gbenjag	Borgbaln	Tingbaln	Kujooni	Chambong	Natagu	Waajorl	Lifur	New Zagbeli		
-    Old Zagbeli
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>newsbox</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-</body>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 425px) {
+        a {
+          color: #f7eeee;
+          color: #1e06fa;
+          border: 1px solid blue;
+          /* margin: 40px; */
+          text-decoration: none;
+        }
+        p {
+          font-size: 12px;
+        }
+        h5 {
+          font-size: 14px;
+        }
+      }
+
+      body {
+        padding: 20px;
+      }
+      a {
+        padding: 2px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        /*border-bottom: 5px solid blue; */
+        text-decoration: none;
+      }
+      section {
+        background-color: #1e06fa;
+        padding: 10px;
+      }
+      .cr11,
+      .cr12 {
+        background-color: azure;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        margin-right: 2px;
+      }
+      .image-row {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .post {
+        display: flex;
+      }
+      .input {
+        flex: 4;
+      }
+      .writeups {
+        flex: 8;
+        background-color: pink;
+      }
+      .text {
+        height: 400;
+      }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .parent {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 10px;
+
+        padding: 2px;
+      }
+      .package {
+        display: flex;
+      }
+      .news {
+        flex: 6;
+        background-color: rgb(196, 241, 247);
+      }
+      .ads {
+        flex: 6;
+      }
+      .newsPage {
+        border: none;
+        border-radius: 5px;
+        padding: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+      }
+      .titlop {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>SABOBA DISTRICT</h3>
+    </div>
+    <div>SABOBA DISTRICT COMMUNITIES</div>
+    <section>
+        <a href="">Tilangbeni</a>
+        <a href="">Saboba</a>
+        <a href="">Sanguli</a>
+        <a href="">Sobiba</a>
+        <a href="">Kpiegu</a>
+        <a href="">Bukob</a>
+        <a href="">Jagridogodo</a>
+        <a href="">Gbangbapon</a>
+        <a href="">Nakpel</a>
+        <a href="">Yawboisu</a>
+        <a href="">Nambiri</a>
+        <a href="">Kunjul</a>
+        <a href="">Zongo</a>
+        <a href="">Tingbaln</a>
+        <a href="">Kujooni</a>
+        <a href="">Kpalba</a>
+        <a href="">Buigmal</a>
+        <a href="">Kucha</a>
+        <a href="">Kuntuli</a>
+        <a href="">Gbaln</a>
+        <a href="">Kugnani</a>
+        <a href="">Chambong</a>
+        <a href="">Botoe</a>
+        <a href="">Sambuli</a>
+        <a href="">Kunkunzoli</a>
+        <a href="">Namongbani</a>
+        <a href="">Wadig</a>
+        <a href="">Garimata</a>
+        <a href="">Nnalog</a>
+        <a href="">Demon</a>
+        <a href="">Dinchakyado</a>
+        <a href="">Wapuli</a>
+        <a href="">Bakundiba</a>
+        <a href="">Nakpanboni</a>
+        <a href="">Yankazia</a>
+        <a href="">Wadul</a>
+        <a href="">Sheigbini</a>
+        <a href="">Inabuni</a>
+        <a href="">Gbenjag</a>
+        <a href="">Natagu</a>
+        <a href="">Waajorl</a>
+        <a href="">Lifur</a>
+        <a href="">New-Zagbeli</a>
+        <a href="">Borgbaln</a>
+        <a href="">Old-Zagbeli</a>
+    </section>
+    <div class="info-down">
+      <div class="image-row">
+        <div class="parent">
+          <img src="images/accra.webp" height="100" width="150" alt="" />
+          <div class="bottom-right">Korle gonno beach, Accra</div>
+        </div>
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
+      </div>
+    </div>
+    <div class="package">
+      <div class="news">
+        <h5><i>LATEST NEWS</i></h5>
+        <div class="newsPage">
+          <h6 class="titlop"></h6>
+          <p class="date"></p>
+          <img src="images/" height="120" width="150" alt="" />
+          <p></p>
+        </div>
+      </div>
+      <div class="ads">
+        <h5><i>COMMUNITY ADVERTISEMENTS</i></h5>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
