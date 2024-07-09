@@ -1,157 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Upper West</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/index.css">
-    <!-- <style>
-.upperwestregion{
-    width: 99vw;
-    height: 96vh;
-    background-color: #aff1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.upperwestregionWrapper{
-    width: 70%;
-    height: 70%;
-    display: flex;
-}
-.upperwestLeft{
-    flex: 1;
-    display: flex;
-    
-} 
-.upperwestDistrictsRight{
-    height: 250px;
-    padding: 20px;
-    background-color: white;
-    
-    flex-direction: column-reverse;
-    justify-content: space-between; 
-    flex: 2;  
-}
-.upperwestTitle{
-    font-size: x-large;
-    font-weight: 800;
-    color: rgba(11, 30, 54, 0.413);
-}
-.districtItems{
-    color: rgb(26, 37, 66);
-}
-.grOne, .grTwo, .grThree, .grFour, .grFive, .grSix, .grSeven{
-    display: flex;
-}
-.districts{
-    margin-right: auto;
-    margin-bottom: 20px;
-    text-decoration: none;
-    background-color: aquamarine;
-    cursor: pointer;
-    color: rgb(6, 14, 82);
-    padding: 5px;
-    
-}
-</style> -->
-<style>
-       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-} 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-
-hr {
- height: 4px;
- background-color: rgb(8, 62, 180);
- border: none;
-}
-a {
- color: rgb(241, 241, 247);
- background-color: rgb(2, 5, 26);
- border: 2px solid yellow;
- padding: 2px;
- font-size: small;
- text-decoration: none;
- margin-bottom: 15px;
- font-weight: 600;
-}
-.regions {
- padding: 20px;
-}
-.grOne {
- margin-bottom: 20px;
-}
-.grTwo {
- margin-bottom: 20px;
-}
-.grThree {
- margin-bottom: 20px;
-}
-.grFour {
- margin-bottom: 20px;
-}
-@media screen and (max-width: 320px ) {
- a {
- color: rgb(240, 240, 245);
- background-color: rgb(2, 22, 2);
- text-decoration: none;
- padding: 2px;
- font-size: x-small;
- margin-bottom: 20px;
- font-weight: 100;
-}
-}
-.regionWrapper{
-    background-image: url(images/upw.png);
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      hr {
+        height: 4px;
+        background-color: rgb(8, 62, 180);
+        border: none;
+      }
+      a {
+        color: rgb(241, 241, 247);
+        background-color: rgb(2, 5, 26);
+        border: 2px solid yellow;
+        padding: 2px;
+        font-size: small;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      .regions {
+        padding: 20px;
+      }
+      .grOne {
+        margin-bottom: 20px;
+      }
+      .grTwo {
+        margin-bottom: 20px;
+      }
+      .grThree {
+        margin-bottom: 20px;
+      }
+      .grFour {
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 320px) {
+        a {
+          color: rgb(240, 240, 245);
+          background-color: rgb(2, 22, 2);
+          text-decoration: none;
+          padding: 2px;
+          font-size: x-small;
+          margin-bottom: 20px;
+          font-weight: 100;
+        }
+      }
+      .regionWrapper {
+        background-image: url(images/upw.webp);
         padding: 20px;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 350px;
-    }
-    .regionTitle, .districtTitle{
+        height: 320px;
+      }
+      .regionTitle,
+      .districtTitle {
         color: white;
-    }
-  </style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <div class="regions">
-        <div class="regionWrapper">
-            <div class="upperwestLeft">
-                <h2 class="regionTitle">UPPER WEST</h2>
-            </div>
-            <div class="upperwestDistrictsRight">
-                <h2 class="districtTitle">UPPER WEST DISTRICTS AND METRO ASSEMBLIES</h2>
-                <div class="grOne">
-                <a href="dafiamabi.html" target="_self" class="districts">DAFFIAMA-BUSSIE-ISSA</a>
-                <a href="jirapa.html" target="_self" class="districts">JIRAPA</a>	
-                <a href="lambusiekarni.html" target="_self" class="districts">LAMBUSIE KARNI</a>
-                <a href="lawra.html" target="_self" class="districts">LAWRA</a>
-                
-                <a href="nadowlikaleo.html" target="_self" class="districts">NADOWLI-KALEO</a>
-                <a href="nandon.html" target="_self" class="districts">NANDON</a>
-                <a href="sisilaeast.html" target="_self" class="districts">SISILA EAST</a>
-                <a href="sisilawest.html" target="_self" class="districts">SISSILA WEST</a>
-                </div>
-                <div class="grTwo">
-                     <a href="waeast.html" target="_self" class="districts">WA EAST</a>	
-                <a href="wamun.html" target="_self" class="districts">WA MUNICIPAL</a>	
-                <a href="wawest.html" target="_self" class="districts">WA WEST</a>
-                </div>
-               	
-              </div>	
-            </div>
+      <div class="regionWrapper">
+        <div class="upperwestLeft">
+          <h3 class="regionTitle">UPPER WEST</h3>
         </div>
-        <hr>
+        <div class="upperwestDistrictsRight">
+          <h4 class="districtTitle">
+            UPPER WEST DISTRICTS AND METRO ASSEMBLIES
+          </h4>
+          <div class="grOne">
+            <a href="dafiamabi.html" target="_self" class="districts"
+              >DAFFIAMA-BUSSIE-ISSA</a
+            >
+            <a href="jirapa.html" target="_self" class="districts">JIRAPA</a>
+            <a href="lambusiekarni.html" target="_self" class="districts"
+              >LAMBUSIE KARNI</a
+            >
+            <a href="lawra.html" target="_self" class="districts">LAWRA</a>
+
+            <a href="nadowlikaleo.html" target="_self" class="districts"
+              >NADOWLI-KALEO</a
+            >
+            <a href="nandon.html" target="_self" class="districts">NANDON</a>
+            <a href="sisilaeast.html" target="_self" class="districts"
+              >SISILA EAST</a
+            >
+            <a href="sisilawest.html" target="_self" class="districts"
+              >SISSILA WEST</a
+            >
+          </div>
+          <div class="grTwo">
+            <a href="waeast.html" target="_self" class="districts">WA EAST</a>
+            <a href="wamun.html" target="_self" class="districts"
+              >WA MUNICIPAL</a
+            >
+            <a href="wawest.html" target="_self" class="districts">WA WEST</a>
+          </div>
+        </div>
+      </div>
+    
+    <hr />
+    <div class="notify">
+      <h4>
+        What are the latest events in town? Get into your districts and
+        communities, make a change and let's hear you.
+      </h4>
     </div>
-    <script type="text/javascript" src="js/jquery-5.1.3.min.js"></script>
-   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-</body>
+  </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

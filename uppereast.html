@@ -1,119 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Upper East</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
     <style>
-       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-} 
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-
-hr {
- height: 4px;
- background-color: rgb(8, 62, 180);
- border: none;
-}
-a {
- color: rgb(241, 241, 247);
- background-color: rgb(2, 5, 26);
- padding: 2px;
- font-size: small;
- text-decoration: none;
- margin-bottom: 15px;
- font-weight: 600;
- border: 2px solid yellow;
-}
-.regions {
- padding: 20px;
-}
-.grOne {
- margin-bottom: 20px;
-}
-.grTwo {
- margin-bottom: 20px;
-}
-.grThree {
- margin-bottom: 20px;
-}
-.grFour {
- margin-bottom: 20px;
-}
-@media screen and (max-width: 320px ) {
- a {
- color: rgb(240, 240, 245);
- background-color: green;
- text-decoration: none;
- padding: 2px;
- font-size: x-small;
- margin-bottom: 20px;
- font-weight: 100;
-
-}
-}
-.regionWrapper {
-        background-image: url(images/bawku.png);
+      hr {
+        height: 2px;
+        background-color: rgb(8, 62, 180);
+        border: none;
+      }
+      a {
+        color: rgb(241, 241, 247);
+        background-color: rgb(2, 5, 26);
+        border: 2px solid yellow;
+        padding: 2px;
+        font-size: small;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      .regions {
         padding: 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 320px;
       }
-      .regionTitle{
-        color: white;
+      .grOne {
+        margin-bottom: 20px;
       }
-      .districtTitle{
-        color: white;
+      .grTwo {
+        margin-bottom: 20px;
+      }
+      .grThree {
+        margin-bottom: 20px;
+      }
+      .grFour {
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 425px) {
+        a {
+          color: rgb(240, 240, 245);
+          background-color: rgb(1, 14, 1);
+          text-decoration: none;
+          padding: 2px;
+          font-size: x-small;
+          margin-bottom: 20px;
+          font-weight: 100;
+        }
+      }
+      .regionWrapper {
+        background-image: url(images/bawku.webp);
+        height: 300px;
+        padding: 10px;
+      }
+      .regionTitle {
+        color: rgba(241, 246, 247, 0.904);
+        font-weight: 600;
+      }
+      .districtTitle {
+        color: rgb(230, 240, 240);
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="regions">
-        <div class="regionWrapper">
-          <div class="uppereastLeft">
-            <h2 class="regionTitle">UPPER EAST</h2>
+      <div class="regionWrapper">
+        <div class="uppereastLeft">
+          <h3 class="regionTitle">UPPER EAST</h3>
+        </div>
+        <div class="uppereastDistrictsRight">
+          <h3 class="districtTitle">
+            UPPER EAST DISTRICTS AND METRO ASSEMBLIES
+          </h3>
+          <div class="grOne">
+            <a href="bawkumun.html" target="_self" class="districts"
+              >BAWKU MUNICIPAL</a
+            >
+            <a href="bawkuwest.html" target="_self" class="districts"
+              >BAWKU WEST</a
+            >
+            <a href="bolgatangamun.html" target="_self" class="districts"
+              >BOLGATANGA MUNICIPAL</a
+            >
+            <a href="bongo.html" target="_self" class="districts">BONGO</a>
+
+            <a href="builsanorth.html" target="_self" class="districts"
+              >BUILSA NORTH</a
+            >
+            <a href="builsasouth.html" target="_self" class="districts"
+              >BUILSA SOUTH</a
+            >
           </div>
-          <div class="uppereastDistrictsRight">
-            <h2 class="districtTitle">
-              UPPER EAST DISTRICTS AND METRO ASSEMBLIES
-            </h2>
-            <div class="grOne">
-              
-              <a href="bawkumun.html" target="_self" class="districts">BAWKU MUNICIPAL</a>
-              <a href="bawkuwest.html" target="_self" class="districts">BAWKU WEST</a>
-              <a href="bolgatangamun.html" target="_self" class="districts">BOLGATANGA MUNICIPAL</a>
-              <a href="bongo.html" target="_self" class="districts">BONGO</a>
-            
-              <a href="builsanorth.html" target="_self" class="districts">BUILSA NORTH</a>
-              <a href="builsasouth.html" target="_self" class="districts">BUILSA SOUTH</a>
-              </div>
-            <div class="grTwo">
-              <a href="garutimpane.html" target="_self" class="districts">GARU-TIMPANE</a>
-              <a href="kasenankanaeast.html" target="_self" class="districts">KASENA NANKANA EAST</a>
-           
-              <a href="nabdam.html" target="_self" class="districts">NABDAM</a>
-              <a href="pusiga.html" target="_self" class="districts">PUSIGA</a>
-              <a href="talensi.html" target="_self" class="districts">TALENSI</a>
-              <a href="kasenankanawest.html" target="_self" class="districts">KASENA NANKANA WEST</a>
-            
-              <a href="binduri.html" target="_self" class="districts">BINDURI</a>
-            </div>
+          <div class="grTwo">
+            <a href="garutimpane.html" target="_self" class="districts"
+              >GARU-TIMPANE</a
+            >
+            <a href="kasenankanaeast.html" target="_self" class="districts"
+              >KASENA NANKANA EAST</a
+            >
+
+            <a href="nabdam.html" target="_self" class="districts">NABDAM</a>
+            <a href="pusiga.html" target="_self" class="districts">PUSIGA</a>
+            <a href="talensi.html" target="_self" class="districts">TALENSI</a>
+            <a href="kasenankanawest.html" target="_self" class="districts"
+              >KASENA NANKANA WEST</a
+            >
+
+            <a href="binduri.html" target="_self" class="districts">BINDURI</a>
           </div>
         </div>
-        <hr>
       </div>
-      <script
+      <hr />
+      <div class="notify">
+        <h5>
+          What are the latest events in town? Get into your districts and
+          communities, make a change and let's hear you.
+        </h5>
+      </div>
+    </div>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
