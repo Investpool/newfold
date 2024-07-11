@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,7 +14,8 @@
       crossorigin="anonymous"
     />
     <script>
-      src="https://kit.fontawesome.com/a076d05399.js"; crossorigin="anonymous"
+      src = "https://kit.fontawesome.com/a076d05399.js";
+      crossorigin = "anonymous";
     </script>
     <script
       async
@@ -43,7 +47,7 @@
         color: #fff;
       }
 
-      .sidebar { 
+      .sidebar {
         flex: 3;
         color: #0f0000;
         text-align: center;
@@ -138,10 +142,10 @@
           font-size: xx-small;
         }
         .story {
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-         font-size: medium; 
-      }
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+          font-size: medium;
+        }
         .gary {
           flex-direction: column;
           height: 80;
@@ -340,17 +344,22 @@
         <div class="sidebar">
           <div class="gary">
             <div class="firstpic">
-              <img src="images/Ho.webp" height="220" width="300" class="pic1"/>
-              <span>A suburb of Ho, Volta Region</span>
+              <img
+                src="images/CapeCoast.webp"
+                height="220"
+                width="300"
+                class="pic1"
+              />
+              <span>A suburb of Cape Coast, Central Region</span>
             </div>
             <div class="secondpic">
               <img
-                src="images/anloga.webp"
+                src="images/Tamale.webp"
                 height="220"
                 width="300"
                 class="pic2"
               />
-              <p>Somewhere in the Eastern Region</p>
+              <p>A busy street in Tamale, Northern Region</p>
             </div>
             <div class="thirdpic">
               <img
@@ -364,10 +373,40 @@
             <div class="fourthpic">
               <img
                 src="images/akatsi.webp"
+                onclick="enlargeImg()"
+                id="1"
                 height="220"
                 width="300"
                 class="pic4"
               />
+              
+              <script>
+                img = document.getElementById("1");
+                
+                function enlargeImg() {
+                  img.style.transition = "scale(2.5)";
+                  img.style.transition = "transform 0.25s ease";
+                }
+                function resetImg() {
+                img.style.transform ="scale(1)";
+                img.style.transition ="transform 0.25s ease";
+                }
+              </script>
+              <!-- <img src=”image/hh.png” onclick=”enlargeImg()”
+Id=”img1”/>
+<br/><br/><br/>
+<button onclick=”resetImg()”>RESET</button>
+<script>
+Img = document.getElementById(“img1”);
+Function enlargeImg() {
+Img.style.transition =”scale(1.5) ”;
+Img.style.transition =”transform 0.25s ease”;
+}
+Function resetImg() {
+Img.style.transform =”scale(1) ”;
+Img.style.transition =”transform 0.25s ease”;
+} -->
+
               <p>Akatsi, Volta Region</p>
             </div>
             <div class="fifthpic">
@@ -383,8 +422,12 @@
         </div>
         <div class="dome">
           <div class="mid_info">
+            <div>
+              <h1></h1>
+            </div>
             <h3 class="story">
-              DEVELOPMENT NEWS FROM THE REGIONS, DISTRICTS AND COMMUNITIES IN GHANA
+              DEVELOPMENT NEWS FROM THE REGIONS, DISTRICTS AND COMMUNITIES IN
+              GHANA
             </h3>
             <p>
               Our communities hold a special place in our childhood memories.
@@ -444,8 +487,9 @@
               <li>any other general outlook.</li>
             </p>
 
-            Information from any community with pictures and voice clips can be
-            emailed to:https://wa.me/233243779704/ 
+            Informations, advertisements, pictures and voice clips from any
+            person can be sent to: https://wa.me/233243779704
+
             <!-- <i class="material-icons custom">share</i> -->
             <p></p>
           </div>
@@ -464,7 +508,7 @@
             scale manufacturing industries owned by multi nationals, to small
             scale (one-man) manufacturing hubs. The Shai and Dangme areas too
             record a little agricultural production.
-        </p>
+          </p>
           <p>
             The area of interest to <b>NEWSBOX</b> is the small scale entities.
             These hubs are identified and mapped for a possible recommendations,
@@ -515,10 +559,10 @@
 
           <h6 class="info_head">WESTERN NORTH REGION</h6>
           <p>
-            This Region is a break away part of Western Region as a result of a
-            government programm aimed at making administrative functions closer
-            to the people. It share same productive values with the Western
-            Region. Detailed outlook is under way to establish the its
+            This Region is a break away part of Western Region as a result of
+            government's programm aimed at making administrative functions
+            closer to the people. It shares same productive values with the
+            Western Region. Detailed outlook is under way to establish its
             productive capacity vis a vis the national output.
           </p>
           <h6 class="info_head">BONO REGION</h6>
@@ -537,9 +581,11 @@
             the region for sustainable development
           </p>
           <h6 class="info_head">AHAFO REGION</h6>
-          <p>Ahafo shares the same ecological features with Bono Region. Yam, Tomatoes and maize production
-            is the main agricultural fits of the region. The impact of Government's role in
-            the region would be assessed and reported to stakeholders.
+          <p>
+            Ahafo shares the same ecological features with Bono Region. Yam,
+            Tomatoes and maize production is the main agricultural fits of the
+            region. The impact of Government's role in the region would be
+            assessed and reported to stakeholders.
           </p>
           <!--<h6 class="info_head">ASHANTI REGION</h6> -->
           <h6 class="info_head">NORTHERN REGION</h6>
@@ -576,8 +622,8 @@
             make account of the rate and the level at which these raw primary
             products are made and the percentage that is changed into secondary
             products. Personalities championing the productive industries would
-            be promoted in such a way that more room is created for them
-            to excel.
+            be promoted in such a way that more room is created for them to
+            excel.
           </p>
           <p>
             The number of industrial establishments in the regions is equally an
