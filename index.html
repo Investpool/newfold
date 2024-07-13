@@ -127,8 +127,8 @@
           margin-bottom: 5px;
           height: 100px;
         }
-        .span1 {
-          font-size: xx-small;
+        .span{
+          font-size: 8px;
         }
         .downbelt {
           display: flex;
@@ -175,6 +175,55 @@
           height: "80";
           width: "100";
         }
+        .topsquare {
+          display: flex;
+          margin-bottom: 4px;
+        }
+        .sect1 {
+          flex: 3;
+        }
+        .sect2 {
+          flex: 9;
+          background-color: green;
+          display: flex;
+          box-shadow: rgb(39, 39, 41) 3px 3px 12px 0px;
+        }
+        .sect2 p {
+          flex-direction: column;
+          gap: 2;
+          color: #fff;
+        }
+        .wrt {
+          padding: 5px;
+          line-height: 10px;
+        }
+        .wrt h3 {
+          color: yellow;
+          font-weight: 600;
+        }
+        .wrt p {
+          font-weight: 500;
+        }
+        .address{
+          background-color: rgb(65, 46, 52);
+          border-radius: 5px;
+          font-size: x-small;
+          padding: 2px;
+          font-style: italic;
+        }
+        .sect2 img{
+          height: 80;
+          width: 110;
+        }
+        .wrt h3 {
+        color: yellow;
+        font-weight: 600;
+        font-size: smaller;
+      }
+      .wrt p {
+        font-weight: 200;
+        font-size: 10px;
+      }
       }
 
       .downbelt {
@@ -252,6 +301,42 @@
         color: #56ff38;
         background: #fff;
         position: relative;
+      }
+      .topsquare {
+        display: flex;
+        margin-bottom: 4px;
+      }
+      .sect1 {
+        flex: 3;
+      }
+      .sect2 {
+        flex: 9;
+        background-color: green;
+        display: flex;
+        box-shadow: rgb(39, 39, 41) 3px 3px 12px 0px;
+      }
+      .sect2 p {
+        flex-direction: column;
+        gap: 2;
+        color: #fff;
+      }
+      .wrt {
+        padding: 5px;
+        line-height: 10px;
+      }
+      .wrt h3 {
+        color: yellow;
+        font-weight: 600;
+      }
+      .wrt p {
+        font-weight: 500;
+      }
+      .address {
+        background-color: rgb(65, 46, 52);
+        border-radius: 5px;
+        font-size: small;
+        padding: 7px;
+        font-style: italic;
       }
     </style>
   </head>
@@ -359,7 +444,7 @@
                 width="300"
                 class="pic2"
               />
-              <p>A busy street in Tamale, Northern Region</p>
+              <span>A busy street in Tamale, Northern Region</span>
             </div>
             <div class="thirdpic">
               <img
@@ -368,7 +453,7 @@
                 width="300"
                 class="pic3"
               />
-              <p>Afadjato area, Volta Region</p>
+              <span>Afadjato area, Volta Region</span>
             </div>
             <div class="fourthpic">
               <img
@@ -379,17 +464,17 @@
                 width="300"
                 class="pic4"
               />
-              
+
               <script>
                 img = document.getElementById("1");
-                
+
                 function enlargeImg() {
                   img.style.transition = "scale(2.5)";
                   img.style.transition = "transform 0.25s ease";
                 }
                 function resetImg() {
-                img.style.transform ="scale(1)";
-                img.style.transition ="transform 0.25s ease";
+                  img.style.transform = "scale(1)";
+                  img.style.transition = "transform 0.25s ease";
                 }
               </script>
               <!-- <img src=”image/hh.png” onclick=”enlargeImg()”
@@ -422,8 +507,20 @@ Img.style.transition =”transform 0.25s ease”;
         </div>
         <div class="dome">
           <div class="mid_info">
-            <div>
-              <h1></h1>
+            <div class="topsquare">
+              <div class="sect1"></div>
+              <div class="sect2">
+                <img src="images/sajey.png" height="140" width="220" />
+                <div class="wrt">
+                  <h3>JEY-DEN EXAMINATIONS CONSULT</h3>
+                  <p>
+                    We Print Your Basic School Exams with Utmost speed and
+                    Precision
+                  </p>
+                  <p>Call us on 0242042910 for a DEAL</p>
+                  <p class="address">Bontrase, Awutu Senya, Central Region</p>
+                </div>
+              </div>
             </div>
             <h3 class="story">
               DEVELOPMENT NEWS FROM THE REGIONS, DISTRICTS AND COMMUNITIES IN
