@@ -48,21 +48,28 @@
       }
 
       .sidebar {
-        flex: 3;
+        
         color: #0f0000;
         text-align: center;
-        width: 200px;
-        padding-left: 2px;
-        height: 100vh;
-        overflow-y: scroll;
-        margin-top: 50px;
+        
+        margin-top: 10px;
+      }
+      .gary {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .gary img {
+        margin-right: 5px;
+      }
+      .gary span {
+        font-size: small;
       }
       .down {
         display: flex;
       }
       .dome {
         display: flex;
-        flex: 9;
+        /* flex: 9; */
         margin-top: 50px;
       }
       .mid_info {
@@ -127,7 +134,7 @@
           margin-bottom: 5px;
           height: 100px;
         }
-        .span{
+        .span {
           font-size: 8px;
         }
         .downbelt {
@@ -145,14 +152,6 @@
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
             "Lucida Sans", Arial, sans-serif;
           font-size: medium;
-        }
-        .gary {
-          flex-direction: column;
-          height: 80;
-          width: 80;
-          justify-content: space-between;
-          font-size: small;
-          text-align: center;
         }
         .write {
           font-size: xx-small;
@@ -204,35 +203,33 @@
         .wrt p {
           font-weight: 500;
         }
-        .address{
+        .address {
           background-color: rgb(65, 46, 52);
           border-radius: 5px;
           font-size: x-small;
           padding: 2px;
           font-style: italic;
         }
-        .sect2 img{
+        .sect2 img {
           height: 80;
           width: 110;
         }
         .wrt h3 {
-        color: yellow;
-        font-weight: 600;
-        font-size: smaller;
+          color: yellow;
+          font-weight: 600;
+          font-size: smaller;
+        }
+        .wrt p {
+          font-weight: 200;
+          font-size: 10px;
+        }
       }
-      .wrt p {
-        font-weight: 200;
-        font-size: 10px;
-      }
-      }
-
-      .downbelt {
+        .downbelt {
         display: flex;
         background-color: black;
         height: auto;
         margin-bottom: 5px;
         padding-left: 20px;
-
         color: white;
       }
       .aboutus {
@@ -249,10 +246,10 @@
         padding-top: 5px;
         flex: 6;
       }
-      .gary {
+      /* .gary{
         margin-top: 15px;
         justify-content: space-between;
-      }
+      } */
       .write {
         font-size: smaller;
         text-align: center;
@@ -283,12 +280,12 @@
       .inset {
         padding: 0px;
       }
-      .regs {
+      /* .regs {
         display: flex;
         font-size: 12px;
         margin-right: 6px;
         color: yellow;
-      }
+      } */
       .link {
         font-size: 11px;
         color: #fff;
@@ -317,7 +314,6 @@
       }
       .sect2 p {
         flex-direction: column;
-        gap: 2;
         color: #fff;
       }
       .wrt {
@@ -426,102 +422,8 @@
         </div>
       </nav>
       <div class="down">
-        <div class="sidebar">
-          <div class="gary">
-            <div class="firstpic">
-              <img
-                src="images/CapeCoast.webp"
-                height="220"
-                width="300"
-                class="pic1"
-              />
-              <span>A suburb of Cape Coast, Central Region</span>
-            </div>
-            <div class="secondpic">
-              <img
-                src="images/Tamale.webp"
-                height="220"
-                width="300"
-                class="pic2"
-              />
-              <span>A busy street in Tamale, Northern Region</span>
-            </div>
-            <div class="thirdpic">
-              <img
-                src="images/logba.webp"
-                height="220"
-                width="300"
-                class="pic3"
-              />
-              <span>Afadjato area, Volta Region</span>
-            </div>
-            <div class="fourthpic">
-              <img
-                src="images/akatsi.webp"
-                onclick="enlargeImg()"
-                id="1"
-                height="220"
-                width="300"
-                class="pic4"
-              />
-
-              <script>
-                img = document.getElementById("1");
-
-                function enlargeImg() {
-                  img.style.transition = "scale(2.5)";
-                  img.style.transition = "transform 0.25s ease";
-                }
-                function resetImg() {
-                  img.style.transform = "scale(1)";
-                  img.style.transition = "transform 0.25s ease";
-                }
-              </script>
-              <!-- <img src=”image/hh.png” onclick=”enlargeImg()”
-Id=”img1”/>
-<br/><br/><br/>
-<button onclick=”resetImg()”>RESET</button>
-<script>
-Img = document.getElementById(“img1”);
-Function enlargeImg() {
-Img.style.transition =”scale(1.5) ”;
-Img.style.transition =”transform 0.25s ease”;
-}
-Function resetImg() {
-Img.style.transform =”scale(1) ”;
-Img.style.transition =”transform 0.25s ease”;
-} -->
-
-              <p>Akatsi, Volta Region</p>
-            </div>
-            <div class="fifthpic">
-              <img
-                src="images/Viepe beach.webp"
-                height="220"
-                width="300"
-                class="pic5"
-              />
-              <p>Viepe Beach, Volta Region</p>
-            </div>
-          </div>
-        </div>
         <div class="dome">
           <div class="mid_info">
-            <!-- <div class="topsquare">
-              <div class="sect1"></div>
-              <div class="sect2">
-                <img src="images/sajey.png" height="140" width="220" />
-                <div class="wrt">
-                  <h3>JEY-DEN EXAMINATIONS CONSULT</h3>
-                  <p>
-                    We Print Your Basic School Exams with Utmost speed and
-                    Precision
-                  </p>
-                  <p>Call us on 0242042910 for a DEAL</p>
-                  <p class="address">Bontrase, Awutu Senya, Central Region</p>
-                </div>
-              </div>
-            </div> -->
             <h3 class="story">
               DEVELOPMENT NEWS FROM THE REGIONS, DISTRICTS AND COMMUNITIES IN
               GHANA
@@ -587,12 +489,59 @@ Img.style.transition =”transform 0.25s ease”;
             Informations, advertisements, pictures and voice clips from any
             person can be sent to: https://wa.me/233243779704
 
-            <!-- <i class="material-icons custom">share</i> -->
             <p></p>
           </div>
         </div>
       </div>
-
+      <div class="sidebar">
+        <div class="gary">
+          <div class="firstpic">
+            <img
+              src="images/CapeCoast.webp"
+              height="220"
+              width="300"
+              class="pic1"
+            />
+            <span>A suburb of Cape Coast, Central Region</span>
+          </div>
+          <div class="secondpic">
+            <img
+              src="images/Tamale.webp"
+              height="220"
+              width="300"
+              class="pic2"
+            />
+            <span>A busy street in Tamale, Northern Region</span>
+          </div>
+          <div class="thirdpic">
+            <img
+              src="images/logba.webp"
+              height="220"
+              width="300"
+              class="pic3"
+            />
+            <span>Afadjato area, Volta Region</span>
+          </div>
+          <div class="fourthpic">
+            <img
+              src="images/akatsi.webp"
+              height="220"
+              width="300"
+              class="pic4"
+            />
+            <span>Akatsi, Volta Region</span>
+          </div>
+          <div class="fifthpic">
+            <img
+              src="images/Viepe beach.webp"
+              height="220"
+              width="300"
+              class="pic5"
+            />
+            <span>Viepe Beach, Volta Region</span>
+          </div>
+        </div>
+      </div>
       <hr class="backline" />
 
       <div class="info">
