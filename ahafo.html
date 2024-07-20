@@ -21,62 +21,65 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-} 
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-
-hr {
- height: 4px;
- background-color: rgb(8, 62, 180);
- border: none;
-}
-a {
- color: rgb(241, 241, 247);
- background-color: rgb(2, 5, 26);
- border: 2px solid yellow;
- border-radius: 5px;
- padding: 2px;
- font-size: small;
- text-decoration: none;
- margin-bottom: 15px;
- font-weight: 600;
-}
-.regions {
- padding: 20px;
-}
-.grOne {
- margin-bottom: 20px;
-}
-.grTwo {
- margin-bottom: 20px;
-}
-.grThree {
- margin-bottom: 20px;
-}
-.grFour {
- margin-bottom: 20px;
-}
-@media screen and (max-width: 320px ) {
- a {
- color: rgb(240, 240, 245);
- background-color: green;
- text-decoration: none;
- padding: 2px;
- font-size: x-small;
- margin-bottom: 20px;
- font-weight: 100;
-}
-}
-.regionWrapper{
-        background-image: url(images/ahafo.webp);
-        height:250px;
+      hr {
+        height: 4px;
+        background-color: rgb(8, 62, 180);
+        border: none;
+      }
+      a {
+        color: rgb(241, 241, 247);
+        background-color: rgb(2, 5, 26);
+        border: 2px solid yellow;
+        border-radius: 5px;
+        padding: 2px;
+        font-size: small;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      .regions {
         padding: 20px;
       }
-      .regionsWrapperLeft, .headings{
+      .grOne {
+        margin-bottom: 20px;
+      }
+      .grTwo {
+        margin-bottom: 20px;
+      }
+      .grThree {
+        margin-bottom: 20px;
+      }
+      .grFour {
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 320px) {
+        a {
+          color: rgb(240, 240, 245);
+          background-color: green;
+          text-decoration: none;
+          padding: 2px;
+          font-size: x-small;
+          margin-bottom: 20px;
+          font-weight: 100;
+        }
+      }
+      .regionWrapper {
+        background-image: url(images/ahafo.webp);
+        height: 250px;
+        padding: 10px;
+      }
+      .regionsWrapperLeft,
+      .headings {
         color: white;
+      }
+      .notify {
+        padding: 20px;
       }
     </style>
   </head>
@@ -84,43 +87,42 @@ a {
     <div class="regions">
       <div class="regionWrapper">
         <div class="regionsWrapperLeft">
-          <h2>AHAFO REGION</h2>
+          <h3>AHAFO REGION</h3>
         </div>
 
         <div class="district">
-          <h2 class="headings">AHAFO DISTRICTS AND METRO ASSEMBLIES</h2>
-          <div class="grOne">
-            <a href="asunafosouth.html" target="_self" class="districts"
-              >ASUNAFO SOUTH</a
-            >
-            <a href="tanonorth.html" target="_self" class="districts"
-              >TANO NORTH</a
-            >
-            <a href="asunafonorthmun.html" target="_self" class="districts"
-              >ASUNAFO NORTH MUNICIPAL</a
-            >
-            <a href="tanosouth.html" target="_self" class="districts"
-              >TANO SOUTH</a
-            >
-          </div>
-          <div class="grTwo">
-            <a href="asutifinorth.html" target="_self" class="districts"
-              >ASUTIFI NORTH</a
-            >
-            <a href="asutifisouth.html" target="_self" class="districts"
-              >ASUTIFI SOUTH</a
-            >
-          </div>
+          <h4 class="headings">AHAFO DISTRICTS AND METRO ASSEMBLIES</h4>
+
+          <a href="asunafosouth.html" target="_self" class="districts"
+            >ASUNAFO SOUTH</a
+          >
+          <a href="tanonorth.html" target="_self" class="districts"
+            >TANO NORTH</a
+          >
+          <a href="asunafonorthmun.html" target="_self" class="districts"
+            >ASUNAFO NORTH MUNICIPAL</a
+          >
+          <a href="tanosouth.html" target="_self" class="districts"
+            >TANO SOUTH</a
+          >
+
+          <a href="asutifinorth.html" target="_self" class="districts"
+            >ASUTIFI NORTH</a
+          >
+          <a href="asutifisouth.html" target="_self" class="districts"
+            >ASUTIFI SOUTH</a
+          >
         </div>
       </div>
-      <hr />
-      <div class="notify">
-        <h3>
-          What are the latest events in town? Get into your districts and
-          communities, make a change and let's hear you.
-        </h3>
-      </div>
     </div>
+    <hr />
+    <div class="notify">
+      <p>
+        What are the latest events in town? Get into your districts and
+        communities, make a change and let's hear you.
+      </p>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

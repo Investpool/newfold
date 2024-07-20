@@ -18,13 +18,20 @@
         box-sizing: border-box;
       }
 
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 425px) {
         a {
           color: #f7eeee;
           color: #1e06fa;
           border: 1px solid blue;
           /* margin: 40px; */
           text-decoration: none;
+        }
+        .newsPage{
+          font-size: small;
+        }
+        .newsPage img {
+          width: 320px;
+          height: 160;
         }
       }
 
@@ -102,7 +109,7 @@
       .newsPage {
         border: none;
         border-radius: 5px;
-        padding: 2px;
+        padding: 12px;
         margin-bottom: 5px;
         margin-left: 5px;
         margin-right: 5px;
@@ -123,7 +130,14 @@
         font-style: italic;
         padding-top: 1px;
       }
-    </style>
+      .comments{
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        padding: 1px;
+      }    
+      </style>
   </head>
   <body>
     <div>
@@ -190,7 +204,7 @@
       <div class="image-row">
         <div class="parent">
           <img src="images/accra.webp" height="100" width="150" alt="" />
-          <div class="bottom-right">Korle gonno beach, Accra</div>
+          <div class="bottom-right"></div>
         </div>
         <img src="images/ahafo.webp" height="100" width="150" alt="" />
         <img src="images/ahafo.webp" height="100" width="150" alt="" />
@@ -213,15 +227,32 @@
       <div class="news">
         <h5 class="titnews"><i>LATEST NEWS</i></h5>
         <div class="newsPage">
-          <h6 class="titlop"></h6>
-          <p class="date"></p>
+          <button class="comments">Comments(0)</button>
+          <h6 class="titlop">Anyirawase Rises to the Challenges</h6>
+          <p class="date">9th May, 2024</p>
           <img src="images/" height="120" width="150" alt="" />
-          <p></p>
-          </div>
+          <p>
+            Anyirawase Youth Association has launched the construction of a Ghc140,000 staff quarters 
+            for its CHIPP compound. 
+          </p>
+        </div>
+        <div class="newsPage">
+          <button class="comments">Comments(0)</button>
+          <h6 class="titlop">Tsito EP Church Completes Road Works</h6>
+          <p class="date">19th June, 2023</p>
+          <img src="images/" height="120" width="150" alt="" />
+          <p>
+            Tsito Evangelical Presbytrian Church, Ghana has completed an expensive town road Works
+            linking the church premises to the main Ho - Accra road. The project, made up of about 300 metres
+             involves the laying of pavement blocks in a nice pattern described by the members of 
+             the church and residents as satisfactory.
+          </p>
+        </div>
+        
       </div>
-      <div class="ads">
+      <!-- <div class="ads">
         <h5 class="titads"><i>COMMUNITY ADVERTISEMENTS</i></h5>
-      </div>
+      </div> -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

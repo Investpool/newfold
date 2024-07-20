@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Bono</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,118 +14,120 @@
       crossorigin="anonymous"
     />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-} 
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
+      hr {
+        height: 4px;
+        background-color: rgb(8, 62, 180);
+        border: none;
+      }
+      a {
+        color: rgb(241, 241, 247);
 
-hr {
- height: 4px;
- background-color: rgb(8, 62, 180);
- border: none;
-}
-a {
- color: rgb(241, 241, 247);
- border-radius: 20px;
- border: 2px solid yellow;
- background-color: rgb(2, 5, 26);
- padding: 2px;
- font-size: small;
- text-decoration: none;
- margin-bottom: 15px;
- font-weight: 600;
-}
-.regions {
- padding: 20px;
-}
-.grOne {
- margin-bottom: 20px;
-}
-.grTwo {
- margin-bottom: 20px;
-}
-.grThree {
- margin-bottom: 20px;
-}
-.grFour {
- margin-bottom: 20px;
-}
-@media screen and (max-width: 320px ) {
- a {
- color: rgb(240, 240, 245);
- background-color: green;
- text-decoration: none;
- padding: 2px;
- font-size: x-small;
- margin-bottom: 20px;
- font-weight: 100;
- border: 2px solid yellow;
-}
-}
-.regionWrapper{
+        border: 2px solid yellow;
+        background-color: rgb(2, 5, 26);
+        padding: 2px;
+        font-size: small;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      @media screen and (max-width: 425px) {
+        a {
+          color: rgb(240, 240, 245);
+          background-color: rgb(17, 24, 17);
+          text-decoration: none;
+          padding: 2px;
+          font-size: small;
+          margin-bottom: 20px;
+          font-weight: 100;
+          border: 2px solid yellow;
+        }
+        .notify p{
+          font-size: x-small;
+          padding: 15px;
+        }
+      }
+      .regionWrapper {
         background-image: url(images/bono.webp);
-        height:300px;
+        height: 300px;
         padding: 20px;
       }
-      
+      .notify p {
+        font-size: medium;
+        padding: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="regions">
-        <div class="regionWrapper">
-          <div class="bonoRegionLeft">
-            <h2 class="bonoHeading">BONO REGION</h2>
-          </div>
-          <div class="bonoDistrictsRight">
-            <div class="bonoHeadingRight">
-              <h2> BONO DISTRICTS AND METRO ASSEMBLIES</h2>
-  
-              <div class="grOne">
-                
-                <a href="sunyaniwest.html" target="_self" class="districts">SUNYANI WEST</a>
-  
-                <a href="jamansouth.html" target="_self" class="districts">JAMAN SOUTH</a>
-  
-                <a href="jamannorth.html" target="_self" class="districts">JAMAN NORTH</a>
-  
-                <a href="sunyanimun.html" target="_self" class="districts">SUNYANI MUNICIPAL</a>
-              
-                <a href="wenchimun.html" target="_self" class="districts">WENCHI MUNICIPAL</a>
-  
-                <a href="banda.html" target="_self" class="districts">BANDA</a>
-  
-                <a href="berekummun.html" target="_self" class="districts">BEREKUM MUNICIPAL</a>
-  
-                <a href="dormaamun.html" target="_self" class="districts">DORMAA MUNICIPAL</a>
-             
-                
-  
-                
-              </div>
-              <div class="grTwo">
-                <a href="dormaawest.html" target="_self" class="districts">DORMAA WEST</a>
-                <a href="dormaaeast.html" target="_self" class="districts">DORMAA EAST</a>
-                <a href="tain.html" target="_self" class="districts">TAIN</a>
-              </div>
-            </div>
-          </div>
+      <div class="regionWrapper">
+        <div class="bonoRegionLeft">
+          <h1>BONO REGION</h1>
         </div>
-        <hr>
-        <div class="notify">
-          <h3>
-            What are the latest events in town? Get into your districts and
-            communities, make a change and let's hear you.
-          </h3>
+
+        <div class="bonoHeadingRight">
+          <h2>BONO DISTRICTS AND METRO ASSEMBLIES</h2>
+
+          <a href="sunyaniwest.html" target="_self" class="districts"
+            >SUNYANI WEST</a
+          >
+
+          <a href="jamansouth.html" target="_self" class="districts"
+            >JAMAN SOUTH</a
+          >
+
+          <a href="jamannorth.html" target="_self" class="districts"
+            >JAMAN NORTH</a
+          >
+
+          <a href="sunyanimun.html" target="_self" class="districts"
+            >SUNYANI MUNICIPAL</a
+          >
+
+          <a href="wenchimun.html" target="_self" class="districts"
+            >WENCHI MUNICIPAL</a
+          >
+
+          <a href="banda.html" target="_self" class="districts">BANDA</a>
+
+          <a href="berekummun.html" target="_self" class="districts"
+            >BEREKUM MUNICIPAL</a
+          >
+
+          <a href="dormaamun.html" target="_self" class="districts"
+            >DORMAA MUNICIPAL</a
+          >
+
+          <a href="dormaawest.html" target="_self" class="districts"
+            >DORMAA WEST</a
+          >
+          <a href="dormaaeast.html" target="_self" class="districts"
+            >DORMAA EAST</a
+          >
+          <a href="tain.html" target="_self" class="districts">TAIN</a>
         </div>
       </div>
-      <script
+    </div>
+    <hr />
+    <div class="notify">
+      <p>
+        What are the latest events in town? Get into your districts and
+        communities, make a change and let's hear you.
+      </p>
+    </div>
+
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
