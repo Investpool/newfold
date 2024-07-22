@@ -138,6 +138,12 @@
         border-radius: 2px;
         padding: 1px;
       }
+      .cmnt {
+        background-color: green;
+        border: none;
+        color: #fff;
+        border-radius: 3px;
+      }
     </style>
   </head>
   <body>
@@ -228,42 +234,54 @@
       <div class="news">
         <h5 class="titnews"><i>LATEST NEWS</i></h5>
         <div class="newsPage">
-          
-          <script type="text/javascript">
-            function sshowcommentform() {
-              var data =
-                "Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='4' cols='50'></textarea><br><input type='submit' value='post comment'>";
-                 document.getElementById("1location").innerHTML = data;
+          <script>
+            var flag = true;
+            function acommentform() {
+              var acform =
+                "<form action='Comment'>Enter Name:<br><input type='text' name='name' placeholder= 'Your name...'/><br>Enter Comment:<br/>  <textarea rows='4' cols='50'></textarea><br><input type='submit' value='Post Comment'/></form>";
+              if (flag) {
+                document.getElementById("amylocation").innerHTML = acform;
+                flag = false;
+              } else {
+                document.getElementById("amylocation").innerHTML = "";
+                flag = true;
+              }
             }
           </script>
-          <form name="myForm">
-            <input type="button" value="comment" onclick="sshowcommentform()" />
-            <div id="1location"></div>
-          </form>
-          
+
+          <button onclick="acommentform()" class="cmnt">Comment(0)</button>
+          <div id="amylocation"></div>
+
           <h6 class="titlop">Anyirawase Rises to the Challenges</h6>
-          <p class="date">9th May, 2024</p>
-          <img src="images/" height="120" width="150" alt="" />
+          <p class="date">13th May, 2024</p>
+          <img src="images/chps.webp" height="120" width="150" alt="" />
           <p>
             Anyirawase Youth Association has launched the construction of a
-            Ghc140,000 staff quarters for its CHIPP compound.
+            Ghc140,000 staff quarters for its CHPS compound.
           </p>
         </div>
         <div class="newsPage">
-          <script type="text/javascript">
-            function showcommentform() {
-              var datum =
-                "Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='4' cols='50'></textarea><br><input type='submit' value='post comment'>";
-                 document.getElementById("2location").innerHTML = datum;
+          <script>
+            var flag = true;
+            function bcommentform() {
+              var bcform =
+                "<form action='Comment'>Enter Name:<br><input type='text' name='name'/><br>Enter Comment:<br/>  <textarea rows='4' cols='50'></textarea><br><input type='submit' value='Post Comment'/></form>";
+              if (flag) {
+                document.getElementById("bmylocation").innerHTML = bcform;
+                flag = false;
+              } else {
+                document.getElementById("bmylocation").innerHTML = "";
+                flag = true;
+              }
             }
           </script>
-          <form name="myForm">
-            <input type="button" value="comment" onclick="showcommentform()" />
-            <div id="2location"></div>
-          </form>
+
+          <button onclick="bcommentform()" class="cmnt">Comment(0)</button>
+          <div id="bmylocation"></div>
+
           <h6 class="titlop">Tsito EP Church Completes Road Works</h6>
           <p class="date">19th June, 2023</p>
-          <img src="images/" height="120" width="150" alt="" />
+          <img src="images/pave.webp" height="120" width="150" alt="" />
           <p>
             Tsito Evangelical Presbytrian Church, Ghana has completed an
             expensive town road Works linking the church premises to the main Ho
