@@ -89,6 +89,12 @@
         text-align: center;
         color: white;
       }
+      .parent img {
+        transition: transform 0.3s ease-in-out;
+      }
+      .parent img:hover {
+            transform: scale(1.8);
+        }
       .bottom-right {
         position: absolute;
         bottom: 10px;
@@ -151,6 +157,7 @@
       <h3>HO WEST DISTRICT</h3>
     </div>
     <div>HO WEST DISTRICT COMMUNITIES</div>
+    <div>
     <section>
       <a href="">Dzolokpuita</a>
       <a href="">Tsito</a>
@@ -207,27 +214,57 @@
       <a href="">Xorse</a>
       <a href="">Kpale</a>
     </section>
+    </div>
     <div class="info-down">
       <div class="image-row">
         <div class="parent">
           <img src="images/accra.webp" height="100" width="150" alt="" />
           <div class="bottom-right"></div>
         </div>
-        <img src="images/ahafo.webp" height="100" width="150" alt="" />
-        <img src="images/ahafo.webp" height="100" width="150" alt="" />
+        <div class="parent">
+          <img src="images/ahafo.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        <div class="parent">
+          <img src="images/akatsi.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        <div class="parent">
+          <img src="images/anloga.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        <div class="parent">
+          <img src="images/ashanti.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        <div class="parent">
+          <img src="images/bawku.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        <div class="parent">
+          <img src="images/bono.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        <div class="parent">
+          <img src="images/anloga.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        <div class="parent">
+          <img src="images/ahafo.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        <div class="parent">
+          <img src="images/ahafo.webp" height="100" width="150" alt="" />
+          <div class="bottom-right"></div>
+        </div>
+        
         <img src="images/akatsi.webp" height="100" width="150" alt="" />
         <img src="images/anloga.webp" height="100" width="150" alt="" />
         <img src="images/ashanti.webp" height="100" width="150" alt="" />
         <img src="images/bawku.webp" height="100" width="150" alt="" />
         <img src="images/bono.webp" height="100" width="150" alt="" />
         <img src="images/anloga.webp" height="100" width="150" alt="" />
-        <img src="images/ashanti.webp" height="100" width="150" alt="" />
-        <img src="images/bawku.webp" height="100" width="150" alt="" />
-        <img src="images/bono.webp" height="100" width="150" alt="" />
-        <img src="images/anloga.webp" height="100" width="150" alt="" />
-        <img src="images/ashanti.webp" height="100" width="150" alt="" />
-        <img src="images/bawku.webp" height="100" width="150" alt="" />
-        <img src="images/bono.webp" height="100" width="150" alt="" />
+       
       </div>
     </div>
     <div class="package">
@@ -238,7 +275,7 @@
             var flag = true;
             function acommentform() {
               var acform =
-                "<form action='Comment'>Enter Name:<br><input type='text' name='name' placeholder= 'Your name...'/><br>Enter Comment:<br/>  <textarea rows='4' cols='50'></textarea><br><input type='submit' value='Post Comment'/></form>";
+                "<form action='Comment'>Enter Name:<br><input type='text' name='name' placeholder= 'Your name...'/><br>Enter Comment:<br/>  <textarea rows='4' cols='40'></textarea><br><input type='submit' value='Post Comment'/></form>";
               if (flag) {
                 document.getElementById("amylocation").innerHTML = acform;
                 flag = false;
@@ -265,7 +302,7 @@
             var flag = true;
             function bcommentform() {
               var bcform =
-                "<form action='Comment'>Enter Name:<br><input type='text' name='name'/><br>Enter Comment:<br/>  <textarea rows='4' cols='50'></textarea><br><input type='submit' value='Post Comment'/></form>";
+                "<form action='Comment'>Enter Name:<br><input type='text' name='name' placeholder= 'Your name...' /><br>Enter Comment:<br/>  <textarea rows='4' cols='40'></textarea><br><input type='submit' value='Post Comment'/></form>";
               if (flag) {
                 document.getElementById("bmylocation").innerHTML = bcform;
                 flag = false;
