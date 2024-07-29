@@ -113,22 +113,111 @@
       .titlop {
         font-weight: 500;
       }
-      .adstore{
+      .adstore {
         display: flex;
         color: #faf609;
         font-weight: 700;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
         border: 4px solid rgb(233, 245, 244);
         margin-top: 5px;
         padding: 5px;
         background-color: #0a4905;
         box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
       }
-      .adstore p{
+      .adstore p {
         padding-left: 5px;
       }
       .adstore img {
         border-radius: 5px;
+      }
+      #myImg {
+        /* border-radius: 5px; */
+        cursor: pointer;
+        transition: 0.3s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #myImg:hover {
+        opacity: 0.7;
+      }
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 99; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+      }
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 75%;
+        /*max-width: 75%;*/
+      }
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 400px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(1);
+        }
+        to {
+          -webkit-transform: scale(2);
+        }
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0.4);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes zoom-out {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+      @keyframes zoom-out {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+      /* Add Animation */
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      .out {
+        animation-name: zoom-out;
+        animation-duration: 0.6s;
       }
     </style>
   </head>
@@ -190,16 +279,130 @@
     <div class="info-down">
       <div class="image-row">
         <div class="parent">
-          <img src="images/Bantama.webp" height="100" width="150" alt="" />
-          <div class="bottom-right">Bantama, Awutu Senya</div>
-        </div>
-        <div class="parent">
-          <img src="images/amadua.webp" height="100" width="150" alt="" />
+          <!-- Image Zoom HTML -->
+          <img
+            id="myImg"
+            src="images/amadua.webp"
+            alt=""
+            width="150"
+            height="100"
+          />
           <div class="bottom-right">Amadua, Awutu Senya</div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              modalImg.alt = this.alt;
+              captionText.innerHTML = this.alt;
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function () {
+              img01.className += " out";
+              setTimeout(function () {
+                modal.style.display = "none";
+                img01.className = "modal-content";
+              }, 400);
+            };
+          </script>
+          <!-- <img src="images/Bantama.webp" height="100" width="150" alt="" />
+-->
         </div>
         <div class="parent">
-          <img src="images/aberful.webp" height="100" width="150" alt="" />
+          <!-- Image Zoom HTML -->
+          <img
+            id="2Img"
+            src="images/aberful.webp"
+            alt=""
+            width="150"
+            height="100"
+          />
           <div class="bottom-right">Aberful, Awutu Senya</div>
+          <!-- The Modal -->
+          <div id="2Modal" class="modal">
+            <img class="modal-content" id="img02" />
+            <div id="2caption"></div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("2Modal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("2Img");
+            var modalImg = document.getElementById("img02");
+            var captionText = document.getElementById("2caption");
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              modalImg.alt = this.alt;
+              captionText.innerHTML = this.alt;
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function () {
+              img02.className += " out";
+              setTimeout(function () {
+                modal.style.display = "none";
+                img02.className = "modal-content";
+              }, 400);
+            };
+          </script>
+          <!-- <img src="images/Bantama.webp" height="100" width="150" alt="" />
+-->
+           </div>
+        <div class="parent">
+          <!-- Image Zoom HTML -->
+          <img
+            id="3Img"
+            src="images/bont.webp"
+            alt=""
+            width="150"
+            height="100"
+          />
+          <div class="bottom-right">Bontrase, Awutu Senya</div>
+          <!-- The Modal -->
+          <div id="3Modal" class="modal">
+            <img class="modal-content" id="img03" />
+            <div id="2caption"></div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("3Modal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("3Img");
+            var modalImg = document.getElementById("img03");
+            var captionText = document.getElementById("3caption");
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              modalImg.alt = this.alt;
+              captionText.innerHTML = this.alt;
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function () {
+              img02.className += " out";
+              setTimeout(function () {
+                modal.style.display = "none";
+                img03.className = "modal-content";
+              }, 400);
+            };
+          </script>
+          <!-- <img src="images/Bantama.webp" height="100" width="150" alt="" />
+-->
         </div>
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
@@ -228,9 +431,10 @@
 
           <div class="adstore">
             <img src="images/akoko.webp" height="80" width="100" />
-            <p>Live chicken ready for sale at Cheap prices.<br/>Contact 024 951 9612, Senya Beraku
-            <br/>Place your order <b>Now!!!</b></p>
-           
+            <p>
+              Live chicken ready for sale at Cheap prices.<br />Contact 024 951
+              9612, Senya Beraku <br />Place your order <b>Now!!!</b>
+            </p>
           </div>
         </div>
       </div>

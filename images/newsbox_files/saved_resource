@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="google" value="notranslate">
+
+<script>
+function addRow(name, url, isdir,
+    size, size_string, date_modified, date_modified_string) {
+  if (name == "." || name == "..")
+    return;
+
+  var root = document.location.pathname;
+  if (root.substr(-1) !== "/")
+    root += "/";
+
+  var tbody = document.getElementById("tbody");
+  var row = document.createElement("tr");
+  var file_cell = document.createElement("td");
+  var link = document.createElement("a");
+
+  link.className = isdir ? "icon dir" : "icon file";
+
+  if (isdir) {
+    name = name + "/";
+    url = url + "/";
+    size = 0;
+    size_string = "";
+  } else {
+    link.draggable = "true";
+    link.addEventListener("dragstart", onDragStart, false);
+  }
+  link.innerText = name;
+  link.href = root + url;
+
+  file_cell.dataset.value = name;
+  file_cell.appendChild(link);
+
+  row.appendChild(file_cell);
+  row.appendChild(createCell(size, size_string));
+  row.appendChild(createCell(date_modified, date_modified_string));
+
+  tbody.appendChild(row);
+}
+
+function onDragStart(e) {
+  var el = e.srcElement;
+  var name = el.innerText.replace(":", "");
+  var download_url_data = "application/octet-stream:" + name + ":" + el.href;
+  e.dataTransfer.setData("DownloadURL", download_url_data);
+  e.dataTransfer.effectAllowed = "copy";
+}
+
+function createCell(value, text) {
+  var cell = document.createElement("td");
+  cell.setAttribute("class", "detailsColumn");
+  cell.dataset.value = value;
+  cell.innerText = text;
+  return cell;
+}
+
+function start(location) {
+  var header = document.getElementById("header");
+  header.innerText = header.innerText.replace("LOCATION", location);
+
+  document.getElementById("title").innerText = header.innerText;
+}
+
+function onHasParentDirectory() {
+  var box = document.getElementById("parentDirLinkBox");
+  box.style.display = "block";
+
+  var root = document.location.pathname;
+  if (!root.endsWith("/"))
+    root += "/";
+
+  var link = document.getElementById("parentDirLink");
+  link.href = root + "..";
+}
+
+function sortTable(column) {
+  var theader = document.getElementById("theader");
+  var oldOrder = theader.cells[column].dataset.order || '1';
+  oldOrder = parseInt(oldOrder, 10)
+  var newOrder = 0 - oldOrder;
+  theader.cells[column].dataset.order = newOrder;
+
+  var tbody = document.getElementById("tbody");
+  var rows = tbody.rows;
+  var list = [], i;
+  for (i = 0; i < rows.length; i++) {
+    list.push(rows[i]);
+  }
+
+  list.sort(function(row1, row2) {
+    var a = row1.cells[column].dataset.value;
+    var b = row2.cells[column].dataset.value;
+    if (column) {
+      a = parseInt(a, 10);
+      b = parseInt(b, 10);
+      return a > b ? newOrder : a < b ? oldOrder : 0;
+    }
+
+    // Column 0 is text.
+    if (a > b)
+      return newOrder;
+    if (a < b)
+      return oldOrder;
+    return 0;
+  });
+
+  // Appending an existing child again just moves it.
+  for (i = 0; i < list.length; i++) {
+    tbody.appendChild(list[i]);
+  }
+}
+
+// Add event handlers to column headers.
+function addHandlers(element, column) {
+  element.onclick = (e) => sortTable(column);
+  element.onkeydown = (e) => {
+    if (e.key == 'Enter' || e.key == ' ') {
+      sortTable(column);
+      e.preventDefault();
+    }
+  };
+}
+
+function onLoad() {
+  addHandlers(document.getElementById('nameColumnHeader'), 0);
+  addHandlers(document.getElementById('sizeColumnHeader'), 1);
+  addHandlers(document.getElementById('dateColumnHeader'), 2);
+}
+
+window.addEventListener('DOMContentLoaded', onLoad);
+</script>
+
+<style>
+
+  h1 {
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th {
+    cursor: pointer;
+  }
+
+  td.detailsColumn {
+    padding-inline-start: 2em;
+    text-align: end;
+    white-space: nowrap;
+  }
+
+  a.icon {
+    padding-inline-start: 1.5em;
+    text-decoration: none;
+    user-select: auto;
+  }
+
+  a.icon:hover {
+    text-decoration: underline;
+  }
+
+  a.file {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAABEElEQVR42nRRx3HDMBC846AHZ7sP54BmWAyrsP588qnwlhqw/k4v5ZwWxM1hzmGRgV1cYqrRarXoH2w2m6qqiqKIR6cPtzc3xMSML2Te7XZZlnW7Pe/91/dX47WRBHuA9oyGmRknzGDjab1ePzw8bLfb6WRalmW4ip9FDVpYSWZgOp12Oh3nXJ7nxoJSGEciteP9y+fH52q1euv38WosqA6T2gGOT44vry7BEQtJkMAMMpa6JagAMcUfWYa4hkkzAc7fFlSjwqCoOUYAF5RjHZPVCFBOtSBGfgUDji3c3jpibeEMQhIMh8NwshqyRsBJgvF4jMs/YlVR5KhgNpuBLzk0OcUiR3CMhcPaOzsZiAAA/AjmaB3WZIkAAAAASUVORK5CYII=") left top no-repeat;
+  }
+
+  a.dir {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABt0lEQVR42oxStZoWQRCs2cXdHTLcHZ6EjAwnQWIkJyQlRt4Cd3d3d1n5d7q7ju1zv/q+mh6taQsk8fn29kPDRo87SDMQcNAUJgIQkBjdAoRKdXjm2mOH0AqS+PlkP8sfp0h93iu/PDji9s2FzSSJVg5ykZqWgfGRr9rAAAQiDFoB1OfyESZEB7iAI0lHwLREQBcQQKqo8p+gNUCguwCNAAUQAcFOb0NNGjT+BbUC2YsHZpWLhC6/m0chqIoM1LKbQIIBwlTQE1xAo9QDGDPYf6rkTpPc92gCUYVJAZjhyZltJ95f3zuvLYRGWWCUNkDL2333McBh4kaLlxg+aTmyL7c2xTjkN4Bt7oE3DBP/3SRz65R/bkmBRPGzcRNHYuzMjaj+fdnaFoJUEdTSXfaHbe7XNnMPyqryPcmfY+zURaAB7SHk9cXSH4fQ5rojgCAVIuqCNWgRhLYLhJB4k3iZfIPtnQiCpjAzeBIRXMA6emAqoEbQSoDdGxFUrxS1AYcpaNbBgyQBGJEOnYOeENKR/iAd1npusI4C75/c3539+nbUjOgZV5CkAU27df40lH+agUdIuA/EAgDmZnwZlhDc0wAAAABJRU5ErkJggg==") left top no-repeat;
+  }
+
+  a.up {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACM0lEQVR42myTA+w1RxRHz+zftmrbdlTbtq04qRGrCmvbDWp9tq3a7tPcub8mj9XZ3eHOGQdJAHw77/LbZuvnWy+c/CIAd+91CMf3bo+bgcBiBAGIZKXb19/zodsAkFT+3px+ssYfyHTQW5tr05dCOf3xN49KaVX9+2zy1dX4XMk+5JflN5MBPL30oVsvnvEyp+18Nt3ZAErQMSFOfelCFvw0HcUloDayljZkX+MmamTAMTe+d+ltZ+1wEaRAX/MAnkJdcujzZyErIiVSzCEvIiq4O83AG7LAkwsfIgAnbncag82jfPPdd9RQyhPkpNJvKJWQBKlYFmQA315n4YPNjwMAZYy0TgAweedLmLzTJSTLIxkWDaVCVfAbbiKjytgmm+EGpMBYW0WwwbZ7lL8anox/UxekaOW544HO0ANAshxuORT/RG5YSrjlwZ3lM955tlQqbtVMlWIhjwzkAVFB8Q9EAAA3AFJ+DR3DO/Pnd3NPi7H117rAzWjpEs8vfIqsGZpaweOfEAAFJKuM0v6kf2iC5pZ9+fmLSZfWBVaKfLLNOXj6lYY0V2lfyVCIsVzmcRV9Y0fx02eTaEwhl2PDrXcjFdYRAohQmS8QEFLCLKGYA0AeEakhCCFDXqxsE0AQACgAQp5w96o0lAXuNASeDKWIvADiHwigfBINpWKtAXJvCEKWgSJNbRvxf4SmrnKDpvZavePu1K/zu/due1X/6Nj90MBd/J2Cic7WjBp/jUdIuA8AUtd65M+PzXIAAAAASUVORK5CYII=") left top no-repeat;
+  }
+
+  html[dir=rtl] a {
+    background-position-x: right;
+  }
+
+  #parentDirLinkBox {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+</style>
+
+<title id="title"></title>
+
+</head>
+
+<body>
+
+<h1 id="header">Index of LOCATION</h1>
+
+<div id="parentDirLinkBox" style="display:none">
+  <a id="parentDirLink" class="icon up">
+    <span id="parentDirText">[parent directory]</span>
+  </a>
+</div>
+
+<table>
+  <thead>
+    <tr class="header" id="theader">
+      <th id="nameColumnHeader" tabindex=0 role="button">Name</th>
+      <th id="sizeColumnHeader" class="detailsColumn" tabindex=0 role="button">
+        Size
+      </th>
+      <th id="dateColumnHeader" class="detailsColumn" tabindex=0 role="button">
+        Date Modified
+      </th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+  </tbody>
+</table>
+
+</body>
+
+</html>
+<script>"use strict";
+// Copyright 2012 The Chromium Authors
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value){expect(!this.data_,"Re-setting data.");this.data_=value}valueExists(id){return id in this.data_}getValue(id){expect(this.data_,"No data. Did you remember to include strings.js?");const value=this.data_[id];expect(typeof value!=="undefined","Could not find value for "+id);return value}getString(id){const value=this.getValue(id);expectIsType(id,value,"string");return value}getStringF(id,var_args){const value=this.getString(id);if(!value){return""}const args=Array.prototype.slice.call(arguments);args[0]=value;return this.substituteString.apply(this,args)}substituteString(label,var_args){const varArgs=arguments;return label.replace(/\$(.|$|\n)/g,(function(m){expect(m.match(/\$[$1-9]/),"Unescaped $ found in localized string.");return m==="$$"?"$":varArgs[m[1]]}))}getBoolean(id){const value=this.getValue(id);expectIsType(id,value,"boolean");return value}getInteger(id){const value=this.getValue(id);expectIsType(id,value,"number");expect(value===Math.floor(value),"Number isn't integer: "+value);return value}overrideValues(replacements){expect(typeof replacements==="object","Replacements must be a dictionary object.");for(const key in replacements){this.data_[key]=replacements[key]}}}function expect(condition,message){if(!condition){throw new Error("Unexpected condition on "+document.location.href+": "+message)}}function expectIsType(id,value,type){expect(typeof value===type,"["+value+"] ("+id+") is not a "+type)}expect(!loadTimeData,"should only include this file once");loadTimeData=new LoadTimeData;window.loadTimeData=loadTimeData;console.warn("crbug/1173575, non-JS module files deprecated.");</script><script>loadTimeData.data = {"header":"Index of LOCATION","headerDateModified":"Date Modified","headerName":"Name","headerSize":"Size","language":"en","parentDirText":"[parent directory]","textdirection":"ltr"};</script><script>start("C:\\Users\\USER\\OneDrive\\Desktop\\newsapps\\newfold\\images\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("aberful.jpg","aberful.jpg",0,5000902,"4.8 MB",1721678261,"7/22/24, 7:57:41 PM");</script>
+<script>addRow("aberful.webp","aberful.webp",0,3594586,"3.4 MB",1721679088,"7/22/24, 8:11:28 PM");</script>
+<script>addRow("accra.png","accra.png",0,237513,"232 kB",1714937804,"5/5/24, 7:36:44 PM");</script>
+<script>addRow("accra.webp","accra.webp",0,18282,"17.9 kB",1717037732,"5/30/24, 2:55:32 AM");</script>
+<script>addRow("ahafo.png","ahafo.png",0,309593,"302 kB",1714996434,"5/6/24, 11:53:54 AM");</script>
+<script>addRow("ahafo.webp","ahafo.webp",0,22660,"22.1 kB",1717037797,"5/30/24, 2:56:37 AM");</script>
+<script>addRow("akatsi.png","akatsi.png",0,169182,"165 kB",1714465774,"4/30/24, 8:29:34 AM");</script>
+<script>addRow("akatsi.webp","akatsi.webp",0,9398,"9.2 kB",1717037817,"5/30/24, 2:56:57 AM");</script>
+<script>addRow("akoko.png","akoko.png",0,709071,"692 kB",1721480927,"7/20/24, 1:08:47 PM");</script>
+<script>addRow("akoko.webp","akoko.webp",0,70904,"69.2 kB",1721481873,"7/20/24, 1:24:33 PM");</script>
+<script>addRow("amadua.jpg","amadua.jpg",0,4587139,"4.4 MB",1721678223,"7/22/24, 7:57:03 PM");</script>
+<script>addRow("amadua.webp","amadua.webp",0,3143012,"3.0 MB",1721679242,"7/22/24, 8:14:02 PM");</script>
+<script>addRow("amaduaa.jpg","amaduaa.jpg",0,5189183,"4.9 MB",1721678189,"7/22/24, 7:56:29 PM");</script>
+<script>addRow("amdua.jpg","amdua.jpg",0,4116853,"3.9 MB",1721678149,"7/22/24, 7:55:49 PM");</script>
+<script>addRow("amdua.webp","amdua.webp",0,2832626,"2.7 MB",1721679038,"7/22/24, 8:10:38 PM");</script>
+<script>addRow("anloga.png","anloga.png",0,170132,"166 kB",1714060627,"4/25/24, 3:57:07 PM");</script>
+<script>addRow("anloga.webp","anloga.webp",0,15694,"15.3 kB",1717037833,"5/30/24, 2:57:13 AM");</script>
+<script>addRow("ashanti.png","ashanti.png",0,351023,"343 kB",1714939286,"5/5/24, 8:01:26 PM");</script>
+<script>addRow("ashanti.webp","ashanti.webp",0,37006,"36.1 kB",1717037850,"5/30/24, 2:57:30 AM");</script>
+<script>addRow("AssinFoso.png","AssinFoso.png",0,567252,"554 kB",1720637240,"7/10/24, 6:47:20 PM");</script>
+<script>addRow("AssinFoso.webp","AssinFoso.webp",0,31836,"31.1 kB",1720663317,"7/11/24, 2:01:57 AM");</script>
+<script>addRow("Bantama.jpg","Bantama.jpg",0,4360750,"4.2 MB",1720637984,"7/10/24, 6:59:44 PM");</script>
+<script>addRow("Bantama.webp","Bantama.webp",0,2977380,"2.8 MB",1720835270,"7/13/24, 1:47:50 AM");</script>
+<script>addRow("bawku.png","bawku.png",0,1162356,"1.1 MB",1715116616,"5/7/24, 9:16:56 PM");</script>
+<script>addRow("bawku.webp","bawku.webp",0,98310,"96.0 kB",1717038310,"5/30/24, 3:05:10 AM");</script>
+<script>addRow("bono.png","bono.png",0,548716,"536 kB",1714993227,"5/6/24, 11:00:27 AM");</script>
+<script>addRow("bono.webp","bono.webp",0,46164,"45.1 kB",1717038413,"5/30/24, 3:06:53 AM");</script>
+<script>addRow("bonoeast.png","bonoeast.png",0,326233,"319 kB",1714939403,"5/5/24, 8:03:23 PM");</script>
+<script>addRow("bonoeast.webp","bonoeast.webp",0,32716,"31.9 kB",1717038427,"5/30/24, 3:07:07 AM");</script>
+<script>addRow("bont.png","bont.png",0,160953,"157 kB",1722158220,"7/28/24, 9:17:00 AM");</script>
+<script>addRow("bont.webp","bont.webp",0,15416,"15.1 kB",1722258423,"7/29/24, 1:07:03 PM");</script>
+<script>addRow("bt 3.webp","bt%203.webp",0,107498,"105 kB",1654392864,"6/5/22, 1:34:24 AM");</script>
+<script>addRow("CapeCoast.png","CapeCoast.png",0,764302,"746 kB",1720636943,"7/10/24, 6:42:23 PM");</script>
+<script>addRow("CapeCoast.webp","CapeCoast.webp",0,51618,"50.4 kB",1720663338,"7/11/24, 2:02:18 AM");</script>
+<script>addRow("centr.png","centr.png",0,217263,"212 kB",1714940577,"5/5/24, 8:22:57 PM");</script>
+<script>addRow("centr.webp","centr.webp",0,12970,"12.7 kB",1717038513,"5/30/24, 3:08:33 AM");</script>
+<script>addRow("central.png","central.png",0,279862,"273 kB",1714940306,"5/5/24, 8:18:26 PM");</script>
+<script>addRow("central.webp","central.webp",0,25252,"24.7 kB",1717038532,"5/30/24, 3:08:52 AM");</script>
+<script>addRow("chps.webp","chps.webp",0,18804,"18.4 kB",1721679490,"7/22/24, 8:18:10 PM");</script>
+<script>addRow("cocoa.webp","cocoa.webp",0,41016,"40.1 kB",1712618987,"4/8/24, 11:29:47 PM");</script>
+<script>addRow("daklu.png","daklu.png",0,818077,"799 kB",1722191959,"7/28/24, 6:39:19 PM");</script>
+<script>addRow("daklu.webp","daklu.webp",0,76434,"74.6 kB",1722258625,"7/29/24, 1:10:25 PM");</script>
+<script>addRow("eastern.png","eastern.png",0,609756,"595 kB",1714939106,"5/5/24, 7:58:26 PM");</script>
+<script>addRow("eastern.webp","eastern.webp",0,40028,"39.1 kB",1717038743,"5/30/24, 3:12:23 AM");</script>
+<script>addRow("ernst.jpg","ernst.jpg",0,50765,"49.6 kB",1655430646,"6/17/22, 1:50:46 AM");</script>
+<script>addRow("fall.jpg","fall.jpg",0,275345,"269 kB",1662643914,"9/8/22, 1:31:54 PM");</script>
+<script>addRow("girl.png","girl.png",0,111313,"109 kB",1715778396,"5/15/24, 1:06:36 PM");</script>
+<script>addRow("guyz.jpg","guyz.jpg",0,7975466,"7.6 MB",1717759574,"6/7/24, 11:26:14 AM");</script>
+<script>addRow("guyz.webp","guyz.webp",0,6008214,"5.7 MB",1720114745,"7/4/24, 5:39:05 PM");</script>
+<script>addRow("hearts.webp","hearts.webp",0,47304,"46.2 kB",1712783474,"4/10/24, 9:11:14 PM");</script>
+<script>addRow("Ho.png","Ho.png",0,550115,"537 kB",1714147770,"4/26/24, 4:09:30 PM");</script>
+<script>addRow("Ho.webp","Ho.webp",0,54648,"53.4 kB",1714467082,"4/30/24, 8:51:22 AM");</script>
+<script>addRow("Koforidua.png","Koforidua.png",0,430498,"420 kB",1718312532,"6/13/24, 9:02:12 PM");</script>
+<script>addRow("Koforidua.webp","Koforidua.webp",0,37324,"36.4 kB",1720663348,"7/11/24, 2:02:28 AM");</script>
+<script>addRow("Kumasi.png","Kumasi.png",0,545277,"532 kB",1720637899,"7/10/24, 6:58:19 PM");</script>
+<script>addRow("Kumasi.webp","Kumasi.webp",0,54304,"53.0 kB",1720663359,"7/11/24, 2:02:39 AM");</script>
+<script>addRow("Logba Alakpeti, Volta Region.png","Logba%20Alakpeti,%20Volta%20Region.png",0,697750,"681 kB",1718312736,"6/13/24, 9:05:36 PM");</script>
+<script>addRow("logba.png","logba.png",0,391627,"382 kB",1714148282,"4/26/24, 4:18:02 PM");</script>
+<script>addRow("logba.webp","logba.webp",0,26054,"25.4 kB",1714466633,"4/30/24, 8:43:53 AM");</script>
+<script>addRow("nnortheastt.png","nnortheastt.png",0,312904,"306 kB",1715542174,"5/12/24, 7:29:34 PM");</script>
+<script>addRow("nnortheastt.webp","nnortheastt.webp",0,27134,"26.5 kB",1715542512,"5/12/24, 7:35:12 PM");</script>
+<script>addRow("northern.png","northern.png",0,467684,"457 kB",1714938343,"5/5/24, 7:45:43 PM");</script>
+<script>addRow("northern.webp","northern.webp",0,41124,"40.2 kB",1717038761,"5/30/24, 3:12:41 AM");</script>
+<script>addRow("oldbaika.jpg","oldbaika.jpg",0,92452,"90.3 kB",1721604467,"7/21/24, 11:27:47 PM");</script>
+<script>addRow("oldbaika.webp","oldbaika.webp",0,88208,"86.1 kB",1721604906,"7/21/24, 11:35:06 PM");</script>
+<script>addRow("oti.png","oti.png",0,735501,"718 kB",1714940171,"5/5/24, 8:16:11 PM");</script>
+<script>addRow("oti.webp","oti.webp",0,45390,"44.3 kB",1717038731,"5/30/24, 3:12:11 AM");</script>
+<script>addRow("pave.webp","pave.webp",0,10490,"10.2 kB",1721681001,"7/22/24, 8:43:21 PM");</script>
+<script>addRow("raf1.PNG","raf1.PNG",0,469986,"459 kB",1662645416,"9/8/22, 1:56:56 PM");</script>
+<script>addRow("raf2.PNG","raf2.PNG",0,872232,"852 kB",1662645572,"9/8/22, 1:59:32 PM");</script>
+<script>addRow("raf2.webp","raf2.webp",0,21316,"20.8 kB",1717037931,"5/30/24, 2:58:51 AM");</script>
+<script>addRow("rainb.PNG","rainb.PNG",0,9299,"9.1 kB",1701541382,"12/2/23, 6:23:02 PM");</script>
+<script>addRow("rainb.webp","rainb.webp",0,2376,"2.3 kB",1717038929,"5/30/24, 3:15:29 AM");</script>
+<script>addRow("sajey.png","sajey.png",0,307211,"300 kB",1720694919,"7/11/24, 10:48:39 AM");</script>
+<script>addRow("sav.png","sav.png",0,196329,"192 kB",1715115315,"5/7/24, 8:55:15 PM");</script>
+<script>addRow("sav.webp","sav.webp",0,17460,"17.1 kB",1717037976,"5/30/24, 2:59:36 AM");</script>
+<script>addRow("Tamale.png","Tamale.png",0,585300,"572 kB",1720637335,"7/10/24, 6:48:55 PM");</script>
+<script>addRow("Tamale.webp","Tamale.webp",0,65066,"63.5 kB",1720663380,"7/11/24, 2:03:00 AM");</script>
+<script>addRow("tanoso, Kumasi.png","tanoso,%20Kumasi.png",0,545277,"532 kB",1718312444,"6/13/24, 9:00:44 PM");</script>
+<script>addRow("tanoso, Kumasi.webp","tanoso,%20Kumasi.webp",0,54304,"53.0 kB",1720663392,"7/11/24, 2:03:12 AM");</script>
+<script>addRow("trio.webp","trio.webp",0,6008214,"5.7 MB",1720835493,"7/13/24, 1:51:33 AM");</script>
+<script>addRow("upperwest.png","upperwest.png",0,708572,"692 kB",1714939798,"5/5/24, 8:09:58 PM");</script>
+<script>addRow("upperwest.webp","upperwest.webp",0,55646,"54.3 kB",1717037998,"5/30/24, 2:59:58 AM");</script>
+<script>addRow("upw.png","upw.png",0,562811,"550 kB",1715115941,"5/7/24, 9:05:41 PM");</script>
+<script>addRow("upw.webp","upw.webp",0,37810,"36.9 kB",1717038034,"5/30/24, 3:00:34 AM");</script>
+<script>addRow("vane.png","vane.png",0,301259,"294 kB",1722114752,"7/27/24, 9:12:32 PM");</script>
+<script>addRow("vane.webp","vane.webp",0,25226,"24.6 kB",1722116966,"7/27/24, 9:49:26 PM");</script>
+<script>addRow("Viepe beach.png","Viepe%20beach.png",0,366465,"358 kB",1714148101,"4/26/24, 4:15:01 PM");</script>
+<script>addRow("Viepe beach.webp","Viepe%20beach.webp",0,27940,"27.3 kB",1717038068,"5/30/24, 3:01:08 AM");</script>
+<script>addRow("volta.png","volta.png",0,432510,"422 kB",1714938108,"5/5/24, 7:41:48 PM");</script>
+<script>addRow("volta.webp","volta.webp",0,25578,"25.0 kB",1717038963,"5/30/24, 3:16:03 AM");</script>
+<script>addRow("western.png","western.png",0,278963,"272 kB",1714938568,"5/5/24, 7:49:28 PM");</script>
+<script>addRow("western.webp","western.webp",0,22840,"22.3 kB",1717038991,"5/30/24, 3:16:31 AM");</script>
+<script>addRow("westernnorth.png","westernnorth.png",0,321972,"314 kB",1714938784,"5/5/24, 7:53:04 PM");</script>
+<script>addRow("westernnorth.webp","westernnorth.webp",0,30570,"29.9 kB",1717038938,"5/30/24, 3:15:38 AM");</script>
