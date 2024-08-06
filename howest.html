@@ -340,18 +340,88 @@
               }, 400);
             };
           </script>
-          <!-- <img src="images/vane.webp" height="100" width="150" alt="" />
-          <div class="bottom-right">Vane, Ho West</div> -->
         </div>
         <div class="parent">
-          <img src="images/rans2.webp" height="100" width="150" alt="" />
+          <!-- Image Zoom HTML -->
+          <img
+            id="2Img"
+            src="images/rans2.png"
+            alt=""
+            width="150"
+            height="100"
+          />
           <div class="bottom-right">Rans Hotel, Tsito</div>
-        </div>
+          <!-- The Modal -->
+          <div id="2Modal" class="modal">
+            <img class="modal-content" id="img02" />
+            <div id="2caption"></div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("2Modal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("2Img");
+            var modalImg = document.getElementById("img02");
+            var captionText = document.getElementById("2caption");
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              modalImg.alt = this.alt;
+              captionText.innerHTML = this.alt;
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function () {
+              img02.className += " out";
+              setTimeout(function () {
+                modal.style.display = "none";
+                img02.className = "modal-content";
+              }, 400);
+            };
+          </script>
+           </div>
         <div class="parent">
-          <img src="images/rans3.png" height="100" width="150" alt="" />
+          <!-- Image Zoom HTML -->
+          <img
+            id="3Img"
+            src="images/rans3.webp"
+            alt=""
+            width="150"
+            height="100"
+          />
           <div class="bottom-right">Rans Hotel, Tsito</div>
+          <!-- The Modal -->
+          <div id="3Modal" class="modal">
+            <img class="modal-content" id="img03" />
+            <div id="3caption"></div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("3Modal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("3Img");
+            var modalImg = document.getElementById("img03");
+            var captionText = document.getElementById("3caption");
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              modalImg.alt = this.alt;
+              captionText.innerHTML = this.alt;
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function () {
+              img03.className += " out";
+              setTimeout(function () {
+                modal.style.display = "none";
+                img03.className = "modal-content";
+              }, 400);
+            };
+          </script>
         </div>
-        <div class="parent">
+          <div class="parent">
           <img src="images/anloga.webp" height="100" width="150" alt="" />
           <div class="bottom-right"></div>
         </div>
