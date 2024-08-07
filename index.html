@@ -108,8 +108,22 @@
         font-size: larger;
         font-weight: bolder;
         margin-right: 25px;
+        bottom: 0;
       }
-
+      .slogan {
+        font-size: xx-small;
+        color: yellow;
+        font-style: italic;
+        top: 0;
+      }
+      .footers {
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding-bottom: 0;
+      }
       @media screen and (max-width: 425px) {
         .navbar {
           margin-bottom: 10px;
@@ -225,6 +239,9 @@
         .wrt p {
           font-weight: 200;
           font-size: 10px;
+        }
+        .slogan {
+          color: blue;
         }
       }
       .downbelt {
@@ -348,22 +365,33 @@
       .notifications {
         background-color: white;
       }
+      .logoWrapper {
+        display: flex;
+      }
+      .letters {
+        line-height: 18px;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <div class="logo">
-            <img
-              class="logs"
-              src="images/rainb.PNG"
-              height="40"
-              width="70"
-              padding="20px"
-              alt=""
-            />
-            <span class="brand">NEWSBOX</span>
+          <div class="logoWrapper">
+            <div class="logo">
+              <img
+                class="logs"
+                src="images/rainb.PNG"
+                height="40"
+                width="70"
+                padding="20px"
+                alt=""
+              />
+            </div>
+            <div class="letters">
+              <span class="brand">NEWSBOX</span>
+              <h6 class="slogan">Your Community Channel</h6>
+            </div>
           </div>
           <button
             class="navbar-toggler"
@@ -485,17 +513,16 @@
               splendour and love are now left behind, deserted and uncared for.
             </p>
             <p>
-              Looking back, its worth considering a special attention paid to
-              our source of inspiration and growth. Coming back to our places of
-              birth after a long working years would in one way or the other
-              give encouragement to the young ones to do same. The ultimate is
-              to ensure a balanced regional development where all places
-              throughout the country are enhanced, befitting a human status.
-            </p>
-            <p>
-              Its the duty of our educated youths to eschew selfishness and
-              speak for the voiceless in the areas of general concern,
-              especially the responsibility of the central government.
+              Ghana has a strong social heritage of fellow feeling, a trait that
+              renders our culture enviable by the international community and
+              all races. What is missing is psycho-analytical stature of
+              leadership in all levels, in that no citizen is left behind in our
+              collective pursuit of happiness and dignity.
+              <br />
+              <br />
+              The ultimate is to ensure a balanced regional development where
+              all places throughout the country are enhanced, befitting a human
+              status.
             </p>
 
             <p>
@@ -583,110 +610,32 @@
 
           <h6 class="info_head">BONO REGION</h6> -->
 
-          <h6 class="info_head">BONO EAST REGION</h6>
-          <p>
-            The Volta River makes a lot of the environment in which the Bono
-            East is situated. Much more can be done with the fishing industry in
-            this area. Rigorous attention is paid to revealing the true state of
-            the region for sustainable development
-          </p>
-          <h6 class="info_head">AHAFO REGION</h6>
-          <p>
-            Ahafo shares the same ecological features with Bono Region. Yam,
-            Tomatoes and maize production is the main agricultural fits of the
-            region. The impact of Government's role in the region would be
-            assessed and reported to stakeholders.
-          </p>
-          <!--<h6 class="info_head">ASHANTI REGION</h6> -->
-          <h6 class="info_head">NORTHERN REGION</h6>
-          <p>
-            Northern Region is a developing area by means of infrastructural add
-            ups in the capital city, Tamale and its environs. Up north is a vast
-            agricultural lands that has all it takes to qualify the region for
-            grain basket of the entire country, especially in the area of guinea
-            corn production.
-          </p>
-          <p>
-            Its believed that when greater percentage of the productive
-            activities are mechanized and the irrigation status of White Volta
-            is totally established, things would change for the better.
-          </p>
+          <!-- <h6 class="info_head">BONO EAST REGION</h6>
 
-          <!-- <h6 class="info_head">NORTH EAST REGION</h6>
-          <h6 class="info_head">SAVANNAH REGION</h6> -->
+          <h6 class="info_head">AHAFO REGION</h6> -->
+          <!--<h6 class="info_head">ASHANTI REGION</h6> -->
+
+          <!--   <h6 class="info_head">NORTHERN REGION</h6>
+           <h6 class="info_head">NORTH EAST REGION</h6>
+          <h6 class="info_head">SAVANNAH REGION</h6> 
           <h6 class="info_head">UPPER WEST REGION</h6>
-          <p>
-            Upper West Region is the northwesterly part of Ghana and a home for
-            many renowned personalities in the productive agricultural space.
-          </p>
-          <p>
-            As a hub of fair natural resources, the region has its major
-            industries in animal and food crop productions. National statistics
-            does not indicate the quantum of these production levels vis a vis
-            the national averages. However its worthy of note that sufficient
-            productions are made for local consumptions and export to
-            neighboring countries.
-          </p>
-          <p>
-            <b>NEWSBOX</b> in furthering its coverage of the region, projects to
-            make account of the rate and the level at which these raw primary
-            products are made and the percentage that is changed into secondary
-            products. Personalities championing the productive industries would
-            be promoted in such a way that more room is created for them to
-            excel.
-          </p>
-          <p>
-            The number of industrial establishments in the regions is equally an
-            important concern for our assessment. Through this, we hope to
-            provide adequate infographics for public consumption and investment
-            processes.
-          </p>
+
           <h6 class="info_head">UPPER EAST REGION</h6>
-          <p>
-            Upper East Region with Bawku as a buzzling marketing center links
-            two international frontiers.
-          </p>
-          <p>
-            Different kinds of products, both industrial and agricultural find
-            their way into the region. This is associated with the fact that it
-            connects the sahel to the south.
-          </p>
-          <p>
-            It is therefore apparent that much smoother commercial links to the
-            region, by way of ownership and management of supply chains are
-            needed to ensure a sustainable business environment as well as
-            pricing modalities.
-          </p>
-          <!-- <h6 class="info_head">OTI REGION</h6> -->
-          <h6 class="info_head">VOLTA REGION</h6>
-          <p>
-            Volta Region has the potential of feeding the entire nation with its
-            rice production capabilities. Its noted that about seven varieties
-            of rice are grown in the region with great looks and nutritive
-            values.
-          </p>
-          <p>
-            Unfortunately the farmers use agrarian technologies accounting for
-            very low output. Mechanization is projected to be enhanced to a
-            remarkable rate along side complete marketing strategies.
-          </p>
-          <p>
-            Details of industrial activities in this area would be made
-            available to stakeholders in due course.
-          </p>
+      
+          <h6 class="info_head">OTI REGION</h6> 
+          <h6 class="info_head">VOLTA REGION</h6>-->
         </div>
         <div class="rightSide"></div>
       </div>
 
-      <div class="downbelt">
-        <div class="aboutus"><a href="about.html">About Us</a></div>
-
-        <div class="policy">
-          <a href="privacy-policy.html">Privacy Policy</a>
-        </div>
-
-        <div class="copyright">
-          Copyright © 2024 NewsBox. All Rights Reserved.
+      <div class="footers">
+        <div class="container">
+          <div class="row">
+            <p class="text-centered">
+              &copy;2024 NEWSBOX Ghana. All Rights Reserved
+              <a href="about.html">About Us</a>|<a href="privacy-policy.html">Privacy Policy</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
