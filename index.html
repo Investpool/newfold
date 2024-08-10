@@ -124,6 +124,9 @@
         margin-top: 5px;
         padding-bottom: 0;
       }
+      .footers a {
+        text-decoration: none;
+      }
       @media screen and (max-width: 425px) {
         .navbar {
           margin-bottom: 10px;
@@ -243,6 +246,55 @@
         .slogan {
           color: blue;
         }
+        .show_factory {
+          display: flex;
+          justify-content: space-between;
+        }
+        .factory1 {
+          flex-direction: column;
+          font-size: 10px;
+          background-color: lavenderblush;
+          color: black;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+        }
+        .coImg img {
+          height: 80px;
+          width: 120px;
+        }
+        .factory2 {
+          flex-direction: column;
+          font-size: 10px;
+          background-color: lavenderblush;
+          color: black;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+        }
+        .factory3 {
+          flex-direction: column;
+          font-size: 10px;
+          background-color: lavenderblush;
+          color: black;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+        }
+        .co_details {
+          padding: 5px;
+          line-height: 10px;
+        }
+        .footers {
+          text-align: center;
+          color: white;
+          font-size: x-small;
+          margin-bottom: 5px;
+        }
+        .footers a {
+          margin-right: 6px;
+          text-decoration: none;
+        }
       }
       .downbelt {
         display: flex;
@@ -252,20 +304,7 @@
         padding-left: 20px;
         color: white;
       }
-      .aboutus {
-        margin-right: 10px;
-        flex: 3;
-      }
-      .policy {
-        margin-right: 10px;
-        flex: 3;
-        text-decoration: none;
-      }
-      .copyright {
-        margin-right: 5px;
-        padding-top: 5px;
-        flex: 6;
-      }
+
       /* .gary{
         margin-top: 15px;
         justify-content: space-between;
@@ -277,9 +316,9 @@
       .pic1 {
         padding: 0%;
       }
-      .info {
-        display: flex;
-      }
+      /* .info {
+        
+      } */
       .leftSide {
         flex: 2;
       }
@@ -370,6 +409,41 @@
       }
       .letters {
         line-height: 18px;
+      }
+      .show_factory {
+        display: flex;
+        justify-content: space-between;
+      }
+      .factory1 {
+        width: 400px;
+        background-color: lavenderblush;
+        color: black;
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+      }
+      .factory2 {
+        width: 400px;
+        background-color: lavenderblush;
+        color: black;
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+      }
+      .factory3 {
+        width: 400px;
+        background-color: lavenderblush;
+        color: black;
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+      }
+      .co_details {
+        padding: 3px;
+        font-size: small;
       }
     </style>
   </head>
@@ -598,47 +672,65 @@
       <hr class="backline" />
 
       <div class="info">
-        <div class="leftSide"></div>
-        <div class="middle">
-          <!-- <h6 class="info_head">CENTRAL REGION</h6>
-
-          <h6 class="info_head">EASTERN REGION</h6>
-          <p></p>
-          <h6 class="info_head">WESTERN REGION</h6>
-
-          <h6 class="info_head">WESTERN NORTH REGION</h6>
-
-          <h6 class="info_head">BONO REGION</h6> -->
-
-          <!-- <h6 class="info_head">BONO EAST REGION</h6>
-
-          <h6 class="info_head">AHAFO REGION</h6> -->
-          <!--<h6 class="info_head">ASHANTI REGION</h6> -->
-
-          <!--   <h6 class="info_head">NORTHERN REGION</h6>
-           <h6 class="info_head">NORTH EAST REGION</h6>
-          <h6 class="info_head">SAVANNAH REGION</h6> 
-          <h6 class="info_head">UPPER WEST REGION</h6>
-
-          <h6 class="info_head">UPPER EAST REGION</h6>
-      
-          <h6 class="info_head">OTI REGION</h6> 
-          <h6 class="info_head">VOLTA REGION</h6>-->
-        </div>
-        <div class="rightSide"></div>
-      </div>
-
-      <div class="footers">
-        <div class="container">
-          <div class="row">
-            <p class="text-centered">
-              &copy;2024 NEWSBOX Ghana. All Rights Reserved
-              <a href="about.html">About Us</a>|<a href="privacy-policy.html">Privacy Policy</a>
+        <div>
+          <h6>
+            ASSESSING THE WEALTH OF OUR NATION CONTINUES FROM HERE:
+            <p style="color: red">
+              Making the machines and what the machines do
             </p>
+
+            <p style="color: lightgrey">
+              (NB:Please the informations below is for testing purposes)
+            </p>
+          </h6>
+        </div>
+        <h6 class="info_head">CENTRAL REGION</h6>
+        <div class="show_factory">
+          <div class="factory1">
+            <div class="coImg">
+              <img src="images/pipi 6.png" height="150" width="220" />
+            </div>
+            <div class="co_details">
+              <span class="co_Name">Gemini Farms Co.</span><br />
+              <span class="co_District">Sunyani West</span><br />
+              <span class="co_Community">Nsoatre</span><br />
+              <span class="co_Products">Maize/Grains</span>
+            </div>
+          </div>
+          <div class="factory2">
+            <div class="coImg">
+              <img src="images/photo7.jpeg" height="150" width="220" />
+            </div>
+            <div class="co_details">
+              <span class="co_Name">GOLFTECH Electronics</span><br />
+              <span class="co_District">KEEA</span><br />
+              <span class="co_Community">Elmina</span><br />
+              <span class="co_Products">Circuit Boards</span>
+            </div>
+          </div>
+          <div class="factory3">
+            <div class="coImg">
+              <img src="images/gas.jpg" height="150" width="220" />
+            </div>
+            <div class="co_details">
+              <span class="co_Name">APPEB Cylinder Co.</span><br />
+              <span class="co_District">Awutu Senya West</span><br />
+              <span class="co_Community">Chochoe</span><br />
+              <span class="co_Products">Gas cylinders</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="footers">
+      <p class="text-centered">
+        &copy;2024 NEWSBOX Ghana. All Rights Reserved
+        <a href="about.html">About Us</a>|<a href="privacy-policy.html"
+          >Privacy Policy</a
+        >
+      </p>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
