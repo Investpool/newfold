@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsbox</title>
+</head>
+<body>
+   
+<script>
+   // Sending JSON data using a POST request
+   fetch("https://jsonplaceholder.typicode.com/todos", {
+      // Setting POST request
+      method: "POST",
+   
+      // Add a body which contains JSON data
+      body: JSON.stringify({
+         id: 290,
+         title: "Today is the rainy day",
+      }),
+      // Setting headers
+      headers:{"Content-type": "application/json; charset=UTF-8"}
+   })
+   // Converting response to JSON
+   .then(response => response.json())
+   .then(myData => {
+      console.log("Data Sent Successfully");
+      // Display output in HTML page
+      document.getElementById("sendData").innerHTML = JSON.stringify(myData);
+   })
+   .catch(err=>{
+      console.error("We get an error:", err);
+   });
+</script>
+<h2>Sent Data</h2>
+<div>
+   <!-- Displaying data-->
+   <p id = "sendData"></p>
+</div>
+</body>
+</html>
