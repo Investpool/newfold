@@ -23,6 +23,11 @@
       href="https://newsboxgh.com/images/croppedfav.jpg"
     />
     <script>
+      snowStorm.snowColor = '#99ccff';   // blue-ish snow!?
+      snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+      snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+      </script>
+    <script>
       src = "https://kit.fontawesome.com/a076d05399.js";
       crossorigin = "anonymous";
     </script>
@@ -542,7 +547,8 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation" style="color: rgb(64, 67, 240);"
+            aria-label="Toggle navigation"
+            style="color: rgb(64, 67, 240)"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -636,14 +642,13 @@
             <div class="elections">
               <h6
                 style="
-                  
                   background-color: red;
                   color: #fff;
                   font-size: 14px;
                   text-align: center;
                 "
               >
-              2024 Elections, National Presidential  Outlook
+                2024 Elections, National Presidential Outlook
               </h6>
               <div class="parties">
                 <div class="npp">
@@ -652,7 +657,8 @@
                     style="
                       background-color: blue;
                       color: #fff;
-                      padding: 3px; font-weight: 800;
+                      padding: 3px;
+                      font-weight: 800;
                     "
                     ><img
                       src="images/npp-logo.jpg"
