@@ -39,7 +39,19 @@
         padding: 0;
         box-sizing: border-box;
       }
+      @media screen and (max-width: 1440px) {
+        .parties {
+          display: flex;
+        }
+        .npp {
+          flex: 6;
+        }
+        .ndc {
+          flex: 6;
+        }
+       
 
+      }
       .navbar {
         display: flex;
         color: red;
@@ -132,7 +144,7 @@
       .footers a {
         text-decoration: none;
       }
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 425px) {
         .navbar {
           margin-bottom: 10px;
           display: flex;
@@ -310,30 +322,239 @@
           margin-right: 6px;
           text-decoration: none;
         }
-        .elections{
-          height: 200px;
-          width: 335px;
+        .elections {
+          border-radius: 5px;
+          margin: 3px 0px 3px 0px;
+          border: 2px solid rgb(165, 162, 162);
+          box-shadow: 0px 10px 2px -10px rgba(0, 0, 0, 0.68);
         }
+
         .parties {
           display: flex;
         }
-        .npp,
+        .npp {
+          flex: 6;
+        }
+
         .ndc {
           flex: 6;
+        }
+        .infoWrapper {
+          margin-top: 3px;
+          overflow-y: scroll;
+          background-color: rgb(187, 181, 123);
+          border-left: 5px solid violet;
+          text-decoration: none;
+          height: 100px;
+          width: 380px;
+          margin-right: 10px;
         }
       }
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 375px) {
+        .infoWrapper {
+          margin-top: 3px;
+          overflow-y: scroll;
+          background-color: rgb(187, 181, 123);
+          border-left: 5px solid violet;
+          text-decoration: none;
+          height: 100px;
+          width: 340px;
+          margin-right: 10px;
+        }
+        .navbar {
+          margin-bottom: 10px;
+          display: flex;
+          background-image: linear-gradient(rgb(244, 248, 248), white);
+        }
+        .nav-item a {
+          font-size: 9px;
+          color: rgb(5, 17, 129);
+        }
+        .sidebar a {
+          font-size: 10px;
+          flex: 4;
+        }
+        .dome {
+          font-size: small;
+        }
+
+        .mid_info {
+          flex: 8;
+          padding-left: 20px;
+          padding-top: 10px;
+        }
+        .firstImg {
+          margin-bottom: 5px;
+          height: 100px;
+        }
+        .span {
+          font-size: 8px;
+        }
+        .downbelt {
+          display: flex;
+          background-color: black;
+          height: auto;
+          margin-bottom: 5px;
+          font-size: xx-small;
+          color: white;
+        }
+        .downbelt a {
+          font-size: xx-small;
+        }
+        .story {
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+          font-size: medium;
+        }
+        .write {
+          font-size: xx-small;
+          text-align: center;
+        }
+        .middle {
+          width: 300px;
+          font-size: small;
+        }
+        .info_head {
+          font-size: small;
+        }
+        .regs {
+          flex-direction: column;
+          font-size: 10px;
+          margin-right: 6px;
+          color: yellow;
+        }
+        .pic1 {
+          height: "80";
+          width: "100";
+        }
+        .topsquare {
+          display: flex;
+          margin-bottom: 4px;
+        }
+        .sect1 {
+          flex: 3;
+        }
+        .sect2 {
+          flex: 9;
+          background-color: green;
+          display: flex;
+          box-shadow: rgb(39, 39, 41) 3px 3px 12px 0px;
+        }
+        .sect2 p {
+          flex-direction: column;
+          gap: 2;
+          color: #fff;
+        }
+        .wrt {
+          padding: 5px;
+          line-height: 10px;
+        }
+        .wrt h3 {
+          color: yellow;
+          font-weight: 600;
+        }
+        .wrt p {
+          font-weight: 500;
+        }
+        .address {
+          background-color: rgb(65, 46, 52);
+          border-radius: 5px;
+          font-size: x-small;
+          padding: 2px;
+          font-style: italic;
+        }
+        .sect2 img {
+          height: 80;
+          width: 110;
+        }
+        .wrt h3 {
+          color: yellow;
+          font-weight: 600;
+          font-size: smaller;
+        }
+        .wrt p {
+          font-weight: 200;
+          font-size: 10px;
+        }
+        .slogan {
+          color: blue;
+        }
+        .wrapps {
+          flex: auto;
+          width: 345px;
+        }
+        .show_factory {
+          display: flex;
+          justify-content: space-between;
+        }
+        .factory1 {
+          flex-direction: column;
+          font-size: 8px;
+          background-color: lavenderblush;
+          color: black;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+        }
+        .coImg img {
+          height: 80px;
+          width: 110px;
+        }
+        .factory2 {
+          flex-direction: column;
+          font-size: 8px;
+          background-color: lavenderblush;
+          color: black;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+        }
+        .factory3 {
+          flex-direction: column;
+          font-size: 8px;
+          background-color: lavenderblush;
+          color: black;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
+        }
+        .co_details {
+          padding: 5px;
+          font-size: x-small;
+          line-height: 10px;
+        }
+        .co_Products {
+          color: blue;
+          font-weight: 600;
+          padding-top: 3px;
+        }
+        .footers {
+          text-align: center;
+          color: white;
+          font-size: x-small;
+        }
+        .footers a {
+          padding: 2px;
+          margin-right: 6px;
+          text-decoration: none;
+        }
+        .elections {
+          border-radius: 5px;
+          margin: 3px 5px 3px 0px;
+          border: 2px solid rgb(165, 162, 162);
+          box-shadow: 0px 10px 2px -10px rgba(0, 0, 0, 0.68);
+        }
+
         .parties {
           display: flex;
         }
-        .npp,
+        .npp {
+          flex: 6;
+        }
+
         .ndc {
           flex: 6;
         }
-        /* .npp img {
-          height: ;
-          width: ;
-        } */
       }
       .downbelt {
         display: flex;
@@ -384,44 +605,6 @@
         background: #fff;
         position: relative;
       }
-      .topsquare {
-        display: flex;
-        margin-bottom: 4px;
-      }
-      .sect1 {
-        flex: 3;
-      }
-      .sect2 {
-        flex: 9;
-        background-color: green;
-        display: flex;
-        box-shadow: rgb(39, 39, 41) 3px 3px 12px 0px;
-      }
-      .sect2 p {
-        flex-direction: column;
-        color: #fff;
-      }
-      .wrt {
-        padding: 5px;
-        line-height: 10px;
-      }
-      .wrt h3 {
-        color: yellow;
-        font-weight: 600;
-      }
-      .wrt p {
-        font-weight: 500;
-      }
-      .address {
-        background-color: rgb(65, 46, 52);
-        border-radius: 5px;
-        font-size: small;
-        padding: 7px;
-        font-style: italic;
-      }
-      /* .wrapps{
-        display: flex;
-      } */
       .infoWrapper {
         margin-top: 3px;
         overflow-y: scroll;
@@ -430,9 +613,6 @@
         text-decoration: none;
         height: 100px;
         margin-right: 10px;
-      }
-      .notifications {
-        background-color: white;
       }
       .logoWrapper {
         display: flex;
@@ -518,12 +698,6 @@
       }
       span {
         margin-top: 7px;
-      }
-      .elections {
-        border-radius: 5px;
-        margin: 3px 0px 3px 0px;
-        border: 2px solid rgb(165, 162, 162);
-        box-shadow: 0px 10px 2px -10px rgba(0, 0, 0, 0.68);
       }
     </style>
   </head>
@@ -659,7 +833,13 @@
               </h6>
               <div class="parties">
                 <div class="npp">
-                  <img src="images/Bawum.jpg" height="150" width="158" alt="" />
+                  <img
+                    src="images/Bawum.jpg"
+                    height="150"
+                    width="158"
+                    alt=""
+                    class="bawumia"
+                  />
                   <span
                     style="
                       background-color: blue;
@@ -681,6 +861,7 @@
                     height="150"
                     width="159"
                     alt=""
+                    class="mahama"
                   />
                   <span
                     style="
@@ -699,7 +880,6 @@
                 </div>
               </div>
             </div>
-
             <p>
               <b>NEWSBOX</b> throws a spotlight on every single community in
               Ghana with their contribution to national economy through
@@ -768,7 +948,6 @@
         </div>
       </div>
       <hr class="backline" />
-
       <div class="info">
         <div>
           <h6>ASSESSING THE WEALTH OF OUR NATION CONTINUES FROM HERE:</h6>
@@ -823,7 +1002,6 @@
         >
       </p>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
