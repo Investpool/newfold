@@ -49,8 +49,6 @@
         .ndc {
           flex: 6;
         }
-       
-
       }
       .navbar {
         display: flex;
@@ -351,6 +349,29 @@
         }
       }
       @media screen and (max-width: 375px) {
+        .topnewsWrapper {
+          margin: 8px;
+        }
+        .topnews {
+          display: flex;
+        }
+        .topnews-one {
+          flex: 6;
+
+          margin: 4px;
+        }
+        .newslineOne {
+          line-height: 15px;
+          font-weight: 500;
+        }
+        .topnews-two {
+          flex: 6;
+          margin: 4px;
+        }
+        .newslineTwo {
+          line-height: 18px;
+          font-weight: 500;
+        }
         .infoWrapper {
           margin-top: 3px;
           overflow-y: scroll;
@@ -537,23 +558,6 @@
           padding: 2px;
           margin-right: 6px;
           text-decoration: none;
-        }
-        .elections {
-          border-radius: 5px;
-          margin: 3px 5px 3px 0px;
-          border: 2px solid rgb(165, 162, 162);
-          box-shadow: 0px 10px 2px -10px rgba(0, 0, 0, 0.68);
-        }
-
-        .parties {
-          display: flex;
-        }
-        .npp {
-          flex: 6;
-        }
-
-        .ndc {
-          flex: 6;
         }
       }
       .downbelt {
@@ -820,64 +824,25 @@
                 </li>
               </div>
             </div>
-            <div class="elections">
-              <h6
-                style="
-                  background-color: red;
-                  color: #fff;
-                  font-size: 14px;
-                  text-align: center;
-                "
-              >
-                2024 Elections, National Presidential Outlook
+            <div class="topnewsWrapper">
+              <h6 class="tophead" style="font-size: small; color: red">
+                Top News
               </h6>
-              <div class="parties">
-                <div class="npp">
-                  <img
-                    src="images/Bawum.jpg"
-                    height="150"
-                    width="158"
-                    alt=""
-                    class="bawumia"
-                  />
-                  <span
-                    style="
-                      background-color: blue;
-                      color: #fff;
-                      padding: 3px;
-                      font-weight: 800;
-                    "
-                    ><img
-                      src="images/npp-logo.jpg"
-                      height="25"
-                      width="25"
-                      style="border-radius: 30px; margin-right: 5px"
-                    />4,657,304 (41.61%)</span
-                  >
-                </div>
-                <div class="ndc">
-                  <img
-                    src="images/mahama.jpg"
-                    height="150"
-                    width="159"
-                    alt=""
-                    class="mahama"
-                  />
-                  <span
-                    style="
-                      background-color: green;
-                      color: #fff;
-                      padding: 3px;
-                      font-weight: 800;
-                    "
-                    ><img
-                      src="images/ndclogo.png"
-                      height="25"
-                      width="25"
-                      style="border-radius: 30px; margin-right: 5px"
-                    />6,328,397 (56.55%)</span
-                  >
-                </div>
+              <div class="topnews">
+                <a href="topnews.html">
+                  <div class="topnews-one">
+                    <img
+                      src="images/supremect.jpg"
+                      height="200"
+                      width="300"
+                      style="border: 2px solid rgb(99, 91, 86)"
+                    />
+                    <p class="newslineOne">
+                      SUPREME COURT ANNULS THE HIGH COURT’S RULING ON THE EC's
+                      CONTROVERSIAL CONSTITUENCY RESULTS
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
             <p>
