@@ -38,20 +38,10 @@
           display: flex;
         }
         .topnews-one {
-          flex: 6;
-
           margin: 4px;
         }
         .newslineOne {
           line-height: 22px;
-          font-weight: 500;
-        }
-        .topnews-two {
-          flex: 6;
-          margin: 4px;
-        }
-        .newslineTwo {
-          line-height: 18px;
           font-weight: 500;
         }
         div img {
@@ -65,68 +55,87 @@
         }
       }
       .topnewsWrapper {
-          margin: 10px;
-          padding: 5px;
-        }
+        background-color: lavender;
+        display: flex;
+        margin: 10px;
+        padding: 5px;
+      }
+      .leftSide {
+        flex: 3;
+      }
+      .mainColumn {
+        background-color: white;
+        padding: 15px;
+        flex: 6;
+      }
+      .rightSide {
+        flex: 3;
+      }
     </style>
   </head>
   <body>
     <div class="topnewsWrapper">
-      <h6 class="tophead" style="font-size: small; color: red">Top News</h6>
-      <div class="topnews">
-        <div class="topnews-one">
-          <img
-            src="images/supremect.jpg"
-            height="200"
-            width="340"
-            style="border: 2px solid rgb(99, 91, 86)"
-          />
-          <p class="date">27th December, 2024</p>
-          <h3 class="newslineOne">
-            SUPREME COURT ANNULS THE HIGH COURT’S RULING OF THE EC's
-            CONTROVERSIAL CONSTITUENCY RESULTS
-          </h3>
-          <br />
-          <p>
-            The Supreme Court ruled that the recent re-collation and declaration
-            of results by the Electoral Commission (EC) in Tema Central,
-            Okaikwei Central, Ablekuma North and Techiman South constituencies
-            in favour of the New Patriotic Party (NPP) be set aside.
-          </p>
-          <br />
-          <p>
-            However, the apex court ruled that the re-collation and declaration
-            of results of Nsawam Adoagyir and Ahafo Ano North constituencies,
-            which also went in favour of the NPP be maintained.
-          </p>
-          <br />
-          <p>
-            The ruling was made by a 5-member Justices panel of the Supreme
-            Court on the disputed results that dragged for days.
-          </p>
-          <br />
-          <p>
-            The judicial review application filed by the National Democratic
-            Congress (NDC), challenged a High Court ruling that directed the
-            Electoral Commission (EC) to collate parliamentary election results
-            in nine contested constituencies.
-          </p>
-          <br />
-          <p>
-            The controversy began on December 20, when the High Court ruled in
-            favour of a mandamus application filed by New Patriotic Party (NPP)
-            candidates, ordering the EC to collate results in the disputed
-            constituencies.
-          </p>
-          <br />
-          <p>
-            The NDC described it as unlawful and accuses the High Court of
-            overstepping its jurisdiction and compromising electoral sanctity.
-          </p>
-          <br />
-          <i style="font-size: small"> By James Coomson</i>
+      <div class="leftSide"></div>
+      <div class="mainColumn">
+        <h6 class="tophead" style="font-size: small; color: red">Top News</h6>
+        <div class="topnews">
+          <div class="topnews-one">
+            <img
+              src="images/supremect.jpg"
+              height="200"
+              width="340"
+              style="border: 2px solid rgb(99, 91, 86)"
+            />
+            <p class="date">27th December, 2024</p>
+            <h3 class="newslineOne">
+              SUPREME COURT ANNULS THE HIGH COURT’S RULING OF THE EC's
+              CONTROVERSIAL CONSTITUENCY RESULTS
+            </h3>
+            <br />
+            <p>
+              The Supreme Court ruled that the recent re-collation and
+              declaration of results by the Electoral Commission (EC) in Tema
+              Central, Okaikwei Central, Ablekuma North and Techiman South
+              constituencies in favour of the New Patriotic Party (NPP) be set
+              aside.
+            </p>
+            <br />
+            <p>
+              However, the apex court ruled that the re-collation and
+              declaration of results of Nsawam Adoagyir and Ahafo Ano North
+              constituencies, which also went in favour of the NPP be
+              maintained.
+            </p>
+            <br />
+            <p>
+              The ruling was made by a 5-member Justices panel of the Supreme
+              Court on the disputed results that dragged for days.
+            </p>
+            <br />
+            <p>
+              The judicial review application filed by the National Democratic
+              Congress (NDC), challenged a High Court ruling that directed the
+              Electoral Commission (EC) to collate parliamentary election
+              results in nine contested constituencies.
+            </p>
+            <br />
+            <p>
+              The controversy began on December 20, when the High Court ruled in
+              favour of a mandamus application filed by New Patriotic Party
+              (NPP) candidates, ordering the EC to collate results in the
+              disputed constituencies.
+            </p>
+            <br />
+            <p>
+              The NDC described it as unlawful and accuses the High Court of
+              overstepping its jurisdiction and compromising electoral sanctity.
+            </p>
+            <br />
+            <i style="font-size: small"> By James Coomson</i>
+          </div>
         </div>
       </div>
+      <div class="rightSide"></div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
