@@ -41,17 +41,6 @@
         padding: 0;
         box-sizing: border-box;
       }
-      @media screen and (max-width: 1440px) {
-        .parties {
-          display: flex;
-        }
-        .npp {
-          flex: 6;
-        }
-        .ndc {
-          flex: 6;
-        }
-      }
       .navbar {
         display: flex;
         color: red;
@@ -351,6 +340,49 @@
         }
       }
       @media screen and (max-width: 375px) {
+        .strip1 p {
+        background-color: rgb(22, 7, 160);
+        color: #fff;
+        font-size: xx-small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip2 p {
+        background-color: rgb(68, 4, 4);
+        color: #fff;
+        font-size: xx-small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip3 p {
+        background-color: rgb(206, 228, 10);
+        color: #fff;
+        font-size: xx-small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip4 p {
+        background-color: rgb(230, 27, 27);
+        color: #fff;
+        font-size: xx-small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip5 p {
+        background-color: rgba(21, 114, 2, 0.986);
+        color: #fff;
+        font-size: xx-small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip6 p{
+         background-color: grey;
+         color: #fff;
+         font-size: xx-small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+
         .headLines {
           display: flex;
         }
@@ -369,7 +401,7 @@
           background-color: rgb(0, 0, 14);
           color: white;
         }
-        .topnewsWrapper {
+        /* .topnewsWrapper {
           margin: 8px;
         }
         .topnews {
@@ -386,7 +418,7 @@
         .newslineTwo {
           line-height: 18px;
           font-weight: 500;
-        }
+        } */
         .infoWrapper {
           margin-top: 3px;
           overflow-y: scroll;
@@ -711,7 +743,6 @@
         font-size: 13px;
         text-decoration: none;
       }
-
       a {
         text-decoration: none;
       }
@@ -738,6 +769,60 @@
         flex: 10;
         background-color: rgb(0, 0, 14);
         color: white;
+      }
+      .belt{
+        display: flex;
+      }
+      .adsCircle{
+        flex: 6;
+      }
+      .mps{
+        flex: 6;
+      }
+      .strip1, .strip2, .strip3, .strip4, .strip5, .strip6 {
+         display: flex;
+      }
+      .strip1 p {
+        background-color: rgb(22, 7, 160);
+        color: #fff;
+        font-size: small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip2 p {
+        background-color: rgb(68, 4, 4);
+        color: #fff;
+        font-size: small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip3 p {
+        background-color: rgb(206, 228, 10);
+        color: #fff;
+        font-size: small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip4 p {
+        background-color: rgb(230, 27, 27);
+        color: #fff;
+        font-size: small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip5 p {
+        background-color: rgba(21, 114, 2, 0.986);
+        color: #fff;
+        font-size: small;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      .strip6 p{
+         background-color: grey;
+         color: #fff;
+         font-size: small;
+        padding: 2px;
+        border-radius: 3px;
       }
     </style>
   </head>
@@ -860,6 +945,8 @@
                 </li>
               </div>
             </div>
+            <div class="belt">
+              <div class="adsCircle">
             <script type="text/javascript">
               if (typeof atAsyncOptions !== "object") var atAsyncOptions = [];
               atAsyncOptions.push({
@@ -878,47 +965,50 @@
                 "://obtainanticipate.com/7c27def5abdf78f6ccb2c6c0a1affd1a/invoke.js";
               document.getElementsByTagName("head")[0].appendChild(script);
             </script>
-
             <div id="atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a"></div>
-            <!-- <div class="topnewsWrapper">
-              <h6 class="tophead" style="font-size: small; color: red">
-                Top News
-              </h6>
-              <div class="topnews">
-                <a href="topnews.html">
-                  <div class="topnews-one">
-                    <img
-                      src="images/supremect.jpg"
-                      height="200"
-                      width="300"
-                      style="border: 2px solid rgb(99, 91, 86)"
-                    />
-                    <p class="newslineOne">
-                      SUPREME COURT ANNULS THE HIGH COURT’S RULING ON THE EC's
-                      CONTROVERSIAL CONSTITUENCY RESULTS
-                    </p>
-                  </div>
-                </a>
+          </div>
+            <div class="mps">
+              <h4>KNOW YOUR MPs</h4>
+              <div class="byRegions">
+                <div class="strip1">
+                  <a href="mpsGR.html"><p class="gr" style="margin-right: 10px; font-size: smaller;">GREATER ACCRA</p></a>
+                  <a href="mpsCR.html"><p class="cr"style="margin-right: 10px; font-size: smaller; " >CENTRAL REGION</p></a>
+                  <a href="mpsWNR.html"><p class="wn">WESTERN NORTH REGION</p></a>
+                </div>
+                <div class="strip2">
+                  <a href="mpsWR.html"><p class="wr" style="margin-right: 10px;font-size: smaller; ">WESTERN REGION</p></a>
+                  <a href="mpsAS.html"><p class="as" style="margin-right: 10px; font-size: smaller;">ASHANTI REGION</p></a>
+                  <a href="mpsBR.html"><p class="bn">BONO REGION</p></a>
+                </div>
+                <div class="strip3">
+                  <a href="mpsBER.html"><p class="be" style="margin-right: 10px; font-size: smaller;">BONO-EAST REGION</p></a>
+                  <a href="mpsAH.html"><p class="ah" style="margin-right: 10px;font-size: smaller; ">AHAFO REGION</p></a>
+                  <a href="mpsER.html"><p class="er">EASTERN REGION</p></a>
+                </div>
+                <div class="strip4">
+                  <a href="mpsVR.html"><p class="vt" style="margin-right: 10px; font-size: smaller;">VOLTA REGION</p></a>
+                  <a href="mpsOR.html"><p class="ti" style="margin-right: 10px; font-size: smaller;">OTI REGION</p></a>
+                  <a href="mpsNR.html"><p class="no">NORTHERN REGION</p></a>
+                </div>
+                <div class="strip5">
+                  <a href="mpsNER.html"><p class="ne" style="margin-right: 10px; font-size: smaller; ">NORTH EAST REGION</p></a>
+                  <a href="mpsSR.html"><p class="sv" style="margin-right: 10px; font-size: smaller;">SAVANA REGION</p></a>
+                  <a href="mpsUWR.html"><p class="uw">UPPER WEST REGION</p></a>
+                </div>
+                <div class="strip6">
+                  <a href="mpsUER.html"><p class="ue">UPPER EAST REGION</p></a>
+                </div>
               </div>
-            </div> -->
+            </div>
+            </div>
             <div class="headLines">
               <h3 class="nhl">HEADLINES</h3>
               <marquee class="marq">
-                I leave behind a Ghana that is working - Akufo Addo<b
+                Ghc2.5bn approved for arrears clearance 2025<b
                   style="color: yellow"
                   ><></b
-                >Ghc2.5bn approved for arrears clearance 2025<b
-                  style="color: yellow"
-                  ><></b
-                >Ghc68.8bn allocated for First Quarter 2025<b
-                  style="color: yellow"
-                  ><></b
-                >Tullow Oil wins $320m tax disput against Ghana
-                <b style="color: yellow"><></b> The West African Examinations
-                Council has released the Provisional Results for WASCCE for
-                School Candidates 2024 <b style="color: yellow"><></b> NDC
-                Professional Forum advises Parliament to retain Bagbin as 9th
-                Speaker <b style="color: yellow"><></b>
+                >Ghc68.8bn allocated for First Quarter 2025
+                 <b style="color: yellow"><></b>
                 Aggrieved Ada Chiefs demand justice over violent attack in
                 Bornikope
                 <b style="color: yellow"><></b> President -Elect John Dramani
