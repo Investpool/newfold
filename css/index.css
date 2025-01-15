@@ -1,3 +1,7 @@
 nav a {
     color: white;
 }
+.body{
+    background-color: aquamarine;
+    margin: 0 10px 0 10px;
+}
