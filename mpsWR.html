@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,254 +11,273 @@
     />
     <title>Document</title>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-  
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        @media screen and (max-width: 375px) {
-          .addup {
-            flex-direction: column;
-            border: 2px solid rgba(237, 235, 245, 0.966);
-            margin-bottom: 5px;
-            margin-right: 3px;
-            border-radius: 3px;
-            background-color: rgb(3, 3, 31);
-            color: white;
-          }
-          .spn {
-            margin-top: 0%;
-            text-align: center;
-            font-size: xx-small;
-            padding-bottom: 1px;
-          }
-          img {
-            height: 70px;
-            width: 80px;
-          }
-        }
-        .gr1,
-        .gr2,
-        .gr3,
-        .gr4,
-        .gr5,
-        .gr6,
-        .gr7,
-        .gr8,
-        .gr9,
-        .gr10,
-        .gr11,
-        .gr12 {
-          display: flex;
-        }
-        .cr1,
-        .cr2,
-        .cr3,
-        .cr4,
-        .cr5,
-        .cr6 {
-          display: flex;
-        }
-        .wr1,
-        .wr2,
-        .wr3,
-        .wr4,
-        .wr5,
-        .wr6 {
-          display: flex;
-        }
-        .wnr1,
-        .wnr2,
-        .wnr3,
-        .wnr4,
-        .wnr5,
-        .wnr6 {
-          display: flex;
-        }
-        .as1,
-        .as2,
-        .as3,
-        .as4,
-        .as5,
-        .as6,
-        .as7,
-        .as8,
-        .as9,
-        .as10,
-        .as11,
-        .as12 {
-          display: flex;
-        }
-        .bn1,
-        .bn2,
-        .bn3 {
-          display: flex;
-        }
-        .be1,
-        .be2,
-        .be3 {
-          display: flex;
-        }
-        .ah1,
-        .ah2,
-        .ah3 {
-          display: flex;
-        }
-        .er1,
-        .er2,
-        .er3,
-        .er4,
-        .er5,
-        .er6,
-        .er7,
-        .er8,
-        .er9 {
-          display: flex;
-        }
-        .vr1,
-        .vr2,
-        .vr3,
-        .vr4,
-        .vr5,
-        .vr6 {
-          display: flex;
-        }
-        .or1,
-        .or2,
-        .or3,
-        .or4 {
-          display: flex;
-        }
-        .ntr1,
-        .ntr2,
-        .ntr3,
-        .ntr4,
-        .ntr5,
-        .ntr6 {
-          display: flex;
-        }
-        .ner1,
-        .ner2,
-        .ner3 {
-          display: flex;
-        }
-        .sr1,
-        .sr2,
-        .sr3 {
-          display: flex;
-        }
-        .uw1,
-        .uw2,
-        .uw3 {
-          display: flex;
-        }
-        .ue1,
-        .ue2,
-        .ue3,
-        .ue4,
-        .ue5,
-        .ue6 {
-          display: flex;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 375px) {
         .addup {
           flex-direction: column;
-          border: 2px solid white;
+          border: 2px solid rgba(237, 235, 245, 0.966);
           margin-bottom: 5px;
           margin-right: 3px;
-          background-color: brown;
+          border-radius: 3px;
+          background-color: rgb(3, 3, 31);
           color: white;
         }
         .spn {
           margin-top: 0%;
           text-align: center;
+          font-size: xx-small;
           padding-bottom: 1px;
         }
-      </style>
-</head>
-<body>
+        img {
+          height: 70px;
+          width: 80px;
+        }
+      }
+      .gr1,
+      .gr2,
+      .gr3,
+      .gr4,
+      .gr5,
+      .gr6,
+      .gr7,
+      .gr8,
+      .gr9,
+      .gr10,
+      .gr11,
+      .gr12 {
+        display: flex;
+      }
+      .cr1,
+      .cr2,
+      .cr3,
+      .cr4,
+      .cr5,
+      .cr6 {
+        display: flex;
+      }
+      .wr1,
+      .wr2,
+      .wr3,
+      .wr4,
+      .wr5,
+      .wr6 {
+        display: flex;
+      }
+      .wnr1,
+      .wnr2,
+      .wnr3,
+      .wnr4,
+      .wnr5,
+      .wnr6 {
+        display: flex;
+      }
+      .as1,
+      .as2,
+      .as3,
+      .as4,
+      .as5,
+      .as6,
+      .as7,
+      .as8,
+      .as9,
+      .as10,
+      .as11,
+      .as12 {
+        display: flex;
+      }
+      .bn1,
+      .bn2,
+      .bn3 {
+        display: flex;
+      }
+      .be1,
+      .be2,
+      .be3 {
+        display: flex;
+      }
+      .ah1,
+      .ah2,
+      .ah3 {
+        display: flex;
+      }
+      .er1,
+      .er2,
+      .er3,
+      .er4,
+      .er5,
+      .er6,
+      .er7,
+      .er8,
+      .er9 {
+        display: flex;
+      }
+      .vr1,
+      .vr2,
+      .vr3,
+      .vr4,
+      .vr5,
+      .vr6 {
+        display: flex;
+      }
+      .or1,
+      .or2,
+      .or3,
+      .or4 {
+        display: flex;
+      }
+      .ntr1,
+      .ntr2,
+      .ntr3,
+      .ntr4,
+      .ntr5,
+      .ntr6 {
+        display: flex;
+      }
+      .ner1,
+      .ner2,
+      .ner3 {
+        display: flex;
+      }
+      .sr1,
+      .sr2,
+      .sr3 {
+        display: flex;
+      }
+      .uw1,
+      .uw2,
+      .uw3 {
+        display: flex;
+      }
+      .ue1,
+      .ue2,
+      .ue3,
+      .ue4,
+      .ue5,
+      .ue6 {
+        display: flex;
+      }
+      .addup {
+        flex-direction: column;
+        border: 2px solid white;
+        margin-bottom: 5px;
+        margin-right: 3px;
+        background-color: brown;
+        color: white;
+      }
+      .spn {
+        margin-top: 0%;
+        text-align: center;
+        padding-bottom: 1px;
+      }
+      body {
+        background-color: lavender;
+      }
+      .container {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
     <h4>WESTERN REGION</h4>
     <div class="western">
       <div class="wr1">
         <div class="addup">
           <img src="images/mpAhantaWestBissue.jpg" height="200" width="200" />
-          <p class="spn">Mavis Kuukua Bissue(NDC)<br />Ahanta West</p>
+          <p class="spn">Mavis Kuukua Bissue<br />Ahanta West (NDC)</p>
         </div>
         <div class="addup">
           <img src="images/mpAmenfiCentralJoana.jpg" height="200" width="200" />
-          <p class="spn">Joana Gyan Cudjoe(NDC)<br />Amenfi Central</p>
+          <p class="spn">Joana Gyan Cudjoe<br />Amenfi Central (NDC)</p>
         </div>
         <div class="addup">
           <img src="images/mpAmenfiEastAmankwah.jpg" height="200" width="200" />
-          <p class="spn">Nicholas Amankwah(NDC)<br />Amenfi East</p>
+          <p class="spn">Nicholas Amankwah<br />Amenfi East (NDC)</p>
         </div>
         <div class="addup">
           <img src="images/mpAmenfiWestAfful.jpg" height="200" width="200" />
-          <p class="spn">Eric Afful(NDC)<br />Amenfi West</p>
+          <p class="spn">Eric Afful<br />Amenfi West (NDC)</p>
         </div>
       </div>
       <div class="wr2">
         <div class="addup">
           <img src="images/mpEffiaBoamah-Nyarko.jpg" height="200" width="200" />
-          <p class="spn">Isaac Y. Boamah Nyarko(NPP)<br />Effia</p>
+          <p class="spn">Isaac Y. Boamah Nyarko<br />Effia (NPP)</p>
         </div>
         <div class="addup">
           <img src="images/mpEllembelle.jpg" height="200" width="200" />
-          <p class="spn">E. Armah Kofi Buah(NDC)<br />Ellembelle</p>
+          <p class="spn">E. Armah Kofi Buah<br />Ellembelle (NDC)</p>
         </div>
         <div class="addup">
-          <img src="images/mpEssikadoKetanDanquah.jpg" height="200" width="200" />
-          <p class="spn">G. Ayensu-Danquah(NDC)<br />Essikado-Ketan</p>
+          <img
+            src="images/mpEssikadoKetanDanquah.jpg"
+            height="200"
+            width="200"
+          />
+          <p class="spn">G. Ayensu-Danquah<br />Essikado-Ketan (NDC)</p>
         </div>
         <div class="addup">
           <img src="images/mpEvalueArko.jpg" height="200" width="200" />
-          <p class="spn">Kofi Arko Nokoe(NDC) <br />Evalue-Ajomoro-Gwira</p>
+          <p class="spn">Kofi Arko Nokoe <br />Evalue-Ajomoro-Gwira (NDC)</p>
         </div>
       </div>
       <div class="wr3">
         <div class="addup">
           <img src="images/mpJomoroDorcas.jpg" height="200" width="200" />
-          <p class="spn">Dorcas Affo-Toffey(NDC) <br />Jomoro</p>
+          <p class="spn">Dorcas Affo-Toffey <br />Jomoro (NDC)</p>
         </div>
         <div class="addup">
-          <img src="images/mpKwesimintsimBuckman.jpg" height="200" width="200" />
-          <p class="spn">Philip Fiifi Buckman(NDC) <br />Kwesimintsim</p>
+          <img
+            src="images/mpKwesimintsimBuckman.jpg"
+            height="200"
+            width="200"
+          />
+          <p class="spn">Philip Fiifi Buckman <br />Kwesimintsim (NDC)</p>
         </div>
         <div class="addup">
           <img src="images/mpMpohorBentil.jpg" height="200" width="200" />
-          <p class="spn">Bentil Godfred Henry(NDC) <br />Mpohor</p>
+          <p class="spn">Bentil Godfred Henry <br />Mpohor (NDC)</p>
         </div>
         <div class="addup">
-          <img src="images/mpPrestea HuniVallCudjoe.jpg" height="200" width="200" />
-          <p class="spn">Robert Wisdom Cudjoe(NDC) <br />Prestea-Huni Valley</p>
+          <img
+            src="images/mpPrestea HuniVallCudjoe.jpg"
+            height="200"
+            width="200"
+          />
+          <p class="spn">Robert Wisdom Cudjoe <br />Prestea-Huni Valley (NDC)</p>
         </div>
       </div>
       <div class="wr4">
         <div class="addup">
           <img src="images/mpSecondiBlay.jpg" height="200" width="200" />
-          <p class="spn">Blay Nyameke Armah(NDC) <br />Sekondi</p>
+          <p class="spn">Blay Nyameke Armah <br />Sekondi (NDC)</p>
         </div>
         <div class="addup">
           <img src="images/mpShamaEmelia.jpg" height="200" width="200" />
-          <p class="spn">Emelia Arthur(NDC) <br />Shama</p>
+          <p class="spn">Emelia Arthur <br />Shama (NDC)</p>
         </div>
         <div class="addup">
           <img src="images/mpTakoradiKwabena.jpg" height="200" width="200" />
-          <p class="spn">K. Okyere Darko-Mensah(NPP) <br />Takoradi</p>
+          <p class="spn">K. Okyere Darko-Mensah <br />Takoradi (NPP)</p>
         </div>
         <div class="addup">
           <img src="images/mpTarkwaTaylor.jpg" height="200" width="200" />
-          <p class="spn">Issa Salifu Taylor(NDC) <br />Tarkwa-Nsuaem</p>
+          <p class="spn">Issa Salifu Taylor <br />Tarkwa-Nsuaem (NDC)</p>
         </div>
       </div>
       <div class="wr5">
         <div class="addup">
           <img src="images/mpWassaEastMensah.jpg" height="200" width="200" />
-          <p class="spn">Isaac Adjei Mensah(NDC) <br />Wassa East</p>
+          <p class="spn">Isaac Adjei Mensah <br />Wassa East (NDC)</p>
         </div>
-        
       </div>
     </div>
-</body>
+    </div>
+  </body>
 </html>
