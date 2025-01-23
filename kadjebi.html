@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,168 +12,176 @@
     />
     <title>newsbox</title>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-  
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        @media screen and (max-width: 425px) {
-          a {
-            color: #f7eeee;
-            color: #1e06fa;
-            border: 1px solid blue;
-            /* margin: 40px; */
-            text-decoration: none;
-          }
-          p{
-            font-size: 12px;
-          }
-          h5{
-            font-size: 14px;
-          }
-        }
-  
-        body {
-          padding: 20px;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 425px) {
         a {
-          padding: 2px;
-          margin-bottom: 100px;
-          border-radius: 20px;
-          color: #fff;
-          border: 1px solid #fff;
-          /*border-bottom: 5px solid blue; */
+          color: #f7eeee;
+          color: #1e06fa;
+          border: 1px solid blue;
+          /* margin: 40px; */
           text-decoration: none;
         }
-        section {
-          background-color: #1e06fa;
-          padding: 10px;
-        }
-        .cr11,
-        .cr12 {
-          background-color: azure;
-          color: rgb(0, 0, 0);
-        }
-        img {
-          margin-right: 2px;
-        }
-        .image-row {
-          display: flex;
-          overflow-x: scroll;
-        }
-        .post {
-          display: flex;
-        }
-        .input {
-          flex: 4;
-        }
-        .writeups {
-          flex: 8;
-          background-color: pink;
-        }
-        .text {
-          height: 400;
-        }
-        .submit {
+        p {
           font-size: 12px;
-          color: #fff;
-          background-color: blue;
-          border-radius: 4px;
-          padding: 5px;
         }
-        .parent {
-          position: relative;
-          text-align: center;
-          color: white;
+        h5 {
+          font-size: 14px;
         }
-        .bottom-right {
-          position: absolute;
-          bottom: 10px;
-          right: 15px;
-          font-size: 10px;
-  
-          padding: 2px;
-        }
-        .package {
-          display: flex;
-        }
-        .news {
-          flex: 6;
-          background-color: rgb(196, 241, 247);
-        }
-        .ads {
-          flex: 6;
-        }
-        .newsPage{
-         border: none;
-         border-radius: 5px;
-         padding: 2px;
-         margin-bottom: 5px;
-         margin-left: 5px;
-         margin-right: 5px;
-         background-color: white;
-        }
-        .titlop{
-          font-weight: 500;
-        } 
-      </style>
-</head>
-<body>
-  <div><h3>KAJEBI DISTRICT</h3></div>
+      }
+
+      body {
+        padding: 20px;
+      }
+      a {
+        padding: 2px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        /*border-bottom: 5px solid blue; */
+        text-decoration: none;
+      }
+      section {
+        background-color: #1e06fa;
+        padding: 10px;
+      }
+      .cr11,
+      .cr12 {
+        background-color: azure;
+        color: rgb(0, 0, 0);
+      }
+      img {
+        margin-right: 2px;
+      }
+      .image-row {
+        display: flex;
+        overflow-x: scroll;
+      }
+      .post {
+        display: flex;
+      }
+      .input {
+        flex: 4;
+      }
+      .writeups {
+        flex: 8;
+        background-color: pink;
+      }
+      .text {
+        height: 400;
+      }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .parent {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        font-size: 10px;
+
+        padding: 2px;
+      }
+      .package {
+        display: flex;
+      }
+      .news {
+        flex: 6;
+        background-color: rgb(196, 241, 247);
+      }
+      .ads {
+        flex: 6;
+      }
+      .newsPage {
+        border: none;
+        border-radius: 5px;
+        padding: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: white;
+      }
+      .titlop {
+        font-weight: 500;
+      }
+      body {
+        padding: 10px;
+        background-color: lightgray;
+      }
+      .container {
+        background-color: white;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div><h3>KAJEBI DISTRICT</h3></div>
     <div>KAJEBI DISTRICT COMMUNITIES</div>
-  <section>
-    <a href="">Kadjebi</a>
-    <a href="">Asato</a>
-    <a href="">Gyamonome</a>
-    <a href="">Ketepe</a>
-    <a href="">Okanta</a>
-    <a href="">Menuso</a>
-    <a href="">Jinjisu</a>
-    <a href="">Kodibenum</a>
-    <a href="">Ahamansu</a>
-    <a href="">Mangoase</a>
-    <a href="">Ahamansu Junction</a>
-    <a href="">Dika</a>
-    <a href="">Todome</a>
-    <a href="">Pampawie</a>
-    <a href="">Yaadzo</a>
-    <a href="">Tsortome</a>
-    <a href="">Butabe</a>
-    <a href="">Koto-Nkwanta</a>
-    <a href="">Titiaka</a>
-    <a href="">Brofoso</a>
-    <a href="">Obuase</a>
-    <a href="">Kpalime</a>
-    <a href="">Okrakrom</a>
-    <a href="">Ampeyo</a>
-    <a href="">Dapaa</a>
-    <a href="">Kukurantumi</a>
-    <a href="">Kwakyi</a>
-    <a href="">Dodi-Mempeasem</a>
-    <a href="">Akun</a>
-    <a href="">Dodi-Tokoranu</a>
-    <a href="">Dodi-Atakofi</a>
-    <a href="">Kpomkpa</a>
-    <a href="">Poase-Cement</a>
-    <a href="">Konsuaso</a>
-    <a href="">Jimpapa</a>
-    <a href="">Tenteanyo</a>
-    <a href="">Asuboe</a>
-    <a href="">Aboabo</a>
-    <a href="">Papase</a>
-    <a href="">Sabram</a>
-    <a href="">Manida</a>
-    <a href="">Amanfrom</a>
-    <a href="">Dodofie</a>
-    <a href="">Berkpo</a>
-    <a href="">Pepesu</a>
-    <a href="">Tamale</a>
-    <a href="">Olobombi</a>
-    <a href="">Dompa</a>
-    
-  </section>
+    <section>
+      <a href="">Kadjebi</a>
+      <a href="">Asato</a>
+      <a href="">Gyamonome</a>
+      <a href="">Ketepe</a>
+      <a href="">Okanta</a>
+      <a href="">Menuso</a>
+      <a href="">Jinjisu</a>
+      <a href="">Kodibenum</a>
+      <a href="">Ahamansu</a>
+      <a href="">Mangoase</a>
+      <a href="">Ahamansu Junction</a>
+      <a href="">Dika</a>
+      <a href="">Todome</a>
+      <a href="">Pampawie</a>
+      <a href="">Yaadzo</a>
+      <a href="">Tsortome</a>
+      <a href="">Butabe</a>
+      <a href="">Koto-Nkwanta</a>
+      <a href="">Titiaka</a>
+      <a href="">Brofoso</a>
+      <a href="">Obuase</a>
+      <a href="">Kpalime</a>
+      <a href="">Okrakrom</a>
+      <a href="">Ampeyo</a>
+      <a href="">Dapaa</a>
+      <a href="">Kukurantumi</a>
+      <a href="">Kwakyi</a>
+      <a href="">Dodi-Mempeasem</a>
+      <a href="">Akun</a>
+      <a href="">Dodi-Tokoranu</a>
+      <a href="">Dodi-Atakofi</a>
+      <a href="">Kpomkpa</a>
+      <a href="">Poase-Cement</a>
+      <a href="">Konsuaso</a>
+      <a href="">Jimpapa</a>
+      <a href="">Tenteanyo</a>
+      <a href="">Asuboe</a>
+      <a href="">Aboabo</a>
+      <a href="">Papase</a>
+      <a href="">Sabram</a>
+      <a href="">Manida</a>
+      <a href="">Amanfrom</a>
+      <a href="">Dodofie</a>
+      <a href="">Berkpo</a>
+      <a href="">Pepesu</a>
+      <a href="">Tamale</a>
+      <a href="">Olobombi</a>
+      <a href="">Dompa</a>
+    </section>
     <!-- <div class="info-down">
       <div class="image-row">
         <div class="parent">
@@ -210,10 +218,11 @@
       </div>
       
     </div> -->
+  </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
