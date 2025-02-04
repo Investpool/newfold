@@ -336,6 +336,22 @@
         }
       }
       @media screen and (max-width: 375px) {
+        .adsCircle{
+          flex: 6;
+        }
+        .mps {
+          flex: 6;
+          border: none;
+          padding: 2px 0px 2px 4px;
+          margin-right: 0px;
+          background-color: rgb(7, 56, 75);
+          margin: 5px 0px 5px 0px;
+          border-radius: 4px;
+          width: 150px;
+        }
+        .reasons {
+          margin-right: 30px;
+        }
         .strip1 p {
           background-color: rgb(22, 7, 160);
           color: #fff;
@@ -536,7 +552,7 @@
         }
         .factory1 {
           flex-direction: column;
-          font-size: 8px;
+          font-size: 6px;
           background-color: lavenderblush;
           color: black;
           border: none;
@@ -545,7 +561,8 @@
         }
         .coImg img {
           height: 80px;
-          width: 110px;
+          width: 100px;
+          border-radius: 5px;
         }
         .factory2 {
           flex-direction: column;
@@ -697,7 +714,7 @@
         font-weight: 500;
         text-decoration: none;
       }
-      .nitem1 {
+      /* .nitem1 {
         margin: 5px;
       }
       .nitem1 p {
@@ -718,7 +735,7 @@
       .nitem2 p {
         font-size: 13px;
         text-decoration: none;
-      }
+      } */
       a {
         text-decoration: none;
       }
@@ -753,13 +770,16 @@
         flex: 6;
       }
       .mps {
-        flex: 6;
+        flex: 4;
         border: none;
         padding: 2px 0px 2px 4px;
         margin-right: 18px;
         background-color: rgb(7, 56, 75);
         margin-top: 5px;
         border-radius: 4px;
+      }
+      .outSide {
+        flex: 2;
       }
       .strip1,
       .strip2,
@@ -966,7 +986,7 @@
                 <h5
                   style="
                     border: 3px solid rgb(8, 21, 145);
-                    font-size: 15px;
+                    font-size: 12px;
                     background-color: rgb(2, 2, 22);
                     color: white;
                     text-align: center;
@@ -977,143 +997,99 @@
                 <div class="byRegions">
                   <div class="strip1">
                     <a href="mpsGR.html"
-                      ><p
-                        class="gr"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="gr" style="margin-right: 5px; font-size: 9px">
                         ACCRA
                       </p></a
                     >
                     <a href="mpsCR.html"
-                      ><p
-                        class="cr"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="cr" style="margin-right: 5px; font-size: 9px">
                         CENTRAL
                       </p></a
                     >
                     <a href="mpsWNR.html"
-                      ><p class="wn" style="margin-right: 10px; font-size: 9px">
+                      ><p class="wn" style="margin-right: 5px; font-size: 7px">
                         W-NORTH
                       </p></a
                     >
                   </div>
                   <div class="strip2">
                     <a href="mpsWR.html"
-                      ><p
-                        class="wr"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="wr" style="margin-right: 5px; font-size: 9px">
                         WESTERN
                       </p></a
                     >
                     <a href="mpsAS.html"
-                      ><p
-                        class="as"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="as" style="margin-right: 5px; font-size: 9px">
                         ASHANTI
                       </p></a
                     >
                     <a href="mpsBR.html"
-                      ><p
-                        class="bn"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="bn" style="margin-right: 5px; font-size: 9px">
                         BONO
                       </p></a
                     >
                   </div>
                   <div class="strip3">
                     <a href="mpsBER.html"
-                      ><p
-                        class="be"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="be" style="margin-right: 5px; font-size: 9px">
                         B-EAST
                       </p></a
                     >
                     <a href="mpsAH.html"
-                      ><p
-                        class="ah"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="ah" style="margin-right: 5px; font-size: 9px">
                         AHAFO
                       </p></a
                     >
                     <a href="mpsER.html"
-                      ><p
-                        class="er"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="er" style="margin-right: 5px; font-size: 9px">
                         EASTERN
                       </p></a
                     >
                   </div>
                   <div class="strip4">
                     <a href="mpsVR.html"
-                      ><p
-                        class="vt"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="vt" style="margin-right: 5px; font-size: 9px">
                         VOLTA
                       </p></a
                     >
                     <a href="mpsOR.html"
-                      ><p
-                        class="ti"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="ti" style="margin-right: 5px; font-size: 9px">
                         OTI
                       </p></a
                     >
                     <a href="mpsNR.html"
-                      ><p
-                        class="no"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="no" style="margin-right: 5px; font-size: 9px">
                         NORTHERN
                       </p></a
                     >
                   </div>
                   <div class="strip5">
                     <a href="mpsNER.html"
-                      ><p
-                        class="ne"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="ne" style="margin-right: 5px; font-size: 9px">
                         N-EAST
                       </p></a
                     >
                     <a href="mpsSR.html"
-                      ><p
-                        class="sv"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="sv" style="margin-right: 5px; font-size: 9px">
                         SAVANA
                       </p></a
                     >
                     <a href="mpsUWR.html"
-                      ><p
-                        class="uw"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="uw" style="margin-right: 5px; font-size: 9px">
                         U-WEST
                       </p></a
                     >
                   </div>
                   <div class="strip6">
                     <a href="mpsUER.html"
-                      ><p
-                        class="ue"
-                        style="margin-right: 10px; font-size: smaller"
-                      >
+                      ><p class="ue" style="margin-right: 5px; font-size: 9px">
                         U-EAST
                       </p></a
                     >
                   </div>
                 </div>
               </div>
+              <div class="outSide"></div>
             </div>
             <div class="headLines">
               <h3 class="nhl">HEADLINES</h3>
@@ -1134,21 +1110,23 @@
                 Birthrights
               </marquee>
             </div>
-            <p>
-              <b>NEWSBOX</b> throws a spotlight on every single community in
-              Ghana with their contribution to national economy through
-              production of real value goods, by individuals and cooperate
-              bodies. This is showcased in:
-              <li>What people say and do around town</li>
-              <li>pictorial activities of the people</li>
-              <li>business opportunities available</li>
-              <li>any other general outlook.</li>
-            </p>
+            <div class="reasons">
+              <p>
+                <b>NEWSBOX</b> throws a spotlight on every single community in
+                Ghana with their contribution to national economy through
+                production of real value goods, by individuals and cooperate
+                bodies. This is showcased in:
+                <li>What people say and do around town</li>
+                <li>pictorial activities of the people</li>
+                <li>business opportunities available</li>
+                <li>any other general outlook.</li>
+              </p>
 
-            Informations, advertisements, pictures and voice clips from any
-            person or community can be sent to:
-            <i class="fa fa-envelope" style="font-size: 12px; color: red"></i>
-            info@newsboxgh.com
+              Informations, advertisements, pictures and voice clips from any
+              person or community can be sent to:
+              <i class="fa fa-envelope" style="font-size: 12px; color: red"></i>
+              info@newsboxgh.com
+            </div>
           </div>
         </div>
       </div>
