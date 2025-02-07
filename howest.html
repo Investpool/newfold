@@ -253,15 +253,22 @@
         background-color: white;
         padding: 5px;
       }
-      
-      .story1 img{
+      .chpsFoto {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
         float: left;
+        margin-right: 5px;
       }
-      .story2 img{
+      .epRoads {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
         float: left;
+        margin-right: 5px;
       }
-      img {
-        margin-right: 6px;
+      .adsCircle{
+        float: left;
       }
     </style>
   </head>
@@ -495,26 +502,6 @@
             <i>Communities with stories are marked <b>yellow</b></i>
           </p>
           <div class="newsPage">
-            <script type="text/javascript">
-              if (typeof atAsyncOptions !== "object") var atAsyncOptions = [];
-              atAsyncOptions.push({
-                key: "7c27def5abdf78f6ccb2c6c0a1affd1a",
-                format: "js",
-                async: true,
-                container: "atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a",
-                params: {},
-              });
-              var script = document.createElement("script");
-              script.type = "text/javascript";
-              script.async = true;
-              script.src =
-                "http" +
-                (location.protocol === "https:" ? "s" : "") +
-                "://obtainanticipate.com/7c27def5abdf78f6ccb2c6c0a1affd1a/invoke.js";
-              document.getElementsByTagName("head")[0].appendChild(script);
-            </script>
-
-            <div id="atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a"></div>
             
             <!-- <h6
               style="
@@ -526,36 +513,68 @@
             >
               ANYIRAWASE AWUDOME, HO WEST, VOLTA
             </h6> -->
-            
+
             <h6 class="titlop">Anyirawase Rises to the Challenges</h6>
             <p class="date">13th May, 2024</p>
             <div class="story1">
-            <img src="images/chps.webp" height="200" width="350" alt="" />
-
-            <p>
-              Anyirawase Youth Association has launched the construction of a
-              Ghc140,000 staff quarters for its CHPS compound.
-            </p>
-            <p>
-              Anyirawase Youth Association has launched the construction of a
-              Ghc140,000 staff quarters for its CHPS compound.
-            </p>
-            <p>
-              Anyirawase Youth Association has launched the construction of a
-              Ghc140,000 staff quarters for its CHPS compound.
-            </p>
-            <p>
-              Anyirawase Youth Association has launched the construction of a
-              Ghc140,000 staff quarters for its CHPS compound.
-            </p>
-            <p>
-              Anyirawase Youth Association has launched the construction of a
-              Ghc140,000 staff quarters for its CHPS compound.
-            </p>
-            <p>
-              Anyirawase Youth Association has launched the construction of a
-              Ghc140,000 staff quarters for its CHPS compound.
-            </p>
+              <div class="chpsFoto">
+                <img src="images/chps.webp" height="200" width="350" alt="" />
+                <span
+                  style="
+                    background-color: gray;
+                    text-align: center;
+                    margin: 2px;
+                  "
+                  >Anyirawase CHPS compound Under Construction</span
+                >
+              </div>
+              <p style="font-weight: 700;"><i>By News Desk</i></p>
+              <p>
+                Anyirawase Youth Association has launched the construction of a
+                Ghc140,000 staff quarters for its CHPS compound.
+              </p>
+              <p>
+                Anyirawase Youth Association has launched the construction of a
+                Ghc140,000 staff quarters for its CHPS compound.
+              </p>
+              <p>
+                Anyirawase Youth Association has launched the construction of a
+                Ghc140,000 staff quarters for its CHPS compound.
+              </p>
+              <p>
+                Anyirawase Youth Association has launched the construction of a
+                Ghc140,000 staff quarters for its CHPS compound.
+              </p>
+              <div class="adsCircle">
+                <script type="text/javascript">
+                  if (typeof atAsyncOptions !== "object") var atAsyncOptions = [];
+                  atAsyncOptions.push({
+                    key: "7c27def5abdf78f6ccb2c6c0a1affd1a",
+                    format: "js",
+                    async: true,
+                    container: "atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a",
+                    params: {},
+                  });
+                  var script = document.createElement("script");
+                  script.type = "text/javascript";
+                  script.async = true;
+                  script.src =
+                    "http" +
+                    (location.protocol === "https:" ? "s" : "") +
+                    "://obtainanticipate.com/7c27def5abdf78f6ccb2c6c0a1affd1a/invoke.js";
+                  document.getElementsByTagName("head")[0].appendChild(script);
+                </script>
+  
+                <div id="atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a"></div>
+              </div>
+              <p>
+                Anyirawase Youth Association has launched the construction of a
+                Ghc140,000 staff quarters for its CHPS compound.
+              </p>
+              <p>
+                Anyirawase Youth Association has launched the construction of a
+                Ghc140,000 staff quarters for its CHPS compound.
+              </p>
             </div>
             <div class="base">
               <div class="links">
@@ -614,16 +633,26 @@
               </div>
             </div>
           </div>
-          <hr>
+          <hr />
           <div class="newsPage">
-           
-              <h6 class="titlop">Tsito EP Church Completes Road Works</h6>
-              <p class="date">19th June, 2023</p>
-              <div class="story2">
-              <img src="images/pave.webp" height="200" width="350" alt="" />
+            <h6 class="titlop">Tsito EP Church Completes Road Works</h6>
+            <p class="date">19th June, 2023</p>
+            <div class="story2">
+              <div class="epRoads">
+                <img src="images/pave.webp" height="200" width="350" alt="" />
+                <span
+                  style="
+                    background-color: gray;
+                    text-align: center;
+                    margin: 2px;
+                  "
+                  >Completed Road Works</span
+                >
+              </div>
+              <p style="font-weight: 700;"><i>By News Desk</i></p>
               <p>
-                Tsito Evangelical Presbyterian Church, Ghana has completed an
-                expensive town road Works linking the church premises to the
+                Tsito Evangelical Presbyterian Church Ghana, has completed an
+                expensive town road works linking the church premises to the
                 main Ho - Accra highway. The project, spanning about 300 metres
                 involves the laying of pavement blocks in a nice pattern
                 described by the members of the church and residents as
