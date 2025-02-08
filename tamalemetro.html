@@ -221,54 +221,55 @@
   </head>
   <body>
     <div class="container">
-    <div>
-      <h3>TAMALE METROPOLIS</h3>
-    </div>
-    <div>TAMALE METROPOLITAN COMMUNITIES</div>
-    <section>Tamale</section>
-    <div class="info-down">
-      <div class="image-row">
-        <div class="parent">
-          <!-- Image Zoom HTML -->
-          <img
-            id="myImg"
-            src="images/Tamale.webp"
-            alt=""
-            width="150"
-            height="100"
-          />
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <img class="modal-content" id="img01" />
-            <div id="caption"></div>
+      <div>
+        <h3>TAMALE METROPOLIS</h3>
+      </div>
+      <div>TAMALE METROPOLITAN COMMUNITIES</div>
+      <section>
+        <a href="">Tamale</a>
+      </section>
+      <div class="info-down">
+        <div class="image-row">
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="myImg"
+              src="images/Tamale.webp"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <img class="modal-content" id="img01" />
+              <div id="caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("myImg");
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img01.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img01.className = "modal-content";
+                }, 400);
+              };
+            </script>
           </div>
-          <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function () {
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              modalImg.alt = this.alt;
-              captionText.innerHTML = this.alt;
-            };
-
-            // When the user clicks on <span> (x), close the modal
-            modal.onclick = function () {
-              img01.className += " out";
-              setTimeout(function () {
-                modal.style.display = "none";
-                img01.className = "modal-content";
-              }, 400);
-            };
-          </script>
-          
-        </div>
-        <!-- <img src="images/" height="100" width="150" alt="" />
+          <!-- <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
@@ -283,9 +284,9 @@
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" /> -->
+        </div>
       </div>
-    </div>
-    <!-- <div class="package">
+      <!-- <div class="package">
       <div class="news">
         <h5><i>LATEST NEWS</i></h5>
         <div class="newsPage">
