@@ -302,7 +302,7 @@
           <a href="">Tsyome</a>
           <a href="">Dodome</a>
           <a href="">Luvudo</a>
-          <a href="">Vane</a>
+          <a href="" style="color: yellow; font-weight: 700">Vane</a>
           <a href="">Amedzofe</a>
           <a href="">Etodome</a>
           <a href="">Hlefi</a>
@@ -458,11 +458,47 @@
               };
             </script>
           </div>
-          <!-- <div class="parent">
-          <img src="images/anloga.webp" height="100" width="150" alt="" />
-          <div class="bottom-right"></div>
-        </div>
-        <div class="parent">
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="4Img"
+              src="images/vane.webp"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Vane</div>
+            <!-- The Modal -->
+            <div id="4Modal" class="modal">
+              <img class="modal-content" id="img04" />
+              <div id="4caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("4Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("4Img");
+              var modalImg = document.getElementById("img04");
+              var captionText = document.getElementById("4caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img04.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img04.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>
+        <!--<div class="parent">
           <img src="images/ashanti.webp" height="100" width="150" alt="" />
           <div class="bottom-right"></div>
         </div>

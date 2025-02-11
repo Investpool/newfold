@@ -226,7 +226,7 @@
         <div class="info-down">
           <div class="image-row">
             <div class="parent">
-              Image Zoom HTML
+              <!--Image Zoom HTML-->
               <img
                 id="myImg"
                 src="images/nkran.webp"
@@ -235,7 +235,7 @@
                 height="100"
               />
               <div class="bottom-right">Central Business Area, Accra</div>
-              The Modal
+              <!--The Modal-->
               <div id="myModal" class="modal">
                 <img class="modal-content" id="img01" />
                 <div id="caption"></div>
@@ -261,6 +261,86 @@
                   setTimeout(function () {
                     modal.style.display = "none";
                     img01.className = "modal-content";
+                  }, 400);
+                };
+              </script>
+            </div>
+            <div class="parent">
+              <!--Image Zoom HTML-->
+              <img
+                id="2Img"
+                src="images/accra2.png"
+                alt=""
+                width="150"
+                height="100"
+              />
+              <div class="bottom-right">South Liberty Avenue, Accra</div>
+              <!--The Modal-->
+              <div id="2Modal" class="modal">
+                <img class="modal-content" id="img02" />
+                <div id="caption"></div>
+              </div>
+              <script>
+                // Get the modal
+                var modal = document.getElementById("2Modal");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("2Img");
+                var modalImg = document.getElementById("img02");
+                var captionText = document.getElementById("caption");
+                img.onclick = function () {
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  modalImg.alt = this.alt;
+                  captionText.innerHTML = this.alt;
+                };
+
+                // When the user clicks on <span> (x), close the modal
+                modal.onclick = function () {
+                  img02.className += " out";
+                  setTimeout(function () {
+                    modal.style.display = "none";
+                    img02.className = "modal-content";
+                  }, 400);
+                };
+              </script>
+            </div>
+            <div class="parent">
+              <!--Image Zoom HTML-->
+              <img
+                id="3Img"
+                src="images/tquashie.png"
+                alt=""
+                width="150"
+                height="100"
+              />
+              <div class="bottom-right">Tetteh Quarshie Overpass, Accra</div>
+              <!--The Modal-->
+              <div id="3Modal" class="modal">
+                <img class="modal-content" id="img03" />
+                <div id="caption"></div>
+              </div>
+              <script>
+                // Get the modal
+                var modal = document.getElementById("3Modal");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("3Img");
+                var modalImg = document.getElementById("img03");
+                var captionText = document.getElementById("caption");
+                img.onclick = function () {
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  modalImg.alt = this.alt;
+                  captionText.innerHTML = this.alt;
+                };
+
+                // When the user clicks on <span> (x), close the modal
+                modal.onclick = function () {
+                  img03.className += " out";
+                  setTimeout(function () {
+                    modal.style.display = "none";
+                    img03.className = "modal-content";
                   }, 400);
                 };
               </script>
