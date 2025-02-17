@@ -33,6 +33,9 @@
         h5 {
           font-size: 14px;
         }
+        .heroesPage {
+          flex-direction: column;
+        }
       }
 
       a {
@@ -116,71 +119,97 @@
         background-color: white;
         padding: 5px;
       }
+      .heroesPage {
+        display: flex;
+      }
+      .hero1 {
+        flex: 4;
+        border: 1px solid black;
+        margin-right: 3px;
+        border-radius: 8px;
+        background-color: brown;
+        color: white;
+        box-shadow: 0px 0px 46px -9px rgba(19, 1, 1, 0.68) ;
+      }
+      .hero2 {
+        flex: 4;
+        /* border: 1px solid black; */
+        margin-right: 3px;
+        border-radius: 8px;
+      }
+      .hero3 {
+        flex: 4;
+        /* border:1px solid black; */
+        border-radius: 8px;
+      }
+      .heroTit {
+        margin-top: 8px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-    <div><h3>FANTEAKWA DISTRICT</h3></div>
-    <div>FANTEAKWA DISTRICT COMMUNITIES</div>
-    <section>
-      <a href="">Begoro</a>
-      <a href="">Juaso</a>
-      <a href="">Asaman</a>
-      <a href="">Nsutam</a>
-      <a href="">Nsuapemso</a>
-      <a href="">Osino</a>
-      <a href="">Abompe</a>
-      <a href="">Dwenease</a>
-      <a href="">Dome</a>
-      <a href="">Hemang</a>
-      <a href="">Gyanpomani</a>
-      <a href="">Bosuso</a>
-      <a href="">Adjeikrom</a>
-      <a href="">Kplandey</a>
-      <a href="">Pimpimso</a>
-      <a href="">Ehiamankyine</a>
-      <a href="">Asidja</a>
-      <a href="">Akwadum</a>
-      <a href="">Kwekusua</a>
-      <a href="">Otwento</a>
-      <a href="">Ahenkwakrom</a>
-      <a href="">Bepoase</a>
-      <a href="">Opesika</a>
-      <a href="">Akrumso</a>
-      <a href="">Koradaso</a>
-      <a href="">Apaa</a>
-      <a href="">Opare</a>
-      <a href="">Awirenten</a>
-      <a href="">Naama</a>
-      <a href="">Obooho</a>
-      <a href="">Nsuta</a>
-      <a href="">Yayaaso</a>
-      <a href="">Abodobi</a>
-      <a href="">Oborahoho</a>
-      <a href="">Subuma</a>
-      <a href="">Nkankama</a>
-      <a href="">Ayesu</a>
-      <a href="">Onoku</a>      
-      <a href="">Besea</a>
-      <a href="">Akwanserem</a>
-      <a href="">Amoafoaso</a>
-      <a href="">Bommoden</a>
-      <a href="">Ahomahomaso</a>      
-      <a href="">Adentem</a>
-      <a href="">Papramanteng</a>
-      <a href="">Akwamukotoku</a>
-      <a href="">Fekyiase</a>
-      <a href="">Miaso</a>
-      <a href="">Mafokrom</a>
-      <a href="">Ntanoam</a>
-      <a href="">Asirebuso</a>
-      <a href="">Aburaso</a>
-      <a href="">Nyadier</a>
-      <a href="">Aboabo</a>
-      <a href="">Abooso</a>
-      <a href="">Twepease</a>
+      <div><h3>FANTEAKWA DISTRICT</h3></div>
+      <div>FANTEAKWA DISTRICT COMMUNITIES</div>
+      <section>
+        <a href="">Begoro</a>
+        <a href="">Juaso</a>
+        <a href="">Asaman</a>
+        <a href="">Nsutam</a>
+        <a href="">Nsuapemso</a>
+        <a href="">Osino</a>
+        <a href="">Abompe</a>
+        <a href="">Dwenease</a>
+        <a href="">Dome</a>
+        <a href="">Hemang</a>
+        <a href="">Gyanpomani</a>
+        <a href="">Bosuso</a>
+        <a href="">Adjeikrom</a>
+        <a href="">Kplandey</a>
+        <a href="">Pimpimso</a>
+        <a href="">Ehiamankyine</a>
+        <a href="">Asidja</a>
+        <a href="">Akwadum</a>
+        <a href="">Kwekusua</a>
+        <a href="">Otwento</a>
+        <a href="">Ahenkwakrom</a>
+        <a href="">Bepoase</a>
+        <a href="">Opesika</a>
+        <a href="">Akrumso</a>
+        <a href="">Koradaso</a>
+        <a href="">Apaa</a>
+        <a href="">Opare</a>
+        <a href="">Awirenten</a>
+        <a href="">Naama</a>
+        <a href="">Obooho</a>
+        <a href="">Nsuta</a>
+        <a href="">Yayaaso</a>
+        <a href="">Abodobi</a>
+        <a href="">Oborahoho</a>
+        <a href="">Subuma</a>
+        <a href="" style="color: yellow; font-weight: 700">Nkankama</a>
+        <a href="">Ayesu</a>
+        <a href="">Onoku</a>
+        <a href="">Besea</a>
+        <a href="">Akwanserem</a>
+        <a href="">Amoafoaso</a>
+        <a href="">Bommoden</a>
+        <a href="">Ahomahomaso</a>
+        <a href="">Adentem</a>
+        <a href="">Papramanteng</a>
+        <a href="">Akwamukotoku</a>
+        <a href="">Fekyiase</a>
+        <a href="">Miaso</a>
+        <a href="">Mafokrom</a>
+        <a href="">Ntanoam</a>
+        <a href="">Asirebuso</a>
+        <a href="">Aburaso</a>
+        <a href="">Nyadier</a>
+        <a href="">Aboabo</a>
+        <a href="">Abooso</a>
+        <a href="">Twepease</a>
       </section>
-    <!-- <div class="info-down">
+      <!-- <div class="info-down">
   <div class="image-row">
     <div class="parent">
       <img src="images/accra.webp" height="100" width="150" alt="" />
@@ -204,7 +233,7 @@
 
   </div>
 </div> -->
-    <!-- <div class="package">
+      <!-- <div class="package">
   <div class="news">
     <h5><i>LATEST NEWS</i></h5>
     <div class="newsPage">
@@ -216,7 +245,50 @@
   </div>
   
 </div> -->
-</div>
+      <h5 class="heroTit">HEROES OF OUR COMMUNITIES</h5>
+      <div class="heroesPage">
+        <div class="hero1">
+          <img
+            src="images/ghost.jpg"
+            height="150"
+            width="150"
+            alt=""
+            style="float: left; padding: 4px"
+          />
+          <p>
+            <i style="color: aqua"><b>Abigail Elorm Mensah</b></i> - donated 100
+            bags of cement and a cash of 10,000 ghc to help fix a broken bridge
+            at <b>Nkankama</b>.
+          </p>
+        </div>
+        <div class="hero2">
+          <!-- <img
+            src="images/ghost.jpg"
+            height="150"
+            width="150"
+            alt=""
+            style="float: left; padding: 4px;"
+          />
+          <p>
+            Abigail Elorm Mensah donated 100 bags of cement and a cash of 10,000
+            ghc to help fix a broken bridge at <b>Nkankama</b>.
+          </p> -->
+        </div>
+        <div class="hero2">
+          <!-- <img
+            src="images/ghost.jpg"
+            height="150"
+            width="150"
+            alt=""
+            style="float: left; padding: 4px;"
+          />
+          <p>
+            Abigail Elorm Mensah donated 100 bags of cement and a cash of 10,000
+            ghc to help fix a broken bridge at Nkankama.
+          </p> -->
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
