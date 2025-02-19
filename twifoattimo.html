@@ -33,6 +33,9 @@
         h5 {
           font-size: 14px;
         }
+        .vidReel{
+          flex-direction: column;
+        }
       }
       a {
         padding: 2px;
@@ -117,76 +120,102 @@
         background-color: white;
         padding: 5px;
       }
-</style>
+      .vidReel {
+        display: flex;
+      }
+      .vid1{
+        margin-right: 5px;
+      }
+      .vid2{
+        margin-right: 5px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-    <div>
-      <h3 class="titleHead">TWIFFO ATIMOKWA DISTRICT</h3>
-    </div>
-    <div>TWIFFO ATIMOKWA DISTRICT COMMUNITIES</div>
-    <section>
-      <a href="">Twifo-Praso</a>
-      <a href="">Darmang</a>
-      <a href="">Kojokrom</a>
-      <a href="">Asamoakrom</a>
-      <a href="">Ongwaso</a>
-      <a href="">Aboso</a>
-      <a href="">Asarekwaku</a>
-      <a href="">Nuamakrom</a>
-      <a href="">Ofosua</a>
-      <a href="">Akweikrom</a>
-      <a href="">Okutuase</a>
-      <a href="">Nkwatwimaso</a>
-      <a href="">Bimponso</a>
-      <a href="">Kenkuase</a>
-      <a href="">Mbaabaso</a>
-      <a href="">Canaan</a>
-      <a href="">Asemsuho-Agave</a>
-      <a href="">Charboso</a>
-      <a href="">Denyase</a>
-      <a href="">Hasowodze</a>
-      <a href="">Mampong</a>
-      <a href="">Eduabeng</a>
-      <a href="">Ntafrewase</a>
-      <a href="">Nyinase</a>
-      <a href="">Abodwese</a>
-      <a href="">Nkonuwoho</a>
-      <a href="">Bonsaho</a>
-      <a href="">Achire</a>
-      <a href="">Kayireku</a>
-      <a href="">Abodom</a>
-      <a href="">Edugyaa</a>
-      <a href="">Brofoyedur</a>
-      <a href="">Dokodoko</a>
-      <a href="">Moseaso</a>
-      <a href="">Somnyamekodru</a>
-      <a href="">Mampoma</a>
-      <a href="">Subriso</a>
-      <a href="">Aboabo</a>
-      <a href="">Osenegya</a>
-      <a href="">Bepoben</a>
-      <a href="">Ayaase</a>
-      <a href="">Otwikrom</a>
-      <a href="">Mirekukrom</a>
-      <a href="">Krobo2</a>
-      <a href="">Attiaso</a>
-      <a href="">Timtimhwe</a>
-      <a href="">Djatokrom</a>
-      <a href="">Mintaso</a>
-      <a href="">Pewodie</a>
-      <a href="">Adade</a>
-      <a href="">Kofi</a>
-      <a href="">Kotokye</a>
-      <a href="">Attokrom</a>
-      <a href="">Kyirenkum</a>
-      <a href="">Twiapiase</a>
-      <a href="">Morkwaa</a>
-      <a href="">Wamaso</a>
-      <a href="">Sebenso</a>
-      <a href="">Agona</a>
-    </section>
-    <!-- <div class="info-down">
+      <div>
+        <h3 class="titleHead">TWIFFO ATIMOKWA DISTRICT</h3>
+      </div>
+      <div>TWIFFO ATIMOKWA DISTRICT COMMUNITIES</div>
+      <section>
+        <a href="">Twifo-Praso</a>
+        <a href="">Darmang</a>
+        <a href="">Kojokrom</a>
+        <a href="">Asamoakrom</a>
+        <a href="">Ongwaso</a>
+        <a href="">Aboso</a>
+        <a href="">Asarekwaku</a>
+        <a href="">Nuamakrom</a>
+        <a href="">Ofosua</a>
+        <a href="">Akweikrom</a>
+        <a href="">Okutuase</a>
+        <a href="">Nkwatwimaso</a>
+        <a href="">Bimponso</a>
+        <a href="">Kenkuase</a>
+        <a href="">Mbaabaso</a>
+        <a href="">Canaan</a>
+        <a href="">Asemsuho-Agave</a>
+        <a href="">Charboso</a>
+        <a href="">Denyase</a>
+        <a href="">Hasowodze</a>
+        <a href="">Mampong</a>
+        <a href="">Eduabeng</a>
+        <a href="">Ntafrewase</a>
+        <a href="">Nyinase</a>
+        <a href="">Abodwese</a>
+        <a href="">Nkonuwoho</a>
+        <a href="">Bonsaho</a>
+        <a href="">Achire</a>
+        <a href="">Kayireku</a>
+        <a href="">Abodom</a>
+        <a href="">Edugyaa</a>
+        <a href="">Brofoyedur</a>
+        <a href="">Dokodoko</a>
+        <a href="">Moseaso</a>
+        <a href="">Somnyamekodru</a>
+        <a href="">Mampoma</a>
+        <a href="">Subriso</a>
+        <a href="">Aboabo</a>
+        <a href="">Osenegya</a>
+        <a href="">Bepoben</a>
+        <a href="">Ayaase</a>
+        <a href="">Otwikrom</a>
+        <a href="">Mirekukrom</a>
+        <a href="">Krobo2</a>
+        <a href="">Attiaso</a>
+        <a href="">Timtimhwe</a>
+        <a href="">Djatokrom</a>
+        <a href="">Mintaso</a>
+        <a href="">Pewodie</a>
+        <a href="">Adade</a>
+        <a href="">Kofi</a>
+        <a href="">Kotokye</a>
+        <a href="">Attokrom</a>
+        <a href="">Kyirenkum</a>
+        <a href="">Twiapiase</a>
+        <a href="">Morkwaa</a>
+        <a href="">Wamaso</a>
+        <a href="">Sebenso</a>
+        <a href="">Agona</a>
+      </section>
+      <!-- <div class="vidReel">
+        <div class="vid1">
+          <video width="320" height="240" controls>
+            <source src="images/GA  Naming.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="vid2">
+          <video width="320" height="240" controls>
+            <source src="images/GA  Naming.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="vid3">
+          <video width="320" height="240" controls>
+            <source src="images/GA  Naming.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div> -->
+      <!-- <div class="info-down">
       <div class="image-row">
         <div class="parent">
           <img src="images/accra.webp" height="100" width="150" alt="" />
@@ -209,7 +238,7 @@
         <img src="images/" height="100" width="150" alt="" />
       </div>
     </div> -->
-    <!-- <div class="package">
+      <!-- <div class="package">
       <div class="news">
         <h5><i>LATEST NEWS</i></h5>
         <div class="newsPage">
