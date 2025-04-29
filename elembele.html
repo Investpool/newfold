@@ -17,7 +17,57 @@
         padding: 0;
         box-sizing: border-box;
       }
+      @media screen and (max-width: 375px) {
+        .market {
+          flex-direction: column;
+        }
+        .set1 {
+          display: flex;
+          margin-top: 5px;
+          font-size: 16px;
+          border: 2px solid black;
+          border-radius: 4px;
+          gap: 10px;
+          line-height: 5px;
+          padding: 3px;
+          background-color: green;
+          color: yellow;
+        }
+        .item{
+          margin-top: 4px;
+          
+        }
+        .set1Details img {
+          flex: 6;
+          height: 300px;
+          width: 340px;
+        }
+        .details {
+          flex: 6;
+        }
+      }
       @media screen and (max-width: 425px) {
+        .market {
+          flex-direction: column;
+        }
+        .set1 {
+          display: flex;
+          margin-top: 5px;
+          font-size: 14px;
+          border: 2px solid black;
+          border-radius: 4px;
+          gap: 10px;
+          line-height: 5px;
+          padding: 3px;
+          background-color: green;
+          color: yellow;
+        }
+        .set1Details {
+          flex: 1;
+        }
+        .details {
+          flex: 1;
+        }
         a {
           color: #f7eeee;
           color: #1e06fa;
@@ -104,6 +154,22 @@
       .titlop {
         font-weight: 500;
       }
+      .market {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .set1 {
+        margin-top: 5px;
+        flex-direction: column;
+        font-size: 14px;
+        border: 2px solid black;
+        border-radius: 4px;
+        gap: 10px;
+        line-height: 5px;
+        padding: 3px;
+        background-color: green;
+        color: yellow;
+      }
       body {
         padding: 10px;
         background-color: lightgray;
@@ -116,74 +182,74 @@
   </head>
   <body>
     <div class="container">
-    <div>
-      <h3>ELEMBELE DISTRICT</h3>
-    </div>
-    <div>ELEMBELE DISTRICT COMMUNITIES</div>
-    <section>
-      <a href="">Jomoro</a>
-      <a href="">Kikam</a>
-      <a href="">Asemko</a>
-      <a href="">Asenta</a>
-      <a href="">Sawoma</a>
-      <a href="">Bobrama</a>
-      <a href="">Esiama</a>
-      <a href="">Kamgbunli</a>
-      <a href="">Ampain</a>
-      <a href="">Azulenuanu</a>
-      <a href="">Nkroful</a>
-      <a href="">Akoto</a>
-      <a href="">Awiebo</a>
-      <a href="">Nvelesolo</a>
-      <a href="">Anwia</a>
-      <a href="">Adubrim</a>
-      <a href="">Tandan</a>
-      <a href="">Asasetre</a>
-      <a href="">Nvuma</a>
-      <a href="">Bomoakpoley</a>
-      <a href="">Mpeasem</a>
-      <a href="">Ngabawie</a>
-      <a href="">Akropong</a>
-      <a href="">Nyamebekyere</a>
-      <a href="">Ekoyiawie</a>
-      <a href="">Ebi</a>
-      <a href="">Aiyinase</a>
-      <a href="">Mantukwa</a>
-      <a href="">Malanu</a>
-      <a href="">Kenyamezor</a>
-      <a href="">Adwakpoley</a>
-      <a href="">Awiazo</a>
-      <a href="">Aloakpoke</a>
-      <a href="">Pelekpolenu</a>
-      <a href="">Sendu</a>
-      <a href="">Ayawora</a>
-      <a href="">Ekokunu</a>
-      <a href="">Menzezor</a>
-      <a href="">Kapenzele</a>
-      <a href="">Krisan</a>
-      <a href="">Basake</a>
-      <a href="">Sanzule</a>
-      <a href="">Baku</a>
-      <a href="">Anokyi</a>
-      <a href="">Ngalekpole</a>
-      <a href="">Eikwe</a>
-      <a href="">Ngalekyi</a>
-      <a href="">Asemdasuazo</a>
-      <a href="">Akonu</a>
-      <a href="">Atuabo</a>
-      <a href="">Bakanta</a>
-      <a href="">Asomase</a>
-      <a href="">Dadwen</a>
-      <a href="">Bonsukrom</a>
-      <a href="">Kwasikrom</a>
-      <a href="">Suazo</a>
-      <a href="">Mandumgbuani</a>
-      <a href="">Ankasa</a>
-      <a href="">Adjeikrom</a>
-      <a href="">Sentreso</a>
-      <a href="">Adiembra</a>
-    </section>
-    <!-- <div class="info-down">
+      <div>
+        <h3>ELEMBELE DISTRICT</h3>
+      </div>
+      <div>ELEMBELE DISTRICT COMMUNITIES</div>
+      <section>
+        <a href="">Jomoro</a>
+        <a href="">Kikam</a>
+        <a href="">Asemko</a>
+        <a href="">Asenta</a>
+        <a href="">Sawoma</a>
+        <a href="">Bobrama</a>
+        <a href="">Esiama</a>
+        <a href="">Kamgbunli</a>
+        <a href="">Ampain</a>
+        <a href="">Azulenuanu</a>
+        <a href="">Nkroful</a>
+        <a href="">Akoto</a>
+        <a href="">Awiebo</a>
+        <a href="">Nvelesolo</a>
+        <a href="">Anwia</a>
+        <a href="">Adubrim</a>
+        <a href="">Tandan</a>
+        <a href="">Asasetre</a>
+        <a href="">Nvuma</a>
+        <a href="">Bomoakpoley</a>
+        <a href="">Mpeasem</a>
+        <a href="">Ngabawie</a>
+        <a href="">Akropong</a>
+        <a href="">Nyamebekyere</a>
+        <a href="">Ekoyiawie</a>
+        <a href="">Ebi</a>
+        <a href="">Aiyinase</a>
+        <a href="">Mantukwa</a>
+        <a href="">Malanu</a>
+        <a href="">Kenyamezor</a>
+        <a href="">Adwakpoley</a>
+        <a href="">Awiazo</a>
+        <a href="">Aloakpoke</a>
+        <a href="">Pelekpolenu</a>
+        <a href="">Sendu</a>
+        <a href="">Ayawora</a>
+        <a href="">Ekokunu</a>
+        <a href="">Menzezor</a>
+        <a href="">Kapenzele</a>
+        <a href="">Krisan</a>
+        <a href="">Basake</a>
+        <a href="">Sanzule</a>
+        <a href="">Baku</a>
+        <a href="">Anokyi</a>
+        <a href="">Ngalekpole</a>
+        <a href="">Eikwe</a>
+        <a href="">Ngalekyi</a>
+        <a href="">Asemdasuazo</a>
+        <a href="">Akonu</a>
+        <a href="">Atuabo</a>
+        <a href="">Bakanta</a>
+        <a href="">Asomase</a>
+        <a href="">Dadwen</a>
+        <a href="">Bonsukrom</a>
+        <a href="">Kwasikrom</a>
+        <a href="">Suazo</a>
+        <a href="">Mandumgbuani</a>
+        <a href="">Ankasa</a>
+        <a href="">Adjeikrom</a>
+        <a href="">Sentreso</a>
+        <a href="">Adiembra</a>
+      </section>
+      <!-- <div class="info-down">
       <div class="image-row">
         <div class="parent">
           <img src="images/accra.webp" height="100" width="150" alt="" />
@@ -207,7 +273,7 @@
 
       </div>
     </div> -->
-    <!-- <div class="package">
+      <!-- <div class="package">
       <div class="news">
         <h5><i>LATEST NEWS</i></h5>
         <div class="newsPage">
@@ -219,6 +285,128 @@
       </div>
       
     </div> -->
+   <!-- <h4>MARKET</h4>
+      <div class="market">
+        
+        
+        <div class="set1">
+          <div class="set1Details">
+            <p>Item: Hyundai Tucson</p>
+            <img
+              src="images/hnd.PNG"
+              height="80"
+              width="120"
+              style="margin-bottom: 5px"
+            />
+          </div>
+          <div>
+            <p>Desc: Brand New</p>
+            <p>Price: GHC 240,000</p>
+            <p>Seller: Kwesi Pee</p>
+            <p>Location: Awiazo</p>
+            <p>Call: 0247666111</p>
+          </div>
+        </div>
+        <div class="set1">
+          <div class="set1Details">
+            <p>Item: Hyundai Tucson</p>
+            <img
+              src="images/hnd.PNG"
+              height="80"
+              width="120"
+              style="margin-bottom: 5px"
+            />
+          </div>
+          <div>
+            <p>Desc: Brand New</p>
+            <p>Price: GHC 240,000</p>
+            <p>Seller: Kwesi Pee</p>
+            <p>Location: Jomoro</p>
+            <p>Call: 0247666111</p>
+          </div>
+        </div>
+        <div class="set1">
+          <div class="set1Details">
+            <p>Item: 3-BR Flat</p>
+            <img
+              src="images/saglemii.png"
+              height="80"
+              width="120"
+              style="margin-bottom: 5px"
+            />
+          </div>
+          <div>
+            <p>Desc: Brand New</p>
+            <p>Price: GHC 240,000</p>
+            <p>Seller: Kwesi Pee</p>
+          </div>
+        </div>
+        <div class="set1">
+          <div class="set1Details">
+            <p>Item: House</p>
+            <img
+              src="images/park1.png"
+              height="80"
+              width="120"
+              style="margin-bottom: 5px"
+            />
+          </div>
+          <div>
+            <p>Desc: Brand New</p>
+            <p>Price: GHC 240,000</p>
+            <p>Seller: Kwesi Pee</p>
+          </div>
+        </div>
+        <div class="set1">
+          <div class="set1Details">
+            <p>Item: Hyundai Tucson</p>
+            <img
+              src="images/hnd.PNG"
+              height="80"
+              width="120"
+              style="margin-bottom: 5px"
+            />
+          </div>
+          <div>
+            <p>Desc: Brand New</p>
+            <p>Price: GHC 240,000</p>
+            <p>Seller: Kwesi Pee</p>
+          </div>
+        </div>
+        <div class="set1">
+          <div class="set1Details">
+            <p>Item: Hyundai Tucson</p>
+            <img
+              src="images/hnd.PNG"
+              height="80"
+              width="120"
+              style="margin-bottom: 5px"
+            />
+          </div>
+          <div>
+            <p>Desc: Brand New</p>
+            <p>Price: GHC 240,000</p>
+            <p>Seller: Kwesi Pee</p>
+          </div>
+        </div>
+        <div class="set1">
+          <div class="set1Details">
+            <p>Item: Hyundai Tucson</p>
+            <img
+              src="images/hnd.PNG"
+              height="80"
+              width="120"
+              style="margin-bottom: 5px"
+            />
+          </div>
+          <div>
+            <p>Desc: Brand New</p>
+            <p>Price: GHC 240,000</p>
+            <p>Seller: Kwesi Pee</p>
+          </div>
+        </div>
+      </div>
+    -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

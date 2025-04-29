@@ -139,11 +139,44 @@
         text-decoration: none;
       }
       @media screen and (max-width: 425px) {
+        .strip1,
+        .strip2,
+        .strip3 {
+          display: flex;
+        }
+        .strip1 p {
+          background-color: rgb(194, 18, 5);
+          color: #fff;
+          font-size: small;
+          padding: 2px;
+          border-radius: 3px;
+        }
+        .strip2 p {
+          background-color: rgb(190, 4, 4);
+          color: #fff;
+          font-size: small;
+          padding: 2px;
+          border-radius: 3px;
+        }
+        .strip3 p {
+          background-color: rgba(189, 202, 6, 0.815);
+          color: #fff;
+          font-size: small;
+          padding: 2px;
+          border-radius: 3px;
+        }
+        .byRegions {
+          margin-right: 3px;
+        }
+        body {
+          padding: 0px;
+        }
         .navbar {
           margin-bottom: 10px;
           display: flex;
           background-image: linear-gradient(rgb(244, 248, 248), white);
           border: none;
+          width: 420px;
         }
         .nav-item a {
           font-size: 9px;
@@ -222,6 +255,27 @@
           flex-direction: column;
           gap: 2;
           color: #fff;
+        }
+        .belt {
+          flex-direction: column;
+          margin-bottom: 5px;
+        }
+        .topNews {
+          background-size: 100% 100%;
+          margin-top: 5px;
+        }
+        .mps {
+          width: 390px;
+          border: none;
+          padding: 2px 0px 2px 4px;
+          margin-right: 5px;
+          background-color: rgb(6, 42, 59);
+          margin-top: 5px;
+          border-radius: 4px;
+        }
+        .adsCircle {
+          margin: 4px;
+          background-color: yellow;
         }
         .wrt {
           padding: 5px;
@@ -330,7 +384,7 @@
           border-left: 5px solid violet;
           text-decoration: none;
           height: 100px;
-          width: 340px;
+          width: 390px;
           margin-right: 10px;
         }
         .reasons {
@@ -338,71 +392,63 @@
         }
       }
       @media screen and (max-width: 375px) {
+        .topnewsLabel h5 {
+          color: white;
+          padding-right: 5px;
+        }
         .reasons p {
           font-size: 12px;
 
           padding: auto;
           margin-right: 45px;
         }
-        .adsCircle {
-          flex: 6;
+        .belt {
+          flex-direction: column;
+          margin-bottom: 5px;
+          width: 350px;
+        }
+        .topNews {
+          background-image: url("images/mpPusigaLaadi.jpg");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          width: 200px;
+          margin-top: 5px;
+          margin-right: 5px;
         }
         .mps {
-          flex: 6;
           border: none;
+          width: 100%;
           padding: 2px 0px 2px 4px;
-          margin-right: 0px;
-          background-color: rgb(7, 56, 75);
-          margin: 5px 0px 5px 4px;
+          margin-right: 5px;
+          background-color: rgb(6, 42, 59);
+          margin-top: 5px;
           border-radius: 4px;
-          width: 150px;
         }
-        /* .reasons {
+        .adsCircle {
           margin: 4px;
-        } */
-        .strip1 p {
-          background-color: rgb(22, 7, 160);
-          color: #fff;
-          font-size: xx-small;
-          padding: 2px;
-          border-radius: 3px;
+          background-color: yellow;
         }
-        .strip2 p {
+        .strip1 p {
           background-color: rgb(68, 4, 4);
           color: #fff;
           font-size: xx-small;
           padding: 2px;
           border-radius: 3px;
         }
-        .strip3 p {
+        */ .strip2 p {
           background-color: rgb(206, 228, 10);
           color: #fff;
           font-size: xx-small;
           padding: 2px;
           border-radius: 3px;
         }
-        .strip4 p {
+        .strip3 p {
           background-color: rgb(230, 27, 27);
           color: #fff;
           font-size: xx-small;
           padding: 2px;
           border-radius: 3px;
         }
-        .strip5 p {
-          background-color: rgba(21, 114, 2, 0.986);
-          color: #fff;
-          font-size: xx-small;
-          padding: 2px;
-          border-radius: 3px;
-        }
-        .strip6 p {
-          background-color: grey;
-          color: #fff;
-          font-size: xx-small;
-          padding: 2px;
-          border-radius: 3px;
-        }
-
         .headLines {
           display: flex;
         }
@@ -429,13 +475,14 @@
           border-left: 5px solid violet;
           text-decoration: none;
           height: 100px;
-          width: 300px;
+          width: 345px;
           margin-right: 10px;
         }
         .navbar {
           margin-bottom: 10px;
           display: flex;
           background-image: linear-gradient(rgb(244, 248, 248), white);
+          width: 365px;
         }
         .nav-item a {
           font-size: 9px;
@@ -540,7 +587,7 @@
           height: 80;
           width: 110;
         }
-        .wrt h3 {
+        /* .wrt h3 {
           color: yellow;
           font-weight: 600;
           font-size: smaller;
@@ -548,7 +595,7 @@
         .wrt p {
           font-weight: 200;
           font-size: 10px;
-        }
+        } */
         .slogan {
           color: blue;
         }
@@ -753,29 +800,35 @@
       }
       .belt {
         display: flex;
+        margin-bottom: 5px;
       }
-      .adsCircle {
-        flex: 6;
-        margin: 4px;
+      .topNews {
+        background-image: url("images/adwuma.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 225px;
+        width: 350px;
+        flex: 5;
+        margin-top: 5px;
+        margin-right: 3px;
       }
       .mps {
         flex: 4;
         border: none;
         padding: 2px 0px 2px 4px;
-        margin-right: 18px;
+        margin-right: 5px;
         background-color: rgb(6, 42, 59);
         margin-top: 5px;
         border-radius: 4px;
       }
-      .outSide {
-        flex: 2;
+      .adsCircle {
+        flex: 3;
+        margin: 4px;
+        background-color: rgb(223, 223, 217);
       }
       .strip1,
       .strip2,
-      .strip3,
-      .strip4,
-      .strip5,
-      .strip6 {
+      .strip3 {
         display: flex;
       }
       .strip1 p {
@@ -786,35 +839,14 @@
         border-radius: 3px;
       }
       .strip2 p {
-        background-color: rgb(190, 4, 4);
+        background-color: rgb(248, 245, 43);
         color: #fff;
         font-size: small;
         padding: 2px;
         border-radius: 3px;
       }
       .strip3 p {
-        background-color: rgba(189, 202, 6, 0.815);
-        color: #fff;
-        font-size: small;
-        padding: 2px;
-        border-radius: 3px;
-      }
-      .strip4 p {
-        background-color: rgb(230, 226, 17);
-        color: #fff;
-        font-size: small;
-        padding: 2px;
-        border-radius: 3px;
-      }
-      .strip5 p {
-        background-color: rgba(21, 114, 2, 0.986);
-        color: #fff;
-        font-size: small;
-        padding: 2px;
-        border-radius: 3px;
-      }
-      .strip6 p {
-        background-color: rgb(21, 114, 2, 0.986);
+        background-color: rgba(25, 168, 12, 0.815);
         color: #fff;
         font-size: small;
         padding: 2px;
@@ -829,6 +861,12 @@
       }
       .brother {
         float: left;
+      }
+      .topnewsLabel h5 {
+        padding-top: 100px;
+        text-align: center;
+        color: white;
+        box-shadow: #0f0000;
       }
     </style>
   </head>
@@ -964,10 +1002,121 @@
                     >Anyirawase Youth Assoc...</a
                   >
                 </li>
-                
               </div>
             </div>
             <div class="belt">
+              <a href="bulletin.html"
+                ><div class="topNews">
+                  <div class="topnewsLabel" style="cursor: pointer">
+                    <h5>
+                      MAHAMA LAUNCHES YOUTH ENTREPRENEURIAL PROGRAMME
+                    </h5>
+                  </div>
+                </div>
+              </a>
+              <div class="mps">
+                <h5
+                  style="
+                    border: 3px solid rgb(8, 21, 145);
+                    font-size: 12px;
+                    background-color: rgb(2, 2, 22);
+                    color: white;
+                    text-align: center;
+                  "
+                >
+                  KNOW YOUR MPs
+                </h5>
+                <div class="byRegions">
+                  <div class="strip1">
+                    <a href="mpsGR.html"
+                      ><p class="gr" style="margin-right: 5px; font-size: 13px">
+                        ACCRA
+                      </p></a
+                    >
+                    <a href="mpsCR.html"
+                      ><p class="cr" style="margin-right: 5px; font-size: 13px">
+                        CENTRAL
+                      </p></a
+                    >
+                    <a href="mpsWNR.html"
+                      ><p class="wn" style="margin-right: 5px; font-size: 13px">
+                        W-NORTH
+                      </p></a
+                    >
+                    <a href="mpsWR.html"
+                      ><p class="wr" style="margin-right: 5px; font-size: 13px">
+                        WESTERN
+                      </p></a
+                    >
+                    <a href="mpsAS.html"
+                      ><p class="as" style="margin-right: 5px; font-size: 13px">
+                        ASHANTI
+                      </p></a
+                    >
+                    <a href="mpsBR.html"
+                      ><p class="bn" style="margin-right: 5px; font-size: 13px">
+                        BONO
+                      </p></a
+                    >
+                  </div>
+                  <div class="strip2">
+                    <a href="mpsBER.html"
+                      ><p class="be" style="margin-right: 5px; font-size: 13px">
+                        B-EAST
+                      </p></a
+                    >
+                    <a href="mpsAH.html"
+                      ><p class="ah" style="margin-right: 5px; font-size: 13px">
+                        AHAFO
+                      </p></a
+                    >
+                    <a href="mpsER.html"
+                      ><p class="er" style="margin-right: 5px; font-size: 13px">
+                        EASTERN
+                      </p></a
+                    >
+
+                    <a href="mpsVR.html"
+                      ><p class="vt" style="margin-right: 5px; font-size: 13px">
+                        VOLTA
+                      </p></a
+                    >
+                    <a href="mpsOR.html"
+                      ><p class="ti" style="margin-right: 5px; font-size: 13px">
+                        OTI
+                      </p></a
+                    >
+                    <a href="mpsNR.html"
+                      ><p class="no" style="margin-right: 5px; font-size: 13px">
+                        NORTHERN
+                      </p></a
+                    >
+                  </div>
+                  <div class="strip3">
+                    <a href="mpsNER.html"
+                      ><p class="ne" style="margin-right: 5px; font-size: 13px">
+                        NORTH-EAST
+                      </p></a
+                    >
+                    <a href="mpsSR.html"
+                      ><p class="sv" style="margin-right: 5px; font-size: 13px">
+                        SAVANA
+                      </p></a
+                    >
+                    <a href="mpsUWR.html"
+                      ><p class="uw" style="margin-right: 5px; font-size: 13px">
+                        UPPER-WEST
+                      </p></a
+                    >
+
+                    <a href="mpsUER.html"
+                      ><p class="ue" style="margin-right: 5px; font-size: 13px">
+                        UPPER-EAST
+                      </p></a
+                    >
+                  </div>
+                </div>
+              </div>
               <div class="adsCircle">
                 <script type="text/javascript">
                   if (typeof atAsyncOptions !== "object")
@@ -990,114 +1139,6 @@
                 </script>
                 <div id="atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a"></div>
               </div>
-              <div class="mps">
-                <h5
-                  style="
-                    border: 3px solid rgb(8, 21, 145);
-                    font-size: 12px;
-                    background-color: rgb(2, 2, 22);
-                    color: white;
-                    text-align: center;
-                  "
-                >
-                  KNOW YOUR MPs
-                </h5>
-                <div class="byRegions">
-                  <div class="strip1">
-                    <a href="mpsGR.html"
-                      ><p class="gr" style="margin-right: 5px; font-size: 9px">
-                        ACCRA
-                      </p></a
-                    >
-                    <a href="mpsCR.html"
-                      ><p class="cr" style="margin-right: 5px; font-size: 9px">
-                        CENTRAL
-                      </p></a
-                    >
-                    <a href="mpsWNR.html"
-                      ><p class="wn" style="margin-right: 5px; font-size: 7px">
-                        W-NORTH
-                      </p></a
-                    >
-                  </div>
-                  <div class="strip2">
-                    <a href="mpsWR.html"
-                      ><p class="wr" style="margin-right: 5px; font-size: 9px">
-                        WESTERN
-                      </p></a
-                    >
-                    <a href="mpsAS.html"
-                      ><p class="as" style="margin-right: 5px; font-size: 9px">
-                        ASHANTI
-                      </p></a
-                    >
-                    <a href="mpsBR.html"
-                      ><p class="bn" style="margin-right: 5px; font-size: 9px">
-                        BONO
-                      </p></a
-                    >
-                  </div>
-                  <div class="strip3">
-                    <a href="mpsBER.html"
-                      ><p class="be" style="margin-right: 5px; font-size: 9px">
-                        B-EAST
-                      </p></a
-                    >
-                    <a href="mpsAH.html"
-                      ><p class="ah" style="margin-right: 5px; font-size: 9px">
-                        AHAFO
-                      </p></a
-                    >
-                    <a href="mpsER.html"
-                      ><p class="er" style="margin-right: 5px; font-size: 9px">
-                        EASTERN
-                      </p></a
-                    >
-                  </div>
-                  <div class="strip4">
-                    <a href="mpsVR.html"
-                      ><p class="vt" style="margin-right: 5px; font-size: 9px">
-                        VOLTA
-                      </p></a
-                    >
-                    <a href="mpsOR.html"
-                      ><p class="ti" style="margin-right: 5px; font-size: 9px">
-                        OTI
-                      </p></a
-                    >
-                    <a href="mpsNR.html"
-                      ><p class="no" style="margin-right: 5px; font-size: 9px">
-                        NORTHERN
-                      </p></a
-                    >
-                  </div>
-                  <div class="strip5">
-                    <a href="mpsNER.html"
-                      ><p class="ne" style="margin-right: 5px; font-size: 9px">
-                        N-EAST
-                      </p></a
-                    >
-                    <a href="mpsSR.html"
-                      ><p class="sv" style="margin-right: 5px; font-size: 9px">
-                        SAVANA
-                      </p></a
-                    >
-                    <a href="mpsUWR.html"
-                      ><p class="uw" style="margin-right: 5px; font-size: 9px">
-                        U-WEST
-                      </p></a
-                    >
-                  </div>
-                  <div class="strip6">
-                    <a href="mpsUER.html"
-                      ><p class="ue" style="margin-right: 5px; font-size: 9px">
-                        U-EAST
-                      </p></a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="outSide"></div>
             </div>
             <div class="reasons">
               <p>
