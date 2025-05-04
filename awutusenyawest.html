@@ -48,7 +48,7 @@
           font-size: 14px;
         }
         .communities {
-          width: 367px;
+          width: 338px;
         }
         .heroesPage {
           flex-direction: column;
@@ -503,6 +503,46 @@
                 setTimeout(function () {
                   modal.style.display = "none";
                   img04.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="5Img"
+              src="images/senya.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Senya Beraku</div>
+            <!-- The Modal -->
+            <div id="5Modal" class="modal">
+              <img class="modal-content" id="img05" />
+              <div id="4caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("5Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("5Img");
+              var modalImg = document.getElementById("img05");
+              var captionText = document.getElementById("5caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img05.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img05.className = "modal-content";
                 }, 400);
               };
             </script>
