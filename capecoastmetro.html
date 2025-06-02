@@ -219,48 +219,209 @@
       <a href="">Pedu</a>
     </section>
     <div class="info-down">
-      <div class="image-row">
-        <div class="parent">
-          <!-- Image Zoom HTML -->
-          <img
-            id="myImg"
-            src="images/CapeCoast.webp"
-            alt=""
-            width="150"
-            height="100"
-          />
-          <div class="bottom-right"> Suburb of Cape Coast</div>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <img class="modal-content" id="img01" />
-            <div id="caption"></div>
+        <div class="image-row">
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="myImg"
+              src="images/kotokraba.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Kotokoraba Market, Cape Coast</div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <img class="modal-content" id="img01"/>
+              <div id="caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("myImg");
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img01.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img01.className = "modal-content";
+                }, 400);
+              };
+            </script>
           </div>
-          <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-  
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function () {
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              modalImg.alt = this.alt;
-              captionText.innerHTML = this.alt;
-            };
-  
-            // When the user clicks on <span> (x), close the modal
-            modal.onclick = function () {
-              img01.className += " out";
-              setTimeout(function () {
-                modal.style.display = "none";
-                img01.className = "modal-content";
-              }, 400);
-            };
-          </script>
-        </div>
-        <!-- <img src="images/" height="100" width="150" alt="" />
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="2Img"
+              src="images/CapeCoast.webp"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Surburb of Cape Coast</div>
+            <!-- The Modal -->
+            <div id="2Modal" class="modal">
+              <img class="modal-content" id="img02" />
+              <div id="2caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("2Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("2Img");
+              var modalImg = document.getElementById("img02");
+              var captionText = document.getElementById("2caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img02.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img02.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>
+          <!-- <div class="parent">
+            Image Zoom HT
+            <img
+              id="3Img"
+              src="images/bont.webp"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Bontrase</div>
+            
+            <div id="3Modal" class="modal">
+              <img class="modal-content" id="img03" />
+              <div id="3caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("3Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("3Img");
+              var modalImg = document.getElementById("img03");
+              var captionText = document.getElementById("3caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img03.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img03.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>
+          <div class="parent">
+            
+            <img
+              id="4Img"
+              src="images/brk.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Beraku Main Station</div>
+            
+            <div id="4Modal" class="modal">
+              <img class="modal-content" id="img04" />
+              <div id="4caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("4Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("4Img");
+              var modalImg = document.getElementById("img04");
+              var captionText = document.getElementById("4caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img04.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img04.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>
+          <div class="parent">
+            
+            <img
+              id="5Img"
+              src="images/senya.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Senya Beraku</div>
+            
+            <div id="5Modal" class="modal">
+              <img class="modal-content" id="img05" />
+              <div id="5caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("5Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("5Img");
+              var modalImg = document.getElementById("img05");
+              var captionText = document.getElementById("5caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img05.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img05.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div> -->
+          <!-- <img src="images/" height="100" width="150" alt="" />
+        <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
@@ -274,9 +435,8 @@
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" />
         <img src="images/" height="100" width="150" alt="" /> -->
-
+        </div>
       </div>
-    </div>
     <!-- <div class="package">
       <div class="news">
         <h5><i>LATEST NEWS</i></h5>
