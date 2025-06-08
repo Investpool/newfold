@@ -136,32 +136,8 @@
         text-decoration: none;
       }
       @media screen and (max-width: 425px) {
-        .strip1,
-        .strip2,
-        .strip3 {
-          display: flex;
-        }
-        .strip1 p {
-          background-color: rgb(194, 18, 5);
-          color: #fff;
-          font-size: small;
-          padding: 2px;
-          border-radius: 3px;
-        }
-        .strip2 p {
-          background-color: rgb(190, 4, 4);
-          color: #fff;
-          font-size: small;
-          padding: 2px;
-          border-radius: 3px;
-        }
-        .strip3 p {
-          background-color: rgba(189, 202, 6, 0.815);
-          color: #fff;
-          font-size: small;
-          padding: 2px;
-          border-radius: 3px;
-        }
+        
+        
         .byRegions {
           margin-right: 3px;
         }
@@ -443,23 +419,18 @@
           margin-bottom: 5px;
           width: 345px;
         }
-        .topNews {
-          background-image: url("images/mpPusigaLaadi.jpg");
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          width: 190px;
-          margin-top: 5px;
-          margin-right: 5px;
-        }
+       
         .belt .topNews {
+          width: 338px;
+        }
+        .belt .mps {
           width: 338px;
         }
         .mps {
           border: none;
-          width: 98%;
+          width: 90%;
           padding: 2px 0px 2px 4px;
           margin-right: 5px;
-          background-color: rgb(6, 42, 59);
           margin-top: 5px;
           border-radius: 4px;
           font-size: 12px;
@@ -467,27 +438,6 @@
         .adsCircle {
           margin: 4px;
           background-color: yellow;
-        }
-        .strip1 p {
-          background-color: rgb(68, 4, 4);
-          color: #fff;
-          font-size: xx-small;
-          padding: 2px;
-          border-radius: 3px;
-        }
-        */ .strip2 p {
-          background-color: rgb(206, 228, 10);
-          color: #fff;
-          font-size: xx-small;
-          padding: 2px;
-          border-radius: 3px;
-        }
-        .strip3 p {
-          background-color: rgb(230, 27, 27);
-          color: #fff;
-          font-size: xx-small;
-          padding: 2px;
-          border-radius: 3px;
         }
         .headlines h5 {
           flex: 3;
@@ -589,12 +539,7 @@
         .info_head {
           font-size: small;
         }
-        .regs {
-          flex-direction: column;
-          font-size: 10px;
-          margin-right: 6px;
-          color: yellow;
-        }
+        
         .pic1 {
           height: "80";
           width: "100";
@@ -639,15 +584,6 @@
           height: 80;
           width: 110;
         }
-        /* .wrt h3 {
-          color: yellow;
-          font-weight: 600;
-          font-size: smaller;
-        }
-        .wrt p {
-          font-weight: 200;
-          font-size: 10px;
-        } */
         .slogan {
           color: blue;
         }
@@ -865,45 +801,22 @@
         margin-right: 3px;
       }
       .mps {
-        flex: 4;
-        border: none;
-        padding: 2px 0px 2px 4px;
-        margin-right: 5px;
-        background-color: rgb(6, 42, 59);
+        background-image: url(images/resque.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 225px;
+        width: 350px;
+        flex: 5;
         margin-top: 5px;
-        border-radius: 4px;
+        margin-right: 3px;
       }
+      
       .adsCircle {
         flex: 3;
         margin: 4px;
         background-color: rgb(223, 223, 217);
       }
-      .strip1,
-      .strip2,
-      .strip3 {
-        display: flex;
-      }
-      .strip1 p {
-        background-color: rgb(194, 18, 5);
-        color: #fff;
-        font-size: small;
-        padding: 2px;
-        border-radius: 3px;
-      }
-      .strip2 p {
-        background-color: rgb(248, 245, 43);
-        color: #fff;
-        font-size: small;
-        padding: 2px;
-        border-radius: 3px;
-      }
-      .strip3 p {
-        background-color: rgba(25, 168, 12, 0.815);
-        color: #fff;
-        font-size: small;
-        padding: 2px;
-        border-radius: 3px;
-      }
+      
       .byRegions {
         margin-right: 3px;
       }
@@ -1039,8 +952,14 @@
           </h3>
 
           <a class="editorial" href="editorial.html">EDITORIAL</a>
+          <a class="editorial" href="mpsByRegions.html">KNOW YOUR MPs</a>
           <div class="wrapps">
             <div class="infoWrapper">
+              <li>
+                <a href="aowin.html" style="text-decoration: none"
+                  >Danger in the face of Yiwabra ...</a
+                >
+              </li>
               <li>
                 <a href="atwimamponua.html" style="text-decoration: none"
                   >About two people confirmed dead ...</a
@@ -1082,107 +1001,13 @@
               </div>
             </a>
             <div class="mps">
-              <h5
-                style="
-                  border: 3px solid rgb(8, 21, 145);
-                  font-size: 12px;
-                  background-color: rgb(2, 2, 22);
-                  color: white;
-                  text-align: center;
-                "
-              >
-                KNOW YOUR MPs
-              </h5>
-              <div class="byRegions">
-                <div class="strip1">
-                  <a href="mpsGR.html"
-                    ><p class="gr" style="margin-right: 5px; font-size: 12px">
-                      ACCRA
-                    </p></a
-                  >
-                  <a href="mpsCR.html"
-                    ><p class="cr" style="margin-right: 5px; font-size: 12px">
-                      CENTRAL
-                    </p></a
-                  >
-                  <a href="mpsWNR.html"
-                    ><p class="wn" style="margin-right: 5px; font-size: 12px">
-                      W-NORTH
-                    </p></a
-                  >
-                  <a href="mpsWR.html"
-                    ><p class="wr" style="margin-right: 5px; font-size: 12px">
-                      WESTERN
-                    </p></a
-                  >
-                  <a href="mpsAS.html"
-                    ><p class="as" style="margin-right: 5px; font-size: 12px">
-                      ASHANTI
-                    </p></a
-                  >
-                  <a href="mpsBR.html"
-                    ><p class="bn" style="margin-right: 5px; font-size: 12px">
-                      BONO
-                    </p></a
-                  >
-                </div>
-                <div class="strip2">
-                  <a href="mpsBER.html"
-                    ><p class="be" style="margin-right: 5px; font-size: 12px; color: gray;">
-                      B-EAST
-                    </p></a
-                  >
-                  <a href="mpsAH.html"
-                    ><p class="ah" style="margin-right: 5px; font-size: 12px; color: gray;">
-                      AHAFO
-                    </p></a
-                  >
-                  <a href="mpsER.html"
-                    ><p class="er" style="margin-right: 5px; font-size: 12px; color: gray;">
-                      EASTERN
-                    </p></a
-                  >
-
-                  <a href="mpsVR.html"
-                    ><p class="vt" style="margin-right: 5px; font-size: 12px; color: gray;">
-                      VOLTA
-                    </p></a
-                  >
-                  <a href="mpsOR.html"
-                    ><p class="ti" style="margin-right: 5px; font-size: 12px; color: gray;">
-                      OTI
-                    </p></a
-                  >
-                  <a href="mpsNR.html"
-                    ><p class="no" style="margin-right: 5px; font-size: 12px; color: gray;">
-                      NORTHERN
-                    </p></a
-                  >
-                </div>
-                <div class="strip3">
-                  <a href="mpsNER.html"
-                    ><p class="ne" style="margin-right: 5px; font-size: 12px">
-                      NORTH-EAST
-                    </p></a
-                  >
-                  <a href="mpsSR.html"
-                    ><p class="sv" style="margin-right: 5px; font-size: 12px">
-                      SAVANA
-                    </p></a
-                  >
-                  <a href="mpsUWR.html"
-                    ><p class="uw" style="margin-right: 5px; font-size: 12px">
-                      UPPER-WEST
-                    </p></a
-                  >
-
-                  <a href="mpsUER.html"
-                    ><p class="ue" style="margin-right: 5px; font-size: 12px">
-                      UPPER-EAST
-                    </p></a
-                  >
+              <a href="aowin.html"
+              ><div class="">
+                <div class="topnewsLabel" style="cursor: pointer">
+                  <h5>DANGER IN THE FACE OF YIWABRA BRIDGE COLLAPSE</h5>
                 </div>
               </div>
+            </a>
             </div>
             <div class="adsCircle">
               <script type="text/javascript">
