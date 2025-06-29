@@ -19,7 +19,7 @@
         padding: 0;
         box-sizing: border-box;
       }
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 375px) {
         a {
           color: #f7eeee;
           color: #1e06fa;
@@ -28,10 +28,30 @@
           text-decoration: none;
         }
         p {
-          font-size: 12px;
+          font-size: 15px;
         }
         h5 {
           font-size: 14px;
+        }
+        .news{
+          margin-right: 5px;
+        }
+        .newsPage {
+        border: none;
+        
+        padding: 4px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 16px;
+        /* background-color: rgb(240, 11, 11);  */
+      }
+        .newsPage img {
+          height: 200;
+          width: 210;
+        }
+        section {
+        background-color: #1e06fa;
+        width: 350px;
         }
       }
       a {
@@ -67,13 +87,6 @@
       .text {
         height: 400;
       }
-      .submit {
-        font-size: 12px;
-        color: #fff;
-        background-color: blue;
-        border-radius: 4px;
-        padding: 5px;
-      }
       .parent {
         position: relative;
         text-align: center;
@@ -92,18 +105,19 @@
       }
       .news {
         flex: 6;
-        background-color: rgb(196, 241, 247);
+        
+        
       }
       .ads {
         flex: 6;
       }
       .newsPage {
         border: none;
-        border-radius: 5px;
+      
         padding: 2px;
         margin-bottom: 5px;
         margin-left: 5px;
-        margin-right: 5px;
+        margin-right: 3px;
         background-color: white;
       }
       .titlop {
@@ -111,64 +125,64 @@
       }
       body {
         padding: 10px;
-        background-color: lightgray;
+        background-color: rgb(211, 211, 211);
       }
       .container {
         background-color: white;
         padding: 5px;
+        margin-right: 15px;
       }
-
     </style>
   </head>
   <body>
     <div class="container">
-    <div><h3>ASUOGYAMAN DISTRICT</h3></div>
-    <div>ASUOGYAMAN DISTRICT COMMUNITIES</div>
-    <section>
-      <a href="">Kpong</a>
-      <a href="">Atimpoku</a>
-      <a href="">Akosombo</a>
-      <a href="">Aboasa</a>
-      <a href="">Anyansu</a>
-      <a href="">Abomanyaw</a>
-      <a href="">Akwamufie</a>
-      <a href="">Apeguso</a>
-      <a href="">Boso</a>
-      <a href="">Frankadua</a>
-      <a href="">Gyakiti</a>
-      <a href="">Labolabo</a>
-      <a href="">New Ajena</a>
-      <a href="">New Akrade</a>
-      <a href="">Asikuma</a>
-      <a href="">New Senchi</a>
-      <a href="">Old Senchi</a>
-      <a href="">Pupuni</a>
-      <a href="">South Senchi</a>
-      <a href="">Mangoase</a>
-      <a href="">Tortibo</a>
-      <a href="">Odokom</a>
-      <a href="">Kwanyako</a>
-      <a href="">Nnudu</a>
-      <a href="">Asempanaye</a>
-      <a href="">Anyansu</a>
-      <a href="">Mpakadam</a>
-      <a href="">Korankye</a>
-      <a href="">Fintey</a>
-      <a href="">Osiabura</a>
-      <a href="">Nkwakubew</a>
-      <a href="">Anum</a>
-      <a href="">Nayor</a>
-      <a href="">Toseng</a>
-      <a href="">Anyaase</a>
-      <a href="">Mpamproase</a>
-      <a href="">Kudikope</a>
-      <a href="">Asubrempong</a>
-      <a href="">Manya-Yoyim</a>
-      <a href="">Yeniama</a>
-      <a href="">Sedorm</a>
-      <a href="">Sapor</a>
-    </section>
-    <!-- <div class="info-down">
+      <div><h3>ASUOGYAMAN DISTRICT</h3></div>
+      <div>ASUOGYAMAN DISTRICT COMMUNITIES</div>
+      <section>
+        <a href="">Kpong</a>
+        <a href="">Atimpoku</a>
+        <a href="">Akosombo</a>
+        <a href="">Aboasa</a>
+        <a href="">Anyansu</a>
+        <a href="">Abomanyaw</a>
+        <a href="">Akwamufie</a>
+        <a href="">Apeguso</a>
+        <a href="">Boso</a>
+        <a href="">Frankadua</a>
+        <a href="">Gyakiti</a>
+        <a href="">Labolabo</a>
+        <a href="">New Ajena</a>
+        <a href="">New Akrade</a>
+        <a href="">Asikuma</a>
+        <a href="">New Senchi</a>
+        <a href="">Old Senchi</a>
+        <a href="">Pupuni</a>
+        <a href="">South Senchi</a>
+        <a href="">Mangoase</a>
+        <a href="">Tortibo</a>
+        <a href="">Odokom</a>
+        <a href="">Kwanyako</a>
+        <a href="">Nnudu</a>
+        <a href="">Asempanaye</a>
+        <a href="">Anyansu</a>
+        <a href="">Mpakadam</a>
+        <a href="">Korankye</a>
+        <a href="">Fintey</a>
+        <a href="">Osiabura</a>
+        <a href="">Nkwakubew</a>
+        <a href="">Anum</a>
+        <a href="">Nayor</a>
+        <a href="">Toseng</a>
+        <a href="">Anyaase</a>
+        <a href="">Mpamproase</a>
+        <a href="">Kudikope</a>
+        <a href="">Asubrempong</a>
+        <a href="">Manya-Yoyim</a>
+        <a href="">Yeniama</a>
+        <a href="">Sedorm</a>
+        <a href="">Sapor</a>
+      </section>
+      <!-- <div class="info-down">
       <div class="image-row">
         <div class="parent">
           <img src="images/accra.webp" height="100" width="150" alt="" />
@@ -191,17 +205,56 @@
         <img src="images/" height="100" width="150" alt="" />
       </div>
     </div> -->
-    <!-- <div class="package">
-      <div class="news">
-        <h5><i>LATEST NEWS</i></h5>
-        <div class="newsPage">
-          <h6 class="titlop"></h6>
-          <p class="date"></p>
-          <img src="images/" height="120" width="150" alt="" />
-          <p></p>
+      <div class="package">
+        <div class="news">
+          <h5><i>LATEST NEWS</i></h5>
+          <div class="newsPage">
+            <h6 class="titlop">
+              VRA COMPLEX JHS SENDS OFF 2025 BECE GRADUATES
+            </h6>
+            <p class="date">28th June, 2025</p>
+            <img src="images/akosombo.jpg" height="300" width="350" alt="" />
+            <h6><i>By News Desk</i></h6>
+            <p>
+              On Thursday, 26th June 2025, VRA Complex JHS No. 1, held a
+              heartfelt Thanksgiving Service and Handing Over Ceremony to
+              celebrate students who recently completed their Basic Education
+              Certificate Examination (BECE) and to formally transfer
+              prefectoral responsibilities to the newly elected school prefects.
+            </p>
+            <p>
+              The atmosphere was filled with joy and emotion as the outgoing
+              students marked their final moments with teachers and peers
+              through symbolic farewell dances and warm interactions. It was a
+              beautiful blend of celebration and reflection.
+            </p>
+            <p>
+              Pastor Fred Yeboah, the guest speaker, delivered an inspiring
+              message to the student body, emphasizing the importance of
+              obedience and respect. He encouraged all students to remain
+              respectful and obedient to authority figures, including teachers,
+              parents, and elders.
+            </p>
+            <p>
+              The second part of the program focused on the official handing
+              over of leadership roles. Outgoing prefects passed the mantle to
+              their successors in a ceremony marked by mixed emotions,
+              gratitude, pride, and a touch of sadness. Certificates of
+              appreciation were awarded to all outgoing prefects, choristers,
+              and outstanding sportsmen and women in recognition of their
+              service and dedication.
+            </p>
+            <p>
+              According to Reindolf J Botchway, in his face book page,the event
+              was brought to life by the Alter Crew, whose energetic performance
+              of contemporary gospel songs had students and staff dancing
+              joyfully, making it a truly memorable occasion.
+            </p>
+            <p></p>
+            <p></p>
+          </div>
         </div>
       </div>
-    </div> -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
