@@ -381,6 +381,14 @@
         .reasons {
           margin: 10px;
         }
+        .topNews img {
+          height: 200px;
+          width: 395px;
+        }
+        .mps img {
+          height: 200px;
+          width: 390px;
+        }
       }
       @media screen and (max-width: 375px) {
         .topnewsLabel h5 {
@@ -644,6 +652,36 @@
           margin-right: 6px;
           text-decoration: none;
         }
+        .topNews img {
+          height: 200px;
+          width: 350px;
+        }
+        .mps img {
+          height: 200px;
+          width: 350px;
+        }
+
+        .topNews h3 {
+          text-align: center;
+          color: white;
+          position: absolute;
+          top: 10%;
+          padding-left: 110px;
+          font-size: 25px;
+          font-weight: 700;
+          text-shadow: 2px 2px black;
+        }
+        .mps h3 {
+          text-align: center;
+          color: white;
+          position: absolute;
+          top: 80%;
+          padding-right: 80px;
+          padding-left: 25px;
+          font-size: 20px;
+          font-weight: 700;
+          text-shadow: 2px 2px black;
+        }
       }
       .downbelt {
         display: flex;
@@ -779,32 +817,36 @@
         margin-bottom: 5px;
       }
       .topNews {
-        background-image: url("images/covid.jpg");
+        flex: 6;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
-        height: 225px;
-        width: 350px;
-        flex: 5;
-        margin-top: 5px;
-        margin-right: 3px;
+        justify-content: center;
+      }
+      .topNews h3 {
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 80%;
+        padding-left: 80px;
+        font-size: 20px;
+        font-weight: 700;
+        text-shadow: 2px 2px black;
       }
       .mps {
-        background-image: url("images/akosombo.jpg");
+        flex: 6;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
-        height: 225px;
-        width: 340px;
-        flex: 5;
-        margin-top: 5px;
-        margin-right: 3px;
+        justify-content: center;
       }
-
-      .adsCircle {
-        flex: 2;
-        margin: 4px;
-        background-color: rgb(223, 223, 217);
+      .mps h3 {
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 80%;
+        padding-right: 40px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        text-shadow: 2px 2px black;
       }
-
       .byRegions {
         margin-right: 3px;
       }
@@ -815,13 +857,7 @@
       .brother {
         float: left;
       }
-      .topnewsLabel h3 {
-        padding-top: 140px;
-        text-align: center;
-        color: white;
-        text-shadow: 2px 2px black;
-        
-      }
+
       .headlines {
         display: flex;
         border: 1px solid black;
@@ -1012,56 +1048,33 @@
             </div>
           </div>
           <div class="belt">
-            <a href="bulletin.html">
-              <div class="topNews">
-                <div class="topnewsLabel" style="cursor: pointer">
-                  <h3>COVID 19 IS BACK</h3>
-                </div>
-              </div>
-            </a>
-            <div class="mps">
-              <a href="asuogyaman.html">
-                <div class="yiwabra">
-                  <div class="topnewsLabel" style="cursor: pointer">
-                    <h3>VRA COMPLEX JHS SENDS OFF 2025 BECE GRADUATES</h3>
-                  </div>
-                </div>
+            <div class="topNews">
+              <a href="bulletin.html">
+                <img src="images/covid.jpg" height="320" width="550" />
+                <h3>COVID 19 IS BACK</h3>
               </a>
             </div>
-            <div class="adsCircle">
-              <script type="text/javascript">
-                if (typeof atAsyncOptions !== "object") var atAsyncOptions = [];
-                atAsyncOptions.push({
-                  key: "7c27def5abdf78f6ccb2c6c0a1affd1a",
-                  format: "js",
-                  async: true,
-                  container: "atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a",
-                  params: {},
-                });
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.async = true;
-                script.src =
-                  "http" +
-                  (location.protocol === "https:" ? "s" : "") +
-                  "://obtainanticipate.com/7c27def5abdf78f6ccb2c6c0a1affd1a/invoke.js";
-                document.getElementsByTagName("head")[0].appendChild(script);
-              </script>
-              <div id="atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a"></div>
+
+            <div class="mps">
+              <a href="asuogyaman.html">
+                <img src="images/akosombo.jpg" height="320" width="550" />
+                <h3>VRA COMPLEX JHS SENDS OFF 2025 BECE GRADUATES</h3>
+              </a>
             </div>
           </div>
+
           <div class="headlines">
             <h5>HEADLINE NEWS</h5>
             <marquee
               >Friday July 4 declared public holiday - Interior Minister ||
-              5,000 teachers and 10,000 non teaching staff to be recruited
-              by Ghana Education Service - Minister || Police busted phone
+              5,000 teachers and 10,000 non teaching staff to be recruited by
+              Ghana Education Service - Minister || Police busted phone
               tampering syndicate in Wassa Akropong || Mahama's Pledge for Egya
               Koo Nimo fulfilled || Early Return to Capital Market will be
               Costly to Ghana - Prof. Quartey || Ghana will complete IMF program
-              without extension - Mahama || Volta to receive boost in Agriculture
-              - Kwamigah-Atokple || Clashes in Togo as protesters demand
-              resignation of Faure Gnassingbe.
+              without extension - Mahama || Volta to receive boost in
+              Agriculture - Kwamigah-Atokple || Clashes in Togo as protesters
+              demand resignation of Faure Gnassingbe.
             </marquee>
           </div>
 
@@ -1194,6 +1207,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    
+    <script type='text/javascript' src='//chiefrecovery.com/ab/2d/6f/ab2d6f20790ab7731f36e080fcf29ab3.js'></script>
   </body>
 </html>
