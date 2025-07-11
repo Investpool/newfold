@@ -51,10 +51,93 @@
         background-color: #1e06fa;
         padding: 10px;
       }
-      .cr11,
-      .cr12 {
-        background-color: azure;
-        color: rgb(0, 0, 0);
+     #myImg {
+        /* border-radius: 5px; */
+        cursor: pointer;
+        transition: 0.3s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #myImg:hover {
+        opacity: 0.7;
+      }
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 99; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+      }
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 75%;
+        /*max-width: 75%;*/
+      }
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 400px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(1);
+        }
+        to {
+          -webkit-transform: scale(2);
+        }
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0.4);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes zoom-out {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+      @keyframes zoom-out {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+      /* Add Animation */
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      .out {
+        animation-name: zoom-out;
+        animation-duration: 0.6s;
       }
       img {
         margin-right: 2px;
@@ -76,13 +159,7 @@
       .text {
         height: 400;
       }
-      .submit {
-        font-size: 12px;
-        color: #fff;
-        background-color: blue;
-        border-radius: 4px;
-        padding: 5px;
-      }
+      
       .parent {
         position: relative;
         text-align: center;
@@ -133,6 +210,7 @@
     <div><h3>HO MUNICIPAL</h3></div>
     <div>HO MUNICIPAL COMMUNITIES</div>
     <section>
+      <a href="">Ho</a>
       <a href="">Takla</a>
       <a href="">Hodzo</a>
       <a href="">Kpenoe</a>
@@ -163,65 +241,209 @@
       <a href="">Awiasu</a>
     </section>
     <div class="info-down">
-      <div class="image-row">
-        
-        <div class="parent">
-          <!-- Image Zoom HTML -->
-          <img
-            id="myImg"
-            src="images/hoho.webp"
-            alt=""
-            width="150"
-            height="100"
-          />
-          <div class="bottom-right">A surburb of Ho</div>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <img class="modal-content" id="img01" />
-            <div id="caption"></div>
+        <div class="image-row">
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="myImg"
+              src="images/hoho.webp"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Ho</div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <img class="modal-content" id="img01" />
+              <div id="caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("myImg");
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img01.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img01.className = "modal-content";
+                }, 400);
+              };
+            </script>
           </div>
-          <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="2Img"
+              src="images/homarket.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Ho Market</div>
+            <!-- The Modal -->
+            <div id="2Modal" class="modal">
+              <img class="modal-content" id="img02" />
+              <div id="2caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("2Modal");
 
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function () {
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              modalImg.alt = this.alt;
-              captionText.innerHTML = this.alt;
-            };
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("2Img");
+              var modalImg = document.getElementById("img02");
+              var captionText = document.getElementById("2caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
 
-            // When the user clicks on <span> (x), close the modal
-            modal.onclick = function () {
-              img01.className += " out";
-              setTimeout(function () {
-                modal.style.display = "none";
-                img01.className = "modal-content";
-              }, 400);
-            };
-          </script>
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img02.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img02.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>
+          <!-- <div class="parent">
+           .. Image Zoom HTML..
+            <img
+              id="3Img"
+              src="images/bont.webp"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Bontrase</div>
+            ..The Modal..
+            <div id="3Modal" class="modal">
+              <img class="modal-content" id="img03" />
+              <div id="3caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("3Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("3Img");
+              var modalImg = document.getElementById("img03");
+              var captionText = document.getElementById("3caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img03.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img03.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div> -->
+          <!-- <div class="parent">
+            ..Image Zoom HTML..
+            <img
+              id="4Img"
+              src="images/brk.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Beraku Main Station</div>
+            ..The Modal..
+            <div id="4Modal" class="modal">
+              <img class="modal-content" id="img04" />
+              <div id="4caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("4Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("4Img");
+              var modalImg = document.getElementById("img04");
+              var captionText = document.getElementById("4caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img04.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img04.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div> -->
+          <!--<div class="parent">
+            ..Image Zoom HTML..
+            <img
+              id="5Img"
+              src="images/senya.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right" style="color: grey">Senya Beraku</div>
+            ..The Modal..
+            <div id="5Modal" class="modal">
+              <img class="modal-content" id="img05" />
+              <div id="5caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("5Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("5Img");
+              var modalImg = document.getElementById("img05");
+              var captionText = document.getElementById("5caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img05.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img05.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>-->
+
         </div>
-        <!-- <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" /> -->
-      </div>
-    </div>
     <!-- <div class="package">
       <div class="news">
         <h5><i>LATEST NEWS</i></h5>
