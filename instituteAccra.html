@@ -16,140 +16,303 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(32, 32, 31);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p{
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(56, 55, 55);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 20px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
-      <p class="number">70</p>
-      <div class="categoryA">
+      <p class="number">Number of schools: 70</p>
+      <div class="hovertext">
         <h4>GREATER ACCRA REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>New Century Technical Institute, Dansoman</p>
-        <p>Ada Tech. Inst., Ada</p>
-        <p>Pilot Technical Institute, Kokomlemle</p>
-        <p>Accra Tech. Trg. Centre, Kokomlemle</p>
-        <p>Madina Technical Institute, Madina</p>
-        <p>Tema Tech. Inst., Tema</p>
-        <p>Tema Mission Technical Institute, Tema</p>
-        <p>East Legon Applied Technology Institute, East Legon</p>
-      </div>
-      <div class="categoryB">
+
+        <span>
+          <p>New Century Technical Institute, Dansoman</p>
+          <img src="images/abunubunu.jpg" />
+        </span>
+        <span>
+          <p>Ada Tech. Inst., Ada</p>
+          <img src="images/awuscoDance.jpg" />
+        </span>
+        <span>
+          <p>Pilot Technical Institute, Kokomlemle</p>
+        </span>
+        <span>
+          <p>Accra Tech. Trg. Centre, Kokomlemle</p>
+        </span>
+        <span>
+          <p>Madina Technical Institute, Madina</p>
+        </span>
+        <span>
+          <p>Tema Tech. Inst., Tema</p>
+        </span>
+        <span>
+          <p>Tema Mission Technical Institute, Tema</p>
+        </span>
+        <span>
+          <span><p>East Legon Applied Technology Institute</p></span>
+        </span>
+
         <h4>GREATER ACCRA REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>Sacred Heart Tech. Inst., James Town</p>
-        <p>Afienya Technical Institute, Afienya</p>
-        <p>Government Technical Institute, Kaneshie</p>
-      </div>
-      <div class="categoryC">
+
+        <span>
+          <p>Sacred Heart Tech. Inst., James Town</p>
+        </span>
+        <span>
+          <p>Afienya Technical Institute, Afienya</p>
+        </span>
+        <span>
+          <p>Government Technical Institute, Kaneshie</p>
+        </span>
+
         <h4>GREATER ACCRA REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>Ashiaman Technical Institute, Ashaiman</p>
-        <p>Opportunities Industrialization Tech. Inst., East Legon</p>
-        <p>Kanda Technical Institute, Kanda</p>
-        <p>Bedeku Technical Institute, Bedeku</p>
-        <p>Ngleshie Amanfro Technical Institute, Ngleshie Amanfrom</p>
-        <p>Teshie Tech. Instittute, Teshie</p>
-        <p>Prampram Technical Institute, Prampram</p>
-        <p>South Labone Girls Technical Institute</p>
-        <p>Agomeda Technical Institute, Agomeda</p>
-        <p>Dodowa Technical Institute, Dodowa</p>
-        <p>Danfa Technical Institute, Danfa</p>
-        <p>Nima Technical Institute, Nima</p>
-      </div>
-      <div class="categoryA">
+
+        <span>
+          <p>Ashiaman Technical Institute, Ashaiman</p>
+        </span>
+        <span>
+          <span
+            ><p>
+              Opportunities Industrialization Tech. Inst., East Legon
+            </p></span
+          >
+        </span>
+        <span>
+          <p>Kanda Technical Institute, Kanda</p>
+        </span>
+        <span>
+          <p>Bedeku Technical Institute, Bedeku</p>
+        </span>
+        <span>
+          <p>Ngleshie Amanfro Technical Institute</p>
+        </span>
+        <span>
+          <p>Teshie Tech. Instittute, Teshie</p>
+        </span>
+        <span>
+          <p>Prampram Technical Institute, Prampram</p>
+        </span>
+        <span>
+          <p>South Labone Girls Technical Institute</p>
+        </span>
+        <span>
+          <p>Agomeda Technical Institute, Agomeda</p>
+        </span>
+        <span>
+          <p>Dodowa Technical Institute, Dodowa</p>
+        </span>
+        <span>
+          <p>Danfa Technical Institute, Danfa</p>
+        </span>
+        <span>
+          <p>Nima Technical Institute, Nima</p>
+        </span>
+
         <h4>GREATER ACCRA REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>Accra Academy, Kaneshie</p>
-        <p>Accra Girls Senior High, Maamobi</p>
-        <p>Achimota Senior High, Achimota</p>
-        <p>St. Mary's Senior High, Korle Gonno</p>
-        <p>St. Thomas Aquinas Senior High, Cantoments</p>
-        <p>Presby Boys' Senior High, Legon</p>
-        <p>Tema Senior High, Tema Comm. 5</p>
-      </div>
-      <div class="categoryB">
+
+        <span>
+          <p>Accra Academy, Kaneshie</p>
+        </span>
+        <span>
+          <p>Accra Girls Senior High, Maamobi</p>
+        </span>
+        <span>
+          <p>Achimota Senior High, Achimota</p>
+        </span>
+        <span>
+          <p>St. Mary's Senior High, Korle Gonno</p>
+        </span>
+        <span>
+          <p>St. Thomas Aquinas Senior High, Cantoments</p>
+        </span>
+        <span>
+          <p>Presby Boys' Senior High, Legon</p>
+        </span>
+        <span>
+          <p>Tema Senior High, Tema Comm. 5</p>
+        </span>
+
         <h4>GREATER ACCRA REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Accra Senior High</p>
-        <p>St. Margaret Mary Snr.High/Tech</p>
-        <p>Wesley Grammar School</p>
-        <p>Ada Senior High</p>
-        <p>Accra STEM Academy</p>
-        <p>Odorgonno Senior High</p>
-        <p>St. John's Grammar Senior High</p>
-        <p>Labone Senior High</p>
-        <p>Forces Senior High/Tech, Burma Camp</p>
-        <p>West Africa Senior High</p>
-        <p>Nungua Senior High</p>
-        <p>Ningo Senior High</p>
-        <p>Prampram Senior High</p>
-        <p>Ghanata Senior High</p>
-        <p>Chemu Senior High/Tech</p>
-        <p>Our Lady of Mercy Senior High</p>
-      </div>
-      <div class="categoryC">
+
+        <span>
+          <p>Accra Senior High</p>
+        </span>
+        <span>
+          <p>St. Margaret Mary Snr.High/Tech</p>
+        </span>
+        <span>
+          <p>Wesley Grammar School</p>
+        </span>
+        <span>
+          <p>Ada Senior High, Ada - Foah</p>
+        </span>
+        <span>
+          <p>Accra STEM Academy</p>
+        </span>
+        <span>
+          <p>Odorgonno Senior High</p>
+        </span>
+        <span>
+          <p>St. John's Grammar Senior High</p>
+        </span>
+        <span>
+          <p>Labone Senior High</p>
+        </span>
+        <span>
+          <p>Forces Senior High/Tech, Burma Camp</p>
+        </span>
+        <span>
+          <p>West Africa Senior High</p>
+        </span>
+        <span>
+          <p>Nungua Senior High</p>
+          <!-- <img src=""/> -->
+        </span>
+        <span>
+          <p>Ningo Senior High</p>
+        </span>
+        <span>
+          <p>Prampram Senior High</p>
+        </span>
+        <span>
+          <p>Ghanata Senior High</p>
+        </span>
+        <span>
+          <p>Chemu Senior High/Tech</p>
+        </span>
+        <span>
+          <p>Our Lady of Mercy Senior High</p>
+        </span>
+
         <h4>GREATER ACCRA REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-         <p>Ebenezer Senior High</p>
-        <p>Accra Wesley Girls High</p>
-        <p>Presby Senior High, Osu</p>
-        <p>Holy Trinity Senior High</p>
-        <p>Kaneshie Senior High/Tech.</p>
-        <p>Kinbu Senior High/Tech</p>
-        <p>Ada Senior High/Tech.</p>
-        <p>Frafraha Comm. Senior High</p>
-        <p>Ashiaman Senior High</p>
-        <p>Kwabenya Comm. Senior High</p>
-        <p>Christian Methodist Senior High</p>
-        <p>Ngleshie Amanfro Senior High</p>
-        <p>Amasaman Senior High/Tech</p>
-        <p>Adjen Kotoku Senior High</p>
-        <p>Akramaman Senior High</p>
-        <p>Kpone Comm. Senior High</p>
-        <p>La Presby Senior High</p>
-        <p>Presby Senior High, Teshie</p>
-        <p>O'Reilly Senior High</p>
-        <p>Osudoku Senior High/Tech.</p>
-        <p>Tema Meth. Day Senior High</p>
-        <p>Presby Senior High, Tema</p>
-        <p>Lashibi Comm. Day</p>
-        <p>Tema Manhean Senior High/Tech</p>
+
+        <span>
+          <p>Ebenezer Senior High</p>
+        </span>
+        <span>
+          <p>Accra Wesley Girls High</p>
+        </span>
+        <span>
+          <p>Presby Senior High, Osu</p>
+        </span>
+        <span>
+          <p>Holy Trinity Senior High</p>
+        </span>
+        <span>
+          <p>Kaneshie Senior High/Tech.</p>
+        </span>
+        <span>
+          <p>Kinbu Senior High/Tech</p>
+        </span>
+        <span>
+          <p>Ada Senior High/Tech.</p>
+        </span>
+        <span>
+          <p>Frafraha Comm. Senior High</p>
+        </span>
+        <span>
+          <p>Ashiaman Senior High</p>
+        </span>
+        <span>
+          <p>Kwabenya Comm. Senior High</p>
+        </span>
+        <span>
+          <p>Christian Methodist Senior High</p>
+        </span>
+        <span>
+          <p>Ngleshie Amanfro Senior High</p>
+        </span>
+        <span>
+          <p>Amasaman Senior High/Tech</p>
+        </span>
+        <span>
+          <p>Adjen Kotoku Senior High</p>
+        </span>
+        <span>
+          <p>Akramaman Senior High</p>
+        </span>
+        <span>
+          <p>Kpone Comm. Senior High</p>
+        </span>
+        <span>
+          <p>La Presby Senior High</p>
+        </span>
+        <span>
+          <p>Presby Senior High, Teshie</p>
+        </span>
+        <span>
+          <p>O'Reilly Senior High</p>
+        </span>
+        <span>
+          <p>Osudoku Senior High/Tech.</p>
+        </span>
+        <span>
+          <p>Tema Meth. Day Senior High</p>
+        </span>
+        <span>
+          <p>Presby Senior High, Tema</p>
+        </span>
+        <span>
+          <p>Lashibi Comm. Day</p>
+        </span>
+        <span>
+          <p>Tema Manhean Senior High/Tech</p>
+        </span>
       </div>
     </div>
   </body>

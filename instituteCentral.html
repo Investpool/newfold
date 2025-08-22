@@ -16,164 +16,180 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+            * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(31, 31, 30);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p{
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(48, 47, 47);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 20px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
       <p class="number">56</p>
-      <div class="categoryA">
+      <div class="hovertext">
         <h4>CENTRAL REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>Asuansi Tech. Inst.</p>
-        <p>Assin Foso Technical Institute</p>
-        <p>Cape Coast Tech. Inst.</p>
-        <p>Winneba Technical Institute</p>
-        <p>Panfokrom Technical Institute</p>
-        <p>Biriwa Technical Institute</p>
-      </div>
-      <div class="categoryB">
+        <span
+          ><p>Asuansi Tech. Inst.</p>
+          <img src="images/awuscoDance.jpg" />
+        </span>
+        <span
+          ><p>Assin Foso Technical Institute</p>
+          <img src="images/awuscoDance.jpg" />
+        </span>
+        <span><p>Cape Coast Tech. Inst.</p></span>
+        <span><p>Winneba Technical Institute</p></span>
+        <span><p>Panfokrom Technical Institute</p></span>
+        <span><p>Biriwa Technical Institute</p></span>
+
         <h4>CENTRAL REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>Agona Swedru Technical Institute</p>
-        <p>Enyan-Abaasa Technical Institute</p>
-        <p>Gomoa Adaa Technical Institute</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Agona Swedru Technical Institute</p></span>
+        <span><p>Enyan-Abaasa Technical Institute</p></span>
+        <span><p>Gomoa Adaa Technical Institute</p></span>
+
         <h4>CENTRAL REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>Ajumako-Afranse Technical Institute</p>
-        <p>Breman Asikuma Technical Institute</p>
-        <p>TSC Technical Institute, Assin Edubiase</p>
-        <p>TSC Technical Institute, Awutu Breku</p>
-        <p>GRATIS Technical Institute, Cape Coast</p>
-        <p>Social Welfare Girls' Technical Institute</p>
-        <p>Mankessim Technical Institute</p>
-        <p>New Ebu Technical Institute</p>
-        <p>Asafora Technical Institute</p>
-        <p>Assin Jakai Applied Technology Institute</p>
-      </div>
-      <div class="categoryA">
+        <span><p>Ajumako-Afranse Technical Institute</p></span>
+        <span><p>Breman Asikuma Technical Institute</p></span>
+        <span><p>TSC Technical Institute, Assin Edubiase</p></span>
+        <span><p>TSC Technical Institute, Awutu Breku</p></span>
+        <span><p>GRATIS Technical Institute, Cape Coast</p></span>
+        <span><p>Social Welfare Girls' Technical Institute</p></span>
+        <span><p>Mankessim Technical Institute</p></span>
+        <span><p>New Ebu Technical Institute</p></span>
+        <span><p>Asafora Technical Institute</p></span>
+        <span><p>Assin Jakai Applied Technology Institute</p></span>
+
         <h4>CENTRAL REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>Adisadel College</p>
-        <p>Holy Child School, Cape Coast</p>
-        <p>Mfantsipim School</p>
-        <p>St. Augustine's College, Cape Coast</p>
-        <p>Wesley Girls' High School, Cape Coast</p>
-        <p>Mfantsiman Girls' Senior High</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Adisadel College, Cape Coast</p></span>
+        <span><p>Holy Child School, Cape Coast</p></span>
+        <span><p>Mfantsipim School, Cape Coast</p></span>
+        <span><p>St.Augustine's College, Cape Coast</p></span>
+        <span><p>Wesley Girls' High School, Cape Coast</p></span>
+        <span><p>Mfantsiman Girls' Senior High</p></span>
+
         <h4>CENTRAL REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Aggrey Mem. A.M.E.Zion Snr. High</p>
-        <p>Swedru Senior High</p>
-        <p>Nsaba Presby Senior High</p>
-        <p>Siddiq Senior High Sch.</p>
-        <p>Nyakrom Senior High Tech</p>
-        <p>Breman Asikuma Senior High</p>
-        <p>Adankwaman Senior High</p>
-        <p>Awutu Winton Senior High</p>
-        <p>Ghana National College</p>
-        <p>Academy of Christ the King</p>
-        <p>University Practice Senior High</p>
-        <p>Winneba Senior High</p>
-        <p>Ekumfi T. I. Ahmadiiyya SHTS</p>
-        <p>Apam Senior High</p>
-        <p>Mozano Senior High</p>
-        <p>Edinaman Senior High</p>
-        <p>Methodist High School,Saltpond</p>
-        <p>Twifo Praso Senior High</p>
-        <p>Twifo Hemang Senior High/Tech</p>
-        <p>Boa-Amponsem Senior High</p>
-        <p>Diaso Senior High</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Aggrey Mem. A.M.E.Zion, Cape Coast</p></span>
+        <span><p>Swedru Senior High</p></span>
+        <span><p>Nsaba Presby Senior High</p></span>
+        <span><p>Siddiq Senior High Sch., Agona Nyakrom</p></span>
+        <span><p>Nyakrom Senior High Tech</p></span>
+        <span><p>Breman Asikuma Senior High</p></span>
+        <span><p>Adankwaman Senior High</p></span>
+        <span><p>Awutu Winton Senior High, Awutu Beraku</p></span>
+        <span><p>Ghana National College, Cape Coast</p></span>
+        <span><p>Academy of Christ the King, Cape Coast</p></span>
+        <span><p>University Practice Senior High, Cape Coast</p></span>
+        <span><p>Winneba Senior High</p></span>
+        <span><p>Ekumfi T. I. Ahmadiiyya SHTS, Esakyir</p></span>
+        <span><p>Apam Senior High</p></span>
+        <span><p>Mozano Senior High</p></span>
+        <span><p>Edinaman Senior High, Elmina</p></span>
+        <span><p>Methodist High School, Saltpond</p></span>
+        <span><p>Twifo Praso Senior High</p></span>
+        <span><p>Twifo Hemang Senior High/Tech</p></span>
+        <span><p>Boa-Amponsem Snr High, Dunkwa-on-Offin</p></span>
+        <span><p>Diaso Senior High</p></span>
+
         <h4>CENTRAL REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Moree Comm. Senior High</p>
-        <p>Aburaman Senior High</p>
-        <p>Abakrampa Senior High/Tech</p>
-        <p>Agona Namonwora Comm.Senior High</p>
-        <p>Kwanyarko Senior High</p>
-        <p>Agona Fankobaa Senior High</p>
-        <p>Swedru Sch. Of Business</p>
-        <p>Enyan Maim Comm. Day School</p>
-        <p>Mando Senior High/Tech.</p>
-        <p>Enyan Denkyira Senior High/Tech</p>
-        <p>Bisease Senior High School</p>
-        <p>Odoben Senior High</p>
-        <p>Brakwa Senior High/Tech</p>
-        <p>Assin State College</p>
-        <p>Gyaase Community Senior High</p>
-        <p>Obiri Yeboah Senior High/Technical</p>
-        <p>Assin North Senior High/Tech</p>
-        <p>Assin Nsuta Senior High School</p>
-        <p>Assin Manso Senior High</p>
-        <p>Nyankumasi Ahenkro Snr. High</p>
-        <p>Awutu Bawjiase Comm. Senior High School</p>
-        <p>Odupong Comm. Day School</p>
-        <p>Obrachire Senior High/Tech</p>
-        <p>Senya Senior High School</p>
-        <p>Effutu Senior High/Tech</p>
-        <p>Oguaa Senior High/Tech</p>
-        <p>J.E.A. Mills Senior High</p>
-        <p>Fettehman Senior High</p>
-        <p>Gomoa Gyaman Senior High</p>
-        <p>Potsin T.I. Ahm. Senior High</p>
-        <p>Gomoa Senior High/Tech</p>
-        <p>College of Music Senior High</p>
-        <p>Eguafo-Abrem Senior High</p>
-        <p>Komenda Senior High/Tech</p>
-        <p>Mankessim Senior High/Tech</p>
-        <p>Abeadze State College</p>
-        <p>Kwegyir Aggrey Senior High</p>
-        <p>Jukwa Senior High/Tech</p>
-        <p>Dunkwa Senior High/Tech</p>
-        <p>Ayanfuri Senior High</p>
-        <p>Kyekyewere Comm. Senior High School</p>
-        <p>Akyin Senior High School</p>
-        <p>Ogyeedom Comm.Snr High/Tech</p>
-        <p>Mokwaa Senior High School</p>
-        <p>St. Gregory Catholic Senior High School</p>
-        <p>Kobina Ansah SHS</p>
-        <p>S.D.A Senior High School, Gomoa Jukwa</p>
-        <p>Bontrase Senior High Tech. Sch</p>
+        <span><p>Moree Comm. Senior High</p></span>
+        <span><p>Aburaman Senior High</p></span>
+        <span><p>Abakrampa Senior High/Tech</p></span>
+        <span><p>Agona Namonwora Comm.Senior High</p></span>
+        <span><p>Kwanyarko Senior High</p></span>
+        <span><p>Agona Fankobaa Senior High</p></span>
+        <span><p>Swedru Sch. Of Business</p></span>
+        <span><p>Enyan Maim Comm. Day School</p></span>
+        <span><p>Mando Senior High/Tech.</p></span>
+        <span><p>Enyan Denkyira Senior High/Tech</p></span>
+        <span><p>Bisease Senior High School</p></span>
+        <span><p>Odoben Senior High</p></span>
+        <span><p>Brakwa Senior High/Tech</p></span>
+        <span><p>Assin State College, Assin Beraku</p></span>
+        <span><p>Gyaase Community Senior High</p></span>
+        <span><p>Obiri Yeboah Senior High/Tech, Assin Fosu</p></span>
+        <span><p>Assin North Senior High/Tech, Asempaneye</p></span>
+        <span><p>Assin Nsuta Senior High School</p></span>
+        <span><p>Assin Manso Senior High</p></span>
+        <span><p>Nyankumasi Ahenkro Snr. High</p></span>
+        <span><p>Awutu Bawjiase Comm. Senior High School</p></span>
+        <span><p>Odupong Comm. Day School, Kasoa Ofaakor</p></span>
+        <span><p>Obrachire Senior High/Tech</p></span>
+        <span><p>Senya Senior High School</p></span>
+        <span><p>Effutu Senior High/Tech, Cape Coast</p></span>
+        <span><p>Oguaa Senior High/Tech, Cape Coast</p></span>
+        <span><p>J.E.A. Mills Senior High, Otuam</p></span>
+        <span><p>Fettehman Senior High, Gomoa Fetteh</p></span>
+        <span><p>Gomoa Gyaman Senior High</p></span>
+        <span><p>Potsin T.I. Ahm. Senior High</p></span>
+        <span><p>Gomoa Senior High/Tech, Dewurampong</p></span>
+        <span><p>College of Music Senior High, Mozano</p></span>
+        <span><p>Eguafo-Abrem Senior High</p></span>
+        <span><p>Komenda Senior High/Tech</p></span>
+        <span><p>Mankessim Senior High/Tech</p></span>
+        <span><p>Abeadze State College, Dominase</p></span>
+        <span><p>Kwegyir Aggrey Senior High, Anomabo</p></span>
+        <span><p>Jukwa Senior High/Tech</p></span>
+        <span><p>Dunkwa Senior High/Tech</p></span>
+        <span><p>Ayanfuri Senior High</p></span>
+        <span><p>Kyekyewere Comm. Senior High School</p></span>
+        <span><p>Akyin Senior High, Arkra-Mbroboto</p></span>
+        <span><p>Ogyeedom Comm.Snr High/, Gomoa Afransi</p></span>
+        <span><p>Mokwaa Senior High School</p></span>
+        <span><p>St.Gregory Catholic Snr High,Buduburam</p></span>
+        <span><p>Kobina Ansah SHS, Kobina Ansa</p></span>
+        <span><p>S.D.A Senior High School, Gomoa Jukwa</p></span>
+        <span><p>Bontrase Senior High Tech. Sch</p></span>
       </div>
     </div>
   </body>

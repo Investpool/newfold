@@ -653,7 +653,7 @@
           width: 340px;
         }
 
-        .topNews a h3 {
+        /* .topNews a h3 {
           color: white;
           position: absolute;
           top: 70%;
@@ -673,9 +673,14 @@
           font-size: 20px;
           font-weight: 700;
           text-shadow: 2px 2px black;
-        }
+        } */
         .extras {
           font-size: 11px;
+        }
+        .indTitle h4 {
+          font-size: 16px;
+          text-align: center;
+          font-weight: 800;
         }
       }
       .downbelt {
@@ -704,10 +709,7 @@
       .rightSide {
         flex: 2;
       }
-      .info_head {
-        color: rgba(10, 0, 0, 0.884);
-        padding: 5px;
-      }
+     
       .inset {
         padding: 0px;
       }
@@ -739,47 +741,7 @@
       .letters {
         line-height: 18px;
       }
-      .show_factory {
-        display: flex;
-        justify-content: space-between;
-      }
-      .factory1 {
-        width: 400px;
-        background-color: lavenderblush;
-        color: black;
-        display: flex;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
-      }
-      .factory2 {
-        width: 400px;
-        background-color: lavenderblush;
-        color: black;
-        display: flex;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
-      }
-      .factory3 {
-        width: 400px;
-        background-color: lavenderblush;
-        color: black;
-        display: flex;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0px 10px 36px -8px rgba(0, 0, 0, 0.68);
-      }
-      .co_details {
-        padding: 3px;
-        font-size: small;
-      }
-
-      .machines {
-        font-size: small;
-        font-family: fantasy;
-      }
-
+      
       a {
         text-decoration: none;
       }
@@ -877,6 +839,7 @@
         font-weight: 500;
         padding: 4px;
         color: white;
+        border: 1px solid black;
       }
       .yourMps {
         background-color: darkgreen;
@@ -884,15 +847,30 @@
         font-weight: 500;
         padding: 4px;
         color: white;
+        border: 1px solid black;
       }
       .fantastics {
         background-color: brown;
         font-weight: 500;
         padding: 4px;
         color: white;
+        border: 1px solid black;
       }
       .extras {
         display: flex;
+      }
+      .grp1,
+      .grp2,
+      .grp3,
+      .grp4,
+      .grp5,
+      .grp6 {
+        display: flex;
+      }
+      .info_head {
+        font-size: 12px;
+        background-color: khaki;
+        margin-right: 2px;
       }
     </style>
   </head>
@@ -997,7 +975,9 @@
           <div class="extras">
             <a class="editorial" href="editorial.html">EDITORIAL</a>
             <a class="yourMps" href="mpsByRegions.html">KNOW YOUR MPs</a>
-            <a class="fantastics" href="secondCycle.html">SECOND CYCLE SCHOOLS</a>
+            <a class="fantastics" href="secondCycle.html"
+              >SECOND CYCLE SCHOOLS</a
+            >
           </div>
           <div class="wrapps">
             <div class="infoWrapper">
@@ -1150,49 +1130,40 @@
       </div>
       <hr class="backline" />
       <div class="info">
-        <div>
-          <h6>ASSESSING THE WEALTH OF OUR NATION CONTINUES FROM HERE:</h6>
-          <p class="machines">
-            Making the machines and what the machines do - a quick step into the
-            most industrial Regions and Districts across the country.
-          </p>
+        <div class="indTitle">
+          <h4>REGIONAL DISTRIBUTION OF INDUSTRIES</h4>
         </div>
-        <h6 class="info_head">CENTRAL REGION</h6>
-        <div class="show_factory">
-          <div class="factory1">
-            <div class="coImg">
-              <img src="images/artgrain.png" height="150" width="220" />
-            </div>
-            <div class="co_details">
-              <span class="co_Name">ARTGRAIN FEEDS Co.</span><br />
-              <span class="co_District">Awutu Senya West</span><br />
-              <span class="co_Community">Aberful</span><br />
-              <span class="co_Products">Feed Mash</span>
-            </div>
+        <div class="indRegions">
+          <div class="grp1">
+            <h6 class="info_head"><a href="">ACCRA REGION</a></h6>
+            <h6 class="info_head"><a href="indusCentral.html">CENTRAL REGION</a></h6>
+            <h6 class="info_head"><a href="">EASTERN REGION</a></h6>
           </div>
-          <div class="factory2">
-            <div class="coImg">
-              <img src="images/photo7.webp" height="150" width="220" />
-            </div>
-            <div class="co_details">
-              <span class="co_Name">GN ELECTRONICS</span><br />
-              <span class="co_District">KEEA</span><br />
-              <span class="co_Community">Elmina</span><br />
-              <span class="co_Products">Circuit Boards</span>
-            </div>
+          <div class="grp2">
+            <h6 class="info_head"><a href="">WESTERN REGION</a></h6>
+            <h6 class="info_head"><a href="">WESTERN-N REGION</a></h6>
+            <h6 class="info_head"><a href="">BONO REGION</a></h6>
           </div>
-          <div class="factory3">
-            <div class="coImg">
-              <img src="images/gas.webp" height="150" width="220" />
-            </div>
-            <div class="co_details">
-              <span class="co_Name">APPEB Cylinder Co.</span><br />
-              <span class="co_District">Awutu Senya West</span><br />
-              <span class="co_Community">Chochoe</span><br />
-              <span class="co_Products">Gas cylinders</span>
-            </div>
+          <div class="grp3">
+            <h6 class="info_head"><a href="">BONO-E REGION</a></h6>
+            <h6 class="info_head"><a href="">AHAFO REGION</a></h6>
+            <h6 class="info_head"><a href="">ASHANTI REGION</a></h6>
+          </div>
+          <div class="grp4">
+            <h6 class="info_head"><a href="">NORTHERN REGION</a></h6>
+            <h6 class="info_head"><a href="">NORTH-E REGION</a></h6>
+            <h6 class="info_head"><a href="">VOLTA REGION</a></h6>
+          </div>
+          <div class="grp5">
+            <h6 class="info_head"><a href="">UPPER-W REGION</a></h6>
+            <h6 class="info_head"><a href="">UPPER-E REGION</a></h6>
+            <h6 class="info_head"><a href="">OTI REGION</a></h6>
+          </div>
+          <div class="grp6">
+            <h6 class="info_head"><a href="">SAVANNAH REGION</a></h6>
           </div>
         </div>
+       
       </div>
     </div>
     <div class="footers">

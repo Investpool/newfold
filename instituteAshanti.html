@@ -16,255 +16,657 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 30%;
+        width: 65vh;
+        height: 65vh;
+      }
+      /* ul {
+        list-style: none;
+      } */
+
+      ul li {
+        margin-right: 30px;
         font-size: 15px;
-        color: rgb(14, 14, 13);
-        font-weight: 700;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
-      p {
-        font-weight: 500;
+      ul li span {
+        cursor: pointer;
       }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(53, 52, 52);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
-        font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
+      /* h1 {
+        font-size: 90px;
         color: white;
-        margin: 2px 100px 2px 100px;
+        background-color: black;
+      } */
+      /* .hovertext ul li h4 {
+        font-size: 50px;
+        color: white;
+        background-color: black;
+      } */
+
+      /* .hovertext ul li:hover h4 {
+        font-size: 60px;
+        color: lemonchiffon;
+        transition: all 0.3s ease-in-out;
+        background-color: blue;
+        transform: scale(1);
+      } */
+
+      .hovertext ul li img {
+        visibility: hidden;
+        position: absolute;
+        bottom: 50%;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+
+        height: 40vh;
+        border: 3px solid black;
+      }
+
+      .hovertext ul li:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext ul:hover li span {
+        opacity: 0.1;
+      } */
+      h4 {
+        font-size: 15px;
+        color: rgb(250, 21, 21);
+        font-family: Neue Montreal;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <p class="number">184</p>
-      <div class="categoryA">
+      <div class="hovertext">
         <h4>ASHANTI REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>Adako Jachie Technical Institute, Kwamo</p>
-        <p>Kumasi Tech. Inst.</p>
-        <p>Suame Technical Institute</p>
-      </div>
-      <div class="categoryB">
-        <h4>ASHANTI REGION</h4>
-        <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>Asankare Technical Institute</p>
-        <p>St. Michael's Technical Institute, Pramso</p>
-        <p>Methodist Technincal Institute, Kwadaso</p>
-        <p>Krobea Asante Technical & Vocational Inst., Asokore</p>
-        <p>Agona Tech Inst., Agona Ashanti</p>
-      </div>
-      <div class="categoryC">
-        <h4>ASHANTI REGION</h4>
-        <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>Hemang Buoho Technical Institute</p>
-        <p>TSC Technical Institute, Konongo</p>
-        <p>Business Secretarial and Tech Inst., Chirapatre</p>
-        <p>Nerebehi Technical Institute</p>
-        <p>Twedie Technical Institute</p>
-        <p>Nana Ampontua Technical Institute</p>
-        <p>TSC Technical Institute, Bekwai</p>
-        <p>Yaa Pokua Technical Institute. Bekwai</p>
-        <p>Amoafo Technical Institute, Bekwai</p>
-        <p>Abosamso Technical Institute</p>
-        <p>Konkoma Technical Institute</p>
-        <p>Tetrefu Technical Institute</p>
-        <p>Afoako Technical Institute</p>
-        <p>Ejuraman Technical Institute, Ejura</p>
-        <p>Baworo Technical Institute</p>
-        <p>Otaakrom Technical Institute</p>
-        <p>Achiase Technical Institute</p>
-        <p>Akumadan Applied Technology Institute</p>
-        <p>Suntreso Technical Institute, North Suntreso</p>
-        <p>TSC Technical Institute, Mampong</p>
-        <p>Offinso Technical Institute</p>
-        <p>Kumawu Technical Institute</p>
-        <p>Jachie Technical Institute</p>
-        <p>TSC Technical Institute, Sekyere Kumawu</p>
-        <p>Kokoben Technical Institute, Asiwa Kokoben</p>
-        <p>Dwease-Praaso Technical Institute</p>
-        <p>Catholic Technical Institute, Kumasi</p>
-        <p>Ramseyer Technical Institute, Asokwa</p>
-        <p>Juaben Technical Institute</p>
-        <p>Pakyi Applied Technology Institute</p>
-      </div>
-      <div class="categoryA">
-        <h4>ASHANTI REGION</h4>
-        <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>St. Louis Senior High, Kumasi</p>
-        <p>Kumasi High School</p>
-        <p>Opoku Ware School, Santase Kumasi</p>
-        <p>Prempeh College, Sofoline Kumasi</p>
-        <p>T. I. Ahmadiyya Senior High , Kumasi</p>
-        <p>Yaa Asantewaa Girls Senior High, Tanoso Kumasi</p>
-        <p>Konongo Odumase Senior High, Odumase</p>
-      </div>
-      <div class="categoryB">
-        <h4>ASHANTI REGION</h4>
-        <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Dompoase Senior High</p>
-        <p>Fomena T.I. Ahmadiyya Senior High</p>
-        <p>Asare Bediako Senior High</p>
-        <p>New Edubiase Senior High</p>
-        <p>Akrofuom Senior High/Tech</p>
-        <p>Otumfuo Osei Tutu II College, Tetrem</p>
-        <p>Aduman Senior High</p>
-        <p>St. Michael's Senior High, Ahenkro</p>
-        <p>Mabang Senior High/Tech</p>
-        <p>Tepa Senior High</p>
-        <p>Jacobu Senior High/Tech.</p>
-        <p>St. Mary's Girl's Senior High, Konongo</p>
-        <p>Wesley Senior High, Konongo</p>
-        <p>Collins Senior High/Commercial, Agogo</p>
-        <p>Presby Senior High, Bompata</p>
-        <p>Kumasi Academy, Asokore Mampong</p>
-        <p>Sakafia Islamic Senior High, Sawaba</p>
-        <p>Afua Kobi Ampem Girls' Senior High, Trabuom</p>
-        <p>Mpasatia Senior High/Tech</p>
-        <p>Osei Tutu Senior High, Akropong</p>
-        <p>Toase Senior High</p>
-        <p>S.D.A. Senior High, Bekwai</p>
-        <p>St. Joseph Senior High/Tech, Ahwiren</p>
-        <p>Ofoase Kokoben Senior High</p>
-        <p>Oppong Mem. Senior High, Kokofu</p>
-        <p>Beposo Senior High</p>
-        <p>Jachie Pramso Senior High</p>
-        <p>Juaben Senior High</p>
-        <p>Ejisu Senior High/Tech</p>
-        <p>Sekyedumase Senior High/Tech</p>
-        <p>Anglican Senior High, Kumasi</p>
-        <p>KNUST Senior High</p>
-        <p>Nuru-Ameen Islamic Senior High, Asewase</p>
-        <p>Al-Azariya Islamic Snr. High, Old Tafo-Kumasi</p>
-        <p>Adventist Senior High, Kumasi</p>
-        <p>Kumasi Girls Senior High, Abrepo</p>
-        ,
-        <p>Serwaah Nyarko Girls' Snr. High, Dichemso</p>
-        <p>Armed Forces Senior High/Tech, Kumasi</p>
-        <p>Osei Kyeretwie Senior High, Old Tafo</p>
-        <p>Asanteman Senior High, Bantama</p>
-        <p>St. Hubert Sem/Senior High, Kumasi</p>
-        <p>Tawheed Senior High, Akwatia-Line</p>
-        <p>Kumasi Wesley Girls High Sch</p>
-        <p>Islamic Senior High,Kumasi</p>
-        <p>Kofiase Adventist Senior High/Tech.</p>
-        <p>St. Monica's Senior High, Mampong</p>
-        <p>Christ the King Cath., Obuasi</p>
-        <p>St. Jerome Senior High, Abofour</p>
-        <p>Dwamena Akenten Senior High, Offinso</p>
-        <p>Ghana Muslim Mission Senior High, Beposo</p>
-        <p>Nsutaman Cath. Senior High, Nsuta</p>
-        <p>T. I. Ahmadiyya Girl's Senior High, Asokore</p>
-        <p>Tweneboa Kodua Senior High, Kumawu</p>
-        <p>Bankoman Senior High, Banko</p>
-        <p>Konadu Yiadom Catholic Senior High, Asaman</p>
-        <p>S.D.A. Senior High, Agona</p>
-        <p>Agona Senior High/Tech</p>
-        <p>Okomfo Anokye Senior High, Wiamoase</p>
-      </div>
-      <div class="categoryC">
-        <h4>ASHANTI REGION</h4>
-        <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Bodwesango Senior High</p>
-        <p>Apagya Senior High, Adansi Apagya</p>
-        <p>Afigyaman Senior High School, Kyekyewere</p>
-        <p>Adugyama Comm. Senior High</p>
-        <p>Mankranso Senior High</p>
-        <p>Wioso SHS, Kunso-Wioso</p>
-        <p>Tweapease Senior High School</p>
-        <p>Manso-Adubia Senior High</p>
-        <p>Mansoman Senior High, Manso</p>
-        <p>Esaase Bontefufuo Snr. High/Tech.</p>
-        <p>Agogo State College</p>
-        <p>Owerriman Senior High/Tech, Domeabra</p>
-        <p>Banka Comm. Senior High</p>
-        <p>Ofoase Senior High/Tech</p>
-        <p>Juaso Senior High/Tech</p>
-        <p>Parkoso Comm. Senior High</p>
-        <p>Atwima Kwanwoma Snr High/Tech, Trede</p>
-        <p>Anum Asamoah Senior High/Tech, Adum Kwanwoma</p>
-        <p>Adobewora Comm. Senior High</p>
-        <p>Nyinahin Cath. Senior High</p>
-        <p>Nkawie Senior High/Tech</p>
-        <p>Barekese Senior High School</p>
-        <p>Wesley High School, Bekwai</p>
-        <p>Denyaseman Cath.Senior High, Poano</p>
-        <p>Bosome Senior High/Tech.</p>
-        <p>St. George's Senior High Tech., Kuntanase</p>
-        <p>Bosomtwe Oyoko Comm. Senior High, Asiwa</p>
-        <p>Osei Adutwum Senior High, Jachie</p>
-        <p>St Sebastian Cath. Senior High, Adumasa</p>
-        <p>Ejisuman Senior High, Ejisu</p>
-        <p>Bonwire Senior High/Tech</p>
-        <p>Achinakrom Senior High</p>
-        <p>Ejuraman Anglican Senior High</p>
-        <p>Akwesi Awobaa Senior High/Tech, Anyinasu</p>
-        <p>Pentecost Senior High, Kumasi</p>
-        <p>Uthmaniya Senior High, Tafo</p>
-        <p>Agric Nzema Senior High, Kumasi</p>
-        <p>Mancell Girls' Senior High/Tech., Oduom</p>
-        <p>Kumasi Senior High/Tech, Patasi-Kumasi</p>
-        <p>Adventist Girls Senior High, Ntonso</p>
-        <p>Adanwomase Senior High</p>
-        <p>Kofi Adjei Senior High/Tech, Bampenase</p>
-        <p>Antoa Senior High</p>
-        <p>Simms Senior High/Com., Fawade</p>
-        <p>Gyaama Pensan Senior High/Tech, Aboaso-Ashanti</p>
-        <p>Amaniampong Senior High, Mampong</p>
-        <p>Opoku Agyeman Senior High/Tech, Apaah</p>
-        <p>St. Joseph Sem/Senior High, Mampong</p>
-        <p>Obuasi Senior High/Tech</p>
-        <p>Namong Senior High/Tech</p>
-        <p>Asuoso Comm. Senior High</p>
-        <p>Akumadan Senior High</p>
-        <p>Nkenkansu Community Senior High</p>
-        <p>Afigya Senior High/Tech, Boamang</p>
-        <p>Presby Senior High/Tech, Kwamang</p>
-        <p>Tijjaniya Senior High, Asokore</p>
-        <p>Effiduase Senior High/Tech</p>
-        <p>Effiduase Senior High/Com</p>
-        <p>Dadease Agric Senior High</p>
-        <p>Bodomase Senior High/Tech</p>
-        <p>Adu Gyamfi Senior High, Gyamasi</p>
-        <p>Boanim Senior High/ Tech Sch</p>
-        <p>Sabronum Methodist Senior High/Tech</p>
-        <p>Prince Of Peace Girls, South Suntreso</p>
-        <p>Jubilee Senior High, Dampong</p>
-        <p>Church Of Christ Senior High, Adadientem</p>
-        <p>Kurofa Methodist Senior High Tech</p>
-        <p>Wiafe Akenten Presby Senior High, Afrancho</p>
-        <p>Spiritan Senior High/Tech, Adankwame</p>
-        <p>Onwe Senior High School, Onwe-Ashanti</p>
-        <p>J. A. Kufuor Senior High, Sokoban</p>
-        <p>Presby Girls Senior High School, Chirapatre</p>
-        <p>Bosomtwe Senior High/Tech, Ankaase-Lakeside</p>
-        <p>Ibadur Rahman Academy, Buobai</p>
-        <p>Morso Senior High/Tech</p>
-        <p>Ghana Stem Technical School, Sewua</p>
-        <p>Drobonso Senior High School</p>
-        <p>Sekyere Kusi Senior High School</p>
-        <p>Feyiase Senior High School</p>
-        <p>Bepoase Shts</p>
-        <p>J.A. Kufour Stem Technical School, Dabaa</p>
+        <ul>
+          <li>
+            <span><p>Adako Jachie Technical Institute, Kwamo</p></span>
+            <img src="images/awuscoDance.jpg" />
+          </li>
+          <li>
+            <span><p>Kumasi Tech. Instittute</p></span>
+          </li>
+          <li>
+            <span><p>Suame Technical Institute</p></span>
+          </li>
+
+          <h4>ASHANTI REGION</h4>
+          <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
+          <li>
+            <span><p>Asankare Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>St. Michael's Technical Institute, Pramso</p></span>
+          </li>
+          <li>
+            <span><p>Methodist Technincal Institute, Kwadaso</p></span>
+          </li>
+          <li>
+            <span
+              ><p>Krobea Asante Tech. & Vocational Inst., Asokore</p></span
+            >
+          </li>
+          <li>
+            <span><p>Agona Tech Inst., Agona Ashanti</p></span>
+          </li>
+
+          <h4>ASHANTI REGION</h4>
+          <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
+          <li>
+            <span><p>Hemang Buoho Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>TSC Technical Institute, Konongo</p></span>
+          </li>
+          <li>
+            <span><p>Business Secretarial and Tech Inst., Chirapatre</p></span>
+          </li>
+          <li>
+            <span><p>Nerebehi Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Twedie Technical Institute, Twedie</p></span>
+          </li>
+          <li>
+            <span><p>Nana Ampontua Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>TSC Technical Institute, Bekwai</p></span>
+          </li>
+          <li>
+            <span><p>Yaa Pokua Technical Institute. Bekwai</p></span>
+          </li>
+          <li>
+            <span><p>Amoafo Technical Institute, Bekwai</p></span>
+          </li>
+          <li>
+            <span><p>Abosamso Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Konkoma Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Tetrefu Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Afoako Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Ejuraman Technical Institute, Ejura</p></span>
+          </li>
+          <li>
+            <span><p>Baworo Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Otaakrom Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Achiase Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Akumadan Applied Technology Institute</p></span>
+          </li>
+          <li>
+            <span><p>Suntreso Technical Institute, North Suntreso</p></span>
+          </li>
+          <li>
+            <span><p>TSC Technical Institute, Mampong</p></span>
+          </li>
+          <li>
+            <span><p>Offinso Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Kumawu Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Jachie Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>TSC Technical Institute, Sekyere Kumawu</p></span>
+          </li>
+          <li>
+            <span><p>Kokoben Technical Institute, Asiwa Kokoben</p></span>
+          </li>
+          <li>
+            <span><p>Dwease-Praaso Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Catholic Technical Institute, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Ramseyer Technical Institute, Asokwa</p></span>
+          </li>
+          <li>
+            <span><p>Juaben Technical Institute</p></span>
+          </li>
+          <li>
+            <span><p>Pakyi Applied Technology Institute</p></span>
+          </li>
+
+          <h4>ASHANTI REGION</h4>
+          <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
+          <li>
+            <span><p>St. Louis Senior High, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Kumasi High School</p></span>
+          </li>
+          <li>
+            <span><p>Opoku Ware School, Santase Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Prempeh College, Sofoline Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>T. I. Ahmadiyya Senior High , Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Yaa Asantewaa Girls Senior High, Tanoso Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Konongo Odumase Senior High, Odumase</p></span>
+          </li>
+
+          <h4>ASHANTI REGION</h4>
+          <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
+          <li>
+            <span><p>Dompoase Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Fomena T.I. Ahmadiyya Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Asare Bediako Senior High</p></span>
+          </li>
+          <li>
+            <span><p>New Edubiase Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Akrofuom Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Otumfuo Osei Tutu II College, Tetrem</p></span>
+          </li>
+          <li>
+            <span><p>Aduman Senior High</p></span>
+          </li>
+          <li>
+            <span><p>St. Michael's Senior High, Ahenkro</p></span>
+          </li>
+          <li>
+            <span><p>Mabang Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Tepa Senior High, Tepa</p></span>
+          </li>
+          <li>
+            <span><p>Jacobu Senior High/Tech.</p></span>
+          </li>
+          <li>
+            <span><p>St. Mary's Girl's Senior High, Konongo</p></span>
+          </li>
+          <li>
+            <span><p>Wesley Senior High, Konongo</p></span>
+          </li>
+          <li>
+            <span><p>Collins Senior High/Commercial, Agogo</p></span>
+          </li>
+          <li>
+            <span><p>Presby Senior High, Bompata</p></span>
+          </li>
+          <li>
+            <span><p>Kumasi Academy, Asokore Mampong</p></span>
+          </li>
+          <li>
+            <span><p>Sakafia Islamic Senior High, Sawaba</p></span>
+          </li>
+          <li>
+            <span><p>Afua Kobi Ampem Girls' Senior High, Trabuom</p></span>
+          </li>
+          <li>
+            <span><p>Mpasatia Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Osei Tutu Senior High, Akropong</p></span>
+          </li>
+          <li>
+            <span><p>Toase Senior High</p></span>
+          </li>
+          <li>
+            <span><p>S.D.A. Senior High, Bekwai</p></span>
+          </li>
+          <li>
+            <span><p>St. Joseph Senior High/Tech, Ahwiren</p></span>
+          </li>
+          <li>
+            <span><p>Ofoase Kokoben Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Oppong Mem. Senior High, Kokofu</p></span>
+          </li>
+          <li>
+            <span><p>Beposo Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Jachie Pramso Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Juaben Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Ejisu Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Sekyedumase Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Anglican Senior High, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>KNUST Senior High, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Nuru-Ameen Islamic Senior High, Asewase</p></span>
+            
+          </li>
+          <li>
+            <span><p>Al-Azariya Islamic Snr. High, Old Tafo-Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Adventist Senior High, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Kumasi Girls Senior High, Abrepo</p></span>
+          </li>
+          <li>
+            <span><p>Serwaah Nyarko Girls' Snr. High, Dichemso</p></span>
+          </li>
+          <li>
+            <span><p>Armed Forces Senior High/Tech, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Osei Kyeretwie Senior High, Old Tafo</p></span>
+          </li>
+          <li>
+            <span><p>Asanteman Senior High, Bantama</p></span>
+          </li>
+          <li>
+            <span><p>St. Hubert Sem/Senior High, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Tawheed Senior High, Akwatia-Line</p></span>
+          </li>
+          <li>
+            <span><p>Kumasi Wesley Girls High Sch</p></span>
+          </li>
+          <li>
+            <span><p>Islamic Senior High,Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Kofiase Adventist Senior High/Tech.</p></span>
+          </li>
+          <li>
+            <span><p>St. Monica's Senior High, Mampong</p></span>
+          </li>
+          <li>
+            <span><p>Christ the King Cath., Obuasi</p></span>
+          </li>
+          <li>
+            <span><p>St. Jerome Senior High, Abofour</p></span>
+          </li>
+          <li>
+            <span><p>Dwamena Akenten Senior High, Offinso</p></span>
+          </li>
+          <li>
+            <span><p>Ghana Muslim Mission Senior High, Beposo</p></span>
+          </li>
+          <li>
+            <span><p>Nsutaman Cath. Senior High, Nsuta</p></span>
+          </li>
+          <li>
+            <span><p>T. I. Ahmadiyya Girl's Senior High, Asokore</p></span>
+          </li>
+          <li>
+            <span><p>Tweneboa Kodua Senior High, Kumawu</p></span>
+          </li>
+          <li>
+            <span><p>Bankoman Senior High, Banko</p></span>
+          </li>
+          <li>
+            <span><p>Konadu Yiadom Catholic Senior High, Asaman</p></span>
+          </li>
+          <li>
+            <span><p>S.D.A. Senior High, Agona</p></span>
+          </li>
+          <li>
+            <span><p>Agona Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Okomfo Anokye Senior High, Wiamoase</p></span>
+          </li>
+
+          <h4>ASHANTI REGION</h4>
+          <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
+          <li>
+            <span><p>Bodwesango Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Apagya Senior High, Adansi Apagya</p></span>
+          </li>
+          <li>
+            <span><p>Afigyaman Senior High School, Kyekyewere</p></span>
+          </li>
+          <li>
+            <span><p>Adugyama Comm. Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Mankranso Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Wioso SHS, Kunso-Wioso</p></span>
+          </li>
+          <li>
+            <span><p>Tweapease Senior High School</p></span>
+          </li>
+          <li>
+            <span><p>Manso-Adubia Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Mansoman Senior High, Manso</p></span>
+          </li>
+          <li>
+            <span><p>Esaase Bontefufuo Snr. High/Tech.</p></span>
+          </li>
+          <li>
+            <span><p>Agogo State College</p></span>
+          </li>
+          <li>
+            <span><p>Owerriman Senior High/Tech, Domeabra</p></span>
+          </li>
+          <li>
+            <span><p>Banka Comm. Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Ofoase Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Juaso Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Parkoso Comm. Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Atwima Kwanwoma Snr High/Tech, Trede</p></span>
+          </li>
+          <li>
+            <span><p>Anum Asamoah Senior High/Tech, Adum Kwanwoma</p></span>
+          </li>
+          <li>
+            <span><p>Adobewora Comm. Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Nyinahin Cath. Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Nkawie Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Barekese Senior High School</p></span>
+          </li>
+          <li>
+            <span><p>Wesley High School, Bekwai</p></span>
+          </li>
+          <li>
+            <span><p>Denyaseman Cath.Senior High, Poano</p></span>
+          </li>
+          <li>
+            <span><p>Bosome Senior High/Tech.</p></span>
+          </li>
+          <li>
+            <span><p>St. George's Senior High Tech., Kuntanase</p></span>
+          </li>
+          <li>
+            <span><p>Bosomtwe Oyoko Comm. Senior High, Asiwa</p></span>
+          </li>
+          <li>
+            <span><p>Osei Adutwum Senior High, Jachie</p></span>
+          </li>
+          <li>
+            <span><p>St Sebastian Cath. Senior High, Adumasa</p></span>
+          </li>
+          <li>
+            <span><p>Ejisuman Senior High, Ejisu</p></span>
+          </li>
+          <li>
+            <span><p>Bonwire Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Achinakrom Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Ejuraman Anglican Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Akwesi Awobaa Senior High/Tech, Anyinasu</p></span>
+          </li>
+          <li>
+            <span><p>Pentecost Senior High, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Uthmaniya Senior High, Tafo</p></span>
+          </li>
+          <li>
+            <span><p>Agric Nzema Senior High, Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Mancell Girls' Senior High/Tech., Oduom</p></span>
+          </li>
+          <li>
+            <span><p>Kumasi Senior High/Tech, Patasi-Kumasi</p></span>
+          </li>
+          <li>
+            <span><p>Adventist Girls Senior High, Ntonso</p></span>
+          </li>
+          <li>
+            <span><p>Adanwomase Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Kofi Adjei Senior High/Tech, Bampenase</p></span>
+          </li>
+          <li>
+            <span><p>Antoa Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Simms Senior High/Com., Fawade</p></span>
+          </li>
+          <li>
+            <span><p>Gyaama Pensan Senior High/Tech, Aboaso-Ashanti</p></span>
+          </li>
+          <li>
+            <span><p>Amaniampong Senior High, Mampong</p></span>
+          </li>
+          <li>
+            <span><p>Opoku Agyeman Senior High/Tech, Apaah</p></span>
+          </li>
+          <li>
+            <span><p>St. Joseph Sem/Senior High, Mampong</p></span>
+          </li>
+          <li>
+            <span><p>Obuasi Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Namong Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Asuoso Comm. Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Akumadan Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Nkenkansu Community Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Afigya Senior High/Tech, Boamang</p></span>
+          </li>
+          <li>
+            <span><p>Presby Senior High/Tech, Kwamang</p></span>
+          </li>
+          <li>
+            <span><p>Tijjaniya Senior High, Asokore</p></span>
+          </li>
+          <li>
+            <span><p>Effiduase Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Effiduase Senior High/Com</p></span>
+          </li>
+          <li>
+            <span><p>Dadease Agric Senior High</p></span>
+          </li>
+          <li>
+            <span><p>Bodomase Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Adu Gyamfi Senior High, Gyamasi</p></span>
+          </li>
+          <li>
+            <span><p>Boanim Senior High/ Tech Sch</p></span>
+          </li>
+          <li>
+            <span><p>Sabronum Methodist Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Prince Of Peace Girls, South Suntreso</p></span>
+          </li>
+          <li>
+            <span><p>Jubilee Senior High, Dampong</p></span>
+          </li>
+          <li>
+            <span><p>Church Of Christ Senior High, Adadientem</p></span>
+          </li>
+          <li>
+            <span><p>Kurofa Methodist Senior High Tech</p></span>
+          </li>
+          <li>
+            <span><p>Wiafe Akenten Presby Senior High, Afrancho</p></span>
+          </li>
+          <li>
+            <span><p>Spiritan Senior High/Tech, Adankwame</p></span>
+          </li>
+          <li>
+            <span><p>Onwe Senior High School, Onwe-Ashanti</p></span>
+          </li>
+          <li>
+            <span><p>J. A. Kufuor Senior High, Sokoban</p></span>
+          </li>
+          <li>
+            <span><p>Presby Girls Senior High School, Chirapatre</p></span>
+          </li>
+          <li>
+            <span><p>Bosomtwe Senior High/Tech, Ankaase-Lakeside</p></span>
+          </li>
+          <li>
+            <span><p>Ibadur Rahman Academy, Buobai</p></span>
+          </li>
+          <li>
+            <span><p>Morso Senior High/Tech</p></span>
+          </li>
+          <li>
+            <span><p>Ghana Stem Technical School, Sewua</p></span>
+          </li>
+          <li>
+            <span><p>Drobonso Senior High School</p></span>
+          </li>
+          <li>
+            <span><p>Sekyere Kusi Senior High School</p></span>
+          </li>
+          <li>
+            <span><p>Feyiase Senior High School</p></span>
+          </li>
+          <li>
+            <span><p>Bepoase Senior High</p></span>
+          </li>
+          <li>
+            <span><p>J.A. Kufour Stem Technical School, Dabaa</p></span>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

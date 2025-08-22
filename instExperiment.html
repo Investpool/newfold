@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>hover-text</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 80vh;
+        height: 65vh;
+      }
+      /* ul {
+        list-style: none;
+      } */
+
+      ul li {
+        margin-right: 30px;
+        font-size: 20px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
+      }
+      ul li p {
+        cursor: pointer;
+      }
+      /* h1 {
+        font-size: 90px;
+        color: white;
+        background-color: black;
+      } */
+      /* .hovertext ul li h4 {
+        font-size: 50px;
+        color: white;
+        background-color: black;
+      } */
+
+      /* .hovertext ul li:hover h4 {
+        font-size: 60px;
+        color: lemonchiffon;
+        transition: all 0.3s ease-in-out;
+        background-color: blue;
+        transform: scale(1);
+      } */
+
+      .hovertext ul li img {
+        visibility: hidden;
+        position: absolute;
+        bottom: 50%;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+
+        height: 40vh;
+        border: 3px solid black;
+      }
+
+      .hovertext ul li:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext ul:hover li span {
+        opacity: 0.1;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="number">70</p>
+      <div class="hovertext">
+        <h4>GREATER ACCRA REGION</h4>
+        <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
+        <ul>
+          <li>
+            <p>New Century Technical Institute, Dansoman</p>
+            <img src="images/awuscoDance.jpg" />
+          </li>
+          <li>
+            <p>Ada Tech. Inst.,</p>
+            <img src="images/daklu.png" />
+          </li>
+          <li>
+            <p>Pilot Technical Institute, Kokomlemle</p>
+            <img src="images/tanoso, Kumasi.png" />
+          </li>
+          <li>
+            <p>Accra Tech. Trg. Centre, Kokomlemle</p>
+            <img src="images/saglemii.png" />
+          </li>
+          <li>
+            <p>Madina Technical Institute, Madina</p>
+            <img src="images/kotei.jpg" />
+          </li>
+          <li>
+            <p>Tema Tech. Inst., Tema</p>
+            <img src="images/daklu.png" />
+          </li>
+          <li>
+            <p>Tema Mission Technical Institute, Tema</p>
+            <img src="images/daklu.png" />
+          </li>
+          <li>East Legon Applied Technology Institute, East Legon</li>
+
+          <h4>GREATER ACCRA REGION</h4>
+          <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
+          <li>Sacred Heart Tech. Inst., James Town</li>
+          <li>Afienya Technical Institute, Afienya</li>
+          <li>Government Technical Institute, Kaneshie</li>
+
+          <h4>GREATER ACCRA REGION</h4>
+          <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
+          <li>Ashiaman Technical Institute, Ashaiman</li>
+          <li>Opportunities Industrialization Tech. Inst., East Legon</li>
+          <li>Kanda Technical Institute, Kanda</li>
+          <li>Bedeku Technical Institute, Bedeku</li>
+          <li>Ngleshie Amanfro Technical Institute, Ngleshie Amanfrom</li>
+          <li>Teshie Tech. Instittute, Teshie</li>
+          <li>Prampram Technical Institute, Prampram</li>
+          <li>South Labone Girls Technical Institute</li>
+          <li>Agomeda Technical Institute, Agomeda</li>
+          <li>Dodowa Technical Institute, Dodowa</li>
+          <li>Danfa Technical Institute, Danfa</li>
+          <li>Nima Technical Institute, Nima</li>
+
+          <h4>GREATER ACCRA REGION</h4>
+          <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
+          <li>Accra Academy, Kaneshie</li>
+          <li>Accra Girls Senior High, Maamobi</li>
+          <li>Achimota Senior High, Achimota</li>
+          <li>St. Mary's Senior High, Korle Gonno</li>
+          <li>St. Thomas Aquinas Senior High, Cantoments</li>
+          <li>Presby Boys' Senior High, Legon</li>
+          <li>Tema Senior High, Tema Comm. 5</li>
+
+          <h4>GREATER ACCRA REGION</h4>
+          <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
+          <li>Accra Senior High</li>
+          <li>St. Margaret Mary Snr.High/Tech</li>
+          <li>Wesley Grammar School</li>
+          <li>Ada Senior High</li>
+          <li>Accra STEM Academy</li>
+          <li>Odorgonno Senior High</li>
+          <li>St. John's Grammar Senior High</li>
+          <li>Labone Senior High</li>
+          <li>Forces Senior High/Tech, Burma Camp</li>
+          <li>West Africa Senior High</li>
+          <li>Nungua Senior High</li>
+          <li>Ningo Senior High</li>
+          <li>Prampram Senior High</li>
+          <li>Ghanata Senior High</li>
+          <li>Chemu Senior High/Tech</li>
+          <li>Our Lady of Mercy Senior High</li>
+
+          <h4>GREATER ACCRA REGION</h4>
+          <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
+          <li>Ebenezer Senior High</li>
+          <li>Accra Wesley Girls High</li>
+          <li>Presby Senior High, Osu</li>
+          <li>Holy Trinity Senior High</li>
+          <li>Kaneshie Senior High/Tech.</li>
+          <li>Kinbu Senior High/Tech</li>
+          <li>Ada Senior High/Tech.</li>
+          <li>Frafraha Comm. Senior High</li>
+          <li>Ashiaman Senior High</li>
+          <li>Kwabenya Comm. Senior High</li>
+          <li>Christian Methodist Senior High</li>
+          <li>Ngleshie Amanfro Senior High</li>
+          <li>Amasaman Senior High/Tech</li>
+          <li>Adjen Kotoku Senior High</li>
+          <li>Akramaman Senior High</li>
+          <li>Kpone Comm. Senior High</li>
+          <li>La Presby Senior High</li>
+          <li>Presby Senior High, Teshie</li>
+          <li>O'Reilly Senior High</li>
+          <li>Osudoku Senior High/Tech.</li>
+          <li>Tema Meth. Day Senior High</li>
+          <li>Presby Senior High, Tema</li>
+          <li>Lashibi Comm. Day</li>
+          <li>Tema Manhean Senior High/Tech</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
