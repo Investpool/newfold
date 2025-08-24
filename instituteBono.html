@@ -16,116 +16,126 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+     * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(10, 10, 10);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(43, 42, 42);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p  {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
-      <p class="number">47</p>
-      <div class="categoryA">
+      <p class="number">47</p></span>
+      <div class="hovertext">
         <h4>BONO REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>Dormaa Technical Institute</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Dormaa Technical Institute</p></span>
+      
         <h4>BONO REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>Our Lady of Fatima Technical Institute, Sampa</p>
-        <p>Don Bosco Voc./Tech. Inst., Odumase</p>
-        <p>Nsoatre Technical Institute</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Our Lady of Fatima Technical Institute, Sampa</p></span>
+        <span><p>Don Bosco Voc./Tech. Inst., Odumase</p></span>
+        <span><p>Nsoatre Technical Institute</p></span>
+      
         <h4>BONO REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>TSC Technical Institute, Dormaa Ahenkro</p>
-        <p>TSC Technical Institute, Drobo</p>
-        <p>Sunyani Technical Institute</p>
-        <p>Social Welfare Technical Institute, Sunyani</p>
-        <p>Sunyani Methodist Technical Inst.</p>
-      </div>
-      <div class="categoryA">
+        <span><p>TSC Technical Institute, Dormaa Ahenkro</p></span>
+        <span><p>TSC Technical Institute, Drobo</p></span>
+        <span><p>Sunyani Technical Institute</p></span>
+        <span><p>Social Welfare Technical Institute, Sunyani</p></span>
+        <span><p>Sunyani Methodist Technical Inst.</p></span>
+      
         <h4>BONO REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>Berekum Presby Senior High</p>
-        <p>Our Lady of Providence Senior High, Kwasi Buokrom</p>
-        <p>St. James Sem & Senior High, Abesim</p>
-        <p>Sunyani Senior High</p>
-        <p>Notre Dame Girls Senior High School, Sunyani</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Berekum Presby Senior High</p></span>
+        <span><p>Our Lady of Providence Senior High, Kwasi Buokrom</p></span>
+        <span><p>St. James Sem & Senior High, Abesim</p></span>
+        <span><p>Sunyani Senior High</p></span>
+        <span><p>Notre Dame Girls Senior High School, Sunyani</p></span>
+      
         <h4>BONO REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Berekum Senior High</p>
-        <p>Jinijini Senior High</p>
-        <p>Dormaa Senior High</p>
-        <p>Salvation Army Senior High, Aboabo Dormaa</p>
-        <p>Mansen Senior High, Wamfie</p>
-        <p>Wamanafo Senior High/Tech</p>
-        <p>Nkrankwanta Senior High/Tech</p>
-        <p>Diamono Senior High Sch., Duadaso No.2</p>
-        <p>Nafana Senior High, Sampa</p>
-        <p>Sumaman Senior High, Suma Ahenkro</p>
-        <p>Goka Senior High/Tech.</p>
-        <p>St. Ann's Girls Senior High, Sampa</p>
-        <p>Drobo Senior High</p>
-        <p>S.D.A Senior High, Sunyani</p>
-        <p>Twene Amanfo Senior High/Tech.</p>
-        <p>Sacred Heart Senior High, Nsoatre</p>
-        <p>Odomaseman Senior High</p>
-        <p>Chiraa Senior High</p>
-        <p>Menji Senior High</p>
-        <p>Nsawkaw State Senior High</p>
-        <p>Badu Senior High/Tech.</p>
-        <p>Nkoranman Senior High, Seikwa</p>
-        <p>Istiquaama Snr. High, Wenchi</p>
-        <p>Wenchi Meth. Senior High</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Berekum Senior High</p></span>
+        <span><p>Jinijini Senior High</p></span>
+        <span><p>Dormaa Senior High</p></span>
+        <span><p>Salvation Army Senior High, Aboabo Dormaa</p></span>
+        <span><p>Mansen Senior High, Wamfie</p></span>
+        <span><p>Wamanafo Senior High/Tech</p></span>
+        <span><p>Nkrankwanta Senior High/Tech</p></span>
+        <span><p>Diamono Senior High Sch., Duadaso No.2</p></span>
+        <span><p>Nafana Senior High, Sampa</p></span>
+        <span><p>Sumaman Senior High, Suma Ahenkro</p></span>
+        <span><p>Goka Senior High/Tech.</p></span>
+        <span><p>St. Ann's Girls Senior High, Sampa</p></span>
+        <span><p>Drobo Senior High</p></span>
+        <span><p>S.D.A Senior High, Sunyani</p></span>
+        <span><p>Twene Amanfo Senior High/Tech.</p></span>
+        <span><p>Sacred Heart Senior High, Nsoatre</p></span>
+        <span><p>Odomaseman Senior High</p></span>
+        <span><p>Chiraa Senior High</p></span>
+        <span><p>Menji Senior High</p></span>
+        <span><p>Nsawkaw State Senior High</p></span>
+        <span><p>Badu Senior High/Tech.</p></span>
+        <span><p>Nkoranman Senior High, Seikwa</p></span>
+        <span><p>Istiquaama Snr. High, Wenchi</p></span>
+        <span><p>Wenchi Meth. Senior High</p></span>
+      
         <h4>BONO REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Bandaman Senior High, Banda Ahenkro</p>
-        <p>Kyem Amponsah Senior High School, Fiapre</p>
-        <p>St. Augustine Senior High School, Nsapor Berekum</p>
-        <p>Methodist Senior High/Tech.,Biadan</p>
-        <p>Duadaso No. 1 Senior High/Tech.</p>
-        <p>Nkyeraa Senior High Sch.</p>
-        <p>Koase Senior High/Tech</p>
-        <p>Hidaayah Islamic Senior High School, Japekrom</p>
+        <span><p>Bandaman Senior High, Banda Ahenkro</p></span>
+        <span><p>Kyem Amponsah Senior High School, Fiapre</p></span>
+        <span><p>St. Augustine Senior High School, Nsapor Berekum</p></span>
+        <span><p>Methodist Senior High/Tech.,Biadan</p></span>
+        <span><p>Duadaso No. 1 Senior High/Tech.</p></span>
+        <span><p>Nkyeraa Senior High Sch.</p></span>
+        <span><p>Koase Senior High/Tech</p></span>
+        <span><p>Hidaayah Islamic Senior High School, Japekrom</p></span>
       </div>
     </div>
   </body>

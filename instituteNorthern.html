@@ -16,115 +16,125 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(32, 32, 31);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(56, 55, 55);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
       <p class="number">46</p>
-      <div class="categoryA">
+      <div class="hovertext">
         <h4>NORTHERN REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>Dabokpa Voc/Tech. Inst.</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Dabokpa Voc/Tech. Inst.</p></span>
+
         <h4>NORTHERN REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>St. Joseph's Tech. Inst., Saboba</p>
-      </div>
-      <div class="categoryC">
+        <span><p>St. Joseph's Tech. Inst., Saboba</p></span>
+
         <h4>NORTHERN REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>Zugu Dabogni Technical Institute</p>
-        <p>Tamale Technical Institute</p>
-        <p>Gbewa Technical Institute</p>
-        <p>St. Mary's Technical Institute,Tamale</p>
-        <p>Lamashegu Technical Inst., Tamale</p>
-        <p>Kumbungu Vocational Techncal Institute</p>
-        <p>GRATIS Technical Institute, Tamale</p>
-        <p>Nyohini Community Tech. Inst., Tamale</p>
-        <p>Tatale Technical Institute</p>
-        <p>Zabzugu Technical Institute</p>
-        <p>Kofi Annan Technical Institute, Nwodua</p>
-        <p>Nyong Technical Institute</p>
-        <p>Savelugu Technical Institute</p>
-      </div>
-      <div class="categoryA">
+        <span><p>Zugu Dabogni Technical Institute</p></span>
+        <span><p>Tamale Technical Institute</p></span>
+        <span><p>Gbewa Technical Institute</p></span>
+        <span><p>St. Mary's Technical Institute,Tamale</p></span>
+        <span><p>Lamashegu Technical Inst., Tamale</p></span>
+        <span><p>Kumbungu Vocational Techncal Institute</p></span>
+        <span><p>GRATIS Technical Institute, Tamale</p></span>
+        <span><p>Nyohini Community Tech. Inst., Tamale</p></span>
+        <span><p>Tatale Technical Institute</p></span>
+        <span><p>Zabzugu Technical Institute</p></span>
+        <span><p>Kofi Annan Technical Institute, Nwodua</p></span>
+        <span><p>Nyong Technical Institute</p></span>
+        <span><p>Savelugu Technical Institute</p></span>
+
         <h4>NORTHERN REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>Tamale Senior High</p>
-        <p>St. Charles Senior High, Tamale</p>
-        <p>Ghana Senior High School, Tamale</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Tamale Senior High</p></span>
+        <span><p>St. Charles Senior High, Tamale</p></span>
+        <span><p>Ghana Senior High School, Tamale</p></span>
+
         <h4>NORTHERN REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Tamale Girls Senior High</p>
-        <p>Kalpohin Senior High, Tamale</p>
-        <p>Yendi Senior High</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Tamale Girls Senior High</p></span>
+        <span><p>Kalpohin Senior High, Tamale</p></span>
+        <span><p>Yendi Senior High</p></span>
+
         <h4>NORTHERN REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Gushegu Senior High</p>
-        <p>Karaga Senior High</p>
-        <p>Kpandai Senior High</p>
-        <p>Kumbungu Senior High</p>
-        <p>Sang Comm. Day School</p>
-        <p>Bimbilla Senior High</p>
-        <p>Wulensi Senior High</p>
-        <p>Wapuli Comm. Senior High</p>
-        <p>Saboba E.P. Senior High</p>
-        <p>Islamic Science Senior High, Tamale</p>
-        <p>Northern School of Business</p>
-        <p>Pong-Tamale Senior High</p>
-        <p>Savelugu Senior High</p>
-        <p>Presby Senior High, Tamale</p>
-        <p>Business Senior High, Tamale</p>
-        <p>Vitting Senior High/Tech., Tamale</p>
-        <p>Anbariya Senior High Sch., Tamale</p>
-        <p>Nuriya Islamic Senior High, Tamale</p>
-        <p>E. P. Agric Senior High/Tech., Tatale</p>
-        <p>Tolon Senior High</p>
-        <p>Dagbon State Senior High/Tech, Yendi</p>
-        <p>Zabzugu Senior High</p>
-        <p>Kasuliyili Senior High</p>
-        <p>Nanton Senior High/Tech</p>
+        <span><p>Gushegu Senior High</p></span>
+        <span><p>Karaga Senior High</p></span>
+        <span><p>Kpandai Senior High</p></span>
+        <span><p>Kumbungu Senior High</p></span>
+        <span><p>Sang Comm. Day School</p></span>
+        <span><p>Bimbilla Senior High</p></span>
+        <span><p>Wulensi Senior High</p></span>
+        <span><p>Wapuli Comm. Senior High</p></span>
+        <span><p>Saboba E.P. Senior High</p></span>
+        <span><p>Islamic Science Senior High, Tamale</p></span>
+        <span><p>Northern School of Business</p></span>
+        <span><p>Pong-Tamale Senior High</p></span>
+        <span><p>Savelugu Senior High</p></span>
+        <span><p>Presby Senior High, Tamale</p></span>
+        <span><p>Business Senior High, Tamale</p></span>
+        <span><p>Vitting Senior High/Tech., Tamale</p></span>
+        <span><p>Anbariya Senior High Sch., Tamale</p></span>
+        <span><p>Nuriya Islamic Senior High, Tamale</p></span>
+        <span><p>E. P. Agric Senior High/Tech., Tatale</p></span>
+        <span><p>Tolon Senior High</p></span>
+        <span><p>Dagbon State Senior High/Tech, Yendi</p></span>
+        <span><p>Zabzugu Senior High</p></span>
+        <span><p>Kasuliyili Senior High</p></span>
+        <span><p>Nanton Senior High/Tech</p></span>
       </div>
     </div>
   </body>

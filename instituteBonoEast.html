@@ -16,106 +16,117 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(14, 14, 13);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(31, 30, 30);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p  {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
-      <p class="number">34</p>
-      <div class="categoryA">
+      <p class="number">34</p></span>
+      <div class="hovertext">
         <h4>BONO EAST REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>Nkoranza Tech Inst.</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Nkoranza Tech Inst.</p></span>
+      
         <h4>BONO EAST REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryC">
+        <span><p>NONE</p></span>
+      
         <h4>BONO EAST REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>Nkwabeng Technical Institute</p>
-        <p>Kintampo Technical Institute</p>
-        <p>Techiman Technical Institute</p>
-        <p>Kajaji Technical Institute</p>
+        <span><p>Nkwabeng Technical Institute</p></span>
+        <span><p>Kintampo Technical Institute</p></span>
+        <span><p>Techiman Technical Institute</p></span>
+        <span><p>Kajaji Technical Institute</p></span>
       </div>
       <div class="categoryA">
         <h4>BONO EAST REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryB">
+        <span><p>NONE</p></span>
+      
         <h4>BONO EAST REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Amanten Senior High</p>
-        <p>Jema Senior High</p>
-        <p>Osei Bonsu Senior High, Yefri</p>
-        <p>Kwabre Senior High, Akuma</p>
-        <p>Nkoranza Senior High/Tech</p>
-        <p>Prang Senior High</p>
-        <p>Yeji Senior High/Tech</p>
-        <p>Kajaji Senior High</p>
-        <p>Techiman Senior High</p>
-        <p>Our Lady of Mount Carmel Girls Snr High, Techiman</p>
-        <p>Yeboah Asuamah Senior High, Nsuta</p>
-        <p>Guakro Effah Senior High, Offuman</p>
-        <p>Tuobodom Senior High/Tech</p>
-        <p>Akumfi Ameyaw Senior High/Tech., Aworowa</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Amanten Senior High</p></span>
+        <span><p>Jema Senior High</p></span>
+        <span><p>Osei Bonsu Senior High, Yefri</p></span>
+        <span><p>Kwabre Senior High, Akuma</p></span>
+        <span><p>Nkoranza Senior High/Tech</p></span>
+        <span><p>Prang Senior High</p></span>
+        <span><p>Yeji Senior High/Tech</p></span>
+        <span><p>Kajaji Senior High</p></span>
+        <span><p>Techiman Senior High</p></span>
+        <span><p>Our Lady of Mount Carmel Girls Snr High, Techiman</p></span>
+        <span><p>Yeboah Asuamah Senior High, Nsuta</p></span>
+        <span><p>Guakro Effah Senior High, Offuman</p></span>
+        <span><p>Tuobodom Senior High/Tech</p></span>
+        <span><p>Akumfi Ameyaw Senior High/Tech., Aworowa</p></span>
+      
         <h4>BONO EAST REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Atebubu Senior High</p>
-        <p>Kintampo Senior High</p>
-        <p>New Longoro Comm.School (Dega)</p>
-        <p>Busunya Senior High</p>
-        <p>Abeaseman Comm. Day Senior High, Abease</p>
-        <p>Kwame Danso Senior High/Tech</p>
-        <p>Kwarteng Ankomah Senior High, Tanoso Techiman</p>
-        <p>Gyarko Comm. Day Senior High,Techiman</p>
-        <p>Kesse Basahyia Senior High School, Techiman Oforikrom</p>
-        <p>St. Francis Seminary Senior High, Buoyem</p>
-        <p>Krobo Comm.Senior High</p>
-        <p>Bassa Community Senior High</p>
-        <p>New Kokrompe Comm. Senior High</p>
-        <p>Abrafi Senior High, Techiman</p>
-        <p>Donkro- Nkwanta Senior High School</p>
+        <span><p>Atebubu Senior High</p></span>
+        <span><p>Kintampo Senior High</p></span>
+        <span><p>New Longoro Comm.School (Dega)</p></span>
+        <span><p>Busunya Senior High</p></span>
+        <span><p>Abeaseman Comm. Day Senior High, Abease</p></span>
+        <span><p>Kwame Danso Senior High/Tech</p></span>
+        <span><p>Kwarteng Ankomah Senior High, Tanoso Techiman</p></span>
+        <span><p>Gyarko Comm. Day Senior High,Techiman</p></span>
+        <span><p>Kesse Basahyia Senior High School, Techiman Oforikrom</p></span>
+        <span><p>St. Francis Seminary Senior High, Buoyem</p></span>
+        <span><p>Krobo Comm.Senior High</p></span>
+        <span><p>Bassa Community Senior High</p></span>
+        <span><p>New Kokrompe Comm. Senior High</p></span>
+        <span><p>Abrafi Senior High, Techiman</p></span>
+        <span><p>Donkro- Nkwanta Senior High School</p></span>
       </div>
     </div>
   </body>

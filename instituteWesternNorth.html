@@ -16,93 +16,103 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+     * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(8, 8, 8);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(56, 56, 56);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number{
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p  {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
-        <p class="number">21</p>
-      <div class="categoryA">
+        <p class="number">21</p></span>
+      <div class="hovertext">
         <h4>WESTERN NORTH REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryB">
+        <span><p>NONE</p></span>
+      
         <h4>WESTERN NORTH REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryC">
+        <span><p>NONE</p></span>
+      
         <h4>WESTERN NORTH REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>TSC Technical Institute - Bibiani</p>
-        <p>Bonso Nkwanta Technical Institute</p>
-      </div>
-      <div class="categoryA">
+        <span><p>TSC Technical Institute - Bibiani</p></span>
+        <span><p>Bonso Nkwanta Technical Institute</p></span>
+      
         <h4>WESTERN NORTH REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>Awaso STEM Senior High</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Awaso STEM Senior High</p></span>
+      
         <h4>WESTERN NORTH REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Bia Senior High/Tech, Debiso Essiam</p>
-        <p>Sefwi Bekwai Senior High</p>
-        <p>Bodi Senior High</p>
-        <p>Juaboso Senior High</p>
-        <p>Akontombra Senior High</p>
-        <p>Sefwi-Wiawso Senior High</p>
-        <p>Sefwi-Wiawso Senior High/Tech</p>
-        <p>Asawinso Senior High</p>
-        <p>St. Joseph Senior High, Sefwi Wiawso</p>
-        <p>Dadieso Senior High</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Bia Senior High/Tech, Debiso Essiam</p></span>
+        <span><p>Sefwi Bekwai Senior High</p></span>
+        <span><p>Bodi Senior High</p></span>
+        <span><p>Juaboso Senior High</p></span>
+        <span><p>Akontombra Senior High</p></span>
+        <span><p>Sefwi-Wiawso Senior High</p></span>
+        <span><p>Sefwi-Wiawso Senior High/Tech</p></span>
+        <span><p>Asawinso Senior High</p></span>
+        <span><p>St. Joseph Senior High, Sefwi Wiawso</p></span>
+        <span><p>Dadieso Senior High</p></span>
+      
         <h4>WESTERN NORTH REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Nana Brentu Senior High/Tech, Enchi</p>
-        <p>Adabokrom Comm. SHS</p>
-        <p>Adjoafua Comm. Senior High</p>
-        <p>Chirano Comm. Day School</p>
-        <p>Bibiani Senior High/Tech.</p>
-        <p>Queens Girls' Senior High, Sefwi Awhiaso</p>
-        <p>Nsawora Edumafa Senior High School</p>
-        <p>Manso-Amenfi Comm. Day School</p>
+        <span><p>Nana Brentu Senior High/Tech, Enchi</p></span>
+        <span><p>Adabokrom Comm. SHS</p></span>
+        <span><p>Adjoafua Comm. Senior High</p></span>
+        <span><p>Chirano Comm. Day School</p></span>
+        <span><p>Bibiani Senior High/Tech.</p></span>
+        <span><p>Queens Girls' Senior High, Sefwi Awhiaso</p></span>
+        <span><p>Nsawora Edumafa Senior High School</p></span>
+        <span><p>Manso-Amenfi Comm. Day School</p></span>
       </div>
     </div>
   </body>

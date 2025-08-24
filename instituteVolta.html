@@ -16,165 +16,178 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(14, 14, 13);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(56, 55, 55);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
-      <p class="number">95</p>
-      <div class="categoryA">
+      <p class="number">104</p>
+      <div class="hovertext">
         <h4>VOLTA REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>Anlo Tech. Inst.</p>
-        <p>Kpando Tech. Inst.</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Anlo Technical Institute</p></span>
+        <span><p>Kpando Technical Instittute</p></span>
+
         <h4>VOLTA REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>St. Daniel Comboni Technical Inst. Liati</p>
-        <p>Have Tech. Inst., Anloga</p>
-        <p>Comboni Tech/Voc Inst., Sogakofe</p>
-      </div>
-      <div class="categoryC">
+        <span><p>St. Daniel Comboni Technical Inst. Liati</p></span>
+        <span><p>Have Tech. Inst., Anloga</p></span>
+        <span><p>Comboni Tech/Voc Inst., Sogakofe</p></span>
+
         <h4>VOLTA REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>Avenorpeme Technical Institute</p>
-        <p>Ve- Golokwati Technical Institute</p>
-        <p>Avenui-Awudome Technical Institute</p>
-        <p>Ave Technical Institute</p>
-        <p>Volta Tech Inst</p>
-        <p>Ho -Lokoe Technical Institute</p>
-        <p>Ho Technical Institute</p>
-        <p>Amedzofe Technical Institute</p>
-        <p>Tsibu Technical Institute</p>
-        <p>E.P. Tech/Voc Inst, Alavanyo</p>
-        <p>Caring Sisters Technical Inst., Tegbi </p>
-        <p>Atorkor Technical Institute</p>
-        <p>Kedzi Technical Institute</p>
-        <p>C.Y.O. Tech/Voc. Inst., Sovie</p>
-        <p>Toh-Kpalime Technical Institute</p>
-        <p>Klefe Technical Institute</p>
-        <p>Dzodze Technical Institute</p>
-        <p>Sogakope Technial Institute</p>
-        <p>Botoku Technical Insitute</p>
-        <p>Woe Technical Institute</p>
-        <p>Anfoeta Technical Institute</p>
-      </div>
-      <div class="categoryA">
+        <span><p>Avenorpeme Technical Institute</p></span>
+        <span><p>Ve- Golokwati Technical Institute</p></span>
+        <span><p>Avenui-Awudome Technical Institute</p></span>
+        <span><p>Ave Technical Institute</p></span>
+        <span><p>Volta Tech Inst</p></span>
+        <span><p>Ho -Lokoe Technical Institute</p></span>
+        <span><p>Ho Technical Institute</p></span>
+        <span><p>Amedzofe Technical Institute</p></span>
+        <span><p>Tsibu Technical Institute</p></span>
+        <span><p>E.P. Tech/Voc Inst, Alavanyo</p></span>
+        <span><p>Caring Sisters Technical Inst., Tegbi</p></span>
+        <span><p>Atorkor Technical Institute</p></span>
+        <span><p>Kedzi Technical Institute</p></span>
+        <span><p>C.Y.O. Tech/Voc. Inst., Sovie</p></span>
+        <span><p>Toh-Kpalime Technical Institute</p></span>
+        <span><p>Klefe Technical Institute</p></span>
+        <span><p>Dzodze Technical Institute</p></span>
+        <span><p>Sogakope Technial Institute</p></span>
+        <span><p>Botoku Technical Insitute</p></span>
+        <span><p>Woe Technical Institute</p></span>
+        <span><p>Anfoeta Technical Institute</p></span>
+
         <h4>VOLTA REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>Mawuli School, Ho</p>
-        <p>OLA Girls Senior High, Ho</p>
-        <p>Bishop Herman College, Kpando</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Mawuli School, Ho</p></span>
+        <span><p>OLA Girls Senior High, Ho</p></span>
+        <span><p>Bishop Herman College, Kpando</p></span>
+
         <h4>VOLTA REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Agate Comm. Senior High</p>
-        <p>Anlo Senior High</p>
-        <p>Mafi-Kumasi Senior High/Tech</p>
-        <p>E.P.C. Mawuko Girls Senior High</p>
-        <p>Awudome Senior High., Tsito</p>
-        <p>Abutia Senior High/Tchnical</p>
-        <p>St. Mary's Sem.& Senior High School, Lolobi</p>
-        <p>Keta Senior High/Tech.</p>
-        <p>Kpando Senior High.</p>
-        <p>Vakpo Senior High</p>
-        <p>Peki Senior High</p>
-        <p>Tongor Senior High Tech.</p>
-        <p>Sogakofe Senior High</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Agate Comm. Senior High</p></span>
+        <span><p>Anlo Senior High</p></span>
+        <span><p>Mafi-Kumasi Senior High/Tech</p></span>
+        <span><p>E.P.C. Mawuko Girls Senior High</p></span>
+        <span>
+          <p>Awudome Senior High, Tsito</p>
+          <img src="images/awuscoDance.jpg"/>
+        </span>
+        <span><p>Abutia Senior High/Tchnical</p></span>
+        <span><p>St. Mary's Sem.& Senior High School, Lolobi</p></span>
+        <span><p>Keta Senior High/Tech.</p></span>
+        <span><p>Kpando Senior High.</p></span>
+        <span><p>Vakpo Senior High</p></span>
+        <span><p>Peki Senior High</p></span>
+        <span><p>Tongor Senior High Tech.</p></span>
+        <span><p>Sogakofe Senior High</p></span>
+
         <h4>VOLTA REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Adaklu Senior High</p>
-        <p>Leklebi Senior High</p>
-        <p>Ve Comm. Senior High</p>
-        <p>Jim Bourton Mem Agric. Senior High, Logba Adzokoe</p>
-        <p>Ziope Senior High Sch.</p>
-        <p>Agotime Senior High</p>
-        <p>Akatsi Senior High/Tech</p>
-        <p>Ave Senior High</p>
-        <p>Avenor Senior High</p>
-        <p>Atiavi Senior High/Tech</p>
-        <p>Volta Senior High School</p>
-        <p>Tsiame Senior High</p>
-        <p>Zion Senior High, Anloga</p>
-        <p>Abor Senior High</p>
-        <p>Keta Business College</p>
-        <p>Anlo Awomefia Senior High, Anyako</p>
-        <p>Anlo Afiadenyigba Snr High</p>
-        <p>Adidome Senior High</p>
-        <p>Shia Senior High/Tech</p>
-        <p>Sokode Senior High/Tech</p>
-        <p>Taviefe Senior High</p>
-        <p>Ziavi Senior High/Tech</p>
-        <p>Tanyigbe Senior High</p>
-        <p>Kpedze Senior High</p>
-        <p>Avatime Senior High</p>
-        <p>Tsito Senior High/Tech</p>
-        <p>Akome Senior High/Tech.</p>
-        <p>Dzolo Senior High</p>
-        <p>E. P. Senior High</p>
-        <p>Afadjato Senior High/Tech., Gbledi-Gborgame</p>
-        <p>Alavanyo Senior High/Tech.</p>
-        <p>Santa Esther Girls' Senior High, Wli</p>
-        <p>Afife Senior High Tech.</p>
-        <p>Dzodze Penyi Senior High</p>
-        <p>Wovenu Senior High Technical</p>
-        <p>Weta Senior High/Tech.</p>
-        <p>St. Paul's Senior High, Denu</p>
-        <p>Klikor Senior High/Tech.</p>
-        <p>Some Senior High</p>
-        <p>Three Town Senior High, Denu</p>
-        <p>Aflao Community SHTS</p>
-        <p>Anfoega Senior High</p>
-        <p>Vakpo Senior High/Tech</p>
-        <p>Volo Comm. Senior High</p>
-        <p>Battor Senior High</p>
-        <p>Dofor Senior High</p>
-        <p>Mepe St. Kizito Senior High/Tech.</p>
-        <p>Aveyime Battor Senior High/Tech.</p>
-        <p>Kpeve Senior High Tech</p>
-        <p>Peki Senior High/Technical</p>
-        <p>St. Catherine Girls Snr High, Agbakorpe</p>
-        <p>Dabala Senior High/Tech.</p>
-        <p>Gbekor Senior High School</p>
+        <span><p>Adaklu Senior High</p></span>
+        <span><p>Leklebi Senior High</p></span>
+        <span><p>Ve Comm. Senior High</p></span>
+        <span><p>Jim Bourton Mem Agric. Senior High, Logba Adzokoe</p></span>
+        <span><p>Ziope Senior High Sch.</p></span>
+        <span><p>Agotime Senior High</p></span>
+        <span><p>Akatsi Senior High/Tech</p></span>
+        <span><p>Ave Senior High</p></span>
+        <span><p>Avenor Senior High</p></span>
+        <span><p>Atiavi Senior High/Tech</p></span>
+        <span><p>Volta Senior High School</p></span>
+        <span><p>Tsiame Senior High</p></span>
+        <span><p>Zion Senior High, Anloga</p></span>
+        <span><p>Abor Senior High</p></span>
+        <span><p>Keta Business College</p></span>
+        <span><p>Anlo Awomefia Senior High, Anyako</p></span>
+        <span><p>Anlo Afiadenyigba Snr High</p></span>
+        <span><p>Adidome Senior High</p></span>
+        <span><p>Shia Senior High/Tech</p></span>
+        <span><p>Sokode Senior High/Tech</p></span>
+        <span><p>Taviefe Senior High</p></span>
+        <span><p>Ziavi Senior High/Tech</p></span>
+        <span><p>Tanyigbe Senior High</p></span>
+        <span><p>Kpedze Senior High</p></span>
+        <span><p>Avatime Senior High</p></span>
+        <span><p>Tsito Senior High/Tech</p></span>
+        <span><p>Akome Senior High/Tech.</p></span>
+        <span><p>Dzolo Senior High</p></span>
+        <span><p>E. P. Senior High</p></span>
+        <span><p>Afadjato Senior High/Tech., Gbledi-Gborgame</p></span>
+        <span><p>Alavanyo Senior High/Tech.</p></span>
+        <span><p>Santa Esther Girls' Senior High, Wli</p></span>
+        <span><p>Afife Senior High Tech.</p></span>
+        <span><p>Dzodze Penyi Senior High</p></span>
+        <span><p>Wovenu Senior High Technical</p></span>
+        <span><p>Weta Senior High/Tech.</p></span>
+        <span><p>St. Paul's Senior High, Denu</p></span>
+        <span><p>Klikor Senior High/Tech.</p></span>
+        <span><p>Some Senior High</p></span>
+        <span><p>Three Town Senior High, Denu</p></span>
+        <span><p>Aflao Community SHTS</p></span>
+        <span><p>Anfoega Senior High</p></span>
+        <span><p>Vakpo Senior High/Tech</p></span>
+        <span><p>Volo Comm. Senior High</p></span>
+        <span><p>Battor Senior High</p></span>
+        <span><p>Dofor Senior High</p></span>
+        <span><p>Mepe St. Kizito Senior High/Tech.</p></span>
+        <span><p>Aveyime Battor Senior High/Tech.</p></span>
+        <span><p>Kpeve Senior High Tech</p></span>
+        <span><p>Peki Senior High/Technical</p></span>
+        <span><p>St. Catherine Girls Snr High, Agbakorpe</p></span>
+        <span><p>Dabala Senior High/Tech.</p></span>
+        <span><p>Gbekor Senior High School</p></span>
       </div>
     </div>
   </body>

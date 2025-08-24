@@ -16,126 +16,136 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(19, 19, 19);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(43, 42, 42);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number{
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p  {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
-        <p class="number">56</p>
-      <div class="categoryA">
+        <p class="number">56</p></span>
+      <div class="hovertext">
         <h4>WESTERN REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>Takoradi Tech. Inst., Takoradi</p>
-        <p>Kikam Tech. Inst., Kikam</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Takoradi Tech. Inst., Takoradi</p></span>
+        <span><p>Kikam Tech. Inst., Kikam</p></span>
+      
         <h4>WESTERN REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>Charlotte Dolphyne Technical Institute, Sanzule</p>
-        <p>Axim Technical Institute, Axim</p>
-        <p>Sekondi Takoradi Technical Institute, Sekondi</p>
-        <p>Tarkwa Technical Institute, Tarkwa</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Charlotte Dolphyne Technical Institute, Sanzule</p></span>
+        <span><p>Axim Technical Institute, Axim</p></span>
+        <span><p>Sekondi Takoradi Technical Institute, Sekondi</p></span>
+        <span><p>Tarkwa Technical Institute, Tarkwa</p></span>
+      
         <h4>WESTERN REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>TSC Technical Institute - Asankragwa</p>
-        <p>Takoradi Community Technical Institute</p>
-        <p>Asasetre Technical Institute, Asasetre</p>
-        <p>TSC Technical Institute - Half Assini</p>
-        <p>Opportunities Industralisation Technical Inst., Takoradi</p>
-        <p>Essipun Technical Institute</p>
-        <p>Shama Technical Institute</p>
-        <p>Manso-Amenfi Technical Institute</p>
-        <p>Mesu Akompi Technical Institute, Wassa Saa</p>
-        <p>Abura Technical Institute</p>
-        <p>St. Ann's Technical Institute, Sekondi</p>
-        <p>Libermann Technical Institute, Sowodadzem</p>
-        <p>Sekondi Technical Institute</p>
-        <p>TSC Technical Institute - Bibiani</p>
-        <p>Bonso Nkwanta Technical Institute</p>
-      </div>
-      <div class="categoryA">
+        <span><p>TSC Technical Institute - Asankragwa</p></span>
+        <span><p>Takoradi Community Technical Institute</p></span>
+        <span><p>Asasetre Technical Institute, Asasetre</p></span>
+        <span><p>TSC Technical Institute - Half Assini</p></span>
+        <span><p>Opportunities Industralisation Technical Inst., Takoradi</p></span>
+        <span><p>Essipun Technical Institute</p></span>
+        <span><p>Shama Technical Institute</p></span>
+        <span><p>Manso-Amenfi Technical Institute</p></span>
+        <span><p>Mesu Akompi Technical Institute, Wassa Saa</p></span>
+        <span><p>Abura Technical Institute</p></span>
+        <span><p>St. Ann's Technical Institute, Sekondi</p></span>
+        <span><p>Libermann Technical Institute, Sowodadzem</p></span>
+        <span><p>Sekondi Technical Institute</p></span>
+        <span><p>TSC Technical Institute - Bibiani</p></span>
+        <span><p>Bonso Nkwanta Technical Institute</p></span>
+      
         <h4>WESTERN REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        <p>Archbishop Porter Girls Snr.High</p>
-        <p>Ghana Senior High/Tech</p>
-        <p>Sekondi College</p>
-        <p>St. John's Senior High, Sekondi</p>
-        <p>Fijai Senior High</p>
-      </div>
-      <div class="categoryB">
+        <span><p>Archbishop Porter Girls Snr.High</p></span>
+        <span><p>Ghana Senior High/Tech</p></span>
+        <span><p>Sekondi College</p></span>
+        <span><p>St. John's Senior High, Sekondi</p></span>
+        <span><p>Fijai Senior High</p></span>
+      
         <h4>WESTERN REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>St. Mary's Boys' Senior High, Apowa</p>
-        <p>Esiama Senior High/Tech, Esiama</p>
-        <p>Half Assini Senior High, Half Asini</p>
-        <p>Mpohor Senior High, Mpohor</p>
-        <p>Daboase Senior High/Tech, Daboase</p>
-        <p>Kwame Nkrumah Senior High, Nsein Axim</p>
-        <p>Bompeh Senior High./Tech, Takoradi</p>
-        <p>Adiembra Senior High, Adiembra</p>
-        <p>Shama Senior High, Shama</p>
-        <p>Ahantaman Girls' Senior High, Secondi - Ketan</p>
-        <p>Tarkwa Senior High, Tarkwa</p>
-        <p>Amenfiman Senior High, Wasa Akropong</p>
-      </div>
-      <div class="categoryC">
+        <span><p>St. Mary's Boys' Senior High, Apowa</p></span>
+        <span><p>Esiama Senior High/Tech, Esiama</p></span>
+        <span><p>Half Assini Senior High, Half Asini</p></span>
+        <span><p>Mpohor Senior High, Mpohor</p></span>
+        <span><p>Daboase Senior High/Tech, Daboase</p></span>
+        <span><p>Kwame Nkrumah Senior High, Nsein Axim</p></span>
+        <span><p>Bompeh Senior High./Tech, Takoradi</p></span>
+        <span><p>Adiembra Senior High, Adiembra</p></span>
+        <span><p>Shama Senior High, Shama</p></span>
+        <span><p>Ahantaman Girls' Senior High, Secondi - Ketan</p></span>
+        <span><p>Tarkwa Senior High, Tarkwa</p></span>
+        <span><p>Amenfiman Senior High, Wasa Akropong</p></span>
+      
         <h4>WESTERN REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Asankrangwa Senior High/Tech</p>
-        <p>Sankor Senior High School</p>
-        <p>Baidoo Bonso Senior High/Tech, Agona Nkwanta</p>
-        <p>Uthman Bin Affan Islamic SHS, Kamgbunli</p>
-        <p>Nkroful Agric. Senior High/Tech</p>
-        <p>Bonzo-Kaku Senior High, Awiebo</p>
-        <p>Annor Adjaye Senior High, Ezilibo</p>
-        <p>Gwiraman Comm.Senior High, Bamianko</p>
-        <p>Axim Girls Senior High</p>
-        <p>St. Augustine's Senior High, Bogoso</p>
-        <p>Prestea Senior High/Tech</p>
-        <p>Huni Valley Senior High</p>
-        <p>Methodist Senior High, Sekondi</p>
-        <p>Takoradi Senior High, Tanokrom</p>
-        <p>Diabene Senior High/Tech</p>
-        <p>Fiaseman Senior High, Bankyim Tarkwa</p>
-        <p>Benso Senior High/Tech</p>
-        <p>Asankrangwa Senior High</p>
+        <span><p>Asankrangwa Senior High/Tech</p></span>
+        <span><p>Sankor Senior High School</p></span>
+        <span><p>Baidoo Bonso Senior High/Tech, Agona Nkwanta</p></span>
+        <span><p>Uthman Bin Affan Islamic SHS, Kamgbunli</p></span>
+        <span><p>Nkroful Agric. Senior High/Tech</p></span>
+        <span><p>Bonzo-Kaku Senior High, Awiebo</p></span>
+        <span><p>Annor Adjaye Senior High, Ezilibo</p></span>
+        <span><p>Gwiraman Comm.Senior High, Bamianko</p></span>
+        <span><p>Axim Girls Senior High</p></span>
+        <span><p>St. Augustine's Senior High, Bogoso</p></span>
+        <span><p>Prestea Senior High/Tech</p></span>
+        <span><p>Huni Valley Senior High</p></span>
+        <span><p>Methodist Senior High, Sekondi</p></span>
+        <span><p>Takoradi Senior High, Tanokrom</p></span>
+        <span><p>Diabene Senior High/Tech</p></span>
+        <span><p>Fiaseman Senior High, Bankyim Tarkwa</p></span>
+        <span><p>Benso Senior High/Tech</p></span>
+        <span><p>Asankrangwa Senior High</p></span>
       </div>
     </div>
   </body>

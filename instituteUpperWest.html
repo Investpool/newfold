@@ -16,120 +16,124 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(12, 12, 12);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(53, 52, 52);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
       <p class="number">44</p>
-      <div class="categoryA">
+      <div class="hovertext">
         <h4>UPPER WEST REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        Wa Tech. Inst.
+        <span><p>Wa Tech. Inst.</p></span>
 
-      </div>
-      <div class="categoryB">
         <h4>UPPER WEST REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        St. Basilides Voc./Tech. Inst., Kaleo
-St. John's Voc. Tech. Institute, Nandon
-St Anne's Vocational Training Inst., Nandon
+        <span><p>St. Basilides Voc./Tech. Inst., Kaleo</p></span>
+        <span><p>St. John's Voc. Tech. Institute, Nandon</p></span>
+        <span><p>St Anne's Vocational Training Inst., Nandon</p></span>
 
-      </div>
-      <div class="categoryC">
         <h4>UPPER WEST REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        Issa Technical Institute
-TSC Technical Institute, Nadowli - Kaleo
-St. Clare's Technical Institute, Tumu
-GRATIS Technical Institute, Wa
-Naa-Momori Technical Institute, Wa
-Tibani Technical Institute
-Birifo Technical Institute
-Nakori Chansa Technical Institute, Wa
-Guo Technical Insititute
+        <span><p>Issa Technical Institute</p></span>
+        <span><p>TSC Technical Institute, Nadowli - Kaleo</p></span>
+        <span><p>St. Clare's Technical Institute, Tumu</p></span>
+        <span><p>GRATIS Technical Institute, Wa</p></span>
+        <span><p>Naa-Momori Technical Institute, Wa</p></span>
+        <span><p>Tibani Technical Institute</p></span>
+        <span><p>Birifo Technical Institute</p></span>
+        <span><p>Nakori Chansa Technical Institute, Wa</p></span>
+        <span><p>Guo Technical Insititute</p></span>
 
-      </div>
-      <div class="categoryA">
         <h4>UPPER WEST REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-        St. Francis Girls Senior High, Jirapa 
-Lawra Senior High 
-Nandom Senior High
+        <span><p>St. Francis Girls Senior High, Jirapa</p></span>
+        <span><p>Lawra Senior High</p></span>
+        <span><p>Nandom Senior High</p></span>
 
-      </div>
-      <div class="categoryB">
         <h4>UPPER WEST REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        Queen of Peace Senior High, Nadowli
-Kanton Senior High, Tumu
-T. I. Ahmadiyya Senior High, Wa
-Wa Senior High .
-Lassie-Tuolu Senior High, Lassie
+        <span><p>Queen of Peace Senior High, Nadowli</p></span>
+        <span><p>Kanton Senior High, Tumu</p></span>
+        <span><p>T. I. Ahmadiyya Senior High, Wa</p></span>
+        <span><p>Wa Senior High</p></span>
+        <span><p>Lassie-Tuolu Senior High, Lassie</p></span>
 
-      </div>
-      <div class="categoryC">
         <h4>UPPER WEST REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-       Daffiamah Senior High
-Jirapa Senior High
-Ullo Senior High
-Piina Senior High
-Lambussie Comm. Senior High School
-Eremon Senior High/Tech.
-Birifoh Senior High Sch., Lawra
-Kaleo Senior High/Tech
-St. Augustine Senior High/Tech, Saan Charikpong
-Takpo Senior High Sch.
-Ko Senior High, Ko-Nandon
-Holy Family Senior High, Hamile
-Tumu Senior High/Tech.
-Holy Child Senior High School, Walembelle
-Dr. Hilla Limann Senior High School, Gwollu
-Funsi Senior High School
-Loggu Comm. Day School
-Islamic Senior High, Wa
-Wa Senior High/Tech.
-Northern Star Senior High, Mangu-Wa
-Jamiat Al-Hidaya Islamic Girls, Wa
-Han Senior High, Jirapa
-Sombo Senior High
-
+        <span><p>Daffiamah Senior High</p></span>
+        <span><p>Jirapa Senior High</p></span>
+        <span><p>Ullo Senior High</p></span>
+        <span><p>Piina Senior High</p></span>
+        <span><p>Lambussie Comm. Senior High School</p></span>
+        <span><p>Eremon Senior High/Tech.</p></span>
+        <span><p>Birifoh Senior High Sch., Lawra</p></span>
+        <span><p>Kaleo Senior High/Tech</p></span>
+        <span><p>St. Augustine Senior High/Tech, Saan Charikpong</p></span>
+        <span><p>Takpo Senior High Sch.</p></span>
+        <span><p>Ko Senior High, Ko-Nandon</p></span>
+        <span><p>Holy Family Senior High, Hamile</p></span>
+        <span><p>Tumu Senior High/Tech.</p></span>
+        <span><p>Holy Child Senior High School, Walembelle</p></span>
+        <span><p>Dr. Hilla Limann Senior High School, Gwollu</p></span>
+        <span><p>Funsi Senior High School</p></span>
+        <span><p>Loggu Comm. Day School</p></span>
+        <span><p>Islamic Senior High, Wa</p></span>
+        <span><p>Wa Senior High/Tech.</p></span>
+        <span><p>Northern Star Senior High, Mangu-Wa</p></span>
+        <span><p>Jamiat Al-Hidaya Islamic Girls, Wa</p></span>
+        <span><p>Han Senior High, Jirapa</p></span>
+        <span><p>Sombo Senior High</p></span>
       </div>
     </div>
   </body>

@@ -16,101 +16,111 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(12, 12, 12);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(53, 52, 52);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
       <p class="number">31</p>
-      <div class="categoryA">
+      <div class="hovertext">
         <h4>OTI REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryB">
+        <span><p>NONE</p></span>
+
         <h4>OTI REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryC">
+        <span><p>NONE</p></span>
+
         <h4>OTI REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        <p>Fr. Dogli Memorial Tech Inst, New Ayoma</p>
-        <p>Kaakyi Tech Inst., Kete Krachi</p>
-        <p>St Theresa's Tech Inst., Chinderi</p>
-        <p>Lolobi Technical Institute</p>
-        <p>Dambai Technical Institute</p>
-      </div>
-      <div class="categoryA">
+        <span><p>Fr. Dogli Memorial Tech Inst, New Ayoma</p></span>
+        <span><p>Kaakyi Tech Inst., Kete Krachi</p></span>
+        <span><p>St Theresa's Tech Inst., Chinderi</p></span>
+        <span><p>Lolobi Technical Institute</p></span>
+        <span><p>Dambai Technical Institute</p></span>
+
         <h4>OTI REGION</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryB">
+        <span><p>NONE</p></span>
+
         <h4>OTI REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>Baglo Ridge Senior High/Tech.</p>
-        <p>Okadjakrom Senior High/Tech.</p>
-        <p>Bueman Senior High</p>
-      </div>
-      <div class="categoryC">
+        <span><p>Baglo Ridge Senior High/Tech.</p></span>
+        <span><p>Okadjakrom Senior High/Tech.</p></span>
+        <span><p>Bueman Senior High</p></span>
+
         <h4>OTI REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        <p>Tapaman Senior High/Tech</p>
-        <p>Biakoye Comm. School</p>
-        <p>Bowiri Comm. Day Senior High/Tech.</p>
-        <p>Nkonya Senior High School</p>
-        <p>Worawora Senior High</p>
-        <p>Ahamansu Islamic Senior High School</p>
-        <p>Kadjebi-Asato Senior High</p>
-        <p>Dodi-Papase Senior High/Tech</p>
-        <p>Yabram Comm. Day School</p>
-        <p>Asukawkaw Senior High</p>
-        <p>Oti Senior High/Tech Sch</p>
-        <p>Nchumuruman Comm. Day Senior High</p>
-        <p>Kete Krachi Senior High/Tech.</p>
-        <p>Krachi Senior High</p>
-        <p>Kpassa Senior High/Tech</p>
-        <p>Nkwanta Comm.Senior High/Tech</p>
-        <p>Kyabobo Girls' School</p>
-        <p>Ntruboman Senior High</p>
-        <p>Nkwanta Senior High</p>
-        <p>Akpafu Senior High/Tech.</p>
-        <p>Likpe Senior High</p>
+        <span><p>Tapaman Senior High/Tech</p></span>
+        <span><p>Biakoye Comm. School</p></span>
+        <span><p>Bowiri Comm. Day Senior High/Tech.</p></span>
+        <span><p>Nkonya Senior High School</p></span>
+        <span><p>Worawora Senior High</p></span>
+        <span><p>Ahamansu Islamic Senior High School</p></span>
+        <span><p>Kadjebi-Asato Senior High</p></span>
+        <span><p>Dodi-Papase Senior High/Tech</p></span>
+        <span><p>Yabram Comm. Day School</p></span>
+        <span><p>Asukawkaw Senior High</p></span>
+        <span><p>Oti Senior High/Tech Sch</p></span>
+        <span><p>Nchumuruman Comm. Day Senior High</p></span>
+        <span><p>Kete Krachi Senior High/Tech.</p></span>
+        <span><p>Krachi Senior High</p></span>
+        <span><p>Kpassa Senior High/Tech</p></span>
+        <span><p>Nkwanta Comm.Senior High/Tech</p></span>
+        <span><p>Kyabobo Girls' School</p></span>
+        <span><p>Ntruboman Senior High</p></span>
+        <span><p>Nkwanta Senior High</p></span>
+        <span><p>Akpafu Senior High/Tech.</p></span>
+        <span><p>Likpe Senior High</p></span>
       </div>
     </div>
   </body>

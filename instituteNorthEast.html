@@ -16,97 +16,104 @@
     />
     <title>newsbox</title>
     <style>
-      body {
-        background-color: lightgrey;
+     * {
+        margin: 0;
+        padding: 0;
       }
-      h4 {
-        text-align: center;
-        font-size: 15px;
-        color: rgb(12, 12, 12);
-        font-weight: 700;
+      .container {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 50%;
+        width: 70vh;
+        height: 65vh;
       }
-      p {
-        font-weight: 500;
-      }
-      .categoryA,
-      .categoryB,
-      .categoryC {
-        background-color: white;
-        color: rgb(53, 52, 52);
-        border: none;
-        gap: 1;
-        padding: 7px 7px 7px 10px;
-        margin: 4px;
-        border-radius: 6px;
-        /* box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-      }
-      .number {
+      span {
+        margin-right: 50px;
         font-size: 20px;
-        background-color: blue;
-        padding: 5px;
-        border-radius: 50%;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        margin: 2px 100px 2px 100px;
+        height: 8vh;
+        display: inline-block;
+        position: relative;
       }
+      .hovertext span p {
+        font-size: 16px;
+        color: rgb(12, 0, 0);
+      }
+
+      .hovertext span:hover p {
+        font-size: 25px;
+        color: rgb(3, 3, 0);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      .hovertext span img {
+        /* visibility: hidden; */
+        position: absolute;
+        bottom: 50%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+        width: 100%;
+        height: 40vh;
+        border: 3px solid rgb(17, 17, 17);
+      }
+
+      .hovertext span:hover img {
+        visibility: visible;
+        transform: scale(1);
+      }
+      /* .hovertext :hover span p {
+        opacity: 0.1;
+      }  */
     </style>
   </head>
   <body>
     <div class="container">
-      <p class="number"></p>
-      <div class="categoryA">
+      <p class="number">21</p>
+      <div class="hovertext">
         <h4>NORTH EAST REGION</h4>
         <h4>CATEGORY A TECHNICAL SCHOOLS</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryB">
+        <span><p>NONE</p></span>
+
         <h4>NORTH EAST REGION</h4>
         <h4>CATEGORY B TECHNICAL SCHOOLS</h4>
-       <p>NONE</p>
-      </div>
-      <div class="categoryC">
+        <span><p>NONE</p></span>
+
         <h4>NORTH EAST REGION</h4>
         <h4>CATEGORY C TECHNICAL SCHOOLS</h4>
-        Nalerigu Technical Institute 
-Walewale Technical Institute 
-Loagri Technical Institute
+        <span><p>Nalerigu Technical Institute</p></span>
+        <span><p>Walewale Technical Institute</p></span>
+        <span><p>Loagri Technical Institute</p></span>
 
-      </div>
-      <div class="categoryA">
         <h4>NORTH EAST REGION</h4>
         <h4>CATEGORY A SENIOR HIGH SCHOOLS</h4>
-       Kpasenpke STEM Senior High
+        <span><p>Kpasenpke STEM Senior High</p></span>
 
-      </div>
-      <div class="categoryB">
         <h4>NORTH EAST REGION</h4>
         <h4>CATEGORY B SENIOR HIGH SCHOOLS</h4>
-        <p>NONE</p>
-      </div>
-      <div class="categoryC">
+        <span><p>NONE</p></span>
+
         <h4>NORTH EAST REGION</h4>
         <h4>CATEGORY C SENIOR HIGH SCHOOLS</h4>
-        Nakpanduri Senior High
-Bunkpurugu Senior High/Tech
-Chereponi Senior High/Tech.
-Nalerigu Senior High
-Gambaga Girls Senior High
-Yagaba Senior High School
-Wulugu Senior High
-Walewale Senior High
-Janga Senior High/Tech
-Sakogu Senior High/Tech
-Langbinsi Senior High/Tech
-Presby SHTS, Nankpanduri
-Yunyoo Senior High School
-Nasuan Senior High School
-Gbintiri Senior High/Tech
-Yizesi Senior High School
-Bimbagu Senior High/Tech
-
+        <span><p>Nakpanduri Senior High</p></span>
+        <span><p>Bunkpurugu Senior High/Tech</p></span>
+        <span><p>Chereponi Senior High/Tech.</p></span>
+        <span><p>Nalerigu Senior High</p></span>
+        <span><p>Gambaga Girls Senior High</p></span>
+        <span><p>Yagaba Senior High School</p></span>
+        <span><p>Wulugu Senior High</p></span>
+        <span><p>Walewale Senior High</p></span>
+        <span><p>Janga Senior High/Tech</p></span>
+        <span><p>Sakogu Senior High/Tech</p></span>
+        <span><p>Langbinsi Senior High/Tech</p></span>
+        <span><p>Presby SHTS, Nankpanduri</p></span>
+        <span><p>Yunyoo Senior High School</p></span>
+        <span><p>Nasuan Senior High School</p></span>
+        <span><p>Gbintiri Senior High/Tech</p></span>
+        <span><p>Yizesi Senior High School</p></span>
+        <span><p>Bimbagu Senior High/Tech</p></span>
       </div>
     </div>
   </body>
