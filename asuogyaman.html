@@ -24,6 +24,7 @@
         padding: 0;
         box-sizing: border-box;
       }
+
       @media screen and (max-width: 375px) {
         a {
           color: #f7eeee;
@@ -32,32 +33,27 @@
           /* margin: 40px; */
           text-decoration: none;
         }
-        p {
-          font-size: 15px;
-        }
-        h5 {
-          font-size: 14px;
-        }
-        .news {
-          margin-right: 5px;
-        }
         .newsPage {
-          border: none;
-
-          padding: 4px;
-          margin-bottom: 5px;
-          margin-left: 5px;
-          margin-right: 16px;
-          /* background-color: rgb(240, 11, 11);  */
+          font-size: small;
         }
         .newsPage img {
-          height: 200;
-          width: 210;
+          width: 320px;
+          height: 160;
         }
-        section {
-          background-color: #1e06fa;
+        .communities {
           width: 350px;
         }
+        .vidReels {
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 425px) {
+        .vidReels {
+          flex-direction: column;
+        }
+      }
+      body {
+        padding: 20px;
       }
       a {
         padding: 2px;
@@ -92,11 +88,24 @@
       .text {
         height: 400;
       }
+      .submit {
+        font-size: 12px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 4px;
+        padding: 5px;
+      }
       .parent {
         position: relative;
         text-align: center;
         color: white;
       }
+      /* .parent img {
+        transition: transform 0.3s ease-in-out;
+      }
+      .parent img:hover {
+            transform: scale(1.8);
+        } */
       .bottom-right {
         position: absolute;
         bottom: 10px;
@@ -110,30 +119,169 @@
       }
       .news {
         flex: 6;
+        background-color: rgb(214, 229, 231);
       }
       .ads {
         flex: 6;
       }
       .newsPage {
         border: none;
-
-        padding: 2px;
+        border-radius: 5px;
+        padding: 12px;
         margin-bottom: 5px;
         margin-left: 5px;
-        margin-right: 3px;
+        margin-right: 5px;
         background-color: white;
       }
-      .titlop {
+      .titnews {
         font-weight: 500;
+        color: grey;
+        margin-left: 4px;
+      }
+      .comm {
+        margin-left: 4px;
+        font-size: 12px;
+      }
+      .titads {
+        color: grey;
+        text-align: center;
+      }
+      .date {
+        font-size: 12px;
+        color: gray;
+        font-style: italic;
+        padding-top: 1px;
+      }
+      .comments {
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        padding: 1px;
+      }
+      .cmnt {
+        background-color: green;
+        border: none;
+        color: #fff;
+        border-radius: 3px;
+      }
+      #myImg {
+        /* border-radius: 5px; */
+        margin-right: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #myImg:hover {
+        opacity: 0.7;
+      }
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 99; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+      }
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 75%;
+        /*max-width: 75%;*/
+      }
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(1);
+        }
+        to {
+          -webkit-transform: scale(2);
+        }
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0.4);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes zoom-out {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+      @keyframes zoom-out {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+      /* Add Animation */
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      .out {
+        animation-name: zoom-out;
+        animation-duration: 0.6s;
       }
       body {
         padding: 10px;
-        background-color: rgb(211, 211, 211);
+        background-color: lightgray;
       }
       .container {
         background-color: white;
         padding: 5px;
-        right: 20px;
+      }
+      .chpsFoto {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        float: left;
+        margin-right: 5px;
+      }
+      .epRoads {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        float: left;
+        margin-right: 5px;
+      }
+      .adsCircle {
+        float: left;
+      }
+      .vidReels {
+        display: flex;
+        overflow-x: scroll;
       }
     </style>
   </head>
@@ -141,73 +289,96 @@
     <div class="container">
       <div><h3>ASUOGYAMAN DISTRICT</h3></div>
       <div>ASUOGYAMAN DISTRICT COMMUNITIES</div>
-      <section>
-        <a href="">Kpong</a>
-        <a href="">Atimpoku</a>
-        <a href="">Akosombo</a>
-        <a href="">Aboasa</a>
-        <a href="">Anyansu</a>
-        <a href="">Abomanyaw</a>
-        <a href="">Akwamufie</a>
-        <a href="">Apeguso</a>
-        <a href="">Boso</a>
-        <a href="">Frankadua</a>
-        <a href="">Gyakiti</a>
-        <a href="">Labolabo</a>
-        <a href="">New Ajena</a>
-        <a href="">New Akrade</a>
-        <a href="">Asikuma</a>
-        <a href="">New Senchi</a>
-        <a href="">Old Senchi</a>
-        <a href="">Pupuni</a>
-        <a href="">South Senchi</a>
-        <a href="">Mangoase</a>
-        <a href="">Tortibo</a>
-        <a href="">Odokom</a>
-        <a href="">Kwanyako</a>
-        <a href="">Nnudu</a>
-        <a href="">Asempanaye</a>
-        <a href="">Anyansu</a>
-        <a href="">Mpakadam</a>
-        <a href="">Korankye</a>
-        <a href="">Fintey</a>
-        <a href="">Osiabura</a>
-        <a href="">Nkwakubew</a>
-        <a href="">Anum</a>
-        <a href="">Nayor</a>
-        <a href="">Toseng</a>
-        <a href="">Anyaase</a>
-        <a href="">Mpamproase</a>
-        <a href="">Kudikope</a>
-        <a href="">Asubrempong</a>
-        <a href="">Manya-Yoyim</a>
-        <a href="">Yeniama</a>
-        <a href="">Sedorm</a>
-        <a href="">Sapor</a>
-      </section>
-      <!-- <div class="info-down">
-      <div class="image-row">
-        <div class="parent">
-          <img src="images/accra.webp" height="100" width="150" alt="" />
-          <div class="bottom-right"></div>
-        </div>
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
-        <img src="images/" height="100" width="150" alt="" />
+      <div class="communities">
+        <section>
+          <a href="">Kpong</a>
+          <a href="">Atimpoku</a>
+          <a href="">Akosombo</a>
+          <a href="">Aboasa</a>
+          <a href="">Anyansu</a>
+          <a href="">Abomanyaw</a>
+          <a href="">Akwamufie</a>
+          <a href="">Apeguso</a>
+          <a href="">Boso</a>
+          <a href="">Frankadua</a>
+          <a href="">Gyakiti</a>
+          <a href="">Labolabo</a>
+          <a href="">New Ajena</a>
+          <a href="">New Akrade</a>
+          <a href="">Asikuma</a>
+          <a href="">New Senchi</a>
+          <a href="">Old Senchi</a>
+          <a href="">Pupuni</a>
+          <a href="">South Senchi</a>
+          <a href="">Mangoase</a>
+          <a href="">Tortibo</a>
+          <a href="">Odokom</a>
+          <a href="">Kwanyako</a>
+          <a href="">Nnudu</a>
+          <a href="">Asempanaye</a>
+          <a href="">Anyansu</a>
+          <a href="">Mpakadam</a>
+          <a href="">Korankye</a>
+          <a href="">Fintey</a>
+          <a href="">Osiabura</a>
+          <a href="">Nkwakubew</a>
+          <a href="">Anum</a>
+          <a href="">Nayor</a>
+          <a href="">Toseng</a>
+          <a href="">Anyaase</a>
+          <a href="">Mpamproase</a>
+          <a href="">Kudikope</a>
+          <a href="">Asubrempong</a>
+          <a href="">Manya-Yoyim</a>
+          <a href="">Yeniama</a>
+          <a href="">Sedorm</a>
+          <a href="">Sapor</a>
+        </section>
       </div>
-    </div> -->
+      <div class="info-down">
+        <div class="image-row">
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="myImg"
+              src="images/atimpoku.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right">Atimpoku</div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <img class="modal-content" id="img01" />
+              <div id="caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("myImg");
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img01.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img01.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>
+        </div>
+      </div>
       <div class="package">
         <div class="news">
           <h5><i>LATEST NEWS</i></h5>
