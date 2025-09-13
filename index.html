@@ -682,9 +682,27 @@
           text-align: center;
           font-weight: 800;
         }
-        .tourist{
+        .tourist {
           font-size: 14px;
         }
+        .topNews h4{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #ffffe0;
+        text-shadow: 2px 2px black;
+      }
+      .mps h4{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #bebe1c;
+        text-shadow: 2px 2px black;
+      }
       }
       .downbelt {
         display: flex;
@@ -737,6 +755,7 @@
         text-decoration: none;
         height: 100px;
         margin-right: 10px;
+        padding-left: 5px;
       }
       .logoWrapper {
         display: flex;
@@ -781,6 +800,27 @@
         background-repeat: no-repeat;
         justify-content: center;
       }
+      .topNews img {
+        position: relative;
+      }
+      /* .topNews h4{
+        position: absolute;
+        top: 470px;
+        left: 200px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffe0;
+        text-shadow: 2px 2px black;
+      }
+      .mps h4{
+        position: absolute;
+        top: 470px;
+        left: 690px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffe0;
+        text-shadow: 2px 2px black;
+      } */
       .topNews h3 {
         text-align: center;
         color: white;
@@ -843,6 +883,7 @@
         padding: 4px;
         color: white;
         border: 1px solid black;
+        border-radius: 4px;
       }
       .yourMps {
         background-color: darkgreen;
@@ -851,6 +892,7 @@
         padding: 4px;
         color: white;
         border: 1px solid black;
+        border-radius: 4px;
       }
       .fantastics {
         background-color: brown;
@@ -858,6 +900,7 @@
         padding: 4px;
         color: white;
         border: 1px solid black;
+        border-radius: 4px;
       }
       .extras {
         display: flex;
@@ -1045,30 +1088,30 @@
             <div class="topNews">
               <a href="bulletin.html">
                 <img src="images/job.jpg" height="320" width="540" />
+                <!-- <h4 class="fotoLabels">YOUTH UNEMPLOYMENT, “A KEG OF GUNPOWDER”</h4> -->
               </a>
             </div>
 
             <div class="mps">
               <a href="bulletin2.html">
                 <img src="images/chiefjustice.jpg" height="320" width="540" />
+                <!-- <h4 class="fotoLabels">SUSPENSION OF THE CHIEF JUSTICE - MATTERS SIMPLIFIED</h4> -->
               </a>
             </div>
           </div>
 
           <div class="headlines">
             <h5>HEADLINE NEWS</h5>
-            :
             <marquee
-              >First year SHS begins October 18 ||WAEC releases BECE 2025 results||Bank of
-              Ghana directs commercial banks to lend below 10% ||President
-              Mahama has donated 40 metric tons of Cocoa-based products to the
-              people of Palestine ||EC sets september 2 for Akwatia Parliametary
-              by-election || Axle Load penalties increased from GHS 5,000 to GHS
-              50,000 - Road Minister || Ghana will no longer borrow from Euro
-              Bond markets but rely on Goldbod for funds - Ricketts-Hagan || BOG
-              brings policy rate down to 25% from 28% || Sportsmen and women to
-              be prioritized in army recruitment - Mahama|| All oil and mineral
-              royalties to fund the "Big Push" on selected roads
+              >World Bank disburses $360m to support Ghana's Economy || Ghana
+              remains Africa's biggest Gold producer with 4.8 million ounces in
+              2024 - Chamber of Mines || Ghana's Debt to GDP Ratio to fall to
+              60% by end of year - IMF || First year SHS begins October 18 || Bank of
+              Ghana directs commercial banks to lend below 10% || All oil and
+              mineral royalties to fund the "Big Push" on selected roads||
+              Kwanyako water treatment plant shuts down due to high turbidity
+              levels Burkina Faso grants visa-free access to all African
+              countries
             </marquee>
           </div>
 
@@ -1248,34 +1291,60 @@
         </div>
         <div class="indRegions">
           <div class="grp1">
-            <h6 class="info_head"><a href="indusAccra.html">ACCRA REGION</a></h6>
+            <h6 class="info_head">
+              <a href="indusAccra.html">ACCRA REGION</a>
+            </h6>
             <h6 class="info_heads">
               <a href="indusCentral.html">CENTRAL REGION</a>
             </h6>
-            <h6 class="info_head"><a href="indusEastern.html">EASTERN REGION</a></h6>
+            <h6 class="info_head">
+              <a href="indusEastern.html">EASTERN REGION</a>
+            </h6>
           </div>
           <div class="grp2">
-            <h6 class="info_head"><a href="indusWestern.html">WESTERN REGION</a></h6>
-            <h6 class="info_head"><a href="instituteWesternNorth.html">WESTERN-N REGION</a></h6>
+            <h6 class="info_head">
+              <a href="indusWestern.html">WESTERN REGION</a>
+            </h6>
+            <h6 class="info_head">
+              <a href="instituteWesternNorth.html">WESTERN-N REGION</a>
+            </h6>
             <h6 class="info_head"><a href="indusBono.html">BONO REGION</a></h6>
           </div>
           <div class="grp3">
-            <h6 class="info_head"><a href="indusBonoE.html">BONO-E REGION</a></h6>
-            <h6 class="info_head"><a href="indusAhafo.html">AHAFO REGION</a></h6>
-            <h6 class="info_head"><a href="indusAshanti.html">ASHANTI REGION</a></h6>
+            <h6 class="info_head">
+              <a href="indusBonoE.html">BONO-E REGION</a>
+            </h6>
+            <h6 class="info_head">
+              <a href="indusAhafo.html">AHAFO REGION</a>
+            </h6>
+            <h6 class="info_head">
+              <a href="indusAshanti.html">ASHANTI REGION</a>
+            </h6>
           </div>
           <div class="grp4">
-            <h6 class="info_head"><a href="indusNorthern.html">NORTHERN REGION</a></h6>
-            <h6 class="info_head"><a href="indusNorthEast.html">NORTH-E REGION</a></h6>
-            <h6 class="info_head"><a href="indusVolta.html">VOLTA REGION</a></h6>
+            <h6 class="info_head">
+              <a href="indusNorthern.html">NORTHERN REGION</a>
+            </h6>
+            <h6 class="info_head">
+              <a href="indusNorthEast.html">NORTH-E REGION</a>
+            </h6>
+            <h6 class="info_head">
+              <a href="indusVolta.html">VOLTA REGION</a>
+            </h6>
           </div>
           <div class="grp5">
-            <h6 class="info_head"><a href="indusUpperW.html">UPPER-W REGION</a></h6>
-            <h6 class="info_head"><a href="indusUpperE.html">UPPER-E REGION</a></h6>
+            <h6 class="info_head">
+              <a href="indusUpperW.html">UPPER-W REGION</a>
+            </h6>
+            <h6 class="info_head">
+              <a href="indusUpperE.html">UPPER-E REGION</a>
+            </h6>
             <h6 class="info_head"><a href="indusOti.html">OTI REGION</a></h6>
           </div>
           <div class="grp6">
-            <h6 class="info_head"><a href="indusSavannah.html">SAVANNAH REGION</a></h6>
+            <h6 class="info_head">
+              <a href="indusSavannah.html">SAVANNAH REGION</a>
+            </h6>
           </div>
         </div>
       </div>
@@ -1283,12 +1352,12 @@
     <div class="footers">
       <p class="text-centered">
         &copy;2025 NEWSBOX Ghana. All Rights Reserved
-        <a href="about.html">About Us</a>||<a href="privacy-policy.html"
+        <a href="about.html">About Us</a> || <a href="privacy-policy.html"
           >Privacy Policy</a
         >
       </p>
     </div>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
