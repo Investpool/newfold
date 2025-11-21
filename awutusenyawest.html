@@ -516,7 +516,7 @@
               width="150"
               height="100"
             />
-            <div class="bottom-right" style="color: grey">Senya Beraku</div>
+            <div class="bottom-right" style="color: red">Senya Beraku</div>
             <!-- The Modal -->
             <div id="5Modal" class="modal">
               <img class="modal-content" id="img05" />
@@ -543,6 +543,46 @@
                 setTimeout(function () {
                   modal.style.display = "none";
                   img05.className = "modal-content";
+                }, 400);
+              };
+            </script>
+          </div>
+          <div class="parent">
+            <!-- Image Zoom HTML -->
+            <img
+              id="6Img"
+              src="images/bbantama.jpg"
+              alt=""
+              width="150"
+              height="100"
+            />
+            <div class="bottom-right" style="color: white">Bantama</div>
+            <!-- The Modal -->
+            <div id="6Modal" class="modal">
+              <img class="modal-content" id="img06" />
+              <div id="6caption"></div>
+            </div>
+            <script>
+              // Get the modal
+              var modal = document.getElementById("6Modal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("6Img");
+              var modalImg = document.getElementById("img06");
+              var captionText = document.getElementById("6caption");
+              img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+              };
+
+              // When the user clicks on <span> (x), close the modal
+              modal.onclick = function () {
+                img06.className += " out";
+                setTimeout(function () {
+                  modal.style.display = "none";
+                  img06.className = "modal-content";
                 }, 400);
               };
             </script>
