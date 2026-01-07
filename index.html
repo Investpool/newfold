@@ -395,6 +395,12 @@
           height: 200px;
           width: 390px;
         }
+        .topNews span {
+          display: none !important;
+        }
+        .mps span {
+          display: none !important;
+        }
       }
       @media screen and (max-width: 375px) {
         .topnewsLabel h5 {
@@ -682,6 +688,12 @@
           color: #bebe1c;
           text-shadow: 2px 2px black;
         }
+        .topNews span {
+          display: none !important;
+        }
+        .mps span {
+          display: none !important;
+        }
       }
       .downbelt {
         display: flex;
@@ -773,6 +785,7 @@
       .belt {
         display: flex;
         margin-bottom: 5px;
+        margin-top: 4px;
       }
       .topNews {
         flex: 6;
@@ -793,7 +806,6 @@
         flex: 6;
         background-repeat: no-repeat;
         justify-content: center;
-        border-radius: 15px;
       }
       .mps h3 {
         text-align: center;
@@ -883,7 +895,10 @@
         padding: 4px;
       }
       .indRegions {
-        margin-left: 4px;
+        padding-left: 7px;
+      }
+      .indTitle {
+        padding-left: 7px;
       }
       .health h4 {
         background-color: brown;
@@ -893,6 +908,8 @@
       }
       .medicare {
         display: flex;
+        margin-left: 110px;
+        margin-right: 110px;
       }
       .health {
         margin-right: 10px;
@@ -907,6 +924,40 @@
         padding: 4px;
         border: 2px solid #f80606;
         border-radius: 4px;
+      }
+      .sidebar {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 6px;
+        background-color: white;
+      }
+      .info {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 6px;
+        background-color: darkkhaki;
+      }
+      .footers {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .topNews span {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 4px;
+         position: absolute;
+        right: 750px;
+        bottom: 70px;
+      }
+      .mps span{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 4px;
+        position: absolute;
+        left: 750px;
+        bottom: 70px;
       }
     </style>
   </head>
@@ -1001,7 +1052,6 @@
           </div>
         </div>
       </nav>
-
       <div class="dome">
         <div class="mid_info">
           <h3 class="story" style="font-family: sans-serif">
@@ -1068,42 +1118,25 @@
           <div class="belt">
             <div class="topNews">
               <a href="bulletin.html">
-                <img src="images/citiagric.jpg" height="320" width="540" />
+                <img src="images/capacitor.jpg" height="320" width="540" />
+                <span>Adopting the Foundations of Knowledge and Culture</span>
               </a>
             </div>
             <div class="mps">
               <a href="bulletin2.html">
-                <img src="images/bigbag.jpg" height="320" width="540" />
+                <img src="images/firegreen.jpg" height="320" width="540" />
+                <span>Institute By-laws on Bushfires to Promote Ecological Balance</span>
               </a>
             </div>
           </div>
           <div class="headlines">
             <h5>HEADLINE NEWS</h5>
-            <marquee
-              >Electricity and Water tariff increases by January 1 with 9.86 % and 15.92 % respectively over 5 - year 
-              period - PURC|| Banks to rollout Non-Interest Banking and Finance (NIBF) soon - BOG || Northern Region now produces Cocoa 
+            <marquee>
+              Police arrest Sefwi Bekwai SHS Kitchen staff for stealing Food
+              Items || TOR begins refining crude ||
             </marquee>
           </div>
-          <script type="text/javascript">
-            if (typeof atAsyncOptions !== "object") var atAsyncOptions = [];
-            atAsyncOptions.push({
-              key: "7c27def5abdf78f6ccb2c6c0a1affd1a",
-              format: "js",
-              async: true,
-              container: "atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a",
-              params: {},
-            });
-            var script = document.createElement("script");
-            script.type = "text/javascript";
-            script.async = true;
-            script.src =
-              "http" +
-              (location.protocol === "https:" ? "s" : "") +
-              "://caravanexhale.com/7c27def5abdf78f6ccb2c6c0a1affd1a/invoke.js";
-            document.getElementsByTagName("head")[0].appendChild(script);
-          </script>
 
-          <div id="atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a"></div>
           <div class="reasons">
             <p>
               <b>NEWSBOX</b> throws a spotlight on every single community in
@@ -1124,8 +1157,9 @@
           </div>
         </div>
       </div>
-      <h2 class="tourist">TOURIST SITES ACROSS THE COUNTRY</h2>
       <div class="sidebar">
+        <h2 class="tourist">TOURIST SITES ACROSS THE COUNTRY</h2>
+
         <div class="gary">
           <div class="firstpic">
             <img
@@ -1273,7 +1307,6 @@
           </div>
         </div>
       </div>
-      <hr class="backline" />
       <div class="info">
         <div class="indTitle">
           <h4>REGIONAL DISTRIBUTION OF INDUSTRIES</h4>
@@ -1357,7 +1390,6 @@
           <div id="atContainer-7c27def5abdf78f6ccb2c6c0a1affd1a"></div>
         </div>
       </div>
-      <hr />
       <div class="medicare">
         <div class="health">
           <a href="medics.html">
@@ -1372,14 +1404,13 @@
           </a>
         </div>
       </div>
-    </div>
-
-    <div class="footers">
-      <p class="text-centered">
-        &copy;2025 NEWSBOX Ghana. All Rights Reserved
-        <a href="about.html">About Us</a> ||
-        <a href="privacy-policy.html">Privacy Policy</a>
-      </p>
+      <div class="footers">
+        <p class="text-centered">
+          &copy;2025 NEWSBOX Ghana. All Rights Reserved
+          <a href="about.html">About Us</a> ||
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </p>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
