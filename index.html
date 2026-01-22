@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="site-verification" content="41d9d42afff0512727c6fb2a52b97da7" />
     <link
-    href="https://caravanexhale.com/gjbamtkh?key=5927389efbf5ec7cb7fcdb868612b8c9
+      href="https://caravanexhale.com/gjbamtkh?key=5927389efbf5ec7cb7fcdb868612b8c9"
     />
     <link
       rel="stylesheet"
@@ -673,35 +673,11 @@
           font-size: 14px;
         }
         .topNews h4 {
-          top: 100px;
-          left: 100px;
-          text-decoration: none;
-          font-size: 12px;
-          color: #ffffe0;
-          text-shadow: 2px 2px black;
-        }
-        .mps h4 {
-          top: 100px;
-          left: 100px;
-          text-decoration: none;
-          font-size: 18px;
-          color: #bebe1c;
-          text-shadow: 2px 2px black;
-        }
-        .topNews span {
           display: none !important;
         }
-        .mps span {
+        .mpp h4 {
           display: none !important;
         }
-      }
-      .downbelt {
-        display: flex;
-        background-color: black;
-        height: auto;
-        margin-bottom: 5px;
-        padding-left: 20px;
-        color: white;
       }
       .write {
         font-size: smaller;
@@ -787,36 +763,7 @@
         margin-bottom: 5px;
         margin-top: 4px;
       }
-      .topNews {
-        flex: 6;
-        background-repeat: no-repeat;
-        justify-content: center;
-      }
-      .topNews h3 {
-        text-align: center;
-        color: white;
-        top: 80%;
-        padding-left: 60px;
-        padding-right: 90px;
-        font-size: 20px;
-        font-weight: 700;
-        text-shadow: 2px 2px black;
-      }
-      .mps {
-        flex: 6;
-        background-repeat: no-repeat;
-        justify-content: center;
-      }
-      .mps h3 {
-        text-align: center;
-        color: white;
-        top: 80%;
-        padding-right: 40px;
-        padding-left: 10px;
-        font-size: 20px;
-        font-weight: 700;
-        text-shadow: 2px 2px black;
-      }
+
       .byRegions {
         margin-right: 3px;
       }
@@ -824,10 +771,6 @@
         background-color: white;
         padding: 5px;
       }
-      .brother {
-        float: left;
-      }
-
       .headlines {
         display: flex;
         border: 1px solid black;
@@ -941,23 +884,33 @@
         margin-left: 20px;
         margin-right: 20px;
       }
-      .topNews span {
+      .topNews h4 {
         text-align: center;
-        background-color: black;
-        color: white;
-        padding: 4px;
-         position: absolute;
-        right: 750px;
-        bottom: 70px;
-      }
-      .mps span{
-        text-align: center;
-        background-color: black;
         color: white;
         padding: 4px;
         position: absolute;
-        left: 750px;
-        bottom: 70px;
+        right: 700px;
+        bottom: 25px;
+      }
+      .topNews img {
+        filter: brightness(0.9);
+        object-fit: cover;
+        margin-right: 4px;
+      }
+      .mpp h4 {
+        position: absolute;
+        top: 90%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-decoration: none;
+      }
+      .mpp img {
+        object-fit: cover;
+        width: 100%;
+        height: 24rem;
+        object-position: top;
+        
       }
     </style>
   </head>
@@ -1116,18 +1069,27 @@
           </div>
 
           <div class="belt">
-            <div class="topNews">
-              <a href="bulletin.html">
-                <img src="images/capacitor.jpg" height="320" width="540" />
-                <span>Adopting the Foundations of Knowledge and Culture</span>
-              </a>
-            </div>
-            <div class="mps">
-              <a href="bulletin2.html">
-                <img src="images/firegreen.jpg" height="320" width="540" />
-                <span>Institute By-laws on Bushfires to Promote Ecological Balance</span>
-              </a>
-            </div>
+            <header>
+              <div class="topNews">
+                <a href="bulletin.html">
+                  <img src="images/unihostel.jpg" height="385" width="540" />
+                  <h4>
+                    The Harsh Reality of University Hostel<br />
+                    Matters on the Less Privileged
+                  </h4>
+                </a>
+              </div>
+            </header>
+            <header>
+              <div class="mpp">
+                <a href="bulletin2.html">
+                  <img src="images/firegreen.jpg" alt="" />
+                  <h4>
+                    Institute By-laws on Bushfires to Promote Ecological Balance
+                  </h4>
+                </a>
+              </div>
+            </header>
           </div>
           <div class="headlines">
             <h5>HEADLINE NEWS</h5>
@@ -1158,8 +1120,7 @@
         </div>
       </div>
       <div class="sidebar">
-        <h2 class="tourist">TOURIST SITES ACROSS THE COUNTRY</h2>
-
+        <h4>TOURIST SITES ACROSS THE COUNTRY</h4>
         <div class="gary">
           <div class="firstpic">
             <img
